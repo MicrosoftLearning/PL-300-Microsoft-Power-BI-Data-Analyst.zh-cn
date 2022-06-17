@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8876507a0ec5ecb2e4e3d048285d075202550f05
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 585b145f177e4e0792054e11f83911c0fad49430
+ms.sourcegitcommit: 9f66e4932aaf188d3be327646561dc7fe8e5c7a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139504254"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143996838"
 ---
 # <a name="pl-300-microsoft-power-bi-data-analyst"></a>PL-300：Microsoft Power BI 資料分析師
 
@@ -12,7 +12,7 @@ ms.locfileid: "139504254"
 
 - 你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **需要手动生成实验室说明？** - [MicrosoftLearning/Docker-Build ](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
-- **是否需要回顾一下哪个实验室服务于哪个模块？** - 查看[GitHub 页面](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)
+- **是否需要回顾一下哪个实验室服务于哪个模块？** - 查看[GitHub 页面](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
 
 ## <a name="what-are-we-doing"></a>我们要做什么？
 
@@ -20,7 +20,7 @@ ms.locfileid: "139504254"
 
 - 我们希望能在这些实验室中引入前所未有的协作感：如果 Power BI 发生更改，而你首先在实时授课时发现这一点，则可以直接在实验室源中进行改进。  帮助你的 MCT 伙伴们。
 
-## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>相对于已发布的 MOC 文件，应如何使用这些文件？
+## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>我应该如何使用与已发布 MOC 文件相关的这些文件？
 
 - 讲师手册和 PowerPoint 仍将是教授课程内容的主要来源。
 
@@ -28,11 +28,11 @@ ms.locfileid: "139504254"
 
 - 建议在每次交付时，培训师检查 GitHub 是否为支持最新的 Azure 服务进行了任何更改，并获取最新的交付文件。
 
-## <a name="what-about-changes-to-the-student-handbook"></a>学员手册有什么变化？
+## <a name="what-about-changes-to-the-student-handbook"></a>如何处理对学生手册的更改？
 
 - 我们将按季度审核学员手册，并根据需要通过标准 MOC 版本通道进行更新。
 
-## <a name="how-do-i-contribute"></a>如何做出贡献？
+## <a name="how-do-i-contribute"></a>如何参与内容编辑？
 
 - 任何 MCT 都可向 GitHub 存储库中的代码或内容提交拉取请求，Microsoft 和课程作者将根据需要进行分流并纳入内容和实验室代码的更改。
 
