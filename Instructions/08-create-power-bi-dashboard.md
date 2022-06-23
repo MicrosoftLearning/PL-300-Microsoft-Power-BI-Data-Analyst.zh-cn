@@ -2,12 +2,12 @@
 lab:
   title: 创建 Power BI 面板
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 777dc5fb86f71c926a347c736896834fdf2baed2
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273281"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109907"
 ---
 # <a name="create-a-power-bi-dashboard"></a>创建 Power BI 仪表板
 
@@ -61,7 +61,7 @@ ms.locfileid: "139273281"
 
     ![图片 42](Linked_image_Files/09-create-power-bi-dashboard_image2.png)
 
-2. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
+2. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -115,7 +115,7 @@ ms.locfileid: "139273281"
 
     ![图片 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\09-create-power-bi-dashboard\Starter”文件夹 。
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\08-create-power-bi-dashboard\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -159,11 +159,11 @@ ms.locfileid: "139273281"
 
     ![图片 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
-4. 在“打开”窗口，导航到“D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Solution”文件夹 。
+4. 在“打开”窗口中，导航到“D:\PL300\Labs\08-create-power-bi-dashboard\Solution”文件夹 。
 
 5. 选择“Sales Analysis.pbix”文件，然后单击“打开” 。
 
-6. 如果系统提示替换数据集，请单击“替换”。
+6. 如果系统提示替换数据集，请单击“替换它”。
 
 ### <a name="task-4-create-a-dashboard"></a>**任务 4：创建仪表板**
 
@@ -181,7 +181,7 @@ ms.locfileid: "139273281"
 
 4. 若要创建仪表板并固定视觉对象，请将光标悬停在“月销售额和利润率”（列/行）视觉对象上。
 
-5. 单击右上角的图钉。
+5. 单击右下角的图钉。
 
     ![图片 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
@@ -193,7 +193,7 @@ ms.locfileid: "139273281"
 
     ![图 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
-8. 打开导航窗格，然后打开“销售监视”仪表板。
+8. 打开“导航”窗格，选择“我的工作区”，然后打开“销售额监视”仪表板  。
 
     ![图片 44](Linked_image_Files/09-create-power-bi-dashboard_image21.png)
 
@@ -337,7 +337,7 @@ ms.locfileid: "139273281"
 
 2. 完成刷新后，保存 Power BI Desktop 文件。
 
-3. 若要将文件发布到工作区，请在“主页”功能区选项卡上的“共享”组中，单击“发布”。
+3. 若要将文件发布到工作区，请在“主页”功能区选项卡上的“共享”组中，单击“发布”，然后单击“选择”以发布   。
 
     ![图片 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -351,11 +351,11 @@ ms.locfileid: "139273281"
 
 ## <a name="exercise-3-review-the-dashboard"></a>**练习 3：** 查看仪表板
 
-在此练习中，你将查看仪表板，以查看更新的销售额以及触发的警报。
+在本练习中，你将在仪表板中查看更新后的销售数据。
 
 ### <a name="task-1-review-the-dashboard"></a>**任务 1：查看仪表板**
 
-在此任务中，你将查看仪表板，以查看更新的销售额以及触发的警报。
+在此任务中，你将在仪表板中查看更新后的销售数据。
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，查看“销售监视”仪表板。
 
@@ -367,22 +367,6 @@ ms.locfileid: "139273281"
 
     ![图片 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-    “年初至今的销售额”磁贴上的警报也应触发。一小段时间后，警报应通知你销售额现已超出配置的阈值。
+    
 
-4. 请注意，“年初至今的销售额”磁贴已更新为“3700 万美元”。
-
-5. 请验证“年初至今的销售额”磁贴上是否显示了警报通知图标。
-
-    如果未看到通知，可能需要按 F5 重新加载浏览器。如果仍未看到通知，请再等待几分钟。
-
-    ![图片 35](Linked_image_Files/09-create-power-bi-dashboard_image51.png)
-
-    *警报通知显示在仪表板磁贴上，可以通过电子邮件传递通知，也可以将通知推送到移动应用（包括 Apple Watch）。*
-
-6. 在网页的右上角，单击“通知”图标。
-
-    ![图片 58](Linked_image_Files/09-create-power-bi-dashboard_image52.png)
-
-7. 在“所有通知”窗格中，查看警报通知的详细信息。
-
-8. 要关闭该窗格，请单击“关闭”。
+4. 要关闭该窗格，请单击“关闭”。

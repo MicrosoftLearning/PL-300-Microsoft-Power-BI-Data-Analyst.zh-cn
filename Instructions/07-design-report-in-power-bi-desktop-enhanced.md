@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中设计报表，第 2 部分
   module: Module 7 - Create Reports
-ms.openlocfilehash: 13dbd8523318739a7e005f1023ab2ae8b32ce8a1
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 113abb71cee132e348d3513f171efe6cec317046
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273292"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109679"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中设计报表，第 2 部分
 
@@ -63,7 +63,7 @@ ms.locfileid: "139273292"
 
     ![图片 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -117,7 +117,7 @@ ms.locfileid: "139273292"
 
     ![图片 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. 在“打开”窗口中，导航到 D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter 文件夹。 
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -245,7 +245,7 @@ ms.locfileid: "139273292"
 
     - Sales \| Profit Margin
 
-12. 为视觉对象配置格式选项，并在“网格”部分将“文本大小”属性设置为“20 磅”。
+12. 为视觉对象配置格式选项，并在“值”部分将“文本大小”属性设置为“20pt”  。
 
     钻取页的设计即将完成。你将在下一个练习中使用条件格式来优化页面。
 
@@ -307,11 +307,11 @@ ms.locfileid: "139273292"
 
 9. 为“颜色”字段配置背景色条件格式。
 
-10. 在“背景色 - 颜色”窗口中，在“格式化依据”下拉列表中选择“字段值”。
+10. 在“背景色 - 颜色”窗口中的“格式样式”下拉列表中，选择“字段值”  。
 
-    ![图片 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
+    
 
-11. 在“依据字段”下拉列表中，选择“产品 \| 格式设置 \| 背景色格式”。 
+11. 在“应将此基于哪个字段?”下拉列表中，选择“产品 \| 格式设置 \| 背景色格式” 。
 
     ![图片 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -401,15 +401,15 @@ ms.locfileid: "139273292"
 
 2. 将按钮直接置于“年份”切片器下。
 
-3. 选择按钮，然后在“格式按钮”窗格中，将“按钮文本”属性设置为“启用”。
+3. 选择按钮，然后在“格式按钮”窗格中，单击“常规”，然后将“按钮文本”属性设置为“启用”   。
 
     ![图片 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. 展开“按钮文本”部分，然后在“按钮文本”框中输入“条形图”。
+4. 展开“标题”部分，然后在“文本”框中输入“条形图”  。
 
 5. 展开“背景”部分，然后使用补色设置背景色。
 
-6. 将“操作”属性设置为“开”（位于列表底部附近）。
+6. 单击“按钮”，然后将“操作”属性设置为“启用”  。
 
     ![图片 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -471,7 +471,7 @@ ms.locfileid: "139273292"
 
 在此任务中，你将在 Power BI 服务中浏览报表。
 
-1. 在 Microsoft Edge 浏览器窗口，在 Power BI 服务的“导航”窗格中，单击“销售额分析”报表 。
+1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，在“导航”窗格中选择“我的工作区”，然后单击“销售分析”报表  。
 
 2. 若要测试钻取报表功能，请在“概述”页面的“各类别的数量”视觉对象中右键单击“服装”栏，然后选择“钻取 \| 产品详细信息”。   
 

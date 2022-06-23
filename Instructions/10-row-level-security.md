@@ -1,13 +1,13 @@
 ---
 lab:
   title: 强制执行行级别安全性
-  module: Module 13 - Row-Level Security
-ms.openlocfilehash: b4b468b1c34d0cb562edd9ec407b07c9ee2efa1d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+  module: Module 12 - Row-Level Security
+ms.openlocfilehash: 6ccc19e9835dca06ec613e386c82fb0270a28ed5
+ms.sourcegitcommit: 51f448b208842f1333cb683b7775618edb41c126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273110"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "141580172"
 ---
 # <a name="enforce-row-level-security"></a>强制执行行级别安全性
 
@@ -73,7 +73,7 @@ ms.locfileid: "139273110"
 
     ![图片 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\12-row-level-security\Starter 文件夹 。
+1. 在“打开”窗口中，导航到“D:\PL300\Labs\10-row-level-security\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -185,7 +185,7 @@ ms.locfileid: "139273110"
 
     ![图片 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**任务 2：完成**
+### <a name="task-3-finish-up"></a>**任务 3：完成**
 
 在此任务中，你将完成本实验室。
 

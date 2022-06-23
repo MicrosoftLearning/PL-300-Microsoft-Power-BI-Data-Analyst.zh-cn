@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 27cbc5c39cdc89c2a54422bbe3468cd13c553ddc
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 3bbdf3dfb4b302a9b3c28005976ff34764c1c542
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273186"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071636"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -75,7 +75,7 @@ ms.locfileid: "139273186"
 
     ![图片 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
-1. 在“打开”窗口，导航到“D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Starter”文件夹 。
+1. 在“打开”窗口中，导航到“D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "139273186"
 
     ![图片 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-    为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义。
+    为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义。
 
     计算表的创建方式为，先输入表名称，后面依次跟等于号 (=) 和返回表的 DAX 公式。请注意，表名称不能是数据模型中已有的。
 
@@ -141,7 +141,7 @@ ms.locfileid: "139273186"
 
     ![图 2](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image12.png)
 
-8. 当看到确认删除的提示时，单击“删除”。
+8. 系统提示确认删除时，单击“确定”。
 
     ![图片 3](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image13.png)
 
@@ -208,7 +208,7 @@ ms.locfileid: "139273186"
 
 在此任务中，你将添加其他列，以支持按不同时间段进行筛选和分组。 你还将创建一个计算列来控制其他列的排序顺序。
 
-为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义。
+为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义。
 
 1. 在“表工具”关联功能区上，单击“计算”组中的“新建列”。
 
@@ -375,7 +375,7 @@ ms.locfileid: "139273186"
 
     ![图片 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
-    回想一下，在“在 Power BI Desktop 中对数据建模，第 2 部分”实验室中，你将“Unit Price”列设置为按“平均值”汇总。** 你在矩阵视觉对象中看到的结果是每月平均单位价格（单位价格值的总和除以单位价格计数）。
+    回想一下，在“在 Power BI Desktop 中为数据建模”实验室中，你将“Unit Price”列设置为按“平均值”汇总。** 你在矩阵视觉对象中看到的结果是每月平均单位价格（单位价格值的总和除以单位价格计数）。
 
 2. 在视觉对象“字段”窗格（位于“可视化效果”窗格之下）的“值”字段井/区域，注意“Unit Price”已列出。
 
@@ -473,9 +473,96 @@ ms.locfileid: "139273186"
 
     ![图片 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
+### <a name="task-2-create-additional-measures"></a>**任务 2：创建其他度量值**
+
+在此任务中，你将创建使用更复杂表达式的其他度量值。
+
+1. 在“报表”视图中，选择“第 1 页”。
+
+    ![图片 40](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image44.png)
+
+2. 审阅表视觉对象，同时注意“Target”列的总计。
+
+    ![图片 41](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image45.png)
+
+    
+
+3. 选择表视觉对象，然后在“可视化效果”窗格中，删除“Target”字段。
+
+    ![图片 42](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image46.png)
+
+4. 将“Targets \| Target”列重命名为“Targets \| TargetAmount” 。
+
+    *提示：有多种方法可以在“报表”视图中重命名列：* 在“字段”窗格中，右键单击相应的列，然后选择“重命名”；或双击相应的列；或按 F2  。
+
+    你将要创建名为“Target”的度量值。同一个表中不能有同名的列和度量值。
+
+5. 在“Targets”表上创建以下度量值：
 
 
-### <a name="task-2-finish-up"></a>**任务 2：完成**
+    **DAX**
+
+
+    ```
+    Target =
+
+    IF(
+
+    HASONEVALUE('Salesperson (Performance)'[Salesperson]),
+
+    SUM(Targets[TargetAmount])
+
+    )
+    ```
+
+
+    HASONEVALUE() 函数测试是否在“Salesperson”列中筛选出单个值。*如果为 true，则表达式返回目标额总和（仅针对此销售人员）。* 如果为 false，则返回 BLANK。
+
+6. 将“Target”度量值的格式设置为没有小数位。
+
+    *提示：* 可以使用“度量值工具”上下文功能区。
+
+7. 隐藏“TargetAmount”列。
+
+    *提示：* 在“字段”窗格中，可以右键单击该列，然后选择“隐藏” 。
+
+8. 将“Target”度量值添加到表视觉对象。
+
+9. 我们注意到，“Target”列总计现在为 BLANK。
+
+    ![图片 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
+
+10. 使用代码片段文件定义为“Targets”表创建以下两个度量值：
+
+    - Variance
+
+    - Variance Margin
+
+11. 将“Variance”度量值的格式设置为没有小数位。
+
+12. 将“Variance Margin”度量值的格式设置为，有两位小数的百分比。
+
+13. 将“Variance”和“Variance Margin”度量值添加到表视觉对象。
+
+14. 重设表视觉对象的大小，以便查看所有列和行。
+
+    ![图片 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
+
+    虽然看上去所有销售员都未达到目标，但请记住，尚未按特定时间段对表视觉对象进行筛选。在“在 Power BI Desktop 中设计报表，第 1 部分”实验室中，你将按用户所选的时间段进行筛选，以生成销售绩效报表。
+
+15. 在“字段”窗格的右上角，折叠后展开，以打开此窗格。
+
+    ![图片 45](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image49.png)
+
+    折叠并重新打开此窗格会重置内容。
+
+16. 我们注意到，“Targets”表现在显示在列表的最上面。
+
+    ![图片 46](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image50.png)
+
+    *只包含可见度量值的表会自动在列表的最上面列出。*
+
+### <a name="task-3-finish-up"></a>**任务 3：完成**
 
 在此任务中，你将完成本实验室。
 

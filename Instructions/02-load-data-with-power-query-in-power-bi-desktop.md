@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中加载数据
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273304"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071855"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**在 Power BI Desktop 中加载数据**
 
@@ -130,7 +130,7 @@ ms.locfileid: "139273304"
 
     现在，你将筛选查询行以仅检索职位是销售人员的员工。
 
-4. 若要查找特定列，请在“开始”功能区选项卡上的“管理列”组中，单击“选择列”向下箭头，然后选择“转到列”。
+4. 若要查找特定列，请在“主页”功能区选项卡上，单击“管理列”向下箭头，再单击“选择列”向下箭头，然后选择“转到列”   。
 
     ![图片 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "139273304"
 
     你创建的每一转换会生成其他的步骤逻辑。*可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。*
 
-10. 要删除列，在“主页”功能区选项卡中的“管理列”组中，单击“选择列”图标。
+10. 若要删除列，请在“主页”功能区选项卡上，单击“管理列”组，然后单击“选择列”图标  。
 
     ![图片 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +216,7 @@ ms.locfileid: "139273304"
 
 23. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
 
-    UPN 是用户主体名称的缩写。*在“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中配置行级别安全性时，将使用此列中的值。*
+    *UPN 是用户主体名称的缩写。*
 
 24. 在状态栏的左下角，验证查询是否具有 5 列和 18 行。
 
@@ -349,7 +349,6 @@ ms.locfileid: "139273304"
     ![图 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. 右键单击“Business Type”列标题，然后选择“替换值”。
 
@@ -648,7 +647,7 @@ ms.locfileid: "139273304"
 
     ![图片 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. 要合并“ColorFormats”查询，请在“主页”功能区选项卡上的“组合”组内，单击“合并查询”   。
+2. 若要合并 ColorFormats 查询，请在“主页”功能区选项卡上，单击“合并”向下箭头，然后单击“合并查询”   。
 
     ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +747,4 @@ ms.locfileid: "139273304"
 
 5. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将配置数据模型表和关系。
+    在“在 Power BI Desktop 中为数据建模”实验室中，你将配置数据模型表和关系。

@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 80cfdfcfcb2072277760670c549cebaaca434cb9
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273082"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071601"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
@@ -73,7 +73,7 @@ ms.locfileid: "139273082"
 
     ![图片 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. 在“打开”窗口，导航到“D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
+1. 在“打开”窗口中，导航到“D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -125,13 +125,11 @@ ms.locfileid: "139273082"
 
     回想一下，“Regions”***层次结构包含“组”** **、“Country”** **和“Region”** **级别。***
 
-7. 若要设置矩阵视觉对象的格式，请选择“可视化效果”窗格下的“格式”窗格。
+7. 若要设置视觉对象的格式，请选择“可视化效果”窗格下的“格式”窗格 。
 
     ![图片 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. 在“搜索”框中，输入“渐变”。
-
-    ![图片 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. 将“渐变布局”属性设置为“关”。
 
@@ -151,7 +149,7 @@ ms.locfileid: "139273082"
 
 1. 基于以下表达式向“Sales”表添加一个度量值：
 
-    为了方便起见，可以从 D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。
+    为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。
 
 
     **DAX**
