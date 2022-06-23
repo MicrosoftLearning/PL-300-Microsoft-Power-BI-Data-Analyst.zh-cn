@@ -1,13 +1,13 @@
 ---
 lab:
   title: 在 Power BI Desktop 中执行数据分析
-  module: Module 10 - Perform Advanced Analytics
-ms.openlocfilehash: 083abd0da7c0423a40985602d8db09d752f064cd
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+  module: Module 9 - Identify Patterns and Trends
+ms.openlocfilehash: e58af011b5603e4cd6e5def7c4353156fc67c879
+ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273282"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "146274793"
 ---
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>在 Power BI Desktop 中执行数据分析
 
@@ -61,7 +61,7 @@ ms.locfileid: "139273282"
 
     ![图片 7](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -103,11 +103,11 @@ ms.locfileid: "139273282"
 
     ![图片 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
-4. 在“打开”窗口，导航到“D:\PL300\Labs\09-create-power-bi-dashboard\Solution”文件夹 。
+4. 在“打开”窗口中，导航到“D:\PL300\Labs\08-create-power-bi-dashboard\Solution”文件夹 。
 
 5. 选择“Sales Analysis.pbix”文件，然后单击“打开” 。
 
-6. 如果系统提示替换数据集，请单击“替换”。
+6. 如果系统提示替换数据集，请单击“替换它”。
 
 ### <a name="task-3-create-the-report"></a>**任务 3：创建报表**
 
@@ -137,7 +137,7 @@ ms.locfileid: "139273282"
 
 7. 在“另存为”窗口中，导航到“D:\PL300\MySolution”文件夹 。
 
-8. 在“文件名”框中，输入“销售探索”。
+8. 在“文件名”框中，输入“销售探索”，然后单击“保存”  。
 
     ![图 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
@@ -153,7 +153,7 @@ ms.locfileid: "139273282"
 
 12. 保存 Power BI Desktop 文件。
 
-    现在，你将创建四个报表页面，在每个页面上，你将使用不同的视觉对象来分析和浏览数据。
+    现在，你将创建两个报表页面，在每个页面上，你将使用不同的视觉对象来分析和浏览数据。
 
 ## <a name="exercise-2-create-a-scatter-chart"></a>**练习 2：** 创建散点图
 
@@ -177,11 +177,13 @@ ms.locfileid: "139273282"
 
     实验室使用速记表示法引用字段。 它将如下所示：Reseller \| Business Type  。 在此示例中，“Reseller”是表名称，“Business Type”是字段名称。
 
-    - 图例：Reseller \| Business Type
+    
 
     - X 轴：Sales \| Sales 
 
     - Y 轴：Sales \| Profit Margin
+
+    - 图例：Reseller \| Business Type
 
     - 大小：Sales \| Quantity
 
@@ -237,9 +239,9 @@ ms.locfileid: "139273282"
 
 3. 将以下字段添加到视觉对象井/区域中：
 
-    - 轴：Date \| Date
+    - X 轴：Date \| Date
 
-    - 值：Sales \| Sales 
+    - Y 轴：Sales \| Sales 
 
     ![图片 46](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
 
@@ -263,21 +265,25 @@ ms.locfileid: "139273282"
 
 8. 展开“预测”部分。
 
-    ![图片 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
+
 
     如果“预测”部分不可用，可能是因为未正确配置该视觉对象。仅当满足以下两个条件时，才能进行预测：轴有一个日期类型的字段，并且只有一个值字段。
 
-9. 单击“添加”。
+9. 将“预测”选项设置为“启用” 。
 
     ![图片 51](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
 
 10. 配置以下预测属性：
 
+    - 单位：Months
+
     - 预测时长：1 个月
 
+    - 季节性：365
+    
     - 置信区间：80%
 
-    - 季节性：365
+
 
 11. 单击“应用”。
 
@@ -302,7 +308,7 @@ ms.locfileid: "139273282"
 
 2. 保存 Power BI Desktop 文件。
 
-3. 若要将文件发布到工作区，请在“主页”功能区选项卡上的“共享”组中，单击“发布”。
+3. 若要将文件发布到“我的工作区”，请在“主页”功能区选项卡上的“共享”组中，单击“发布”，然后单击“选择”以发布    。
 
     ![图片 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 
