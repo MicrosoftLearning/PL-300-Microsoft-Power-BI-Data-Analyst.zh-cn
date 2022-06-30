@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
-ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
+ms.openlocfilehash: 064f5bb2c313448f7d15b01bd0e69a84aa85811f
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146071601"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650194"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
@@ -23,7 +23,7 @@ ms.locfileid: "146071601"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 

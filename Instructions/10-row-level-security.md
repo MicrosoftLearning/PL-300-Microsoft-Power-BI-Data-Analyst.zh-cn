@@ -2,28 +2,27 @@
 lab:
   title: 强制执行行级别安全性
   module: Module 12 - Row-Level Security
-ms.openlocfilehash: 6ccc19e9835dca06ec613e386c82fb0270a28ed5
-ms.sourcegitcommit: 51f448b208842f1333cb683b7775618edb41c126
+ms.openlocfilehash: f47cc7c54428589aaa9d6b37afd9ee4d11c5884e
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "141580172"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650104"
 ---
 # <a name="enforce-row-level-security"></a>强制执行行级别安全性
 
 **预估完成本实验室需要 45 分钟**
 
-在此实验室中，你将在“Salesperson”表和“Sales”表之间创建多对多关系。 你还将强制执行行级别安全性，以确保销售人员只能分析其分配区域的销售数据。
+在此实验室中，你将强制执行行级别安全性，确保销售人员只能分析其分配区域的销售数据。
 
 本实验室介绍如何完成以下操作：
 
-- 配置多对多关系
 
 - 强制执行行级别安全性
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
