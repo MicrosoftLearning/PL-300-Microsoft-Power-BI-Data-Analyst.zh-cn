@@ -179,7 +179,7 @@ ms.locfileid: "146650212"
 
     *提示：* 还可以双击页面名称以进行重命名。
 
-2. 将页面重命名为“概述”，然后按 Enter。
+2. 将页面重命名为“Overview”，然后按 Enter。
 
     ![图片 37](Linked_image_Files/07-design-report-in-power-bi-desktop_image14.png)
 
@@ -216,7 +216,7 @@ ms.locfileid: "146650212"
 
     ![图片 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
-13. 在“年份”切片器中，打开下拉列表，选择“2020 财年”，然后折叠下拉列表。
+13. 在“Year”切片器中，打开下拉列表，选择“FY2020”，然后折叠下拉列表。
 
     ![图片 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
@@ -261,7 +261,7 @@ ms.locfileid: "146650212"
 
     2020 年的最后一个月（即 6 月）没有任何销售额（尚未发布）。*默认情况下，视觉对象已删除销售额为“BLANK”的月份。* 现在可将视觉对象配置为显示所有月份。
 
-28. 在视觉对象字段窗格中的“X 轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示没有数据的项”  。
+28. 在视觉对象字段窗格中的“X 轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示无数据的项”。
 
     ![图片 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -307,7 +307,7 @@ ms.locfileid: "146650212"
 
 39. 依次展开“条形图”、“颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）  。
 
-40. 将“数据标签”属性设置为“启用”。
+40. 将“图例”属性设置为“启用”。
 
     ![图 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
@@ -327,7 +327,7 @@ ms.locfileid: "146650212"
 
     ![图片 42](Linked_image_Files/07-design-report-in-power-bi-desktop_image38.png)
 
-2. 将页面重命名为“利润”。
+2. 将页面重命名为“Profit”。
 
     ![图片 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
@@ -379,7 +379,7 @@ ms.locfileid: "146650212"
 
     - Subcategory
 
-    - 产品
+    - Product
 
     - Color
 
@@ -541,7 +541,7 @@ ms.locfileid: "146650212"
 
 13. 将光标悬停在条形图的不同段上，以显示工具提示。
 
-14. 若要返回到“报表”页，请在左上方单击“返回报表”。
+14. 若要返回到“报表”页，请在左上方单击“返回到报表”。
 
     ![图片 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
@@ -551,7 +551,7 @@ ms.locfileid: "146650212"
 
 16. 试用除“在 Teams 中聊天”以外的每个选项。
 
-17. 在左侧的“页面”窗格，选择“利润”页。
+17. 在左侧的“页数”窗格，选择“Profit”页。
 
     ![图片 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
@@ -565,7 +565,7 @@ ms.locfileid: "146650212"
 
 20. 在矩阵视觉对象中，使用加号 (+) 按钮钻取“财务”层次结构。
 
-21. 选择“我的绩效”页。
+21. 选择“My Performance”页。
 
     ![图片 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
 

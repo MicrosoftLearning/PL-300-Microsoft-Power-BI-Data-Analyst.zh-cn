@@ -161,7 +161,7 @@ ms.locfileid: "146650203"
 
     ![图 1](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image13.png)
 
-5. 在（“可视化效果”窗格左侧的）“同步切片器”窗格中的第二列（代表同步），选中“概述”和“我的绩效”页的复选框。
+5. 在（“可视化效果”窗格左侧的）“同步切片器”窗格中的第二列（代表同步），选中“Overview”和“My Performance”页的复选框。
 
     ![图片 93](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image14.png)
 
@@ -191,7 +191,7 @@ ms.locfileid: "146650203"
 
     ![图片 95](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image18.png)
 
-2. 右键单击“产品详细信息”页面选项卡，然后选择“隐藏页面”。
+2. 右键单击“产品详细信息”页面选项卡，然后选择“隐藏页”。
 
     ![图片 97](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image19.png)
 
@@ -203,7 +203,7 @@ ms.locfileid: "146650203"
 
     ![图片 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
 
-4. 若要测试钻取页，请在钻取筛选器卡中选择“自行车”。
+4. 若要测试钻取页，请在钻取筛选器卡中选择“Bikes”。
 
     ![图片 99](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
 

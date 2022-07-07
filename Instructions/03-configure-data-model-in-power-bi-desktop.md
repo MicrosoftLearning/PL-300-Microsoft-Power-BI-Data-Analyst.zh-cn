@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop 中的模型数据
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: e6ffd23cf2b7861dad63a522734941b8f914bf88
-ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
+ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "146274819"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015361"
 ---
 # <a name="model-data-in-power-bi-desktop"></a>Power BI Desktop 中的模型数据
 
@@ -26,7 +26,7 @@ ms.locfileid: "146274819"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 

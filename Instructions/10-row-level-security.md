@@ -82,7 +82,7 @@ ms.locfileid: "146650104"
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 要创建该文件的副本，请单击“文件”功能区选项卡以打开 Bckstage 视图。
+1. 要创建该文件的副本，请单击“文件”功能区选项卡以打开 Backstage 视图。
 
 1. 选择“另存为”。
 
@@ -122,7 +122,7 @@ ms.locfileid: "146650104"
 
     ![图片 5702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
 
-7. 在方框中，用角色名称替换选定的文本：“销售员”的名称，然后按 Enter。
+7. 在方框中，用角色名称替换选定的文本：“Salespeople”的名称，然后按 Enter。
 
     ![图片 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 

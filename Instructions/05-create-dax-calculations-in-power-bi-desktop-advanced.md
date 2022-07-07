@@ -125,7 +125,7 @@ ms.locfileid: "146650194"
 
     回想一下，“Regions”***层次结构包含“组”** **、“Country”** **和“Region”** **级别。***
 
-7. 若要设置视觉对象的格式，请选择“可视化效果”窗格下的“格式”窗格 。
+7. 若要设置矩阵视觉对象的格式，请选择“可视化”窗格下的“格式”窗格。
 
     ![图片 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
@@ -439,7 +439,7 @@ ms.locfileid: "146650194"
 
 在此任务中，你将完成本实验室。
 
-1. 要清理可用于开发报表的解决方案，请在左下角右键单击“第 2 页”选项卡，然后选择“删除”页面。
+1. 要清理可用于开发报表的解决方案，请在左下角右键单击“第 2 页”选项卡，然后选择“删除页”。
 
     ![图片 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
 

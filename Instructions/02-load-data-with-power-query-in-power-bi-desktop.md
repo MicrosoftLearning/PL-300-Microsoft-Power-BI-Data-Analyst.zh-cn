@@ -29,7 +29,7 @@ ms.locfileid: "146650221"
 
 2. **在 Power BI Desktop 中加载数据**
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
@@ -40,7 +40,7 @@ ms.locfileid: "146650221"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -499,7 +499,7 @@ ms.locfileid: "146650221"
 
     配置正确数据类型是非常重要的。当列包含数值时，如果想执行数学计算，也务必要选择正确的类型。
 
-13. 将以下三列数据类型修改为“定点十进制数”。
+13. 将以下三列数据类型修改为“定点小数”。
 
     - Unit Price
 
@@ -603,7 +603,7 @@ ms.locfileid: "146650221"
 
     - 将 TargetMonth 的数据类型修改为日期
 
-22. 要将“Target”值乘以 1000，请选择“Target”列标题，然后在“转换”功能区选项卡上的“数字列”组内，单击“标准”，然后选择“相乘”。
+22. 要将“Target”值乘以 1000，请选择“Target”列标题，然后在“转换”功能区选项卡上的“数字列”组内，单击“标准”，然后选择“乘”。
 
     *你可能还记得，目标值是以千为单位存储的。*
 
@@ -663,7 +663,7 @@ ms.locfileid: "146650221"
 
 5. 在“ColorFormats”查询网格中，选择“Color”列标题。
 
-6. 当“私有级别”窗口打开时，对于两个数据源中的每一个，在相应的下拉列表中，选择“组织”。
+6. 当“隐私级别”窗口打开时，对于两个数据源中的每一个，在相应的下拉列表中，选择“组织”。
 
     ![图片 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
@@ -679,9 +679,9 @@ ms.locfileid: "146650221"
 
 9. 展开“ColorFormats”列以包括以下两列：
 
-    - 背景色格式
+    - Background Color Format
 
-    - 字体颜色格式
+    - Font Color Format
 
     ![图片 5694](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image77.png)
 
@@ -733,7 +733,7 @@ ms.locfileid: "146650221"
 
     - ColorFormats（不会加载到数据模型中）
 
-2. 若要加载数据模型，请在“文件”后台视图中选择“关闭 &amp; 应用”。 
+2. 若要加载数据模型，请在“文件”后台视图中选择“关闭并应用”。 
 
     ![图片 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
