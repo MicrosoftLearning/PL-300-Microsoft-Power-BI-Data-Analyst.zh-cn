@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 创建 Power BI 面板
+  title: 创建 Power BI 仪表板
   module: Module 8 - Create Dashboards
 ms.openlocfilehash: 0f8abb8670c71f5063dc28032daa321bf4b742f9
 ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
@@ -171,7 +171,7 @@ ms.locfileid: "147015352"
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，打开“销售分析”报表。
 
-2. 在“概述”页中，将“年份”切片器设置为“FY2020”。
+2. 在“概述”页中，将“Year”切片器设置为“FY2020”。
 
     ![图片 4](Linked_image_Files/09-create-power-bi-dashboard_image17.png)
 
@@ -185,7 +185,7 @@ ms.locfileid: "147015352"
 
     ![图片 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
-6. 在“固定到仪表板”窗口中的“仪表板名称”框内输入“销售监视”。
+6. 在“固定到仪表板”窗口中的“仪表板名称”框内输入“Sales Monitoring”。
 
     ![图片 3](Linked_image_Files/09-create-power-bi-dashboard_image19.png)
 
@@ -213,7 +213,7 @@ ms.locfileid: "147015352"
 
 13. 删除问答框中的所有文本。
 
-14. 在问答框中输入以下内容：年初至今的销售额
+14. 在问答框中输入以下内容： Sales YTD
 
     ![图片 11](Linked_image_Files/09-create-power-bi-dashboard_image24.png)
 
@@ -227,7 +227,7 @@ ms.locfileid: "147015352"
 
     ![图片 12](Linked_image_Files/09-create-power-bi-dashboard_image26.png)
 
-17. 请注意，答复现在为“3300 万美元”。
+17. 请注意，回答现在为“$33M”。
 
     ![图片 13](Linked_image_Files/09-create-power-bi-dashboard_image27.png)
 

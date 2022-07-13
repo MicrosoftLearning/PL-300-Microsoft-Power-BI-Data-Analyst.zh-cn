@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Power BI Desktop 中的模型数据
+  title: 在 Power BI Desktop 中对数据建模
   module: Module 4 - Design a Data Model in Power BI
 ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
 ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
@@ -9,7 +9,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2022
 ms.locfileid: "147015361"
 ---
-# <a name="model-data-in-power-bi-desktop"></a>Power BI Desktop 中的模型数据
+# <a name="model-data-in-power-bi-desktop"></a>在 Power BI Desktop 中对数据建模
 
 **预估完成本实验室需要 45 分钟**
 
@@ -32,7 +32,7 @@ ms.locfileid: "147015361"
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -42,7 +42,7 @@ ms.locfileid: "147015361"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -283,7 +283,7 @@ ms.locfileid: "147015361"
 
 2. 选择“Country”列（而不是“Country”层次结构级别）。
 
-3. 在“属性”窗格中，展开“高级”部分（位于窗格底部），然后在“数据类别”下拉列表中，选择“Country/Region”。
+3. 在“属性”窗格中，展开“高级”部分（位于窗格底部），然后在“数据类别”下拉列表中，选择“国家/地区”。
 
     ![图片 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
 
@@ -305,7 +305,7 @@ ms.locfileid: "147015361"
 
     - Country-Region
 
-    - 省/市/自治区
+    - State-Province
 
     - City
 
@@ -337,7 +337,7 @@ ms.locfileid: "147015361"
 
 6. 在“属性”窗格的“格式设置”部分中，将“小数位数”属性设置为“2”   。
 
-7. 在“高级”组（可能需要向下滚动以找到它）的“汇总依据”下拉列表中，选择“Average”。
+7. 在“高级”组（可能需要向下滚动以找到它）的“汇总依据”下拉列表中，选择“平均值”。
 
     ![图片 354](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image37.png)
 
@@ -435,7 +435,7 @@ ms.locfileid: "147015361"
 
     ![图片 360](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image41.png)
 
-6. 在“选项”窗口左侧的“当前文件”组中，选择“数据负载”。
+6. 在“选项”窗口左侧的“当前文件”组中，选择“数据加载”
 
     ![图片 361](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image42.png)
 

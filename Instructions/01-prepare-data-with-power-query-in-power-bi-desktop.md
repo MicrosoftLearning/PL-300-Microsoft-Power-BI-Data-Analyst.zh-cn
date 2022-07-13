@@ -35,7 +35,7 @@ ms.locfileid: "147015343"
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -45,7 +45,7 @@ ms.locfileid: "147015343"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -97,7 +97,7 @@ ms.locfileid: "147015343"
 
     ![图 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
 
-1. 在“选项”窗口左侧的“当前文件”组中，选择“数据负载”。
+1. 在“选项”窗口左侧的“当前文件”组中，选择“数据加载”。
 
     ![图片 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
 
@@ -171,7 +171,7 @@ ms.locfileid: "147015343"
 
 ### <a name="task-4-preview-sql-server-queries"></a>**任务 4：预览 SQL Server 查询**
 
-在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分布和列分析工具来了解数据并评估数据质量。
+在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分发和列分析工具来了解数据并评估数据质量。
 
 1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。
 
@@ -205,13 +205,13 @@ ms.locfileid: "147015343"
 
     ![图片 38](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
-8. 若要评估列分步，请在“视图”功能区选项卡的“数据预览”组中，选中“列分步”。
+8. 若要评估列分发，请在“视图”功能区选项卡的“数据预览”组中，选中“列分发”。
 
     ![图片 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
 
 9. 再次查看 Position 列，请注意有四个非重复值和一个唯一值。
 
-10. 查看 EmployeeKey（第一）列的列分布，其中包含 296 个非重复值和 296 个唯一值。
+10. 查看 EmployeeKey（第一）列的列分发，其中包含 296 个非重复值和 296 个唯一值。
 
     ![图片 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
@@ -282,7 +282,7 @@ ms.locfileid: "147015343"
 
 在此任务中，你将基于 CSV 文件创建查询。
 
-1. 要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上，在“新查询”组中，单击“新源”向下箭头，然后选择“文本/CSV”。
+1. 要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上，在“新建查询”组中，单击“新建源”向下箭头，然后选择“文本/CSV”。
 
     ![图片 70](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image35.png)
 
@@ -333,7 +333,7 @@ ms.locfileid: "147015343"
 
     - 列质量
 
-    - 列分布
+    - 列分发
 
     - 列配置文件
 

@@ -137,7 +137,7 @@ ms.locfileid: "147015325"
 
 7. 在“另存为”窗口中，导航到“D:\PL300\MySolution”文件夹 。
 
-8. 在“文件名”框中，输入“销售探索”，然后单击“保存”  。
+8. 在“文件名”框中，输入“Sales Exploration”，然后单击“保存”  。
 
     ![图 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
