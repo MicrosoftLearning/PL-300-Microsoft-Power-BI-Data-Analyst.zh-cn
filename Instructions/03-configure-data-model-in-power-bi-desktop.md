@@ -2,18 +2,14 @@
 lab:
   title: 在 Power BI Desktop 中对数据建模
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015361"
 ---
+
+
 # <a name="model-data-in-power-bi-desktop"></a>在 Power BI Desktop 中对数据建模
 
 **预估完成本实验室需要 45 分钟**
 
-在本实验室中，你将开始开发数据模型。 它将涉及在表之间创建关系，然后配置表和列属性以提高数据模型的友好性和可用性。 你还将创建层次结构并创建快速度量值。
+In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
 本实验室介绍如何完成以下操作：
 
@@ -26,7 +22,7 @@ ms.locfileid: "147015361"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -162,15 +158,15 @@ ms.locfileid: "147015361"
 
 14. 在“基数”下拉列表中，请注意，选择了“一对多(1:*)”。
 
-    由于 Power BI 认为“Product”表中的“ProductKey”列包含唯一值，因此已自动检测到基数。** 一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。
+    由于 Power BI 认为“Product”表中的“ProductKey”列包含唯一值，因此已自动检测到基数。* 一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用多对多基数。*
 
 15. 在“交叉筛选方向”下拉列表中，请注意，选择了“单向”。
 
-    单个筛选方向表示筛选器从“一侧”传播到“多侧”。在本例中，这意味着应用于“Product”表的筛选器将传播到“Sales”表，但传播方向不能反过来 。
+    单个筛选方向表示筛选器从“一侧”传播到“多侧”。*在本例中，这意味着应用于“Product”表的筛选将传播到“Sales”表，但传播方向不能反过来。“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用双向关系。*
 
 16. 可以看到“将此关系标记为可用”处于选中状态。
 
-    活动关系传播筛选。*可以将关系标记为非活动状态，这样筛选就不会传播。当表之间存在多个关系路径时，可能存在非活动关系。* 在这种情况下，模型计算可以使用特殊函数来激活它们。
+    活动关系传播筛选。*可以将关系标记为非活动状态，这样筛选就不会传播。当表之间存在多个关系路径时，可能存在非活动关系。在这种情况下，模型计算可以使用特殊函数来激活它们。“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用处于非活动状态的关系。*
 
 17. 单击 **“确定”** 。
 
@@ -210,10 +206,11 @@ ms.locfileid: "147015361"
 
     - “Salesperson \| EmployeeKey”到“Sales \| EmployeeKey” 
 
-25. 在该图中，排列表，以使“Sales”表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
+    在本实验室中，“SalespersonRegion”和“Targets”表将保持断开连接状态。* 销售员与区域之间存在多对多关系，在“在 Power BI Desktop 对数据建模，第 2 部分”实验室中，你将使用这种高级方案。*
+
+25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
     ![图片 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
-
 
 26. 保存 Power BI Desktop 文件。
 
@@ -313,7 +310,13 @@ ms.locfileid: "147015361"
 
     ![图片 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
 
-3. 将“Country-Region”、“State-Province”和“City”列的“数据类别”分别设置为“国家/地区”、“州或省”和“市”      。 
+3. 对以下三列进行分类：
+
+    - “Country-Region”分类为“Country/Region”
+
+    - “State-Province”分类为“State or Province”
+
+    - “City”分类为“City”
 
 ### <a name="task-4-configure-the-sales-table"></a>**任务 4：配置“Sales”表**
 
@@ -329,15 +332,15 @@ ms.locfileid: "147015361"
 
 3. 选择“Quantity”列。
 
-4. 在“属性”窗格的“格式设置”部分中，将“千位分隔符”属性滑动到“是”。
+4. 在“属性”窗格的“格式设置”部分中，将“千位分隔符”属性滑动到“开”。
 
     ![图片 357](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image36.png)
 
 5. 选择“Unit Price”列。
 
-6. 在“属性”窗格的“格式设置”部分中，将“小数位数”属性设置为“2”   。
+6. 在“属性”窗格的“格式设置”部分中，将“小数位数”属性滑动到“2”。
 
-7. 在“高级”组（可能需要向下滚动以找到它）的“汇总依据”下拉列表中，选择“平均值”。
+7. 在“高级”组（可能需要向下滚动以找到它）的“汇总依据”下拉列表中，选择“Average”。
 
     ![图片 354](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image37.png)
 
@@ -345,7 +348,7 @@ ms.locfileid: "147015361"
 
 ### <a name="task-5-bulk-update-properties"></a>**任务 5：批量更新属性**
 
-在此任务中，你将使用单个批量更新来更新多个列。 你将使用此方法来隐藏列，并设置列值的格式。
+In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. 在“字段”窗格中，选择“Product \| ProductKey”列 。
 
@@ -377,13 +380,13 @@ ms.locfileid: "147015361"
 
     - Targets \| EmployeeID
 
-3. 在“属性”窗格中，将“已隐藏”属性滑动到“是”  。
+3. 在“属性”窗格中，将“已隐藏”属性滑动到“开”。
 
     ![图片 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image38.png)
 
     这些列是隐藏的，因为它们要么被关系使用，要么将在行级别安全性配置或计算逻辑中使用。
 
-    在“在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中，你将在计算中使用 SalesOrderNumber **。
+    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用 UPN 列定义行级别安全性。* “在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中将在计算中使用 SalesOrderNumber。 *
 
 4. 从以下三个列中进行选择（多选）：
 
@@ -435,7 +438,7 @@ ms.locfileid: "147015361"
 
     ![图片 360](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image41.png)
 
-6. 在“选项”窗口左侧的“当前文件”组中，选择“数据加载”
+6. 在“选项”窗口左侧的“当前文件”组中，选择“数据负载”。
 
     ![图片 361](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image42.png)
 
@@ -452,193 +455,8 @@ ms.locfileid: "147015361"
     ![图片 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
 
-## <a name="exercise-4-create-quick-measures"></a>练习 4：**创建快速度量值**
 
-在本练习中，你将创建两个快速度量值。
-
-### <a name="task-1-create-quick-measures"></a>**任务 1：创建快速度量值**
-
-在此任务中，你将创建两个快速度量来计算利润和利润率。
-
-1. 在“字段”窗格中，右键单击“Sales”表，然后选择“新建快速度量值”。
-
-    ![图片 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image46.png)
-
-2. 在“快速度量值”窗口的“计算”下拉列表中，从“数学运算”组中选择“减法”。
-
-    ![图片 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
-
-3. 在“快速度量”窗口的“字段”窗格中，展开“Sales”表。
-
-4. 将“Sales”字段拖入“基值”框。
-
-5. 将“Cost”字段拖入“要减去的值”框。
-
-    ![图片 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
-
-6. 单击 **“确定”** 。
-
-    ![图片 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image49.png)
-
-    快速度量值可为你创建计算公式。*对于简单而通用的计算，可以轻松快速地创建。* 在“在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中，你将在不使用此工具的情况下创建度量值。
-
-7. 注意“字段”窗格“Sales”表中的新度量。
-
-    ![图片 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
-
-    度量值使用计算器图标修饰。
-
-8. 若要重命名度量值，请右键单击它，然后选择“重命名”。
-
-    ![图片 371](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image51.png)
-
-    *提示：* 若要重命名字段，也可以双击它，或选择它并按 F2。
-
-9. 将度量值重命名为“Profit”，然后按 Enter。
-
-10. 根据以下要求，在“Sales”表中添加第二个快速度量值：
-
-    - 使用“除法”数学运算
-
-    - 将“分子”设置为“Sales \| Profit”字段 
-
-    - 将“分母”设置为“Sales \| Sales”字段 
-
-    - 将度量值重命名为“Profit Margin”
-
-    ![图片 372](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image52.png)
-
-    ![图片 373](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image53.png)
-
-11. 确保选中“Profit Margin”度量值，然后在“度量工具”上下文功能区上，将格式设置为“百分比”并保留两位小数。
-
-    ![图片 374](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image54.png)
-
-12. 若要测试这两个度量值，请先选择报表页上的表视觉对象。
-
-13. 在“字段”窗格中，选中两个度量值。
-
-    ![图片 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image55.png)
-
-14. 单击并拖动右侧参考线以加宽表视觉对象。
-
-    ![图片 376](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image56.png)
-
-15. 验证这些度量是否生成了格式正确的合理结果。
-
-    ![图片 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image57.png)
-
-### <a name="task-2-create-a-many-to-many-relationship"></a>**任务 2：创建多对多关系**
-
-在本任务中，你将在“Salesperson”表和“Sales”表之间创建多对多关系。
-
-1. 在 Power BI Desktop 中，在“报表”视图的“字段”窗格中，选中以下两个字段以创建表视觉对象：
-
-    - Salesperson \| Salesperson
-
-    - Sales \| Sales
-
-    *实验室使用速记表示法引用字段。它将如下所示：Salesperson \| Salesperson。* 在此示例中，前面的 Salesperson 是表名称，后面的 Salesperson 是字段名称 。
-
-    ![图 1](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image9.png)
-
-    *表显示每个销售人员的销售额。但是，销售员与销售额之间存在另一种关系。一些销售人员属于一个、两个或可能更多的销售区域。此外，销售区域可以分配有多个销售人员。*
-
-    从绩效管理的角度来看，需要分析销售人员的销售额（基于其分配的区域）并将其与销售目标进行比较。在下一个练习中，你将创建关系来支持此分析。
-
-2. 请注意，Michael Blythe 的销售额已近 900 万美元。
-
-3. 切换到“模型”视图。
-
-    ![图片 10](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image10.png)
-
-4. 拖动“SalespersonRegion”表，将其放置在“Region”和“Salesperson”表之间。
-
-5. 使用拖放方法创建以下两个模型关系：
-
-    - “Salesperson \| EmployeeKey”到“SalespersonRegion \| EmployeeKey” 
-
-    - “Region \| SalesTerritoryKey”到“SalespersonRegion \| SalesTerritoryKey” 
-
-    “SalespersonRegion”表可被视为桥接表。
-
-6. 切换到“报表”视图，可看到视觉对象尚未更新 - Michael Blythe 的销售额结果未更改。
-
-7. 切换回“模型”视图，然后按照“Salesperson”表中的关系筛选方向（箭头）进行操作。
-
-    考虑以下情况：“Salesperson”表筛选“Sales”表。** 还可以筛选“SalespersonRegion”表，但不会继续将筛选器传播到“Region”表（箭头指向错误方向） 。
-
-    ![图片 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
-
-8. 若要编辑“Region”和“SalespersonRegion”表之间的关系，请双击该关系。
-
-9. 在“编辑关系”窗口的“交叉筛选方向”下拉列表中，选择“双向”。  
-
-10. 选中“在两个方向上应用安全筛选器”复选框。
-
-    ![图片 381](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image12.png)
-
-11. 单击 **“确定”** 。
-
-    ![图片 335](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image13.png)
-
-12. 请注意，该关系具有双箭头。
-
-    ![图片 382](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image14.png)
-
-13. 切换到“报表”视图，然后注意到销售额仍未更改。
-
-    问题现在与以下事实有关：“Salesperson”*和“Sales”表之间存在两个可能的筛选器传播路径。基于“最少表数”评估在内部解决这种歧义。需要明确的是，不应设计具有此类歧义的模型，该问题将在本实验室的后面部分通过完成“在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室得以解决*。
-
-14. 切换到“模型”视图。
-
-15. 要通过桥接表强制实施筛选传播，请编辑（双击）“Salesperson”表和“Sales”表之间的关系。
-
-16. 在“编辑关系”窗口中，取消选中“使此关系可用”复选框。
-
-    ![图片 383](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image15.png)
-
-17. 单击 **“确定”** 。
-
-    ![图片 5696](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image16.png)
-
-    筛选器传播现在将遵循唯一的可用路径。
-
-18. 在关系图中，请注意，非活动关系由虚线表示。
-
-    ![图片 5697](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image17.png)
-
-19. 切换到“报表”视图，然后请注意，Michael Blythe 的销售额现在为近 2,200 万美元。
-
-    ![图片 5698](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image18.png)
-
-20. 还要注意，每个销售员的销售额（如果相加）将超过表中的总额。
-
-    由于对区域销售额结果进行了两次、三次等计数，这通常是针对多对多关系的观测结果。*考虑列出的第二个销售人员 Brian Welcker。他的销售额等于总销售额。* 这是正确的结果，因为他是销售总监；他的销售额按所有区域的销售额进行度量。
-
-    虽然多对多关系现在有效，但现在无法分析销售人员的销售额（因为该关系处于非活动状态）。在“在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中引入可可分析对销售人员分配的销售区域的销售额的计算表（用于绩效分析），以便能够重新激活此关系。
-
-21. 切换到“建模”视图，然后在关闭图中选择“Salesperson”表。
-
-22. 在“属性”窗格的“名称”框中，将文本替换为“Salesperson (Performance)”。
-
-    已重命名的表现在反映了它的用途：用于根据对销售人员分配的销售区域的销售额来报告和分析销售人员的绩效。
-
-### <a name="task-3-relate-the-targets-table"></a>**任务 3：关联“Targets”表**
-
-在此任务中，你将创建与“Targets”表的关系
-
-1. 通过“Salesperson (Performance) \| EmployeeID”列和“Targets \| EmployeeID”列创建关系 。
-
-2. 在“报表”视图中，将“Targets \| Target”字段添加到表视觉对象。
-
-3. 重设表视觉对象的大小，使所有列均可见。
-
-    ![图片 5699](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image19.png)
-
-    现在能够以可视化方式显示销售额和目标，但请注意两个原因。*首先，没有对时间段应用筛选，因此目标还包括将来的目标金额。其次，目标不可相加，因此不应显示总数。可以通过设置视觉对象的格式来禁用它们，也可以使用计算逻辑将其删除。* 在“在 Power BI Desktop 中创建 DAX 计算，第 2 部分”实验室中，你将采用第二种方法：创建一个目标度量值，该度量值会在筛选的销售人员数超过一个时返回 BLANK。
-
-### <a name="task-4-finish-up"></a>任务 4：完成
+### <a name="task-2-finish-up"></a>**任务 2：完成**
 
 在此任务中，你将完成本实验室。
 
@@ -647,3 +465,5 @@ ms.locfileid: "147015361"
 2. 如果系统提示应用查询，则单击“稍后应用”。
 
 3. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
+
+    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将配置多对多关系和行级别安全性，以改进数据模型。**

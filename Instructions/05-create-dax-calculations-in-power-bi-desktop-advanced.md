@@ -2,13 +2,9 @@
 lab:
   title: 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 064f5bb2c313448f7d15b01bd0e69a84aa85811f
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650194"
 ---
+
+
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
 **预估完成本实验室需要 45 分钟**
@@ -23,13 +19,13 @@ ms.locfileid: "146650194"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -39,7 +35,7 @@ ms.locfileid: "146650194"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -73,7 +69,7 @@ ms.locfileid: "146650194"
 
     ![图片 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. 在“打开”窗口中，导航到“D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
+1. 在“打开”窗口，导航到“D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -115,7 +111,7 @@ ms.locfileid: "146650194"
 
 4. 若要配置矩阵视觉对象字段，请将“Region \| Regions”层次结构从“字段”窗格中拖放到视觉对象中 。
 
-    实验室使用速记表示法引用字段或层次结构。*它将如下所示：Region \| Regions。在此示例中，Region 是表名称，Regions 是层次结构名称。*
+    实验室使用速记表示法引用字段或层次结构。*它将如下所示：Region \| Regions。在此示例中，Region 是表名称，Regions 是层次结构名称。 *
 
 5. 此外，还添加“Sales \| Sales”字段。
 
@@ -125,11 +121,13 @@ ms.locfileid: "146650194"
 
     回想一下，“Regions”***层次结构包含“组”** **、“Country”** **和“Region”** **级别。***
 
-7. 若要设置矩阵视觉对象的格式，请选择“可视化”窗格下的“格式”窗格。
+7. 若要设置矩阵视觉对象的格式，请选择“可视化效果”窗格下的“格式”窗格。
 
     ![图片 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. 在“搜索”框中，输入“渐变”。
+
+    ![图片 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. 将“渐变布局”属性设置为“关”。
 
@@ -149,7 +147,7 @@ ms.locfileid: "146650194"
 
 1. 基于以下表达式向“Sales”表添加一个度量值：
 
-    为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。
+    为了方便起见，可以从 D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。**
 
 
     **DAX**
@@ -166,7 +164,7 @@ ms.locfileid: "146650194"
 
     REMOVEFILTERS() 函数用于删除活动筛选器。它可以不接受任何参数，也可以接受一个表、一列或多列作为它的参数。
 
-    在此公式中，度量值计算修改后的筛选器上下文中“Sales”列的总和，这将删除应用到“Region”表的任何筛选器。**
+    在此公式中，度量值计算修改后的筛选器上下文中“Sales”列的总和，这将删除应用到“Region”表的任何筛选器。* *
 
 2. 将“Sales All Region”度量值添加到矩阵视觉对象。
 
@@ -196,7 +194,7 @@ ms.locfileid: "146650194"
     ```
 
 
-    此度量值已重命名，以准确反映更新后的公式。*DIVIDE() 函数将“Sales”度量值（未经筛选器上下文修改）除以修改后的上下文中的“Sales”度量值（即删除了应用于“Region”表的任何筛选器）。*
+    此度量值已重命名，以准确反映更新后的公式。*DIVIDE() 函数将“Sales”度量值（未经筛选器上下文修改）除以修改后的上下文中的“Sales”度量值（即删除了应用于“Region”表的任何筛选器）。  *
 
 5. 在矩阵视觉对象中，我们注意到，此度量值已重命名，现在每个组、国家/地区和区域的显示值都不同。
 
@@ -225,7 +223,7 @@ ms.locfileid: "146650194"
 
 9. 我们注意到，“Sales % Country”度量值公式与“Sales % All Region”度量值公式略有不同。
 
-    不同之处在于，分母修改筛选器上下文的方法是，删除“Region”表的“Region”列上的筛选器，而不是删除“Region”表的所有列上的筛选器。*也就是说，应用于组或国家/地区列的所有筛选器都会保留。* 它获得的结果表示销售额在国家/地区中所占的百分比。
+    不同之处在于，分母修改筛选器上下文的方法是，删除“Region”表的“Region”列上的筛选器，而不是删除“Region”表的所有列上的筛选器。*  也就是说，应用于组或国家/地区列的所有筛选器都会保留。* 它获得的结果表示销售额在国家/地区中所占的百分比。
 
 10. 将“Sales % Country”度量值添加到矩阵视觉对象。
 
@@ -386,7 +384,7 @@ ms.locfileid: "146650194"
 
     “Sales YoY Growth”***度量值公式声明了一个变量。** 变量对于简化公式逻辑很有用，而且当表达式需要在公式中进行多次计算时（YoY 增长率逻辑就是这种情况），变量可以提高效率。变量是用唯一名称进行声明，然后度量值表达式必须在“RETURN”关键字之后输出。*
 
-    “SalesPriorYear”变量分配给在修改后的上下文中对“Sales”列进行求和的表达式，修改后的上下文使用 PARALLELPERIOD() 函数从筛选器上下文中的每个日期往回移动 12 个月。**
+    “SalesPriorYear”变量分配给在修改后的上下文中对“Sales”列进行求和的表达式，修改后的上下文使用 PARALLELPERIOD() 函数从筛选器上下文中的每个日期往回移动 12 个月。* *
 
 2. 将“Sales YoY Growth”度量值添加到矩阵视觉对象。
 
@@ -455,4 +453,4 @@ ms.locfileid: "146650194"
 
 6. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    “在 Power BI Desktop 中设计报表，第 1 部分”实验室中将基于数据模型创建报表。
+    “在 Power BI Desktop 中设计报表，第 1 部分”实验室中将基于数据模型创建报表。**

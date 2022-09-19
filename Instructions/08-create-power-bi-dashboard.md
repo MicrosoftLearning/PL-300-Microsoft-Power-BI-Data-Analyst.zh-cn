@@ -2,13 +2,9 @@
 lab:
   title: 创建 Power BI 仪表板
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 0f8abb8670c71f5063dc28032daa321bf4b742f9
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015352"
 ---
+
+
 # <a name="create-a-power-bi-dashboard"></a>创建 Power BI 仪表板
 
 **预估完成本实验室需要 45 分钟**
@@ -23,13 +19,13 @@ ms.locfileid: "147015352"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -47,7 +43,7 @@ ms.locfileid: "147015352"
 
 ## <a name="exercise-1-create-a-dashboard"></a>**练习 1：创建仪表板**
 
-在此练习中，你将创建“销售额监视”仪表板。 完成的仪表板将如下所示：
+In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
 
 ![完成的仪表板的图像，其中包含三个磁贴。](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -61,7 +57,7 @@ ms.locfileid: "147015352"
 
     ![图片 42](Linked_image_Files/09-create-power-bi-dashboard_image2.png)
 
-2. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
+2. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -115,7 +111,7 @@ ms.locfileid: "147015352"
 
     ![图片 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\08-create-power-bi-dashboard\Starter”文件夹 。
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\09-create-power-bi-dashboard\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -159,15 +155,15 @@ ms.locfileid: "147015352"
 
     ![图片 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
-4. 在“打开”窗口中，导航到“D:\PL300\Labs\08-create-power-bi-dashboard\Solution”文件夹 。
+4. 在“打开”窗口，导航到“D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Solution”文件夹 。
 
 5. 选择“Sales Analysis.pbix”文件，然后单击“打开” 。
 
-6. 如果系统提示替换数据集，请单击“替换它”。
+6. 如果系统提示替换数据集，请单击“替换”。
 
 ### <a name="task-4-create-a-dashboard"></a>**任务 4：创建仪表板**
 
-在此任务中，你将创建“销售额监视”仪表板。 你将固定报表中的一个视觉对象、添加基于图像数据 URI 的磁贴以及使用问答来创建磁贴。
+In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，打开“销售分析”报表。
 
@@ -181,7 +177,7 @@ ms.locfileid: "147015352"
 
 4. 若要创建仪表板并固定视觉对象，请将光标悬停在“月销售额和利润率”（列/行）视觉对象上。
 
-5. 单击右下角的图钉。
+5. 单击右上角的图钉。
 
     ![图片 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
@@ -193,7 +189,7 @@ ms.locfileid: "147015352"
 
     ![图 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
-8. 打开“导航”窗格，选择“我的工作区”，然后打开“销售额监视”仪表板  。
+8. 打开导航窗格，然后打开“销售监视”仪表板。
 
     ![图片 44](Linked_image_Files/09-create-power-bi-dashboard_image21.png)
 
@@ -213,7 +209,7 @@ ms.locfileid: "147015352"
 
 13. 删除问答框中的所有文本。
 
-14. 在问答框中输入以下内容： Sales YTD
+14. 在问答框中输入以下内容：年初至今的销售额
 
     ![图片 11](Linked_image_Files/09-create-power-bi-dashboard_image24.png)
 
@@ -221,13 +217,13 @@ ms.locfileid: "147015352"
 
     ![图片 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
-    你可能还记得在“在 Power BI Desktop 中创建 DAX 计算，第 2 部分”实验室中添加了“年初至今的销售额”度量值 *。此度量值是时间智能表达式，它需要对“日期”表进行筛选以生成结果。*
+    你可能还记得在“在 Power BI Desktop 中创建 DAX 计算，第 2 部分”实验室中添加了“年初至今的销售额”度量值* 。此度量值是时间智能表达式，它需要对“日期”表进行筛选以生成结果。*
 
 16. 在问题中加入“FY2020 年”。
 
     ![图片 12](Linked_image_Files/09-create-power-bi-dashboard_image26.png)
 
-17. 请注意，回答现在为“$33M”。
+17. 请注意，答复现在为“3300 万美元”。
 
     ![图片 13](Linked_image_Files/09-create-power-bi-dashboard_image27.png)
 
@@ -311,7 +307,7 @@ ms.locfileid: "147015352"
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**练习 2：** 刷新数据集
 
-在此练习中，你首先需要将 2020 年 6 月的销售订单数据加载到 AdventureWorksDW2020 数据库。 然后打开 Power BI Desktop 文件，执行数据刷新，再将该文件上传到工作区。
+In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
 
 ### <a name="task-1-update-the-lab-database"></a>**任务 1：更新实验室数据库**
 
@@ -325,7 +321,7 @@ ms.locfileid: "147015352"
 
 3. 当系统提示按任意键关闭时，请再次按 Enter。
 
-    AdventureWorksDW2020 数据库现在包含 2020 年 6 月的销售订单。
+    AdventureWorksDW2020 数据库现在包含 2020 年 6 月的销售订单。**
 
 ### <a name="task-2-refresh-the-power-bi-desktop-file"></a>**任务 2：刷新 Power BI Desktop 文件**
 
@@ -337,7 +333,7 @@ ms.locfileid: "147015352"
 
 2. 完成刷新后，保存 Power BI Desktop 文件。
 
-3. 若要将文件发布到工作区，请在“主页”功能区选项卡上的“共享”组中，单击“发布”，然后单击“选择”以发布   。
+3. 若要将文件发布到工作区，请在“主页”功能区选项卡上的“共享”组中，单击“发布”。
 
     ![图片 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -351,11 +347,11 @@ ms.locfileid: "147015352"
 
 ## <a name="exercise-3-review-the-dashboard"></a>**练习 3：** 查看仪表板
 
-在本练习中，你将在仪表板中查看更新后的销售数据。
+在此练习中，你将查看仪表板，以查看更新的销售额以及触发的警报。
 
 ### <a name="task-1-review-the-dashboard"></a>**任务 1：查看仪表板**
 
-在此任务中，你将在仪表板中查看更新后的销售数据。
+在此任务中，你将查看仪表板，以查看更新的销售额以及触发的警报。
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，查看“销售监视”仪表板。
 
@@ -363,10 +359,26 @@ ms.locfileid: "147015352"
 
 3. 还可以看到，其中包含“2020 年 6 月”列。
 
-    如果没有看到 2020 年 6 月的数据，可能需要按 F5 重新加载 Web 浏览器。
+    如果没有看到 2020 年 6 月的数据，可能需要按 F5 重新加载 Web 浏览器。**
 
     ![图片 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-    
+    “年初至今的销售额”磁贴上的警报也应触发。** 一小段时间后，警报应通知你销售额现已超出配置的阈值。
 
-4. 要关闭该窗格，请单击“关闭”。
+4. 请注意，“年初至今的销售额”磁贴已更新为“3700 万美元”。
+
+5. 请验证“年初至今的销售额”磁贴上是否显示了警报通知图标。
+
+    如果未看到通知，可能需要按 F5 重新加载浏览器。** 如果仍未看到通知，请再等待几分钟。
+
+    ![图片 35](Linked_image_Files/09-create-power-bi-dashboard_image51.png)
+
+    *警报通知显示在仪表板磁贴上，可以通过电子邮件传递通知，也可以将通知推送到移动应用（包括 Apple Watch）。*
+
+6. 在网页的右上角，单击“通知”图标。
+
+    ![图片 58](Linked_image_Files/09-create-power-bi-dashboard_image52.png)
+
+7. 在“所有通知”窗格中，查看警报通知的详细信息。
+
+8. 要关闭该窗格，请单击“关闭”。

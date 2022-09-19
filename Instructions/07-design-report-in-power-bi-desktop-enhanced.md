@@ -2,13 +2,9 @@
 lab:
   title: 在 Power BI Desktop 中设计报表，第 2 部分
   module: Module 7 - Create Reports
-ms.openlocfilehash: 72d571e81320d4c0311f9e566d1805725439f961
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650203"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中设计报表，第 2 部分
 
 **预估完成本实验室需要 45 分钟**
@@ -27,13 +23,13 @@ ms.locfileid: "146650203"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -63,7 +59,7 @@ ms.locfileid: "146650203"
 
     ![图片 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -117,7 +113,7 @@ ms.locfileid: "146650203"
 
     ![图片 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter”文件夹 。
+8. 在“打开”窗口中，导航到 D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter 文件夹。 
 
 9. 选择“销售分析”文件。
 
@@ -147,7 +143,7 @@ ms.locfileid: "146650203"
 
 在此任务中，你将同步“年份”和“区域”切片器。
 
-你将继续开发“在 Power BI Desktop 中设计报表，第 1 部分”实验室中创建的报表。
+你将继续开发“在 Power BI Desktop 中设计报表，第 1 部分”实验室中创建的报表。**
 
 1. 在 Power BI Desktop 的“概述”页上，将“年份”切片器设置为“FY2018”。
 
@@ -179,7 +175,7 @@ ms.locfileid: "146650203"
 
 ## <a name="exercise-2-configure-drill-through"></a>**练习 2：** 配置钻取
 
-在此练习中，你将创建一个新页面并将其配置为钻取页面。 完成设计后，该页面将如下所示：
+In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![新页面的图像，包含一个卡片视觉对象和表视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -203,7 +199,7 @@ ms.locfileid: "146650203"
 
     ![图片 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
 
-4. 若要测试钻取页，请在钻取筛选器卡中选择“Bikes”。
+4. 若要测试钻取页，请在钻取筛选器卡中选择“自行车”。
 
     ![图片 99](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
 
@@ -245,13 +241,13 @@ ms.locfileid: "146650203"
 
     - Sales \| Profit Margin
 
-12. 为视觉对象配置格式选项，并在“值”部分将“文本大小”属性设置为“20pt”  。
+12. 为视觉对象配置格式选项，并在“网格”部分将“文本大小”属性设置为“20 磅”。
 
     钻取页的设计即将完成。你将在下一个练习中使用条件格式来优化页面。
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**练习 3：** 添加条件格式
 
-在此练习中，你将使用条件格式来优化钻取页面。 完成设计后，该页面将如下所示：
+In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![更新后的页面图像，显示了颜色格式值和图标。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -307,11 +303,11 @@ ms.locfileid: "146650203"
 
 9. 为“颜色”字段配置背景色条件格式。
 
-10. 在“背景色 - 颜色”窗口中的“格式样式”下拉列表中，选择“字段值”  。
+10. 在“背景色 - 颜色”窗口中，在“格式化依据”下拉列表中选择“字段值”。
 
-    
+    ![图片 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
 
-11. 在“应将此基于哪个字段?”下拉列表中，选择“产品 \| 格式设置 \| 背景色格式” 。
+11. 在“依据字段”下拉列表中，选择“产品 \| 格式设置 \| 背景色格式”。 
 
     ![图片 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -321,11 +317,11 @@ ms.locfileid: "146650203"
 
 13. 重复前面的步骤，使用“产品 \| 格式设置 \| 字体颜色格式”字段为“颜色”字段配置字体颜色条件格式 
 
-    回想一下，背景和字体颜色源自“在 Power BI Desktop 中准备数据”实验室中的“ColorFormats.csv”文件，然后与“在 Power BI Desktop 中加载数据”实验室中的“产品”查询集成。**
+    回想一下，背景和字体颜色源自“在 Power BI Desktop 中准备数据”实验室中的“ColorFormats.csv”文件，然后与“在 Power BI Desktop 中加载数据”实验室中的“产品”查询集成。*   *
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>练习 4：添加书签和按钮
 
-在此练习中，你将通过按钮优化“我的业绩”页面，使报表用户可以选择要显示的视觉对象类型。 完成设计后，该页面将如下所示：
+In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![更新后的第 3 页的图像，显示两个按钮和两个视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
@@ -401,15 +397,15 @@ ms.locfileid: "146650203"
 
 2. 将按钮直接置于“年份”切片器下。
 
-3. 选择按钮，然后在“格式按钮”窗格中，单击“常规”，然后将“按钮文本”属性设置为“启用”   。
+3. 选择按钮，然后在“格式按钮”窗格中，将“按钮文本”属性设置为“启用”。
 
     ![图片 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. 展开“标题”部分，然后在“文本”框中输入“条形图”  。
+4. 展开“按钮文本”部分，然后在“按钮文本”框中输入“条形图”。
 
 5. 展开“背景”部分，然后使用补色设置背景色。
 
-6. 单击“按钮”，然后将“操作”属性设置为“启用”  。
+6. 将“操作”属性设置为“开”（位于列表底部附近）。
 
     ![图片 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -421,7 +417,7 @@ ms.locfileid: "146650203"
 
 9. 使用复制和粘贴创建按钮的副本，然后配置新按钮，如下所示：
 
-    *提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。*
+    *提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。 *
 
     - 将“按钮文本”属性设置为“柱形图”
 
@@ -471,7 +467,7 @@ ms.locfileid: "146650203"
 
 在此任务中，你将在 Power BI 服务中浏览报表。
 
-1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，在“导航”窗格中选择“我的工作区”，然后单击“销售分析”报表  。
+1. 在 Microsoft Edge 浏览器窗口，在 Power BI 服务的“导航”窗格中，单击“销售额分析”报表 。
 
 2. 若要测试钻取报表功能，请在“概述”页面的“各类别的数量”视觉对象中右键单击“服装”栏，然后选择“钻取 \| 产品详细信息”。   
 
