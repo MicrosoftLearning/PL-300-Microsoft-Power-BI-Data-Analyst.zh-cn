@@ -2,18 +2,14 @@
 lab:
   title: 强制执行行级别安全性
   module: Module 13 - Row-Level Security
-ms.openlocfilehash: b4b468b1c34d0cb562edd9ec407b07c9ee2efa1d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273110"
 ---
+
+
 # <a name="enforce-row-level-security"></a>强制执行行级别安全性
 
 **预估完成本实验室需要 45 分钟**
 
-在此实验室中，你将在“Salesperson”表和“Sales”表之间创建多对多关系。 你还将强制执行行级别安全性，以确保销售人员只能分析其分配区域的销售数据。
+In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
 
 本实验室介绍如何完成以下操作：
 
@@ -23,13 +19,13 @@ ms.locfileid: "139273110"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -39,7 +35,7 @@ ms.locfileid: "139273110"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -123,7 +119,7 @@ ms.locfileid: "139273110"
 
     ![图片 5702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
 
-7. 在方框中，用角色名称替换选定的文本：“销售员”的名称，然后按 Enter。
+7. 在方框中，用角色名称替换选定的文本：“Salespeople”的名称，然后按 Enter。
 
     ![图片 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
@@ -145,13 +141,13 @@ ms.locfileid: "139273110"
 
     ![图片 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-12. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：**michael-blythe@adventureworks.com**
+12. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：** michael-blythe@adventureworks.com**
 
 13. 选中“销售员”角色。
 
     ![图片 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
-    完成此配置后，系统将使用“Salespeople”角色，并使用 Michael Blythe 的姓名扮演该用户。
+    完成此配置后，系统将使用“Salespeople”角色，并使用 Michael Blythe 的姓名扮演该用户。**
 
 14. 单击 **“确定”** 。
 
@@ -169,7 +165,7 @@ ms.locfileid: "139273110"
 
     ![图片 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-    Power BI Desktop 文件发布到 Power BI 服务后，你将需要完成发布后的任务，将安全主体映射到“销售人员”角色。在本实验室中不执行此操作。
+    Power BI Desktop 文件发布到 Power BI 服务后，你将需要完成发布后的任务，将安全主体映射到“销售人员”角色。** 在本实验室中不执行此操作。
 
 18. 要删除该角色，请在“建模”功能区选项卡的“安全性”组内，单击“管理角色”。
 

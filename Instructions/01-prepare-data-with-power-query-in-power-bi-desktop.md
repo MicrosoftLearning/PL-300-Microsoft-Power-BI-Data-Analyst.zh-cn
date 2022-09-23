@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中准备数据
   module: Module 2 - Get Data in Power BI
-ms.openlocfilehash: deaa403224e029a08c91ed5137693d51ac30fcab
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 56cc5b93dfb545367ae8f5fe3996a9318203f151
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273195"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015343"
 ---
 # <a name="prepare-data-in-power-bi-desktop"></a>在 Power BI Desktop 中准备数据
 
@@ -29,13 +29,13 @@ ms.locfileid: "139273195"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -45,7 +45,7 @@ ms.locfileid: "139273195"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -97,7 +97,7 @@ ms.locfileid: "139273195"
 
     ![图 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
 
-1. 在“选项”窗口左侧的“当前文件”组中，选择“数据负载”。
+1. 在“选项”窗口左侧的“当前文件”组中，选择“数据加载”。
 
     ![图片 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
 
@@ -132,6 +132,8 @@ ms.locfileid: "139273195"
 3. 单击“确定”。
 
     ![图片 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
+
+4. 如果系统提示输入凭据，请在“SQL Server 数据库”窗口中，选择“使用我的当前凭据” 。 然后单击“连接”。
 
 4. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
 
@@ -169,7 +171,7 @@ ms.locfileid: "139273195"
 
 ### <a name="task-4-preview-sql-server-queries"></a>**任务 4：预览 SQL Server 查询**
 
-在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分布和列分析工具来了解数据并评估数据质量。
+在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分发和列分析工具来了解数据并评估数据质量。
 
 1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。
 
@@ -203,23 +205,23 @@ ms.locfileid: "139273195"
 
     ![图片 38](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
-8. 若要评估列分步，请在“视图”功能区选项卡的“数据预览”组中，选中“列分步”。
+8. 若要评估列分发，请在“视图”功能区选项卡的“数据预览”组中，选中“列分发”。
 
     ![图片 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
 
 9. 再次查看 Position 列，请注意有四个非重复值和一个唯一值。
 
-10. 查看 EmployeeKey（第一）列的列分布，其中包含 296 个非重复值和 296 个唯一值。
+10. 查看 EmployeeKey（第一）列的列分发，其中包含 296 个非重复值和 296 个唯一值。
 
     ![图片 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    当非重复值和唯一值的计数相同时，这表示列包含唯一值。 在建模时，某些表必须具有唯一的列。 这些唯一的列可用于创建一对多关系，你将在“在 Power BI Desktop 中对数据建模，第 1 部分”实验室中进行此操作。
+    当非重复值和唯一值的计数相同时，这表示列包含唯一值。 在建模时，某些表必须具有唯一的列。 这些唯一的列可用于创建一对多关系，你将在“在 Power BI Desktop 中为数据建模”实验室中进行此操作。
 
 11. 在“查询”窗格中，选择 DimEmployeeSalesTerritory 查询。
 
     ![图片 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    DimEmployeeSalesTerritory 表存储的每个行表示每个员工及其管理的销售区域。 该表支持将多个区域与单个员工相关联。 某些员工管理一个、两个或可能更多的区域。 在为此数据建模时，将需要定义多对多关系，“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将完成此操作。
+    DimEmployeeSalesTerritory 表存储的每个行表示每个员工及其管理的销售区域。 该表支持将多个区域与单个员工相关联。 某些员工管理一个、两个或可能更多的区域。 为此数据建模时，需要定义多对多关系。
 
 12. 在“查询”窗格中，选择 DimProduct 查询。
 
@@ -261,7 +263,7 @@ ms.locfileid: "139273195"
 
     ![图片 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    DimSalesTerritory 表包含的每个行表示每个销售区域，包括“公司总部”（总部）。 区域会分配到国家/地区，国家/地区会分配到组。 “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将创建一个层次结构，用来支持在区域、国家或组级别进行分析。
+    DimSalesTerritory 表包含的每个行表示每个销售区域，包括“公司总部”（总部）。 区域会分配到国家/地区，国家/地区会分配到组。 在“在 Power BI Desktop 中为数据建模”实验室中，你将创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。
 
 23. 在“查询”窗格中，选择 FactResellerSales 查询。
 
@@ -275,11 +277,12 @@ ms.locfileid: "139273195"
 
     缺少 TotalProductCost 列值是数据质量问题。 为解决该问题，在“在 Power BI Desktop 中加载数据”实验室中，你将通过使用产品标准成本（存储在相关的“DimProduct”表中）来应用转换以填充缺少的值 。
 
+
 ### <a name="task-5-get-data-from-a-csv-file"></a>**任务 5：从 CSV 文件获取数据**
 
 在此任务中，你将基于 CSV 文件创建查询。
 
-1. 要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上，在“新查询”组中，单击“新源”向下箭头，然后选择“文本/CSV”。
+1. 要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上，在“新建查询”组中，单击“新建源”向下箭头，然后选择“文本/CSV”。
 
     ![图片 70](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image35.png)
 
@@ -292,9 +295,7 @@ ms.locfileid: "139273195"
 5. 单击 **“确定”** 。
 
     ![图片 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
-
-  
-‎ 
+ 
 
 6. 在“查询”窗格中，请注意添加了 ResellerSalesTargets 查询。
 
@@ -332,7 +333,7 @@ ms.locfileid: "139273195"
 
     - 列质量
 
-    - 列分布
+    - 列分发
 
     - 列配置文件
 

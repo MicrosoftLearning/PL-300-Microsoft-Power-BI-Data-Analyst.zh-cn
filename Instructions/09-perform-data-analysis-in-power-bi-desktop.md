@@ -2,13 +2,9 @@
 lab:
   title: 在 Power BI Desktop 中执行数据分析
   module: Module 10 - Perform Advanced Analytics
-ms.openlocfilehash: 083abd0da7c0423a40985602d8db09d752f064cd
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273282"
 ---
+
+
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>在 Power BI Desktop 中执行数据分析
 
 **预估完成本实验室需要 45 分钟**
@@ -25,13 +21,13 @@ ms.locfileid: "139273282"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -175,7 +171,7 @@ ms.locfileid: "139273282"
 
 3. 将以下字段添加到视觉对象井/区域中：
 
-    实验室使用速记表示法引用字段。 它将如下所示：Reseller \| Business Type  。 在此示例中，“Reseller”是表名称，“Business Type”是字段名称。
+    The labs use a shorthand notation to reference a field. It will look like this: <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> <bpt id="p2">**</bpt><ph id="ph1">\|</ph><ept id="p2">**</ept> <bpt id="p3">**</bpt>Business Type<ept id="p3">**</ept>. In this example, <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> is the table name and <bpt id="p2">**</bpt>Business Type<ept id="p2">**</ept> is the field name.
 
     - 图例：Reseller \| Business Type
 
@@ -189,7 +185,7 @@ ms.locfileid: "139273282"
 
     ![图片 39](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image17.png)
 
-    将字段添加到“播放轴”井/区域时，可以对图表进行动画处理。
+    将字段添加到“播放轴”井/区域时，可以对图表进行动画处理。**
 
 4. 在“筛选器”窗格中，将“Product \| Category”字段添加到“此页上的筛选器”井/区域中  。
 
@@ -265,7 +261,7 @@ ms.locfileid: "139273282"
 
     ![图片 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
 
-    如果“预测”部分不可用，可能是因为未正确配置该视觉对象。仅当满足以下两个条件时，才能进行预测：轴有一个日期类型的字段，并且只有一个值字段。
+    如果“预测”部分不可用，可能是因为未正确配置该视觉对象。** 仅当满足以下两个条件时，才能进行预测：轴有一个日期类型的字段，并且只有一个值字段。
 
 9. 单击“添加”。
 

@@ -1,19 +1,15 @@
 ---
 lab:
-  title: 在 Power BI Desktop 中对数据建模，第 1 部分
+  title: 在 Power BI Desktop 中对数据建模
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: cbec1e2dc3bb7738b2e78de88e30b1d56cb79b60
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273122"
 ---
-# <a name="model-data-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中为数据建模，第 1 部分
+
+
+# <a name="model-data-in-power-bi-desktop"></a>在 Power BI Desktop 中对数据建模
 
 **预估完成本实验室需要 45 分钟**
 
-在本实验室中，你将开始开发数据模型。 它将涉及在表之间创建关系，然后配置表和列属性以提高数据模型的友好性和可用性。 你还将创建层次结构并创建快速度量值。
+In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
 本实验室介绍如何完成以下操作：
 
@@ -26,13 +22,13 @@ ms.locfileid: "139273122"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -42,7 +38,7 @@ ms.locfileid: "139273122"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -162,7 +158,7 @@ ms.locfileid: "139273122"
 
 14. 在“基数”下拉列表中，请注意，选择了“一对多(1:*)”。
 
-    由于 Power BI 认为“Product”表中的“ProductKey”列包含唯一值，因此已自动检测到基数。*一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用多对多基数。*
+    由于 Power BI 认为“Product”表中的“ProductKey”列包含唯一值，因此已自动检测到基数。* 一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用多对多基数。*
 
 15. 在“交叉筛选方向”下拉列表中，请注意，选择了“单向”。
 
@@ -210,9 +206,9 @@ ms.locfileid: "139273122"
 
     - “Salesperson \| EmployeeKey”到“Sales \| EmployeeKey” 
 
-    在本实验室中，“SalespersonRegion”和“Targets”表将保持断开连接状态。*销售员与区域之间存在多对多关系，在“在 Power BI Desktop 对数据建模，第 2 部分”实验室中，你将使用这种高级方案。*
+    在本实验室中，“SalespersonRegion”和“Targets”表将保持断开连接状态。* 销售员与区域之间存在多对多关系，在“在 Power BI Desktop 对数据建模，第 2 部分”实验室中，你将使用这种高级方案。*
 
-25. 在该图中，排列表，以使“Sales”表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
+25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
     ![图片 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
@@ -284,7 +280,7 @@ ms.locfileid: "139273122"
 
 2. 选择“Country”列（而不是“Country”层次结构级别）。
 
-3. 在“属性”窗格中，展开“高级”部分（位于窗格底部），然后在“数据类别”下拉列表中，选择“Country/Region”。
+3. 在“属性”窗格中，展开“高级”部分（位于窗格底部），然后在“数据类别”下拉列表中，选择“国家/地区”。
 
     ![图片 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
 
@@ -306,7 +302,7 @@ ms.locfileid: "139273122"
 
     - Country-Region
 
-    - 省/市/自治区
+    - State-Province
 
     - City
 
@@ -352,7 +348,7 @@ ms.locfileid: "139273122"
 
 ### <a name="task-5-bulk-update-properties"></a>**任务 5：批量更新属性**
 
-在此任务中，你将使用单个批量更新来更新多个列。 你将使用此方法来隐藏列，并设置列值的格式。
+In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. 在“字段”窗格中，选择“Product \| ProductKey”列 。
 
@@ -390,7 +386,7 @@ ms.locfileid: "139273122"
 
     这些列是隐藏的，因为它们要么被关系使用，要么将在行级别安全性配置或计算逻辑中使用。
 
-    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用 UPN 列定义行级别安全性。*“在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中将在计算中使用 SalesOrderNumber。*
+    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将使用 UPN 列定义行级别安全性。* “在 Power BI Desktop 中创建 DAX 计算，第 1 部分”实验室中将在计算中使用 SalesOrderNumber。 *
 
 4. 从以下三个列中进行选择（多选）：
 
@@ -470,4 +466,4 @@ ms.locfileid: "139273122"
 
 3. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将配置多对多关系和行级别安全性，以改进数据模型。
+    “在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将配置多对多关系和行级别安全性，以改进数据模型。**

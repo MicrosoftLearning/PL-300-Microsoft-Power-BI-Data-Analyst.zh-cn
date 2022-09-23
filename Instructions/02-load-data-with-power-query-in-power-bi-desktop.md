@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中加载数据
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273304"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650221"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**在 Power BI Desktop 中加载数据**
 
@@ -23,13 +23,13 @@ ms.locfileid: "139273304"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. **在 Power BI Desktop 中加载数据**
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
@@ -40,7 +40,7 @@ ms.locfileid: "139273304"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -130,7 +130,7 @@ ms.locfileid: "139273304"
 
     现在，你将筛选查询行以仅检索职位是销售人员的员工。
 
-4. 若要查找特定列，请在“开始”功能区选项卡上的“管理列”组中，单击“选择列”向下箭头，然后选择“转到列”。
+4. 若要查找特定列，请在“主页”功能区选项卡上，单击“管理列”向下箭头，再单击“选择列”向下箭头，然后选择“转到列”   。
 
     ![图片 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "139273304"
 
     你创建的每一转换会生成其他的步骤逻辑。*可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。*
 
-10. 要删除列，在“主页”功能区选项卡中的“管理列”组中，单击“选择列”图标。
+10. 若要删除列，请在“主页”功能区选项卡上，单击“管理列”组，然后单击“选择列”图标  。
 
     ![图片 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +216,7 @@ ms.locfileid: "139273304"
 
 23. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
 
-    UPN 是用户主体名称的缩写。*在“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中配置行级别安全性时，将使用此列中的值。*
+    *UPN 是用户主体名称的缩写。*
 
 24. 在状态栏的左下角，验证查询是否具有 5 列和 18 行。
 
@@ -349,7 +349,6 @@ ms.locfileid: "139273304"
     ![图 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. 右键单击“Business Type”列标题，然后选择“替换值”。
 
@@ -500,7 +499,7 @@ ms.locfileid: "139273304"
 
     配置正确数据类型是非常重要的。当列包含数值时，如果想执行数学计算，也务必要选择正确的类型。
 
-13. 将以下三列数据类型修改为“定点十进制数”。
+13. 将以下三列数据类型修改为“定点小数”。
 
     - Unit Price
 
@@ -604,7 +603,7 @@ ms.locfileid: "139273304"
 
     - 将 TargetMonth 的数据类型修改为日期
 
-22. 要将“Target”值乘以 1000，请选择“Target”列标题，然后在“转换”功能区选项卡上的“数字列”组内，单击“标准”，然后选择“相乘”。
+22. 要将“Target”值乘以 1000，请选择“Target”列标题，然后在“转换”功能区选项卡上的“数字列”组内，单击“标准”，然后选择“乘”。
 
     *你可能还记得，目标值是以千为单位存储的。*
 
@@ -648,7 +647,7 @@ ms.locfileid: "139273304"
 
     ![图片 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. 要合并“ColorFormats”查询，请在“主页”功能区选项卡上的“组合”组内，单击“合并查询”   。
+2. 若要合并 ColorFormats 查询，请在“主页”功能区选项卡上，单击“合并”向下箭头，然后单击“合并查询”   。
 
     ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -664,7 +663,7 @@ ms.locfileid: "139273304"
 
 5. 在“ColorFormats”查询网格中，选择“Color”列标题。
 
-6. 当“私有级别”窗口打开时，对于两个数据源中的每一个，在相应的下拉列表中，选择“组织”。
+6. 当“隐私级别”窗口打开时，对于两个数据源中的每一个，在相应的下拉列表中，选择“组织”。
 
     ![图片 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
@@ -680,9 +679,9 @@ ms.locfileid: "139273304"
 
 9. 展开“ColorFormats”列以包括以下两列：
 
-    - 背景色格式
+    - Background Color Format
 
-    - 字体颜色格式
+    - Font Color Format
 
     ![图片 5694](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image77.png)
 
@@ -734,7 +733,7 @@ ms.locfileid: "139273304"
 
     - ColorFormats（不会加载到数据模型中）
 
-2. 若要加载数据模型，请在“文件”后台视图中选择“关闭 &amp; 应用”。 
+2. 若要加载数据模型，请在“文件”后台视图中选择“关闭并应用”。 
 
     ![图片 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
@@ -748,4 +747,4 @@ ms.locfileid: "139273304"
 
 5. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将配置数据模型表和关系。
+    在“在 Power BI Desktop 中为数据建模”实验室中，你将配置数据模型表和关系。

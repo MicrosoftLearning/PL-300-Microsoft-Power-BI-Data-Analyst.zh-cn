@@ -2,12 +2,12 @@
 lab:
   title: 在 Power BI Desktop 中设计报表，第 1 部分
   module: Module 7 - Create Reports
-ms.openlocfilehash: 9aa794d25d2eb2ec611315a7ec6ac472e9a3a141
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273302"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650212"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中设计报表，第 1 部分
 
@@ -23,7 +23,7 @@ ms.locfileid: "139273302"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -59,7 +59,7 @@ ms.locfileid: "139273302"
 
     ![图片 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -141,7 +141,7 @@ ms.locfileid: "139273302"
 
     ![图片 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter”文件夹 。
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -179,7 +179,7 @@ ms.locfileid: "139273302"
 
     *提示：* 还可以双击页面名称以进行重命名。
 
-2. 将页面重命名为“概述”，然后按 Enter。
+2. 将页面重命名为“Overview”，然后按 Enter。
 
     ![图片 37](Linked_image_Files/07-design-report-in-power-bi-desktop_image14.png)
 
@@ -216,7 +216,7 @@ ms.locfileid: "139273302"
 
     ![图片 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
-13. 在“年份”切片器中，打开下拉列表，选择“2020 财年”，然后折叠下拉列表。
+13. 在“Year”切片器中，打开下拉列表，选择“FY2020”，然后折叠下拉列表。
 
     ![图片 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
@@ -230,21 +230,6 @@ ms.locfileid: "139273302"
 
     ![图片 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-17. 若要设置切片器的格式，请在“可视化效果”窗格下打开“格式”窗格。
-
-    ![图片 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
-
-18. 展开“选择控件”组。
-
-    ![图片 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
-
-19. 将“显示‘全选’选项”设置为“启用”。
-
-    ![图片 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
-
-20. 请注意，在“区域”切片器中，第一项现在为“全选”。
-
-    选择此项后，将全选或取消选择所有项。通过该项，报表用户可更轻松地设置所需切片器项。
 
 21. 通过单击报表页的空白区域取消选择该切片器。
 
@@ -262,13 +247,13 @@ ms.locfileid: "139273302"
 
     - Sales \| Sales
 
-25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“共享轴”和“列值”井/区域。
+25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“X 轴”和“Y 轴列”井/区域   。
 
     ![图片 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
 
     通过将字段拖到视觉对象中即可将其添加到默认井/区域中。为了精确起见，可直接将字段拖到井/区域中，接下来你将执行此操作。
 
-26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“行值”井中  。
+26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“Y 轴行”井中  。
 
     ![图片 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -276,7 +261,7 @@ ms.locfileid: "139273302"
 
     2020 年的最后一个月（即 6 月）没有任何销售额（尚未发布）。*默认情况下，视觉对象已删除销售额为“BLANK”的月份。* 现在可将视觉对象配置为显示所有月份。
 
-28. 在视觉对象字段窗格中的“共享轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示没有数据的项”。
+28. 在视觉对象字段窗格中的“X 轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示无数据的项”。
 
     ![图片 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -320,9 +305,9 @@ ms.locfileid: "139273302"
 
     ![图片 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. 展开“数据颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）。
+39. 依次展开“条形图”、“颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）  。
 
-40. 将“数据标签”属性设置为“启用”。
+40. 将“图例”属性设置为“启用”。
 
     ![图 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
@@ -342,16 +327,15 @@ ms.locfileid: "139273302"
 
     ![图片 42](Linked_image_Files/07-design-report-in-power-bi-desktop_image38.png)
 
-2. 将页面重命名为“利润”。
+2. 将页面重命名为“Profit”。
 
     ![图片 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
-‎ 
 
 3. 基于“Region \| Region”字段添加切片器。
 
-4. 使用“格式”窗格启用“全选”选项（在“选择控件”组中）。
+4. 使用“格式”窗格启用“全选”选项（在“选择”组中） 。
 
 5. 调整该切片器的大小和位置，使其位于报表页面左侧，高度约为页面高度的一半。
 
@@ -395,7 +379,7 @@ ms.locfileid: "139273302"
 
     - Subcategory
 
-    - 产品
+    - Product
 
     - Color
 
@@ -445,7 +429,7 @@ ms.locfileid: "139273302"
 
 1. 设置视觉对象的格式：
 
-    - 在“数据标签”组中，将“文本大小”属性增加到“28pt”
+    - 在“标注值”组中，将“文本大小”属性增加到“28pt”  
 
     - 在“背景”组，将“颜色”设置为浅灰色
 
@@ -557,7 +541,7 @@ ms.locfileid: "139273302"
 
 13. 将光标悬停在条形图的不同段上，以显示工具提示。
 
-14. 若要返回到“报表”页，请在左上方单击“返回报表”。
+14. 若要返回到“报表”页，请在左上方单击“返回到报表”。
 
     ![图片 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
@@ -567,7 +551,7 @@ ms.locfileid: "139273302"
 
 16. 试用除“在 Teams 中聊天”以外的每个选项。
 
-17. 在左侧的“页面”窗格，选择“利润”页。
+17. 在左侧的“页数”窗格，选择“Profit”页。
 
     ![图片 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
@@ -581,7 +565,7 @@ ms.locfileid: "139273302"
 
 20. 在矩阵视觉对象中，使用加号 (+) 按钮钻取“财务”层次结构。
 
-21. 选择“我的绩效”页。
+21. 选择“My Performance”页。
 
     ![图片 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
 

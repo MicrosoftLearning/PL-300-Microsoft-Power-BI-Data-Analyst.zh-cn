@@ -2,13 +2,9 @@
 lab:
   title: 在 Power BI Desktop 中设计报表，第 2 部分
   module: Module 7 - Create Reports
-ms.openlocfilehash: 13dbd8523318739a7e005f1023ab2ae8b32ce8a1
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273292"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中设计报表，第 2 部分
 
 **预估完成本实验室需要 45 分钟**
@@ -27,13 +23,13 @@ ms.locfileid: "139273292"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -147,7 +143,7 @@ ms.locfileid: "139273292"
 
 在此任务中，你将同步“年份”和“区域”切片器。
 
-你将继续开发“在 Power BI Desktop 中设计报表，第 1 部分”实验室中创建的报表。
+你将继续开发“在 Power BI Desktop 中设计报表，第 1 部分”实验室中创建的报表。**
 
 1. 在 Power BI Desktop 的“概述”页上，将“年份”切片器设置为“FY2018”。
 
@@ -161,7 +157,7 @@ ms.locfileid: "139273292"
 
     ![图 1](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image13.png)
 
-5. 在（“可视化效果”窗格左侧的）“同步切片器”窗格中的第二列（代表同步），选中“概述”和“我的绩效”页的复选框。
+5. 在（“可视化效果”窗格左侧的）“同步切片器”窗格中的第二列（代表同步），选中“Overview”和“My Performance”页的复选框。
 
     ![图片 93](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image14.png)
 
@@ -179,7 +175,7 @@ ms.locfileid: "139273292"
 
 ## <a name="exercise-2-configure-drill-through"></a>**练习 2：** 配置钻取
 
-在此练习中，你将创建一个新页面并将其配置为钻取页面。 完成设计后，该页面将如下所示：
+In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![新页面的图像，包含一个卡片视觉对象和表视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -191,7 +187,7 @@ ms.locfileid: "139273292"
 
     ![图片 95](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image18.png)
 
-2. 右键单击“产品详细信息”页面选项卡，然后选择“隐藏页面”。
+2. 右键单击“产品详细信息”页面选项卡，然后选择“隐藏页”。
 
     ![图片 97](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image19.png)
 
@@ -251,7 +247,7 @@ ms.locfileid: "139273292"
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**练习 3：** 添加条件格式
 
-在此练习中，你将使用条件格式来优化钻取页面。 完成设计后，该页面将如下所示：
+In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![更新后的页面图像，显示了颜色格式值和图标。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -321,11 +317,11 @@ ms.locfileid: "139273292"
 
 13. 重复前面的步骤，使用“产品 \| 格式设置 \| 字体颜色格式”字段为“颜色”字段配置字体颜色条件格式 
 
-    回想一下，背景和字体颜色源自“在 Power BI Desktop 中准备数据”实验室中的“ColorFormats.csv”文件，然后与“在 Power BI Desktop 中加载数据”实验室中的“产品”查询集成。**
+    回想一下，背景和字体颜色源自“在 Power BI Desktop 中准备数据”实验室中的“ColorFormats.csv”文件，然后与“在 Power BI Desktop 中加载数据”实验室中的“产品”查询集成。*   *
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>练习 4：添加书签和按钮
 
-在此练习中，你将通过按钮优化“我的业绩”页面，使报表用户可以选择要显示的视觉对象类型。 完成设计后，该页面将如下所示：
+In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![更新后的第 3 页的图像，显示两个按钮和两个视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
@@ -421,7 +417,7 @@ ms.locfileid: "139273292"
 
 9. 使用复制和粘贴创建按钮的副本，然后配置新按钮，如下所示：
 
-    *提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。*
+    *提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。 *
 
     - 将“按钮文本”属性设置为“柱形图”
 
