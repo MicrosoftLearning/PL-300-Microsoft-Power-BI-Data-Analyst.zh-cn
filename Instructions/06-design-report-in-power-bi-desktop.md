@@ -2,18 +2,14 @@
 lab:
   title: 在 Power BI Desktop 中设计报表，第 1 部分
   module: Module 7 - Create Reports
-ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650212"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中设计报表，第 1 部分
 
 **预估完成本实验室需要 45 分钟**
 
-在本实验室中，你将创建一个三页的报表。 然后将其发布到 Power BI，接着打开报表并与之进行交互。
+In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
 
 本实验室介绍如何完成以下操作：
 
@@ -23,13 +19,13 @@ ms.locfileid: "146650212"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. Power BI Desktop 中的模型数据
+3. 在 Power BI Desktop 中对数据建模
 
 5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
@@ -39,7 +35,7 @@ ms.locfileid: "146650212"
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 面板
+9. 创建 Power BI 仪表板
 
 10. 在 Power BI Desktop 中执行数据分析
 
@@ -59,7 +55,7 @@ ms.locfileid: "146650212"
 
     ![图片 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
@@ -92,7 +88,7 @@ ms.locfileid: "146650212"
 
     ![图片 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. 向下滚动页面到“集成”设置。 单击箭头以展开“地图和着色地图视觉对象”选项。
+1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
 
     ![图片 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -141,7 +137,7 @@ ms.locfileid: "146650212"
 
     ![图片 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter”文件夹 。
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -169,7 +165,7 @@ ms.locfileid: "146650212"
 
 ### <a name="task-4-design-page-1"></a>任务 4：设计页面 1
 
-在此任务中，你将设计报表的第 1 页。 完成设计后，该页面将如下所示：
+In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
 
 ![第 1 页的图像，包含一个徽标、两个切片器和三个视觉对象。](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -220,7 +216,7 @@ ms.locfileid: "146650212"
 
     ![图片 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
-    报表页现在按年份“FY2020”进行筛选。
+    报表页现在按年份“FY2020”进行筛选。**
 
 14. 通过单击报表页的空白区域取消选择该切片器。
 
@@ -230,6 +226,21 @@ ms.locfileid: "146650212"
 
     ![图片 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
+17. 若要设置切片器的格式，请在“可视化效果”窗格下打开“格式”窗格。
+
+    ![图片 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
+
+18. 展开“选择控件”组。
+
+    ![图片 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
+
+19. 将“显示‘全选’选项”设置为“启用”。
+
+    ![图片 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
+
+20. 请注意，在“区域”切片器中，第一项现在为“全选”。
+
+    选择此项后，将全选或取消选择所有项。通过该项，报表用户可更轻松地设置所需切片器项。
 
 21. 通过单击报表页的空白区域取消选择该切片器。
 
@@ -247,13 +258,13 @@ ms.locfileid: "146650212"
 
     - Sales \| Sales
 
-25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“X 轴”和“Y 轴列”井/区域   。
+25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“共享轴”和“列值”井/区域。
 
     ![图片 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
 
     通过将字段拖到视觉对象中即可将其添加到默认井/区域中。为了精确起见，可直接将字段拖到井/区域中，接下来你将执行此操作。
 
-26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“Y 轴行”井中  。
+26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“行值”井中  。
 
     ![图片 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -261,7 +272,7 @@ ms.locfileid: "146650212"
 
     2020 年的最后一个月（即 6 月）没有任何销售额（尚未发布）。*默认情况下，视觉对象已删除销售额为“BLANK”的月份。* 现在可将视觉对象配置为显示所有月份。
 
-28. 在视觉对象字段窗格中的“X 轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示无数据的项”。
+28. 在视觉对象字段窗格中的“共享轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示没有数据的项”。
 
     ![图片 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -305,9 +316,9 @@ ms.locfileid: "146650212"
 
     ![图片 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. 依次展开“条形图”、“颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）  。
+39. 展开“数据颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）。
 
-40. 将“图例”属性设置为“启用”。
+40. 将“数据标签”属性设置为“启用”。
 
     ![图 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
@@ -317,7 +328,7 @@ ms.locfileid: "146650212"
 
 ### <a name="task-5-design-page-2"></a>任务 5：设计页面 2
 
-在此任务中，你将设计报表的第 2 页。 完成设计后，该页面将如下所示：
+在本实验室中，你将创建一个三页的报表。
 
 ![第 2 页的图像，包含一个切片器和矩阵。](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -332,10 +343,11 @@ ms.locfileid: "146650212"
     ![图片 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
+‎ 
 
 3. 基于“Region \| Region”字段添加切片器。
 
-4. 使用“格式”窗格启用“全选”选项（在“选择”组中） 。
+4. 使用“格式”窗格启用“全选”选项（在“选择控件”组中）。
 
 5. 调整该切片器的大小和位置，使其位于报表页面左侧，高度约为页面高度的一半。
 
@@ -379,7 +391,7 @@ ms.locfileid: "146650212"
 
     - Subcategory
 
-    - Product
+    - 产品
 
     - Color
 
@@ -391,7 +403,7 @@ ms.locfileid: "146650212"
 
 ### <a name="task-6-design-page-3"></a>任务 6：设计页面 3
 
-在此任务中，你将设计报表的第 3 页，也是最后一页。 完成设计后，该页面将如下所示：
+然后将其发布到 Power BI，接着打开报表并与之进行交互。
 
 ![第 3 页的图像，包含一个切片器和三个视觉对象。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -401,7 +413,7 @@ ms.locfileid: "146650212"
     
     ![筛选器窗格中 Salesperson 字段的图像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. 选择“Michael Blythe”。 “My Performance”报表页面上的数据现将进行筛选，仅显示 Michael Blythe 的数据。
+1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
 
 1. 基于“Date \| Year”字段添加下拉切片器，然后重设大小并重新定位，使其位于页面的左上角。
 
@@ -429,7 +441,7 @@ ms.locfileid: "146650212"
 
 1. 设置视觉对象的格式：
 
-    - 在“标注值”组中，将“文本大小”属性增加到“28pt”  
+    - 在“数据标签”组中，将“文本大小”属性增加到“28pt”
 
     - 在“背景”组，将“颜色”设置为浅灰色
 
@@ -505,7 +517,7 @@ ms.locfileid: "146650212"
 
     *当你发布了 Power BI Desktop 文件后，数据模型已发布为数据集。*
 
-    如果你看不到数据集，请按 F5 重载浏览器，然后再次展开此工作区。
+    如果你看不到数据集，请按 F5 重载浏览器，然后再次展开此工作区。**
 
     ![图片 94](Linked_image_Files/07-design-report-in-power-bi-desktop_image63.png)
 
@@ -561,7 +573,7 @@ ms.locfileid: "146650212"
 
 19. 在“筛选器”窗格（位于右侧）中，展开筛选器卡，并应用一些筛选器。
 
-    通过“筛选器”窗格，可以定义超出切片器页面范围的筛选器。
+    通过“筛选器”窗格，可以定义超出切片器页面范围的筛选器。**
 
 20. 在矩阵视觉对象中，使用加号 (+) 按钮钻取“财务”层次结构。
 
@@ -591,4 +603,4 @@ ms.locfileid: "146650212"
 
 2. 使 Microsoft Edge 浏览器窗口保持打开状态。
 
-    “在 Power BI Desktop 中设计报表，第 2 部分”实验室中将使用高级功能改进报表设计。
+    “在 Power BI Desktop 中设计报表，第 2 部分”实验室中将使用高级功能改进报表设计。**

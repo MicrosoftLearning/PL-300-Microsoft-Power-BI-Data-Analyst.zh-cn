@@ -1,19 +1,14 @@
 ---
 lab:
   title: 在 Power BI Desktop 中加载数据
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650221"
+  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
 ---
+
 # <a name="load-data-in-power-bi-desktop"></a>**在 Power BI Desktop 中加载数据**
 
 **预估完成本实验室需要 45 分钟**
 
-在本实验室中，你将开始对上一个实验室中创建的每个查询应用转换。 随后，你将应用查询将每一查询作为表加载到数据模型。
+In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
 
 本实验室介绍如何完成以下操作：
 
@@ -23,7 +18,7 @@ ms.locfileid: "146650221"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -130,7 +125,7 @@ ms.locfileid: "146650221"
 
     现在，你将筛选查询行以仅检索职位是销售人员的员工。
 
-4. 若要查找特定列，请在“主页”功能区选项卡上，单击“管理列”向下箭头，再单击“选择列”向下箭头，然后选择“转到列”   。
+4. 若要查找特定列，请在“开始”功能区选项卡上的“管理列”组中，单击“选择列”向下箭头，然后选择“转到列”。
 
     ![图片 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +151,7 @@ ms.locfileid: "146650221"
 
     你创建的每一转换会生成其他的步骤逻辑。*可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。*
 
-10. 若要删除列，请在“主页”功能区选项卡上，单击“管理列”组，然后单击“选择列”图标  。
+10. 要删除列，在“主页”功能区选项卡中的“管理列”组中，单击“选择列”图标。
 
     ![图片 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +211,7 @@ ms.locfileid: "146650221"
 
 23. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
 
-    *UPN 是用户主体名称的缩写。*
+    UPN 是用户主体名称的缩写。*在“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中配置行级别安全性时，将使用此列中的值。*
 
 24. 在状态栏的左下角，验证查询是否具有 5 列和 18 行。
 
@@ -284,7 +279,7 @@ ms.locfileid: "146650221"
 
     ![图片 5646](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    通过选择这两个列，将应用转换以联接到 DimProductSubcategory 表，将这些列包含在内 ***。** 事实上，“DimProductCategory”列是数据源中的另一个相关表。*
+    通过选择这两个列，将应用转换以联接到 DimProductSubcategory 表，将这些列包含在内***。** 事实上，“DimProductCategory”列是数据源中的另一个相关表。*
 
 9. 取消选中“使用原始列名作为前缀”复选框。
 
@@ -349,6 +344,7 @@ ms.locfileid: "146650221"
     ![图 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
+‎ 
 
 6. 右键单击“Business Type”列标题，然后选择“替换值”。
 
@@ -450,7 +446,7 @@ ms.locfileid: "146650221"
 
     - DimProduct
 
-    你可能还记得，“在 Power BI Desktop 中准备数据”实验室中有一小部分“FactResellerSales”行缺少“TotalProductCost”值。*为了修复缺少的值，已将“DimProduct”列包含在内，用于检索产品标准成本。*
+    你可能还记得，“在 Power BI Desktop 中准备数据”实验室中有一小部分“FactResellerSales”行缺少“TotalProductCost”值。*  为了修复缺少的值，已将“DimProduct”列包含在内，用于检索产品标准成本。*
 
 4. 展开“DimProduct”列，取消选中所有列，然后仅包括“StandardCost”列。
 
@@ -473,7 +469,7 @@ ms.locfileid: "146650221"
    ```
 
 
-此表达式测试是否缺失 TotalProductCost 值。*如果缺失，则通过将“OrderQuantity”值乘以“StandardCost”值来生成一个值；否则，它使用现有的“TotalProductCost”值。*
+此表达式测试是否缺失 TotalProductCost 值。*如果缺失，则通过将“OrderQuantity”值乘以“StandardCost”值来生成一个值；否则，它使用现有的“TotalProductCost”值。  *
 
 9. 单击 **“确定”** 。
 
@@ -575,7 +571,7 @@ ms.locfileid: "146650221"
 
 15. 请注意，网格单元格将更新为预测值。
 
-    该功能已准确预测你正在合并“Year”和“MonthNumber”列中的值。**
+    该功能已准确预测你正在合并“Year”和“MonthNumber”列中的值。* *
 
 16. 另请注意查询网格上方显示的公式。
 
@@ -647,7 +643,7 @@ ms.locfileid: "146650221"
 
     ![图片 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. 若要合并 ColorFormats 查询，请在“主页”功能区选项卡上，单击“合并”向下箭头，然后单击“合并查询”   。
+2. 要合并“ColorFormats”查询，请在“主页”功能区选项卡上的“组合”组内，单击“合并查询”   。
 
     ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -679,9 +675,9 @@ ms.locfileid: "146650221"
 
 9. 展开“ColorFormats”列以包括以下两列：
 
-    - Background Color Format
+    - 背景色格式
 
-    - Font Color Format
+    - 字体颜色格式
 
     ![图片 5694](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image77.png)
 
@@ -705,7 +701,7 @@ ms.locfileid: "146650221"
 
     ![图片 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    禁用加载意味着它将不会作为表加载到数据模型。 这样做是因为查询已经与已启用的“Product”查询合并，以便加载到数据模型。
+    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
 
 4. 单击 **“确定”** 。
 
@@ -747,4 +743,4 @@ ms.locfileid: "146650221"
 
 5. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    在“在 Power BI Desktop 中为数据建模”实验室中，你将配置数据模型表和关系。
+    “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将配置数据模型表和关系。**
