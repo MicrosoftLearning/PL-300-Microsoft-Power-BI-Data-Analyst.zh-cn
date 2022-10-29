@@ -23,7 +23,7 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -175,7 +175,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-2-configure-drill-through"></a>**练习 2：** 配置钻取
 
-In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
+在此练习中，你将创建一个新页面并将其配置为钻取页面。 完成设计后，该页面将如下所示：
 
 ![新页面的图像，包含一个卡片视觉对象和表视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -247,7 +247,7 @@ In this exercise you will create a new page and configure it as a drill through 
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**练习 3：** 添加条件格式
 
-In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
+在此练习中，你将使用条件格式来优化钻取页面。 完成设计后，该页面将如下所示：
 
 ![更新后的页面图像，显示了颜色格式值和图标。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -321,7 +321,7 @@ In this exercise you will enhance the drill through page with conditional format
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>练习 4：添加书签和按钮
 
-In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
+在此练习中，你将通过按钮优化“我的业绩”页面，使报表用户可以选择要显示的视觉对象类型。 完成设计后，该页面将如下所示：
 
 ![更新后的第 3 页的图像，显示两个按钮和两个视觉对象。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 

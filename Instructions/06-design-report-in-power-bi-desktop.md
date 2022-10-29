@@ -9,7 +9,7 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
+在本实验室中，你将创建一个三页的报表。 然后将其发布到 Power BI，接着打开报表并与之进行交互。
 
 本实验室介绍如何完成以下操作：
 
@@ -19,7 +19,7 @@ In this lab you will create a three-page report. You will then publish it to Pow
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -88,7 +88,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![图片 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
+1. 向下滚动页面到“集成”设置。 单击箭头以展开“地图和着色地图视觉对象”选项。
 
     ![图片 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -165,7 +165,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ### <a name="task-4-design-page-1"></a>任务 4：设计页面 1
 
-In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
+在此任务中，你将设计报表的第 1 页。 完成设计后，该页面将如下所示：
 
 ![第 1 页的图像，包含一个徽标、两个切片器和三个视觉对象。](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -328,7 +328,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-5-design-page-2"></a>任务 5：设计页面 2
 
-在本实验室中，你将创建一个三页的报表。
+在此任务中，你将设计报表的第 2 页。 完成设计后，该页面将如下所示：
 
 ![第 2 页的图像，包含一个切片器和矩阵。](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -403,7 +403,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-6-design-page-3"></a>任务 6：设计页面 3
 
-然后将其发布到 Power BI，接着打开报表并与之进行交互。
+在此任务中，你将设计报表的第 3 页，也是最后一页。 完成设计后，该页面将如下所示：
 
 ![第 3 页的图像，包含一个切片器和三个视觉对象。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -413,7 +413,7 @@ In this task you will design the first report page. When you’ve completed the 
     
     ![筛选器窗格中 Salesperson 字段的图像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
+1. 选择“Michael Blythe”。 “My Performance”报表页面上的数据现将进行筛选，仅显示 Michael Blythe 的数据。
 
 1. 基于“Date \| Year”字段添加下拉切片器，然后重设大小并重新定位，使其位于页面的左上角。
 

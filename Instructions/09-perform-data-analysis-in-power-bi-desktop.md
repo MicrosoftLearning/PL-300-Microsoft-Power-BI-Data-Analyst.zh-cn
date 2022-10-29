@@ -21,7 +21,7 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -171,7 +171,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. 将以下字段添加到视觉对象井/区域中：
 
-    The labs use a shorthand notation to reference a field. It will look like this: <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> <bpt id="p2">**</bpt><ph id="ph1">\|</ph><ept id="p2">**</ept> <bpt id="p3">**</bpt>Business Type<ept id="p3">**</ept>. In this example, <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> is the table name and <bpt id="p2">**</bpt>Business Type<ept id="p2">**</ept> is the field name.
+    实验室使用速记表示法引用字段。 它将如下所示：Reseller \| Business Type  。 在此示例中，“Reseller”是表名称，“Business Type”是字段名称。
 
     - 图例：Reseller \| Business Type
 

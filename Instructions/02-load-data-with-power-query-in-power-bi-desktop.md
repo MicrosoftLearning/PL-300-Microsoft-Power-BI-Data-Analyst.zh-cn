@@ -8,7 +8,7 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
+在本实验室中，你将开始对上一个实验室中创建的每个查询应用转换。 随后，你将应用查询将每一查询作为表加载到数据模型。
 
 本实验室介绍如何完成以下操作：
 
@@ -18,7 +18,7 @@ In this lab you will commence apply transformations to each of the queries creat
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -701,7 +701,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![图片 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
+    禁用加载意味着它将不会作为表加载到数据模型。 这样做是因为查询已经与已启用的“Product”查询合并，以便加载到数据模型。
 
 4. 单击 **“确定”** 。
 
