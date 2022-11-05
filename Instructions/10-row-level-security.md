@@ -9,7 +9,7 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
+在此实验室中，你将在“Salesperson”表和“Sales”表之间创建多对多关系。 你还将强制执行行级别安全性，以确保销售人员只能分析其分配区域的销售数据。
 
 本实验室介绍如何完成以下操作：
 
@@ -19,7 +19,7 @@ In this lab you will create a many-to-many relationship between the <bpt id="p1"
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 

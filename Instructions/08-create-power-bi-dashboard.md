@@ -19,7 +19,7 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -43,7 +43,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-a-dashboard"></a>**练习 1：创建仪表板**
 
-In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
+在此练习中，你将创建“销售额监视”仪表板。 完成的仪表板将如下所示：
 
 ![完成的仪表板的图像，其中包含三个磁贴。](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -163,7 +163,7 @@ In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept i
 
 ### <a name="task-4-create-a-dashboard"></a>**任务 4：创建仪表板**
 
-In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
+在此任务中，你将创建“销售额监视”仪表板。 你将固定报表中的一个视觉对象、添加基于图像数据 URI 的磁贴以及使用问答来创建磁贴。
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，打开“销售分析”报表。
 
@@ -307,7 +307,7 @@ In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**练习 2：** 刷新数据集
 
-In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
+在此练习中，你首先需要将 2020 年 6 月的销售订单数据加载到 AdventureWorksDW2020 数据库。 然后打开 Power BI Desktop 文件，执行数据刷新，再将该文件上传到工作区。
 
 ### <a name="task-1-update-the-lab-database"></a>**任务 1：更新实验室数据库**
 

@@ -8,7 +8,7 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.
+在本实验室中，你将开始为 Adventure Works 公司开发 Power BI Desktop 解决方案。 这涉及到连接到源数据、预览数据，以及使用数据预览技术来了解源数据的特性和质量。
 
 本实验室介绍如何完成以下操作：
 
@@ -24,7 +24,7 @@ In this lab you commence the development of a Power BI Desktop solution for the 
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -48,7 +48,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-prepare-data"></a>**练习 1：** 准备数据
 
-In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
+在本练习中，你将创建 8 个 Power BI Desktop 查询。 6 个查询从 SQL Server 中获取数据，2 个查询从 CSV 文件获取。
 
 ### <a name="task-1-save-the-power-bi-desktop-file"></a>**任务 1：保存 Power BI Desktop 文件**
 
@@ -102,7 +102,7 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
     ![图片 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
 
-    While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the <bpt id="p1">**</bpt>Load Data in Power BI Desktop<ept id="p1">**</ept> lab, you’ll learn why you are adding each one.
+    虽然在开发数据模型时启用这两个选项可能会有所帮助，但你之前禁用了它们来支持实验室体验。 在“在 Power BI Desktop 中加载数据”实验室中创建关系时，你将了解为什么要添加每个关系。
 
 1. 单击 **“确定”** 。
 
@@ -122,7 +122,7 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
     ![图片 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
 
-    在本实验室中，你将开始为 Adventure Works 公司开发 Power BI Desktop 解决方案。
+    在本实验室中，你将使用“localhost”连接到 SQL Server 数据库。 但在创建自己的解决方案时，不建议这样做。 这是因为网关数据源无法解析 localhost。
 
 3. 单击“确定”。
 
@@ -130,7 +130,7 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
 4. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
 
-    这涉及到连接到源数据、预览数据，以及使用数据预览技术来了解源数据的特性和质量。
+    AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。 已对其进行修改，以支持课程实验室的学习目标。
 
     ![图片 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image17.png)
 
@@ -158,13 +158,13 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
 8. 若要向所选表的数据应用转换，请单击“转换数据”。
 
-    You won’t be transforming the data in this lab. The objectives of this lab focus on exploring and profiling the data in the <bpt id="p1">**</bpt>Power Query Editor<ept id="p1">**</ept> window.
+    此实验室中不会进行数据转换。 本实验室的目标是在“Power Query 编辑器”窗口探索和分析数据。
 
     ![图片 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
 
 ### <a name="task-4-preview-sql-server-queries"></a>**任务 4：预览 SQL Server 查询**
 
-In this task you will preview the data of the SQL Server queries. First, you will learn relevant information about the data. You will also use column quality, column distribution, and column profile tools to understand the data and to assess data quality.
+在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分发和列分析工具来了解数据并评估数据质量。
 
 1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。
 
@@ -176,7 +176,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 33](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image21.png)
 
-    The <bpt id="p1">**</bpt>DimEmployee<ept id="p1">**</ept> table in the SQL Server database stores one row for each employee. A subset of the rows from this table represents the salespeople, which will be relevant to the model you’ll develop.
+    在 SQL Server 数据库中的“DimEmployee”表中，每个员工占用一行。 行的子集表示销售人员，这与你将开发的模型相关。
 
 3. 注意左下角状态栏的表统计信息 - 该表有 33 列和 296 行。
 
@@ -186,7 +186,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
 5. 请注意，最后五列包含表或值链接。
 
-    These five columns represent relationships to other tables in the database. They can be used to join tables together. You’ll join tables in the <bpt id="p1">**</bpt>Load Data in Power BI Desktop<ept id="p1">**</ept> lab.
+    这五个列表示与数据库中其他表之间的关系。 它们可用于将表联接在一起。 你将在“在 Power BI Desktop 中加载数据”实验室中联接表。
 
 6. 要评估列质量，请在“视图”功能区选项卡的“数据预览”组中，勾选“列质量”。
 
@@ -208,13 +208,13 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    When the distinct and unique counts are the same, it means the column contains unique values. When modeling, it’s important that some model tables have unique columns. These unique columns can be used to create one-to-many relationships, which you will do in the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 1<ept id="p1">**</ept> lab.
+    当非重复值和唯一值的计数相同时，这表示列包含唯一值。 在建模时，某些表必须具有唯一的列。 这些唯一的列可用于创建一对多关系，你将在“在 Power BI Desktop 中对数据建模，第 1 部分”实验室中进行此操作。
 
 11. 在“查询”窗格中，选择 DimEmployeeSalesTerritory 查询。
 
     ![图片 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    The <bpt id="p1">**</bpt>DimEmployeeSalesTerritory<ept id="p1">**</ept> table stores one row for each employee and the sales territory regions they manage. The table supports relating many regions to a single employee. Some employees manage one, two, or possibly more regions. When you model this data, you’ll need to define a many-to-many relationship, which you’ll do in the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 2<ept id="p1">**</ept> lab.
+    DimEmployeeSalesTerritory 表存储的每个行表示每个员工及其管理的销售区域。 该表支持将多个区域与单个员工相关联。 某些员工管理一个、两个或可能更多的区域。 在为此数据建模时，将需要定义多对多关系，“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中将完成此操作。
 
 12. 在“查询”窗格中，选择 DimProduct 查询。
 
@@ -232,7 +232,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 49](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image29.png)
 
-    The <bpt id="p1">**</bpt>DimReseller<ept id="p1">**</ept> table contains one row per reseller. Resellers sell, distribute, or value add to the Adventure Works products.
+    DimReseller 表包含的每个行表示每个经销商。 经销商对 Adventure Works 的产品进行销售、分销或增值。
 
 16. 若要查看列值，请在“视图”功能区选项卡的“数据预览”组中，选中“列配置文件”。
 
@@ -256,7 +256,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    The <bpt id="p1">**</bpt>DimSalesTerritory<ept id="p1">**</ept> table contains one row per sales region, including <bpt id="p2">**</bpt>Corporate HQ<ept id="p2">**</ept> (headquarters). Regions are assigned to a country, and countries are assigned to groups. In the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 1<ept id="p1">**</ept> lab, you’ll create a hierarchy to support analysis at region, country, or group level.
+    DimSalesTerritory 表包含的每个行表示每个销售区域，包括“公司总部”（总部）。 区域会分配到国家/地区，国家/地区会分配到组。 “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将创建一个层次结构，用来支持在区域、国家或组级别进行分析。
 
 23. 在“查询”窗格中，选择 FactResellerSales 查询。
 
@@ -268,7 +268,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
 
-    此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。
+    缺少 TotalProductCost 列值是数据质量问题。 为解决该问题，在“在 Power BI Desktop 中加载数据”实验室中，你将通过使用产品标准成本（存储在相关的“DimProduct”表中）来应用转换以填充缺少的值 。
 
 ### <a name="task-5-get-data-from-a-csv-file"></a>**任务 5：从 CSV 文件获取数据**
 
@@ -295,7 +295,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image37.png)
 
-    你可以按任意顺序完成实验室。
+    ResellerSalesTargets CSV 文件包含的每个行表示每个年度的每个销售人员。 每行记录 12 个月度销售目标（以千为单位）。 请注意，Adventure Works 公司的营业年度从 7 月 1 日开始。
 
 7. 请注意，没有列包含空值。
 
@@ -305,7 +305,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-    但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+    这些图标表示列数据类型。 123 是整数，ABC 是文本。
 
     “在 Power BI Desktop 中加载数据”实验室中将应用许多转换以获得不同形状的结果，该结果仅由 3 个列组成：“Date”、“EmployeeKey”和“TargetAmount”。
 
@@ -317,7 +317,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
 
-    The <bpt id="p1">**</bpt>ColorFormats<ept id="p1">**</ept> CSV file contains one row per product color. Each row records the HEX codes to format background and font colors. You’ll integrate this data with the <bpt id="p1">**</bpt>DimProduct<ept id="p1">**</ept> query data in the <bpt id="p2">**</bpt>Load Data in Power BI Desktop<ept id="p2">**</ept> lab.
+    在 ColorFormats CSV 文件中，每个产品颜色占一行。 每行都记录十六进制代码，以格式化背景颜色和字体颜色。 “在 Power BI Desktop 中加载数据”实验室中会将此数据与“DimProduct”查询数据集成。
 
 ### <a name="task-7-finish-up"></a>**任务 7：完成**
 
@@ -341,7 +341,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
     ![图片 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image42.png)
 
-    Applying the queries will load their data to the data model. You’re not ready to do that, as there are many transformations that must be applied first.
+    应用查询会将其数据加载到数据模型。 你尚未准备好执行该操作，因为必须先应用许多转换。
 
 4. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 

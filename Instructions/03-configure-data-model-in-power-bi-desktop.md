@@ -9,7 +9,7 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
+在本实验室中，你将开始开发数据模型。 它将涉及在表之间创建关系，然后配置表和列属性以提高数据模型的友好性和可用性。 你还将创建层次结构并创建快速度量值。
 
 本实验室介绍如何完成以下操作：
 
@@ -22,7 +22,7 @@ In this lab you will commence developing the data model. It will involve creatin
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -208,7 +208,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     在本实验室中，“SalespersonRegion”和“Targets”表将保持断开连接状态。* 销售员与区域之间存在多对多关系，在“在 Power BI Desktop 对数据建模，第 2 部分”实验室中，你将使用这种高级方案。*
 
-25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
+25. 在该图中，排列表，以使“Sales”表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
 
     ![图片 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
@@ -348,7 +348,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ### <a name="task-5-bulk-update-properties"></a>**任务 5：批量更新属性**
 
-In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
+在此任务中，你将使用单个批量更新来更新多个列。 你将使用此方法来隐藏列，并设置列值的格式。
 
 1. 在“字段”窗格中，选择“Product \| ProductKey”列 。
 

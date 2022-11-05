@@ -21,7 +21,7 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
@@ -45,7 +45,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-calculated-tables"></a>**练习 1：创建计算表**
 
-In this exercise you will create two calculated tables. The first will be the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table, to allow a direct relationship between it and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. The second will be the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table.
+在本练习中，你将创建两个计算表。 第一个是“Salesperson”表，允许它与“Sales”表之间有直接关系。 第二个是“Date”表。
 
 ### <a name="task-1-get-started"></a>**任务 1：入门**
 
@@ -202,7 +202,7 @@ In this exercise you will create two calculated tables. The first will be the <b
 
 ### <a name="task-4-create-calculated-columns"></a>任务 4：创建计算列
 
-In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
+在此任务中，你将添加其他列，以支持按不同时间段进行筛选和分组。 你还将创建一个计算列来控制其他列的排序顺序。
 
 为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义**。
 
@@ -302,7 +302,7 @@ In this task you will add additional columns to enable filtering and grouping by
 
 ### <a name="task-5-complete-the-date-table"></a>任务 5：完成“Date”表
 
-In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table by hiding a column and creating a hierarchy. You will then create relationships to the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Targets<ept id="p2">**</ept> tables.
+在此任务中，你将通过隐藏列和创建层次结构来完成“Date”表的设计。 然后，你将创建与“Sales”和“Targets”表的关系。
 
 1. 切换到“模型”视图。
 
@@ -363,7 +363,7 @@ In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept i
 
 ### <a name="task-1-create-simple-measures"></a>**任务 1：创建简单的度量值**
 
-In this task you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
+在此任务中，你将创建简单的度量值。 简单的度量值聚合单个列中的值或对表中的行进行计数。
 
 1. 在“报表”视图“第 2 页”上的“字段”窗格中，将“Sales \| Unit Price”字段拖到矩阵视觉对象。  
 
