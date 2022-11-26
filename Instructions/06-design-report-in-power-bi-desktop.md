@@ -391,7 +391,7 @@ lab:
 
     - Subcategory
 
-    - 产品
+    - Product
 
     - Color
 
@@ -577,7 +577,7 @@ lab:
 
 20. 在矩阵视觉对象中，使用加号 (+) 按钮钻取“财务”层次结构。
 
-21. 选择“My Performance”页。
+21. 选择“我的绩效”页。
 
     ![图片 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
 
