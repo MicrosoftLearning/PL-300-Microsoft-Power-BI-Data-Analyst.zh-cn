@@ -30,7 +30,7 @@
 
 - 你可以提交 bug、更改、改进和想法。  比我们先发现 Power BI 新功能？  提交新演示！
 
-## <a name="notes"></a>说明
+## <a name="notes"></a>注释
 
 ### <a name="classroom-materials"></a>课堂材料
 
