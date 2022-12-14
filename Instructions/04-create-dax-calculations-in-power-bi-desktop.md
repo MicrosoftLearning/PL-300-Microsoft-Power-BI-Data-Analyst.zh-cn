@@ -37,7 +37,7 @@ lab:
 
 8. 在 Power BI Desktop 中设计报表，第 2 部分
 
-9. 创建 Power BI 仪表板
+9. 创建 Power BI 面板
 
 10. 在 Power BI Desktop 中执行数据分析
 

@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 创建 Power BI 仪表板
+  title: 创建 Power BI 面板
   module: Module 8 - Create Dashboards
 ---
 
