@@ -1,13 +1,13 @@
 ---
 lab:
   title: 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
-  module: Module 5 - Create Model Calculations using DAX in Power BI
+  module: 5 - Create Model Calculations using DAX in Power BI
 ---
 
 
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
-**预估完成本实验室需要 45 分钟**
+**预估完成本实验室需要 45 分钟。**
 
 在本实验室中，你将使用涉及筛选器上下文控制的 DAX 表达式来创建度量值。
 
@@ -19,27 +19,27 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. 在 Power BI Desktop 中对数据建模
+3. 在 Power BI 中设计数据模型
 
-5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
-6. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
+5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
-7. 在 Power BI Desktop 中设计报表，第 1 部分
+6. 在 Power BI Desktop 中设计报表，第 1 部分
 
-8. 在 Power BI Desktop 中设计报表，第 2 部分
+7. 在 Power BI Desktop 中设计报表，第 2 部分
+
+8. 使用 AI 视觉对象分析数据
 
 9. 创建 Power BI 面板
 
-10. 在 Power BI Desktop 中执行数据分析
-
-11. 强制执行行级别安全性
+10. 强制执行行级别安全性
 
 ## <a name="exercise-1-work-with-filter-context"></a>**练习 1：处理筛选器上下文**
 
@@ -69,7 +69,7 @@ lab:
 
     ![图片 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. 在“打开”窗口，导航到“D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
+1. 在“打开”窗口中，导航到“D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -121,13 +121,11 @@ lab:
 
     回想一下，“Regions”***层次结构包含“组”** **、“Country”** **和“Region”** **级别。***
 
-7. 若要设置矩阵视觉对象的格式，请选择“可视化效果”窗格下的“格式”窗格。
+7. 若要设置矩阵视觉对象的格式，请选择“可视化”窗格下的“格式”窗格。
 
     ![图片 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. 在“搜索”框中，输入“渐变”。
-
-    ![图片 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. 将“渐变布局”属性设置为“关”。
 
@@ -147,7 +145,7 @@ lab:
 
 1. 基于以下表达式向“Sales”表添加一个度量值：
 
-    为了方便起见，可以从 D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。**
+    为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义**。
 
 
     **DAX**
