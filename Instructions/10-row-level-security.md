@@ -1,7 +1,7 @@
 ---
 lab:
   title: 强制执行行级别安全性
-  module: Module 13 - Row-Level Security
+  module: 12 - Row-Level Security
 ---
 
 
@@ -9,37 +9,35 @@ lab:
 
 **预估完成本实验室需要 45 分钟**
 
-在此实验室中，你将在“Salesperson”表和“Sales”表之间创建多对多关系。 你还将强制执行行级别安全性，以确保销售人员只能分析其分配区域的销售数据。
+在此实验室中，你将强制执行行级别安全性，确保销售人员只能分析其分配区域的销售数据。
 
 本实验室介绍如何完成以下操作：
-
-- 配置多对多关系
 
 - 强制执行行级别安全性
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. 在 Power BI Desktop 中对数据建模
+3. 在 Power BI 中设计数据模型
 
-5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
-6. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
+5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
-7. 在 Power BI Desktop 中设计报表，第 1 部分
+6. 在 Power BI Desktop 中设计报表，第 1 部分
 
-8. 在 Power BI Desktop 中设计报表，第 2 部分
+7. 在 Power BI Desktop 中设计报表，第 2 部分
+
+8. 使用 AI 视觉对象分析数据
 
 9. 创建 Power BI 面板
 
-10. 在 Power BI Desktop 中执行数据分析
-
-11. 强制执行行级别安全性
+10. 强制执行行级别安全性
 
 ## <a name="exercise-1-enforce-row-level-security"></a>**练习 1：强制执行行级别安全性**
 
@@ -69,7 +67,7 @@ lab:
 
     ![图片 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\12-row-level-security\Starter 文件夹 。
+1. 在“打开”窗口中，导航到“D:\PL300\Labs\10-row-level-security\Starter”文件夹 。
 
 1. 选择“销售分析”文件。
 
@@ -181,7 +179,7 @@ lab:
 
     ![图片 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**任务 2：完成**
+### <a name="task-3-finish-up"></a>**任务 3：完成**
 
 在此任务中，你将完成本实验室。
 
