@@ -1,13 +1,13 @@
 ---
 lab:
   title: 在 Power BI Desktop 中设计报表，第 1 部分
-  module: Module 7 - Create Reports
+  module: 7 - Create Reports
 ---
 
 
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中设计报表，第 1 部分
 
-**预估完成本实验室需要 45 分钟**
+**预估完成本实验室需要 45 分钟。**
 
 在本实验室中，你将创建一个三页的报表。 然后将其发布到 Power BI，接着打开报表并与之进行交互。
 
@@ -19,27 +19,27 @@ lab:
 
 ### <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. 在 Power BI Desktop 中加载数据
 
-3. 在 Power BI Desktop 中对数据建模
+3. 在 Power BI 中设计数据模型
 
-5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
-6. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
+5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
-7. 在 Power BI Desktop 中设计报表，第 1 部分
+6. 在 Power BI Desktop 中设计报表，第 1 部分
 
-8. 在 Power BI Desktop 中设计报表，第 2 部分
+7. 在 Power BI Desktop 中设计报表，第 2 部分
+
+8. 使用 AI 视觉对象分析数据
 
 9. 创建 Power BI 面板
 
-10. 在 Power BI Desktop 中执行数据分析
-
-11. 强制执行行级别安全性
+10. 强制执行行级别安全性
 
 ## <a name="exercise-1-create-a-report"></a>**练习 1：** 创建报表
 
@@ -55,19 +55,13 @@ lab:
 
     ![图片 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.com**。
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://powerbi.microsoft.com**。
 
     *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
 
 1. 单击“登录”（位于右上角）。
 
     ![图片 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
-
-1. 输入提供给你的帐户详细信息（查看“资源”）。
-
-1. 如果系统提示更新密码，请重新输入提供的密码，然后输入新密码并确认。
-
-    *重要说明：请确保记下新密码。*
 
 1. 完成登录过程。
 
@@ -77,35 +71,36 @@ lab:
 
 ### <a name="task-2-get-started--enable-map-and-filled-map-visuals"></a>**任务 2：** 开始使用 - 启用地图和着色地图视觉对象
 
-在此任务中，将通过在 Power BI 管理门户中更新“集成”设置，在实验室环境中启用地图和着色地图视觉对象。 
+在此任务中，你将通过更新 Power BI Desktop 中的“全局”设置和 Power BI 管理门户中的“集成”设置，在实验室环境中启用地图和着色地图视觉对象。
 
+1. 在“Power BI Desktop”中，导航到“选项”>“选项和设置”>“全局”，然后勾选“使用地图和着色地图视觉对象”框 。
 
-1. 要打开 Power BI 管理门户，请在浏览器的右上角单击“设置”图标。
+![Picture103b](Linked_image_Files/07-design-report-in-power-bi-desktop_image103b.png)
+
+2. 要打开 Power BI 管理门户，请在 Edge 浏览器的右上角单击“设置”图标。
 
     ![图片 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
 
-1. 选择“管理门户”。
+3. 选择“管理门户”。
 
     ![图片 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. 向下滚动页面到“集成”设置。 单击箭头以展开“地图和着色地图视觉对象”选项。
+4. 向下滚动页面到“集成”设置。 单击箭头以展开“地图和着色地图视觉对象”选项。
 
     ![图片 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
-1. 将“地图和着色地图视觉对象”选项设置为“启用”。
+5. 将“地图和着色地图视觉对象”选项设置为“启用”。
 
-1. 单击“应用”以应用更改。 
+6. 单击“应用”以应用更改。 
 
     ![图片 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
 
-1. 此时会在浏览器的右上角出现一条消息，指示将在接下来的 15 分钟内应用“租户”设置的更改。 
+7. 此时会在浏览器的右上角出现一条消息，指示将在接下来的 15 分钟内应用“租户”设置的更改。
 
 
     ![图片 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
 
-
-
-1. 使 Microsoft Edge 浏览器窗口保持打开状态。
+8. 使 Microsoft Edge 浏览器窗口保持打开状态。
 
 ### <a name="task-3-get-started--open-report"></a>任务 3：开始使用 - 打开报表
 
@@ -137,7 +132,7 @@ lab:
 
     ![图片 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. 在“打开”窗口中，导航到“D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter”文件夹 。
+8. 在“打开”窗口中，导航到“D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter”文件夹 。
 
 9. 选择“销售分析”文件。
 
@@ -226,21 +221,6 @@ lab:
 
     ![图片 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-17. 若要设置切片器的格式，请在“可视化效果”窗格下打开“格式”窗格。
-
-    ![图片 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
-
-18. 展开“选择控件”组。
-
-    ![图片 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
-
-19. 将“显示‘全选’选项”设置为“启用”。
-
-    ![图片 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
-
-20. 请注意，在“区域”切片器中，第一项现在为“全选”。
-
-    选择此项后，将全选或取消选择所有项。通过该项，报表用户可更轻松地设置所需切片器项。
 
 21. 通过单击报表页的空白区域取消选择该切片器。
 
@@ -258,13 +238,13 @@ lab:
 
     - Sales \| Sales
 
-25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“共享轴”和“列值”井/区域。
+25. 请注意，在视觉对象字段窗格（不是“字段”窗格 - 视觉对象字段窗格位于“可视化效果”窗格下方）中，这些字段已分配给“X 轴”和“Y 轴列”井/区域   。
 
-    ![图片 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
+    ![图片 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
     通过将字段拖到视觉对象中即可将其添加到默认井/区域中。为了精确起见，可直接将字段拖到井/区域中，接下来你将执行此操作。
 
-26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“行值”井中  。
+26. 将“Sales \| Profit Margin”字段从“字段”窗格拖动到“Y 轴行”井中  。
 
     ![图片 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -272,7 +252,7 @@ lab:
 
     2020 年的最后一个月（即 6 月）没有任何销售额（尚未发布）。*默认情况下，视觉对象已删除销售额为“BLANK”的月份。* 现在可将视觉对象配置为显示所有月份。
 
-28. 在视觉对象字段窗格中的“共享轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示没有数据的项”。
+28. 在视觉对象字段窗格中的“X 轴”井/区域中，对于“Month”字段，单击向下箭头，然后选择“显示无数据的项”。
 
     ![图片 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -316,7 +296,7 @@ lab:
 
     ![图片 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. 展开“数据颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）。
+39. 依次展开“条形图”、“颜色”组，然后将“默认颜色”属性设置为合适的颜色（以补充柱形图/折线图）  。
 
 40. 将“数据标签”属性设置为“启用”。
 
@@ -343,11 +323,10 @@ lab:
     ![图片 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
-‎ 
 
 3. 基于“Region \| Region”字段添加切片器。
 
-4. 使用“格式”窗格启用“全选”选项（在“选择控件”组中）。
+4. 使用“格式”窗格启用“全选”选项（在“选择”组中） 。
 
 5. 调整该切片器的大小和位置，使其位于报表页面左侧，高度约为页面高度的一半。
 
@@ -441,7 +420,7 @@ lab:
 
 1. 设置视觉对象的格式：
 
-    - 在“数据标签”组中，将“文本大小”属性增加到“28pt”
+    - 在“标注值”组中，将“文本大小”属性增加到“28pt”  
 
     - 在“背景”组，将“颜色”设置为浅灰色
 
@@ -455,9 +434,9 @@ lab:
 
 1. 将以下字段添加到视觉对象井/区域中：
 
-    - 轴：Date \| Month
+    - Y 轴：日期\|月份
 
-    - 值：“Sales \| Sales”和“Targets \| Target” 
+    - X 轴：“销售\|销售”和“目标\|目标” 
 
     ![图片 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
@@ -523,7 +502,9 @@ lab:
 
 3. 单击“销售分析”报表以将其打开。
 
-4. 在左侧的“页面”窗格中，选择“概述”页面。 
+4. 在左侧的“页面”窗格中，选择“概述”页面。
+ 
+    ***请注意**：如果看到表示地图视觉对象已禁用的错误，请刷新浏览器。*
 
 5. 在“区域”切片器中，按住 Ctrl 键的同时选择多个区域。
 
