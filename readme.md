@@ -4,7 +4,7 @@
 
 - 你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **需要手动生成实验室说明？** - [MicrosoftLearning/Docker-Build ](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
-- **是否需要回顾一下哪个实验室服务于哪个模块？** - 查看 [GitHub 页面](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)
+- **是否需要回顾各个实验室与各项课程演示之间的对应关系？** - 查看 [GitHub 页面](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
 
 ## <a name="what-are-we-doing"></a>我们要做什么？
 

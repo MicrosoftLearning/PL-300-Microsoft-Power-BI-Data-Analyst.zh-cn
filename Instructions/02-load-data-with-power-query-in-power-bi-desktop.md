@@ -1,12 +1,12 @@
 ---
 lab:
   title: 在 Power BI Desktop 中加载数据
-  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
+  module: '3 - Clean, Transform, and Load Data in Power BI'
 ---
 
-# <a name="load-data-in-power-bi-desktop"></a>**在 Power BI Desktop 中加载数据**
+# <a name="load-data-in-power-bi-desktop"></a>在 Power BI Desktop 中加载数据
 
-**预估完成本实验室需要 45 分钟**
+**预估完成本实验室需要 45 分钟。**
 
 在本实验室中，你将开始对上一个实验室中创建的每个查询应用转换。 随后，你将应用查询将每一查询作为表加载到数据模型。
 
@@ -16,30 +16,29 @@ lab:
 
 - 应用查询以将它们加载到数据模型
 
-### <a name="lab-story"></a>**实验室场景**
+## <a name="lab-story"></a>**实验室场景**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，那么对于前 10 个实验室，建议你按以下顺序进行：
+此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
 
 2. **在 Power BI Desktop 中加载数据**
 
-3. 在 Power BI Desktop 中对数据建模
+3. 在 Power BI 中设计数据模型
 
+4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
 
-5. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
 
-6. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
+6. 在 Power BI Desktop 中设计报表，第 1 部分
 
-7. 在 Power BI Desktop 中设计报表，第 1 部分
+7. 在 Power BI Desktop 中设计报表，第 2 部分
 
-8. 在 Power BI Desktop 中设计报表，第 2 部分
+8. 使用 AI 视觉对象分析数据
 
 9. 创建 Power BI 面板
 
-10. 在 Power BI Desktop 中执行数据分析
-
-11. 强制执行行级别安全性
+10. 强制执行行级别安全性
 
 ## <a name="exercise-1-load-data"></a>**练习 1：加载数据**
 
@@ -125,7 +124,7 @@ lab:
 
     现在，你将筛选查询行以仅检索职位是销售人员的员工。
 
-4. 若要查找特定列，请在“开始”功能区选项卡上的“管理列”组中，单击“选择列”向下箭头，然后选择“转到列”。
+4. 若要查找特定列，请在“主页”功能区选项卡上，单击“管理列”向下箭头，再单击“选择列”向下箭头，然后选择“转到列”   。
 
     ![图片 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -151,7 +150,7 @@ lab:
 
     你创建的每一转换会生成其他的步骤逻辑。*可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。*
 
-10. 要删除列，在“主页”功能区选项卡中的“管理列”组中，单击“选择列”图标。
+10. 若要删除列，请在“主页”功能区选项卡上，单击“管理列”组，然后单击“选择列”图标  。
 
     ![图片 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -211,7 +210,7 @@ lab:
 
 23. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
 
-    UPN 是用户主体名称的缩写。*在“在 Power BI Desktop 中为数据建模，第 2 部分”实验室中配置行级别安全性时，将使用此列中的值。*
+    *UPN 是用户主体名称的缩写。*
 
 24. 在状态栏的左下角，验证查询是否具有 5 列和 18 行。
 
@@ -344,7 +343,6 @@ lab:
     ![图 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. 右键单击“Business Type”列标题，然后选择“替换值”。
 
@@ -386,11 +384,7 @@ lab:
 
 2. 将查询重命名为 Region。
 
-3. 向“SalesTerritoryAlternateKey”列应用筛选器以删除值 0（零）。
-
-    ![图片 5660](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image44.png)
-
-4. 删除除了以下列之外的所有列：
+3. 删除除了以下列之外的所有列：
 
     - SalesTerritoryKey
 
@@ -400,7 +394,7 @@ lab:
 
     - SalesTerritoryGroup
 
-5. 对以下三列进行重命名：
+4. 对以下三列进行重命名：
 
     - 将 SalesTerritoryRegion 重命名为 Region
 
@@ -408,7 +402,7 @@ lab:
 
     - 将 SalesTerritoryGroup 重命名为 Group
 
-6. 在状态栏中，验证查询是否具有 4 列和 10 行。
+5. 在状态栏中，验证查询是否具有 4 列和 10 行。
 
     ![图片 5661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
@@ -460,28 +454,26 @@ lab:
 
 7. 在“自定义列公式”框中，输入以下表达式（等号后面的文本）：
 
-8. 为方便使用，可从 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。
-
-
-   **Power Query**
-   ```
+   `
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-   ```
-
+   `
 
 此表达式测试是否缺失 TotalProductCost 值。*如果缺失，则通过将“OrderQuantity”值乘以“StandardCost”值来生成一个值；否则，它使用现有的“TotalProductCost”值。  *
 
-9. 单击 **“确定”** 。
+为方便使用，可从 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。
+
+8. 单击 **“确定”** 。
 
     ![图片 5666](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image49.png)
 
-10. 删除以下两列：
+
+9. 删除以下两列：
 
     - TotalProductCost
 
     - StandardCost
 
-11. 对以下三列进行重命名：
+10. 对以下三列进行重命名：
 
     - 将 OrderQuantity 重命名为 Quantity
 
@@ -489,13 +481,13 @@ lab:
 
     - 将 SalesAmount 重命名为 Sales
 
-12. 要修改列数据类型，请在“Quantity”列标题（位于列名称的左侧）中单击“1.2”图标，然后选择“整数”。
+11. 要修改列数据类型，请在“Quantity”列标题（位于列名称的左侧）中单击“1.2”图标，然后选择“整数”。
 
     ![图片 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
     配置正确数据类型是非常重要的。当列包含数值时，如果想执行数学计算，也务必要选择正确的类型。
 
-13. 将以下三列数据类型修改为“定点小数”。
+12. 将以下三列数据类型修改为“定点小数”。
 
     - Unit Price
 
@@ -507,7 +499,7 @@ lab:
 
     “定点十进制数”数据类型存储完全精度的值，因此需要比小数更多的存储空间。务必为财务值或费率（例如汇率）使用定点十进制数类型。
 
-14. 在状态栏中，确认查询具有 10 列和超过 999 行。
+13. 在状态栏中，确认查询具有 10 列和超过 999 行。
 
     ![图片 5669](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image52.png)
 
@@ -565,7 +557,7 @@ lab:
 
 13. 请注意，第一行对应年份“2017”和月份“7”。
 
-14. 在“Column1”列的第一个网格单元中，开始输入“7/1/2017”，然后按 Enter。
+14. 在“Column1”列的第一个网格单元中，开始输入“07/01/2017”，然后按 Enter  。
 
     由于虚拟机使用美国区域设置，因此此日期实际上将显示为 July 1, 2017。
 
@@ -643,7 +635,7 @@ lab:
 
     ![图片 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. 要合并“ColorFormats”查询，请在“主页”功能区选项卡上的“组合”组内，单击“合并查询”   。
+2. 若要合并 ColorFormats 查询，请在“主页”功能区选项卡上，单击“合并”向下箭头，然后单击“合并查询”   。
 
     ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -743,4 +735,4 @@ lab:
 
 5. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
 
-    “在 Power BI Desktop 中为数据建模，第 1 部分”实验室中将配置数据模型表和关系。**
+    在“在 Power BI Desktop 中为数据建模”实验室中，你将配置数据模型表和关系。**
