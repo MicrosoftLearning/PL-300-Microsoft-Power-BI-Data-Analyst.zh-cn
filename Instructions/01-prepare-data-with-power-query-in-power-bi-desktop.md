@@ -4,346 +4,215 @@ lab:
   module: 2 - Get Data in Power BI
 ---
 
-# <a name="prepare-data-in-power-bi-desktop"></a>在 Power BI Desktop 中准备数据
+# 在 Power BI Desktop 中准备数据
 
-**预估完成本实验室需要 45 分钟。**
-
-在本实验室中，你将开始为 Adventure Works 公司开发 Power BI Desktop 解决方案。 这涉及到连接到源数据、预览数据，以及使用数据预览技术来了解源数据的特性和质量。
-
-本实验室介绍如何完成以下操作：
-
-- 打开 Power BI Desktop
-
-- 设置 Power BI Desktop 选项
-
-- 连接到源数据
-
-- 预览源数据
-
-- 使用数据预览技术深入了解数据
-
-## <a name="lab-story"></a>**实验室场景**
+完成本实验室预计需要 30 分钟。
 
 此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
+1. 在 Power BI Desktop 中加载数据
+1. 在 Power BI 中设计数据模型
+1. 在 Power BI Desktop 中创建 DAX 计算
+1. 在 Power BI Desktop 中创建高级 DAX 计算
+1. 在 Power BI Desktop 中设计报表
+1. 在 Power BI Desktop 中增强报表
+1. 在 Power BI 中执行数据分析
+1. 创建 Power BI 面板
+1. 强制执行行级别安全性
 
-2. 在 Power BI Desktop 中加载数据
+## **实验室场景**
 
-3. 在 Power BI 中设计数据模型
+本实验室旨在介绍 Power BI Desktop 应用程序以及如何连接到数据，以及如何使用数据预览技术了解源数据的特征和质量。 学习目标为：
 
-4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+- 打开 Power BI Desktop
+- 连接到源数据
+- 预览源数据
+- 使用数据配置文件工具
 
-5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
+## **练习 1：** 准备数据
 
-6. 在 Power BI Desktop 中设计报表，第 1 部分
+在本练习中，创建 8 个 Power BI Desktop 查询。 6 个查询从 SQL Server 中获取数据，2 个查询从 CSV 文件获取。
 
-7. 在 Power BI Desktop 中设计报表，第 2 部分
+### **任务 1：开始使用 Power BI Desktop**
 
-8. 使用 AI 视觉对象分析数据
+在此任务中，首先打开一个 Power BI 入门文件 (.pbix)。 入门文件不包含任何数据，但经过专门配置，可帮助完成实验室。 入门文件中禁用了以下报表级设置：
 
-9. 创建 Power BI 面板
+- 数据加载 > 首次加载时从数据源导入关系
+- 数据加载 > 加载数据后自动检测新关系
 
-10. 强制执行行级别安全性
+注意：虽然在开发数据模型时启用这两个选项可能会有所帮助，但你之前禁用了它们来支持实验室体验。在“在 Power BI Desktop 中加载数据”实验室中创建关系时，可了解添加每个关系的原因。**
 
-## <a name="exercise-1-prepare-data"></a>**练习 1：** 准备数据
+<br/>
 
-在本练习中，你将创建 8 个 Power BI Desktop 查询。 6 个查询从 SQL Server 中获取数据，2 个查询从 CSV 文件获取。
+1. 打开 Power BI Desktop。
 
-### <a name="task-1-save-the-power-bi-desktop-file"></a>**任务 1：保存 Power BI Desktop 文件**
+    ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-在此任务中，你将首先保存 Power BI Desktop 文件。
+    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
 
-1. 若要打开 Power BI Desktop，请在任务栏上单击“Microsoft Power BI Desktop”快捷方式。
+1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-    ![图 2](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image1.png)
+1. 在“打开”窗口中，导航到 D:\PL300\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter 文件夹 。
 
-1. 要关闭开始窗口，请单击窗口右上角的“X”。
+1. 选择“销售分析”文件。
 
-    ![图片 3](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image2.png)
+1. 通过“另存为”将文件副本保存到 D:\PL300\MySolution 文件夹 。
 
-1. 要保存文件，请单击“文件”功能区选项卡以打开 backstage 视图。
+### **任务 2：从 SQL Server 获取数据**
 
-1. 选择“保存”  。
+此任务介绍如何连接到 SQL Server 数据库并导入表，这会在 Power Query 中创建查询。
 
-    ![图片 4](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image3.png)
+1. 在“主页”功能区选项卡上的“数据”组中，选择“SQL Server”。
 
-1. 在“另存为”窗口中，导航到“D:\PL300\MySolution”文件夹 。
+     ![SQL Server 获取数据图标](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-1. 在“文件名”框中，输入“Sales Analysis”。
+1. 在“SQL Server 数据库”窗口的“服务器”框中，输入“localhost”，然后选择“确定”   。
+    
+    注意：在此实验室中，使用 localhost 连接到 SQL Server 数据库，因为网关数据源无法解析 localhost。不建议在创建自己的解决方案时这样做 。
 
-    ![图片 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image4.png)
+1. 如果系统提示输入凭据，请在“SQL Server 数据库”窗口中，选择“使用我的当前凭据”，然后选择“连接”  。
 
-1. 单击“保存” 。
+1. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
+    
+    注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。 
 
-    ![图片 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
+1. 选择但不要选中 DimEmployee 表
 
-    提示：还可以通过单击左上角的“保存”图标来保存文件。
+     ![指示 DimEmployee 的 AdventureWorksDW2020 数据库](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-    ![图片 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
+1. 请注意右侧窗格中表数据的预览。 可以通过预览数据来查看列和行示例。
 
-### <a name="task-2-set-power-bi-desktop-options"></a>**任务 2：设置 Power BI Desktop 选项**
-
-在此任务中，你将设置 Power BI Desktop 选项。
-
-1. 在 Power BI Desktop 中，单击“文件”功能区选项卡，以打开 backstage 视图。
-
-1. 在左侧，选择“选项和设置”，然后选择“选项”。
-
-    ![图 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
-
-1. 在“选项”窗口左侧的“当前文件”组中，选择“数据负载”。
-
-    ![图片 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
-
-    通过当前文件的“数据加载”设置，可以设置选项来确定建模时的默认行为。
-
-1. 在“关系”组中，取消选中已选中的两个选项。
-
-    ![图片 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
-
-    虽然在开发数据模型时启用这两个选项可能会有所帮助，但你之前禁用了它们来支持实验室体验。 在“在 Power BI Desktop 中加载数据”实验室中创建关系时，你将了解为什么要添加每个关系。
-
-1. 单击 **“确定”** 。
-
-    ![图片 9](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image10.png)
-
-1. 保存 Power BI Desktop 文件。
-
-### <a name="task-3-get-data-from-sql-server"></a>**任务 3：从 SQL Server 获取数据**
-
-在此任务中，你将基于 SQL Server 表创建查询。
-
-1. 在“主页”功能区选项卡上的“数据”组中，单击“SQL Server”。
-
-    ![图片 19](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
-
-2. 在“SQL Server 数据库”窗口的“服务器”框中，输入“localhost”。
-
-    ![图片 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
-
-    在本实验室中，你将使用“localhost”连接到 SQL Server 数据库。 但在创建自己的解决方案时，不建议这样做。 这是因为网关数据源无法解析 localhost。
-
-3. 单击“确定”。
-
-    ![图片 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
-
-4. 如果系统提示输入凭据，请在“SQL Server 数据库”窗口中，选择“使用我的当前凭据” 。 然后单击“连接”。
-
-4. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
-
-    AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。 已对其进行修改，以支持课程实验室的学习目标。
-
-    ![图片 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image17.png)
-
-5. 选择“DimEmployee”表，但不选中它。
-
-    ![图片 29](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
-
-6. 请注意右侧窗格中表数据的预览。
-
-    可以通过预览数据来确定列和行示例。
-
-7. 若要创建查询，请选中下面 6 个表旁边的复选框：
+1. 若要创建查询，请选中下面 6 个表旁边的复选框：
 
     - DimEmployee
-
     - DimEmployeeSalesTerritory
-
     - DimProduct
-
     - DimReseller
-
     - DimSalesTerritory
-
     - FactResellerSales
 
-8. 若要向所选表的数据应用转换，请单击“转换数据”。
+1. 单击“转换数据”完成此任务，这会打开 Power Query 编辑器。
+    1. 此实验室仅用于连接和分析数据，但不转换数据。
 
-    此实验室中不会进行数据转换。 本实验室的目标是在“Power Query 编辑器”窗口探索和分析数据。
+### **任务 3：在 Power Query 编辑器中预览数据**
 
-    ![图片 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
+此任务介绍 Power Query 编辑器，并允许查看和分析数据。 这有助于确定之后如何清理和转换数据。
 
-### <a name="task-4-preview-sql-server-queries"></a>**任务 4：预览 SQL Server 查询**
+1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。 “查询”窗格包含一个针对每个所选表的查询。
 
-在此任务中，你将预览 SQL Server 查询的数据。 首先，你将了解数据的相关信息。 你还将使用列质量、列分发和列分析工具来了解数据并评估数据质量。
+     ![加载的查询列表](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
 
-1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。
+1. 选择第一个查询 -“DimEmployee”。
 
-    ![图片 31](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
+    SQL Server 数据库的 DimEmployee 表中每个员工占一行。此表中的行子集表示销售人员，与要开发的模型相关。
 
-    “查询”窗格包含一个针对每个所选表的查询。
+1. 状态栏的左下角提供了一些表统计信息 - 该表包含 33 列和 296 行。
 
-2. 选择第一个查询 -“DimEmployee”。
+     ![33 列、296 行的计数](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
 
-    ![图片 33](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image21.png)
+1. 在“数据预览”窗格中，水平滚动以查看所有列。 请注意，最后五列包含表或值链接。
+    
+    这五列表示与数据库中其他表的关系，可用于将表联接在一起。联接表的操作在“在 Power BI Desktop 中加载数据”实验室中完成。
 
-    在 SQL Server 数据库中的“DimEmployee”表中，每个员工占用一行。 行的子集表示销售人员，这与你将开发的模型相关。
+1. 要评估列质量，请在“视图”功能区选项卡的“数据预览”组中，勾选“列质量”。 通过列质量功能，可以轻松确定列中的有效值、错误值或空值的百分比。
 
-3. 注意左下角状态栏的表统计信息 - 该表有 33 列和 296 行。
+     ![在功能区中选中了“列质量”](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
-    ![图片 36](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
+1. 请注意，Position 列 94% 的行都为空 (null)。
 
-4. 在“数据预览”窗格中，水平滚动以查看所有列。
+     ![显示 94% 空行的列质量](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
-5. 请注意，最后五列包含表或值链接。
+1. 若要评估列分步，请在“视图”功能区选项卡的“数据预览”组中，选中“列分步”。
 
-    这五个列表示与数据库中其他表之间的关系。 它们可用于将表联接在一起。 你将在“在 Power BI Desktop 中加载数据”实验室中联接表。
+1. 再次查看 Position 列，请注意有四个非重复值和一个唯一值。
 
-6. 要评估列质量，请在“视图”功能区选项卡的“数据预览”组中，勾选“列质量”。
+1. 查看 EmployeeKey 列的列分布，其中包含 296 个非重复值和 296 个唯一值。
+    
+    当非重复值和唯一值的计数相同时，这表示列包含唯一值。在建模时，某些模型表必须具有唯一的列。这些唯一列可用于创建一对多关系，此操作在“在 Power BI Desktop 中为数据建模”实验室中进行。
 
-    ![图片 35](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
+     ![显示 296 个非重复值和 296 个唯一值的列分布](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    通过列质量功能，可以轻松确定列中的有效值、错误值或空值的百分比。
+1. 在“查询”窗格中，选择 DimEmployeeSalesTerritory 查询。
+    
+    DimEmployeeSalesTerritory 表中每个员工及其管理的销售区域占一行。该表支持将多个区域与单个员工关联。某些员工管理一个、两个或可能更多区域。为这些数据建模时需要定义多对多关系。
 
-7. 对于 Position 列（倒数第六列），请注意，94% 的行都为空 (null)。
+1. 在“查询”窗格中，选择 DimProduct 查询。 DimProduct 表包含的每个行表示公司已销售的每个产品。
 
-    ![图片 38](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
+1. 水平滚动以显示最后面的列。 请注意 DimProductSubcategory 列。
+    
+    在“在 Power BI Desktop 中加载数据”实验室中向此查询添加转换时，使用“DimProductSubcategory”列联接表。 
 
-8. 若要评估列分发，请在“视图”功能区选项卡的“数据预览”组中，选中“列分发”。
+1. 在“查询”窗格中，选择 DimReseller 查询。
+    
+    在 DimReseller 表中，每个经销商占一行。经销商对 Adventure Works 的产品进行销售、分销或增值。
 
-    ![图片 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
+1. 若要查看列值，请在“视图”功能区选项卡的“数据预览”组中，选中“列配置文件”。
 
-9. 再次查看 Position 列，请注意有四个非重复值和一个唯一值。
+1. 选择“BusinessType”列标题，并注意“数据预览”窗格下面的新窗格。
 
-10. 查看 EmployeeKey（第一）列的列分发，其中包含 296 个非重复值和 296 个唯一值。
+1. 在“数据预览”窗格中查看列统计信息和值分布情况。
+    
+    请注意以下数据质量问题：有两个表示 warehouse 的标签（“Warehouse”以及拼写错误的“Ware House”） 。
 
-    ![图片 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
+     ![BusinessType 列的值分布](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
 
-    当非重复值和唯一值的计数相同时，这表示列包含唯一值。 在建模时，某些表必须具有唯一的列。 这些唯一的列可用于创建一对多关系，你将在“在 Power BI Desktop 中为数据建模”实验室中进行此操作。
+1. 将光标悬停在“Ware House”栏上，请注意有 5 个行包含此值。
+    
+    “在 Power BI Desktop 中加载数据”实验室中将应用转换来重新标记这五行。
 
-11. 在“查询”窗格中，选择 DimEmployeeSalesTerritory 查询。
+1. 在“查询”窗格中，选择 DimSalesTerritory 查询。  
+    
+    在 DimSalesTerritory 表中，每个销售区域占一行，包括 Corporate HQ（总部）。区域会分配到国家/地区，国家/地区会分配到组。“Power BI Desktop 中为数据建模”实验室中会创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。  
 
-    ![图片 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
+1. 在“查询”窗格中，选择 FactResellerSales 查询。
+    
+    在 FactResellerSales 表中，每个销售订单行占一行 - 一个销售订单包含一个或多个行项。
 
-    DimEmployeeSalesTerritory 表存储的每个行表示每个员工及其管理的销售区域。 该表支持将多个区域与单个员工相关联。 某些员工管理一个、两个或可能更多的区域。 为此数据建模时，需要定义多对多关系。
+1. 查看 TotalProductCost 列的列质量，请注意 8% 的行都为空。
+    
+    缺少 TotalProductCost 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载数据”实验室中，使用存储在相关 DimProduct 表中的产品标准成本来应用转换以填充缺少的值。  
 
-12. 在“查询”窗格中，选择 DimProduct 查询。
+### **任务 4：从 CSV 文件获取数据**
 
-    ![图片 46](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image28.png)
+在此任务中，基于 CSV 文件创建新查询。
 
-    DimProduct 表包含的每个行表示公司已销售的每个产品。
+1. 若要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上的“新建查询”组中，选择“新建源”向下箭头，然后选择“文本/CSV”。
 
-13. 水平滚动以显示最后面的列。
+1. 在“打开”窗口中，导航到“D:\PL300\Resources”文件夹，然后选择“ResellerSalesTargets.csv”文件  。 选择“打开”  。
 
-14. 请注意 DimProductSubcategory 列。
+1. 在“ResellerSalesTargets.csv”窗口中，查看预览数据。 选择“确定”。
 
-    当在“在 Power BI Desktop 中加载数据”实验室中向此查询添加转换时，将使用“DimProductSubcategory”列联接表。
+1. 在“查询”窗格中，请注意添加了 ResellerSalesTargets 查询。
+    
+    在 ResellerSalesTargets CSV 文件中，每个年度的每个销售人员占一行。每行记录 12 个月度销售目标（以千为单位）。Adventure Works 公司的业务年度从 7 月 1 日开始。
 
-15. 在“查询”窗格中，选择 DimReseller 查询。
+1. 请注意，没有列包含空值。  如果没有月度销售目标，则改为存储一个连字符。
 
-    ![图片 49](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image29.png)
+1. 在列名左侧的各个列标题中查看图标。 这些图标表示列数据类型。 123 是整数，ABC 是文本。
 
-    DimReseller 表包含的每个行表示每个经销商。 经销商对 Adventure Works 的产品进行销售、分销或增值。
+     ![图片 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-16. 若要查看列值，请在“视图”功能区选项卡的“数据预览”组中，选中“列配置文件”。
+1. 基于 D:\PL300\Resources\ColorFormats.csv 文件重复这些步骤，以创建查询。
+    
+    在 ColorFormats CSV 文件中，每个产品颜色占一行。每行都记录十六进制代码以设置背景和字体颜色的格式。
 
-    ![图片 41](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image30.png)
+现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。 
 
-17. 选择“BusinessType”列标题。
+ ![查询列表](Linked_image_Files/01-all-queries-loaded.png)
 
-18. 注意“数据预览”窗格下面的新窗格。
+### **任务 5：完成**
 
-19. 在“数据预览”窗格中查看列统计信息和值分布情况。
-
-20. 请注意以下数据质量问题：有两个表示 warehouse 的标签（“Warehouse”以及拼写错误的“Ware House”）。
-
-    ![图片 51](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
-
-21. 将光标悬停在“Ware House”栏上，请注意有 5 个行包含此值。
-
-    “在 Power BI Desktop 中加载数据”实验室中将应用转换来重新标记这 5 个行。
-
-22. 在“查询”窗格中，选择 DimSalesTerritory 查询。
-
-    ![图片 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
-
-    DimSalesTerritory 表包含的每个行表示每个销售区域，包括“公司总部”（总部）。 区域会分配到国家/地区，国家/地区会分配到组。 在“在 Power BI Desktop 中为数据建模”实验室中，你将创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。
-
-23. 在“查询”窗格中，选择 FactResellerSales 查询。
-
-    ![图片 54](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image33.png)
-
-    “FactResellerSales”表中每个销售订单行包含一行 - 一个销售订单包含一个或多个行项。
-
-24. 查看 TotalProductCost 列的列质量，请注意 8% 的行都为空。
-
-    ![图片 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
-
-    缺少 TotalProductCost 列值是数据质量问题。 为解决该问题，在“在 Power BI Desktop 中加载数据”实验室中，你将通过使用产品标准成本（存储在相关的“DimProduct”表中）来应用转换以填充缺少的值 。
-
-
-### <a name="task-5-get-data-from-a-csv-file"></a>**任务 5：从 CSV 文件获取数据**
-
-在此任务中，你将基于 CSV 文件创建查询。
-
-1. 要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上，在“新建查询”组中，单击“新建源”向下箭头，然后选择“文本/CSV”。
-
-    ![图片 70](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image35.png)
-
-2. 在“打开”窗口中，导航到“D:\PL300\Resources”文件夹，然后选择“ResellerSalesTargets.csv”文件  。
-
-3. 单击 **“打开”** 。
-
-4. 在“ResellerSalesTargets.csv”窗口中，查看预览数据。
-
-5. 单击 **“确定”** 。
-
-    ![图片 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
- 
-
-6. 在“查询”窗格中，请注意添加了 ResellerSalesTargets 查询。
-
-    ![图片 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image37.png)
-
-    ResellerSalesTargets CSV 文件包含的每个行表示每个年度的每个销售人员。 每行记录 12 个月度销售目标（以千为单位）。 请注意，Adventure Works 公司的营业年度从 7 月 1 日开始。
-
-7. 请注意，没有列包含空值。
-
-    如果没有月度销售目标，则改为存储一个连字符。
-
-8. 在列名左侧的各个列标题中查看图标。
-
-    ![图片 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
-
-    这些图标表示列数据类型。 123 是整数，ABC 是文本。
-
-    “在 Power BI Desktop 中加载数据”实验室中将应用许多转换以获得不同形状的结果，该结果仅由 3 个列组成：“Date”、“EmployeeKey”和“TargetAmount”。
-
-### <a name="task-6-get-additional-data-from-a-csv-file"></a>**任务 6：从 CSV 文件中获取其他数据**
-
-在此任务中，你将基于其他 CSV 文件创建其他查询。
-
-1. 使用上一个任务中的步骤，基于 D:\PL300\Resources\ColorFormats.csv 文件创建查询。
-
-    ![图片 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
-
-    在 ColorFormats CSV 文件中，每个产品颜色占一行。 每行都记录十六进制代码，以格式化背景颜色和字体颜色。 “在 Power BI Desktop 中加载数据”实验室中会将此数据与“DimProduct”查询数据集成。
-
-### <a name="task-7-finish-up"></a>**任务 7：完成**
-
-在此任务中，你将完成本实验室。
+在此任务中，你将完成此实验室。
 
 1. 在“视图”功能区选项卡上，从“数据预览”组中，取消选中此实验室中先前启用的三个数据预览选项：
 
     - 列质量
-
     - 列分发
-
     - 列配置文件
 
-    ![图片 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
+     ![图片 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
 
-2. 要保存 Power BI Desktop 文件，请在“Power Query 编辑器”窗口的“文件”backstage 视图中，选择“保存”。
-
-    ![图片 77](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image41.png)
-
-3. 当系统提示应用查询时，单击“稍后应用”。
-
-    ![图片 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image42.png)
-
-    应用查询会将其数据加载到数据模型。 你尚未准备好执行该操作，因为必须先应用许多转换。
-
-4. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
-
-    在“在 Power BI Desktop 中加载数据”实验室中，你将对查询应用各种转换，然后应用查询将其加载到数据模型。
+1. 保存 Power BI Desktop 文件。 当系统提示应用挂起的更改时，选择“稍后应用”。
+    
+    提示：应用查询会将其数据加载到数据模型。尚未准备好执行此操作，因为必须首先应用众多转换。
