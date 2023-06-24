@@ -1,187 +1,137 @@
 ---
 lab:
-  title: 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+  title: 在 Power BI Desktop 中创建 DAX 计算
   module: 5 - Create Model Calculations using DAX in Power BI
 ---
 
 
-# <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>在 Power BI Desktop 中创建 DAX 计算，第 1 部分
+# 在 Power BI Desktop 中创建 DAX 计算
 
 **预估完成本实验室需要 45 分钟。**
 
-在本实验室中，你将使用数据分析表达式 (DAX) 创建计算表、计算列和简单的度量值。
+在本实验室中，使用数据分析表达式 (DAX) 创建计算表、计算列和简单的度量值。
 
 本实验室介绍如何完成以下操作：
 
-- 创建计算表
+ - 创建计算表
+ - 创建计算列
+ - 创建度量值
 
-- 创建计算列
-
-- 创建度量值
-
-### <a name="lab-story"></a>**实验室场景**
+### **实验室场景**
 
 此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
 
 1. 在 Power BI Desktop 中准备数据
+1. 在 Power BI Desktop 中加载数据
+1. 在 Power BI 中设计数据模型
+1. **在 Power BI Desktop 中创建 DAX 计算**
+1. 在 Power BI Desktop 中创建高级 DAX 计算
+1. 在 Power BI Desktop 中设计报表
+1. 在 Power BI Desktop 中增强报表
+1. 在 Power BI 中执行数据分析
+1. 创建 Power BI 面板
+1. 强制执行行级别安全性
 
-2. 在 Power BI Desktop 中加载数据
-
-3. 在 Power BI 中设计数据模型
-
-4. 在 Power BI Desktop 中创建 DAX 计算，第 1 部分
-
-5. 在 Power BI Desktop 中创建 DAX 计算，第 2 部分
-
-6. 在 Power BI Desktop 中设计报表，第 1 部分
-
-7. 在 Power BI Desktop 中设计报表，第 2 部分
-
-8. 使用 AI 视觉对象分析数据
-
-9. 创建 Power BI 面板
-
-10. 强制执行行级别安全性
-
-## <a name="exercise-1-create-calculated-tables"></a>**练习 1：创建计算表**
+## **练习 1：创建计算表**
 
 在本练习中，你将创建两个计算表。 第一个是“Salesperson”表，允许它与“Sales”表之间有直接关系。 第二个是“Date”表。
 
-### <a name="task-1-get-started"></a>**任务 1：入门**
+### **任务 1：入门**
 
-在此任务中，你将设置实验室环境。
+在此任务中，设置实验室的环境。
 
-*重要说明：如果你是继续上一个实验室（并且已经成功完成了该实验室），请不要完成此任务，而是继续下一个任务。*
+重要说明：如果你是从上一个实验继续（并且已经成功完成该实验室），请不要完成此任务，而是从下一个任务开始继续操作。
 
-1. 若要打开 Power BI Desktop，请在任务栏上单击“Microsoft Power BI Desktop”快捷方式。
+1. 打开 Power BI Desktop。
 
-    ![图片 50](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image1.png)
+    ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. 要关闭开始窗口，请单击窗口左上角的“X”。
+    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
 
-    ![图片 49](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image2.png)
+1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 要打开入门 Power BI Desktop 文件，请单击“文件”功能区选项卡以打开 Backstage 视图。
-
-1. 选择“打开报表”。
-
-    ![图片 48](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image3.png)
-
-1. 单击“浏览报表”。
-
-    ![图片 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
-
-1. 在“打开”窗口中，导航到“D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter”文件夹 。
-
-1. 选择“销售分析”文件。
-
-1. 单击 **“打开”** 。
-
-    ![图片 35](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image5.png)
+1. 在“打开”窗口中，导航到 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter 文件夹，并打开“Sales Analysis”文件  。
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 要创建该文件的副本，请单击“文件”功能区选项卡以打开 Bckstage 视图。
+1. 请注意功能区下方的黄色警告消息。 
 
-1. 选择“另存为”。
+    此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
+    
+    要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
 
-    ![图片 34](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image6.png)
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\PL300\MySolution 文件夹 。
 
-1. 如果系统提示应用更改，请单击“应用”。
+1. 如果系统提示应用更改，请选择“稍后应用”。
 
-    ![图 25](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image7.png)
+### **任务 2：创建“Salesperson”表**
 
-1. 在“另存为”窗口中，导航到“D:\PL300\MySolution”文件夹 。
+在此任务中，创建与 Sales 有直接关系的 Salesperson 计算表 。
 
-1. 单击“保存” 。
+计算表的创建方式为，先输入表名称，后面依次跟等于号 (=) 和返回表的 DAX 公式。 表名称不能是数据模型中已有的。
 
-    ![图片 13](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image8.png)
+编辑栏支持输入有效的 DAX 公式。 它包括自动完成、Intellisense 和颜色编码等功能，让你能够快速、准确地输入公式。
 
-### <a name="task-2-create-the-salesperson-table"></a>**任务 2：创建“Salesperson”表**
+1. 在 Power BI Desktop 中，在“报表”视图的“建模”功能区上，选择“计算”组中的“新建表”。
 
-在此任务中，你将创建“Salesperson”表（与“Sales”有直接关系）。
-
-1. 在 Power BI Desktop 中，在“报表”视图的“建模”功能区上，单击“计算”组中的“新建表”。
-
-    ![图 1](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image9.png)
+     ![图 1](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image9.png)
 
 2. 在编辑栏（在创建或编辑计算时在功能区正下方打开）中，键入“Salesperson =”，按 Shift+Enter，键入“Salesperson (Performance)”，然后按 Enter。
-
-    ![图片 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
-
+    
     为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义**。
 
-    计算表的创建方式为，先输入表名称，后面依次跟等于号 (=) 和返回表的 DAX 公式。请注意，表名称不能是数据模型中已有的。
+     ![图片 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-    编辑栏支持输入有效的 DAX 公式。它包括自动完成、Intellisense 和颜色编码等功能，让你能够快速、准确地输入公式。
+     此表定义创建 Salesperson (Performance) 表的副本。它仅复制数据，但不复制如可见性、格式设置等模型属性。
 
-    此表定义创建“Salesperson (Performance)”表的副本。** 它仅复制数据，但是不复制模型属性（如可见性、格式设置等）。
+     提示：建议输入“空格”（即回车和制表符）来以直观且易于阅读的格式编写公式，尤其在公式又长又复杂的情况下。要输入回车符，请按 Shift+Enter。“空格”是可选的。
 
-    *提示：建议输入“空格”（即回车和制表符）来以直观且易于阅读的格式布局公式，尤其在公式又长又复杂的情况下。若要输入回车符，请按 Shift+Enter。* “空白区域”是视需要选择输入的。
-
-3. 在“字段”窗格中，我们注意到，表图标为蓝色阴影（表示计算表）。
+1. 在“字段”窗格中，我们注意到，表图标为蓝色阴影（表示计算表）。
 
     ![图片 10](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image11.png)
 
-    计算表是使用返回表的 DAX 公式来定义的。*请务必了解，计算表会增加数据模型的大小，因为它们会具体化和存储值。* 每当刷新公式依赖项时，都会对其进行重新计算，就像在此数据模型中将新（未来）日期值加载到表中时一样。
+    注意：计算表是使用返回表的 DAX 公式来定义的。请务必了解，计算表会增加数据模型的大小，因为它们会具体化和存储值。每当刷新公式依赖项时，都会对其进行重新计算，就像在此数据模型中将新（未来）日期值加载到表中时一样。
 
     与基于 Power Query 的表不同，计算表不能用于从外部数据源加载数据。它们只能根据已加载到数据模型中的内容来转换数据。
 
-4. 切换到“模型”视图。
+1. 切换到“模型”视图，请注意 Salesperson 表可用（可能需要重置视图以查找表）。
 
-5. 请注意“Salesperson”表可用（注意，它可能在视图中处于隐藏状态，可通过水平滚动来找到它）。
+1. 创建从“Salesperson \| EmployeeKey”列到“Sales \| EmployeeKey”列的关系 。
 
-6. 创建从“Salesperson \| EmployeeKey”列到“Sales \| EmployeeKey”列的关系 。
+1. 右键单击“Salesperson (Performance)”与“Sales”表之间的非活动关系，然后选择“删除”。 当看到确认删除的提示时，选择“是”。
 
-7. 右键单击“Salesperson (Performance)”与“Sales”表之间的非活动关系，然后选择“删除”。
-
-    ![图 2](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image12.png)
-
-8. 系统提示确认删除时，单击“确定”。
-
-    ![图片 3](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image13.png)
-
-9. 在“Salesperson”表中，选择以下列，然后将其隐藏（将“隐藏”属性设置为“是”）：
+1. 在“Salesperson”表中，选择以下列，然后将其隐藏（将“隐藏”属性设置为“是”）：
 
     - EmployeeID
-
     - EmployeeKey
-
     - UPN
 
-10. 在模型图中，选择“Salesperson”表。
+1. 在模型图中，选择“Salesperson”表。
 
-11. 在“属性”窗格的“说明”框中，输入：与销售额相关的销售员
-
+1. 在“属性”窗格的“说明”框中，输入：与销售额相关的销售员
+    
     回想一下，当用户将光标悬停在表或字段上时，描述将显示为“字段”窗格中的工具提示。**
 
-12. 对于“Salesperson (Performance)”表，将说明设置为：销售人员与一个或多个区域相关
+1. 对于“Salesperson (Performance)”表，将说明设置为：销售人员与一个或多个区域相关
 
-    数据模型现在会在分析销售人员时提供两种替代方案。 *“Salesperson”表可便于分析销售人员的销售额，而“Salesperson (Performance)”表则可便于分析分配给销售人员的一个或多个销售区域中的销售额。 *
+数据模型现在会在分析销售人员时提供两种替代方案。 *“Salesperson”表可便于分析销售人员的销售额，而“Salesperson (Performance)”表则可便于分析分配给销售人员的一个或多个销售区域中的销售额。 *
 
-### <a name="task-3-create-the-date-table"></a>**任务 3：创建“Date”表**
+### **任务 3：创建“Date”表**
 
 在此任务中，你将创建“Date”表。
 
-1. 切换到“数据”视图。
-
-    ![图片 29](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image14.png)
-
-2. 在“主页”功能区选项卡上，单击“计算”组中的“新建表”。
+1. 切换到“数据”视图。 在“主页”功能区选项卡上，选择“计算”组中的“新建表”。
 
     ![图片 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
 
-3. 在公式栏中，输入以下内容：
-
+1. 在公式栏中，输入以下内容：
 
     **DAX**
-
 
     ```
     Date =  
     CALENDARAUTO(6)
     ```
-
 
     ![图片 6](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image16.png)
 
@@ -190,7 +140,7 @@ lab:
 
     此函数可以采用一个可选参数，该参数表示一年的最后一个月。*如果省略，则值为“12”，表示 12 月是一年的最后一个月。* 在此示例中，输入“6”，表示 6 月是一年的最后一个月。
 
-4. 注意包含日期值的列。
+1. 注意包含日期值的列。
 
     ![图片 7](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image17.png)
 
@@ -200,17 +150,17 @@ lab:
 
     ![图片 9](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image18.png)
 
-### <a name="task-4-create-calculated-columns"></a>任务 4：创建计算列
+### 任务 4：创建计算列
 
-在此任务中，你将添加其他列，以支持按不同时间段进行筛选和分组。 你还将创建一个计算列来控制其他列的排序顺序。
+在此任务中，添加其他列，以支持按不同时间段进行筛选和分组。 你还将创建一个计算列来控制其他列的排序顺序。
 
 为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义**。
 
-1. 在“表工具”关联功能区上，单击“计算”组中的“新建列”。
+1. 在“表工具”关联功能区上，选择“计算”组中的“新建列”。
 
     ![图片 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
-2. 在公式栏中键入以下内容（或从代码片段文件中复制），然后按 Enter：
+1. 在公式栏中键入以下内容（或从代码片段文件中复制），然后按 Enter：
 
 
     **DAX**
@@ -222,55 +172,54 @@ lab:
     ```
 
 
-    计算列的创建方式为，先输入列名称，后面依次跟等于号 (=) 和返回单值结果的 DAX 公式。列名称不能是表中已有的。
+    计算列的创建方式为：先输入列名，后面依次是等号 (=) 和返回单值结果的 DAX 公式。该列名不能已存在于表中。
 
     此公式使用日期的年份值，但如果月份是在 6 月后，则会在年份值上加 1。这就是 Adventure Works 会计年度的计算方式。
 
-3. 验证新列是否已添加。
+1. 验证新列是否已添加。
 
     ![图片 12](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image20.png)
 
-4. 使用代码片段文件定义为“Date”表创建以下两个计算列：
+1. 使用代码片段文件定义为“Date”表创建以下两个计算列：
 
     - Quarter
-
     - Month
 
     ![图片 14](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image21.png)
 
-5. 若要验证计算，请切换到“报表”视图。
+1. 若要验证计算，请切换到“报表”视图。
 
-6. 若要新建报表页，请单击左下角的加号图标。
+1. 若要创建新的报表页，请选择“第 1 页”旁边的加号图标。
 
     ![图片 15](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image22.png)
 
-7. 若要将矩阵视觉对象添加到新的报表页，请在“可视化效果”窗格中选择矩阵视觉对象类型。
+1. 若要将矩阵视觉对象添加到新的报表页，请在“可视化效果”窗格中选择矩阵视觉对象类型。
 
     *提示：* 可以将光标悬停在每个图标上，以查看描述视觉对象类型的工具提示。
 
     ![图片 51](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
-8. 在“字段”窗格中，从“Date”表内，将“Year”字段拖入“行”井/区域中。
+1. 在“字段”窗格中，从“Date”表内，将“Year”字段拖入“行”井/区域中。
 
     ![图片 17](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image24.png)
 
-9. 将“Month”字段拖入“Year”字段正下方的“行”井/区域。
+1. 将“Month”字段拖入“Year”字段正下方的“行”井/区域。
 
     ![图片 18](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image25.png)
 
-10. 在矩阵视觉对象的右上角（或底部，取决于视觉对象的位置），单击“叉状双箭头”图标（它将全年向下扩展一级）。
+1. 在矩阵视觉对象的右上角（或底部，取决于视觉对象的位置），选择“叉状双箭头”图标（可将所有年份向下展开一个级别）。
 
     ![图片 19](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image26.png)
 
-11. 我们注意到，年份展开到月份，月份是按字母顺序排序，而不是按时间顺序排序。
+1. 我们注意到，年份展开到月份，月份是按字母顺序排序，而不是按时间顺序排序。
 
     ![图片 20](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image27.png)
 
     *默认情况下，文本值按字母顺序排序，数字按从小到大的顺序排序，日期按从早到晚的顺序排序。*
 
-12. 若要自定义“Month”字段排序顺序，请切换到“数据”视图。
+1. 若要自定义“Month”字段排序顺序，请切换到“数据”视图。
 
-13. 将“MonthKey”列添加到“Date”表中。
+1. 将“MonthKey”列添加到“Date”表中。
 
 
     **DAX**
@@ -284,84 +233,72 @@ lab:
 
     *此公式会为每个年份/月份组合计算一个数值。*
 
-14. 在“数据”视图中，验证新列是否包含数值（例如，201707 表示 2017 年 7 月等）。
+1. 在“数据”视图中，验证新列是否包含数值（例如，201707 表示 2017 年 7 月等）。
 
     ![图片 21](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image28.png)
 
-15. 切换回“报表”视图。
+1. 切换回“报表”视图。 在“字段”窗格中，确保已选中“Month”字段（如果选中，则有深灰色背景）。
 
-16. 在“字段”窗格中，确保已选中“Month”字段（如果选中，则有深灰色背景）。
-
-17. 在“列工具”关联功能区上，单击“排序”组中的“按列排序”，然后选择“MonthKey”。
+1. 在“列工具”关联功能区上，选择“排序”组中的“按列排序”，然后选择“MonthKey”。
 
     ![图片 22](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image29.png)
 
-18. 在矩阵视觉对象中，我们注意到，月份现在按时间顺序排序。
+1. 在矩阵视觉对象中，我们注意到，月份现在按时间顺序排序。
 
     ![图片 23](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image30.png)
 
-### <a name="task-5-complete-the-date-table"></a>任务 5：完成“Date”表
+### 任务 5：完成“Date”表
 
 在此任务中，你将通过隐藏列和创建层次结构来完成“Date”表的设计。 然后，你将创建与“Sales”和“Targets”表的关系。
 
-1. 切换到“模型”视图。
+1. 切换到“模型”视图。 在“Date”表中，隐藏“MonthKey”列（将“隐藏”设置为“是”）。
 
-2. 在“Date”表中，隐藏“MonthKey”列（将“隐藏”设置为“是”）。
+1. 在“字段”右侧窗格中，选择 Date 表，右键选择“Year”列，然后选择“创建层次结构”   。 
 
-3. 在“字段”右侧窗格中，选择 Date 表，右键单击“Year”列，然后选择“创建层次结构”   。 
+1. 右键选择“重命名”，将新创建的层次结构重命名为“Fiscal” 。 
 
-4. 右键单击“重命名”，将新创建的层次结构重命名为“Fiscal” 。 
-5. 通过在“字段”窗格中选择其余两个字段，单击鼠标右键，选择“添加到层次结构 -> Fiscal”，将其添加到“Fiscal”层次结构 。
+1. 通过在“字段”窗格中选择其余两个字段，右键单击，选择“添加到层次结构” -> “Fiscal”，将其添加到“Fiscal”层次结构 。
     
     - Quarter
-
     - Month
 
     ![图片 24](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image31.png)
 
-6. 创建以下两个模型关系：
+1. 创建以下两个模型关系：
 
     - 从“Date \| Date”到“Sales \| OrderDate” 
-
     - 从“Date \| Date”到“Targets \| TargetMonth” 
 
-7. 隐藏以下两列：
+1. 隐藏以下两列：
 
     - Sales \| OrderDate
-
     - Targets \| TargetMonth
 
-### <a name="task-6-mark-the-date-table"></a>**任务 6：标记“Date”表**
+### **任务 6：标记“Date”表**
 
-在此任务中，你会将“Date”表标记为日期表。
+在此任务中，你将把“Date”表标记为日期表。
 
-1. 切换到“报表”视图。
+1. 切换到“报表”视图。 在“字段”窗格中，选择“Date”表（不是“Date”字段）。
 
-2. 在“字段”窗格中，选择“Date”表（不是“Date”字段）。
-
-3. 在“表工具”关联功能区上，单击“日历”组中的“标记为日期表”，然后选择“标记为日期表”。
+1. 在“表工具”关联功能区上，选择“日历”组中的“标记为日期表”，然后选择“标记为日期表”。
 
     ![图片 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
 
-4. 在“标记为日期表”窗口中，选择“日期列”下拉列表中的“日期”。
+1. 在“标记为日期表”窗口中，选择“日期列”下拉列表中的“日期”。 选择“确定”。
 
     ![图片 37](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image33.png)
 
-5. 单击 **“确定”** 。
+1. 保存 Power BI Desktop 文件。
 
-    ![图 26](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image34.png)
+    Power BI Desktop 现在知道此表定义的是日期（时间）。依靠时间智能计算时，这一点很重要。“在 Power BI Desktop 中创建高级 DAX 计算”实验室中将使用时间智能计算。
 
-6. 保存 Power BI Desktop 文件。
+    这种日期表设计方法适用于数据源中没有日期表的情况。如果有数据仓库，应该从其日期维度表（而不是数据模型中的“重新定义”日期逻辑）中加载日期数据。
 
-    Power BI Desktop 现在知道此表定义的是日期（时间）。*依靠时间智能计算时，这一点很重要。“在 Power BI Desktop 中创建 DAX 计算，第 2 部分”实验室中将使用时间智能计算。*
+## **练习 2：创建度量值**
 
-    请注意，当数据源中没有日期表时，这种用于日期表的设计方法是合适的。如果你有数据仓库，则应该从其日期维度表（而不是数据模型中的“重新定义”日期逻辑）中加载日期数据。
+在本练习中，你将创建多个度量值，并设置它们的格式。
 
-## <a name="exercise-2-create-measures"></a>**练习 2：创建度量值**
-
-在此练习中，你将创建几个度量值并对其进行格式设置。
-
-### <a name="task-1-create-simple-measures"></a>**任务 1：创建简单的度量值**
+### **任务 1：创建简单的度量值**
 
 在此任务中，你将创建简单的度量值。 简单的度量值聚合单个列中的值或对表中的行进行计数。
 
@@ -373,21 +310,19 @@ lab:
 
     回想一下，在“在 Power BI Desktop 中为数据建模”实验室中，你将“Unit Price”列设置为按“平均值”汇总。*  *你在矩阵视觉对象中看到的结果是每月平均单位价格（单位价格值的总和除以单位价格计数）。
 
-2. 在视觉对象“字段”窗格（位于“可视化效果”窗格之下）的“值”字段井/区域，注意“Unit Price”已列出。
+1. 在视觉对象“字段”窗格（位于“可视化效果”窗格之下）的“值”字段井/区域，注意“Unit Price”已列出。
 
     ![图片 28](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image36.png)
 
-3. 单击“Unit Price”的向下箭头，然后注意可用的菜单选项。
+1. 选择“Unit Price”的向下箭头，然后注意可用的菜单选项。
 
     ![图片 30](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image37.png)
 
-    借助可见的数值列，报表作者可以在设计报表时确定汇总（或不汇总）列值的方式。*这可能会生成不当的报表。但是某些数据建模人员不喜欢碰运气，他们选择隐藏这些列，而不是公开度量值中定义的聚合逻辑。* 这就是你将在本实验室中采用的方法。
+    借助可见数值列，报表作者可以在设计报表时确定汇总（或不汇总）列值的方式。这可能会生成不当的报表。但是某些数据建模人员不喜欢碰运气，他们选择隐藏这些列，而不是公开度量值中定义的聚合逻辑。这就是你要在本实验室中采用的方法。
 
-4. 若要创建度量值，请在“字段”窗格中右键单击“Sales”表，然后选择“新建度量值”。
+1. 若要创建度量值，请在“字段”窗格中右键单击“Sales”表，然后选择“新建度量值”。
 
-    ![图片 31](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image38.png)
-
-5. 在编辑栏中，添加以下度量值定义：
+1. 在编辑栏中，添加以下度量值定义：
 
 
     **DAX**
@@ -395,30 +330,25 @@ lab:
 
     ```
     Avg Price =  
-    ‎AVERAGE(Sales[Unit Price])
+    AVERAGE(Sales[Unit Price])
     ```
 
+1. 将“Avg Price”度量值添加到矩阵视觉对象。
 
-6. 将“Avg Price”度量值添加到矩阵视觉对象。
+1. 我们注意到，它生成的结果与“Unit Price”列相同（但格式不同）。
 
-7. 我们注意到，它生成的结果与“Unit Price”列相同（但格式不同）。
-
-8. 在“值”井中，打开“Avg Price”字段的关联菜单，我们注意到，聚合技术是无法更改的。
+1. 在“值”井中，打开“Avg Price”字段的上下文菜单，可以注意到无法更改聚合技术 。
 
     ![图片 32](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image39.png)
 
     无法修改度量值的聚合行为。
 
-9. 使用代码片段文件定义为“Sales”表创建以下五个度量值：
+1. 使用代码片段文件定义为“Sales”表创建以下五个度量值：
 
     - Median Price
-
     - Min Price
-
     - Max Price
-
     - Orders
-
     - Order Lines
 
     “Orders”度量值中使用的 DISTINCTCOUNT() 函数只会对订单进行一次计数（忽略重复项）。*“Order Lines”度量值中使用的 COUNTROWS() 函数对表执行运算。*
@@ -447,7 +377,7 @@ lab:
 
     ![图片 36](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image41.png)
 
-14. 在“报表”视图中，在矩阵视觉对象的“值”井/区域中，对于“Unit Price”字段，单击“X”将其删除。
+14. 在“报表”视图中，在矩阵视觉对象的“值”井/区域中，选择“Unit Price”字段的“X”以将其移除  。
 
     ![图片 38](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image42.png)
 
@@ -456,45 +386,33 @@ lab:
 16. 在“矩阵”视觉对象中添加以下五个新度量值：
 
     - Median Price
-
     - Min Price
-
     - Max Price
-
     - Orders
-
     - Order Lines
 
-17. 验证结果是否合理，且格式是否正确。
+17. 验证结果是否合理，以及格式是否正确。
 
     ![图片 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
-### <a name="task-2-create-additional-measures"></a>**任务 2：创建其他度量值**
+### **任务 2：创建其他度量值**
 
-在此任务中，你将创建使用更复杂表达式的其他度量值。
+在此任务中，创建使用更复杂表达式的其他度量值。
 
-1. 在“报表”视图中，选择“第 1 页”。
-
-    ![图片 40](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image44.png)
-
-2. 审阅表视觉对象，同时注意“Target”列的总计。
+1. 在“报表”视图中，选择“第 1 页”并查看表视觉对象，注意“Target”列的总计 。
 
     ![图片 41](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image45.png)
 
-    
 
-3. 选择表视觉对象，然后在“可视化效果”窗格中，删除“Target”字段。
+1. 选择表视觉对象，然后在“可视化效果”窗格中，删除“Target”字段。
 
-    ![图片 42](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image46.png)
-
-4. 将“Targets \| Target”列重命名为“Targets \| TargetAmount” 。
+1. 将“Targets \| Target”列重命名为“Targets \| TargetAmount” 。
 
     *提示：有多种方法可以在“报表”视图中重命名列：* 在“字段”窗格中，右键单击相应的列，然后选择“重命名”；或双击相应的列；或按 F2  。
 
     你将要创建名为“Target”的度量值。** 同一个表中不能有同名的列和度量值。
 
-5. 在“Targets”表上创建以下度量值：
-
+1. 在“Targets”表上创建以下度量值：
 
     **DAX**
 
@@ -511,59 +429,53 @@ lab:
     )
     ```
 
-
     HASONEVALUE() 函数测试是否在“Salesperson”列中筛选出单个值。*如果为 true，则表达式返回目标额总和（仅针对此销售人员）。* 如果为 false，则返回 BLANK。
 
-6. 将“Target”度量值的格式设置为没有小数位。
+1. 将“Target”度量值的格式设置为没有小数位。
 
     *提示：* 可以使用“度量值工具”上下文功能区。
 
-7. 隐藏“TargetAmount”列。
+1. 隐藏“TargetAmount”列。
 
     *提示：* 在“字段”窗格中，可以右键单击该列，然后选择“隐藏” 。
 
-8. 将“Target”度量值添加到表视觉对象。
+1. 将“Target”度量值添加到表视觉对象。
 
-9. 我们注意到，“Target”列总计现在为 BLANK。
+1. 我们注意到，“Target”列总计现在为 BLANK。
 
     ![图片 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
 
-10. 使用代码片段文件定义为“Targets”表创建以下两个度量值：
+1. 使用代码片段文件定义为“Targets”表创建以下两个度量值：
 
     - Variance
-
     - Variance Margin
 
-11. 将“Variance”度量值的格式设置为没有小数位。
+1. 将“Variance”度量值的格式设置为没有小数位。
 
-12. 将“Variance Margin”度量值的格式设置为，有两位小数的百分比。
+1. 将“Variance Margin”度量值的格式设置为，有两位小数的百分比。
 
-13. 将“Variance”和“Variance Margin”度量值添加到表视觉对象。
+1. 将“Variance”和“Variance Margin”度量值添加到表视觉对象。
 
-14. 重设表视觉对象的大小，以便查看所有列和行。
+1. 重设表视觉对象的大小，以便查看所有列和行。
 
     ![图片 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
 
-    虽然看上去所有销售员都未达到目标，但请记住，尚未按特定时间段对表视觉对象进行筛选。在“在 Power BI Desktop 中设计报表，第 1 部分”实验室中，你将按用户所选的时间段进行筛选，以生成销售绩效报表。
+    虽然看上去所有销售员都未达到目标，但请记住，尚未按特定时间段对表视觉对象进行筛选。“在 Power BI Desktop 中设计报表”实验室中按用户所选的时间段进行筛选，以生成销售绩效报表。
 
-15. 在“字段”窗格的右上角，折叠后展开，以打开此窗格。
-
-    ![图片 45](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image49.png)
+1. 在“字段”窗格的右上角，折叠后展开，以打开此窗格。
 
     折叠并重新打开此窗格会重置内容。
 
-16. 我们注意到，“Targets”表现在显示在列表的最上面。
+1. 我们注意到，“Targets”表现在显示在列表的最上面。
 
     ![图片 46](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image50.png)
 
     *只包含可见度量值的表会自动在列表的最上面列出。*
 
-### <a name="task-3-finish-up"></a>**任务 3：完成**
+### **任务 3：完成**
 
-在此任务中，你将完成本实验室。
+在此任务中，你将完成此实验室。
 
-1. 保存 Power BI Desktop 文件。
+保存 Power BI Desktop 文件。
 
-2. 如果你打算开始下一个实验室，请让 Power BI Desktop 保持打开状态。
-
-    “在 Power BI Desktop 中创建 DAX 计算，第 2 部分”实验室中将使用 DAX 生成高级计算，来改进数据模型。**
+“在 Power BI Desktop 中创建高级 DAX 计算”实验室中使用 DAX 生成更高级的计算，以便增强数据模型。
