@@ -1,47 +1,30 @@
 ---
 lab:
-  title: 在 Power BI Desktop 中加载数据
-  module: '3 - Clean, Transform, and Load Data in Power BI'
+  title: 在 Power BI Desktop 中加载已转换的数据
+  module: 'Clean, Transform, and Load Data in Power BI'
 ---
 
-# 在 Power BI Desktop 中加载数据
+# 在 Power BI Desktop 中加载已转换的数据
 
-**预估完成本实验室需要 45 分钟。**
+## **实验室场景**
 
-在此实验室中，对之前的实验室中创建的每一个查询应用转换。 随后，你将应用查询将每一查询作为表加载到数据模型。
+在本实验室中，你将使用数据清理和转换技术开始塑造数据模型。 随后，你将应用查询将每一查询作为表加载到数据模型。
 
 本实验室介绍如何完成以下操作：
 
 - 应用各种转换
-- 应用查询以将它们加载到数据模型
+- 将查询加载到数据模型
 
-## **实验室场景**
+**此实验室应该大约需要 45 分钟。**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
-
-1. 在 Power BI Desktop 中准备数据
-1. **在 Power BI Desktop 中加载数据**
-1. 在 Power BI 中设计数据模型
-1. 在 Power BI Desktop 中创建 DAX 计算
-1. 在 Power BI Desktop 中创建高级 DAX 计算
-1. 在 Power BI Desktop 中设计报表
-1. 在 Power BI Desktop 中增强报表
-1. 在 Power BI 中执行数据分析
-1. 创建 Power BI 面板
-1. 强制执行行级别安全性
-
-## **练习 1：加载数据**
-
-在本练习中，你将对之前的实验室中创建的每一个查询应用转换。
-
-### **任务 1：入门**
+## **入门**
 
 在此任务中，设置实验室的环境。
 
 重要说明：如果在同一 VM 中完成了上一个实验室，请跳到下一个任务。
 
 1. 打开 Power BI Desktop。
-    
+
     提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
@@ -52,17 +35,17 @@ lab:
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 请注意功能区下方的黄色警告消息。 
+1. 请注意功能区下方的黄色警告消息。
 
     此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
-    
+
     若要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
 
 1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\PL300\MySolution 文件夹 。
 
 1. 如果系统提示应用更改，请选择“稍后应用”。
 
-### **任务 2：配置 Salesperson 查询**
+## **配置 Salesperson 查询**
 
 在此任务中，使用 Power Query 编辑器来配置 Salesperson 查询。
 
@@ -77,11 +60,11 @@ lab:
      ![图 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
 1. 若要重命名查询，请在“查询设置”窗格（位于右侧）的“名称”框中，将文本替换为 Salesperson，然后按 Enter 键。 然后，在“查询”窗格中验证名称是否已更新。
-    
+
     查询名称确定模型表名称。建议定义简明的用户友好名称。
 
 1. 若要查找特定列，请在“开始”功能区选项卡上，选择“管理列”向下箭头，再选择“选择列”向下箭头，然后选择“转到列”   。
-    
+
     包含多列时，“转到列”功能非常有用。如果不使用该功能，可以水平滚动查找列。
 
      ![“管理列”>“选择列”>“转到列”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
@@ -90,12 +73,10 @@ lab:
 
      ![“转到列”排序选项](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
-1. 依次选择 SalesPersonFlag 列标头、向下箭头和 FALSE，然后单击“确定”  。
-    
-    此操作会筛选行，以仅检索属于销售人员的员工。
+1. 找到 SalesPersonFlag 列，然后筛选该列以仅选择“Salespeople”（即 TRUE），然后单击“确定”  。
 
 1. 查询设置”窗格中，可以注意到“应用的步骤”列表中添加了“筛选的行”步骤。
-    
+
     创建的每一个转换都会生成另一个步骤逻辑。可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。
 
      ![已应用步骤](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
@@ -122,7 +103,7 @@ lab:
      ![同时选择两列来创建单列](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. 右键单击任一所选列标题，然后在上下文菜单中选择“合并列”。
-    
+
     可以通过以下方式应用许多常见的转换：右键单击列标头，然后从上下文菜单中进行选择。但是请注意，功能区中还有更多转换可用。
 
 1. 在“合并列”窗口中的“分隔符”下拉列表中，选择“空格”。
@@ -132,12 +113,12 @@ lab:
 1. 若要重命名 EmployeeNationalIDAlternateKey 列，请双击 EmployeeNationalIDAlternateKey 列标头并将文本替换为 EmployeeID，然后按 Enter。   
 
 1. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
-    
+
     *UPN 是用户主体名称的缩写。*
 
 1. 在状态栏的左下角，验证查询是否具有 5 列和 18 行。
 
-### **任务 3：配置 SalespersonRegion 查询**
+## **配置 SalespersonRegion 查询**
 
 在此任务中，你将配置 SalespersonRegion 查询。
 
@@ -153,7 +134,7 @@ lab:
 
 1. 在状态栏中，验证查询是否具有 2 列和 39 行。
 
-### **任务 4：配置 Product 查询**
+## **配置 Product 查询**
 
 在此任务中，你将配置 Product 查询。
 
@@ -179,9 +160,9 @@ lab:
 
 1. 查看列的完整列表，然后选择“选择所有列”框以取消选择所有列。
 2. 选择 EnglishProductSubcategoryName 和 DimProductCategory，然后先取消选中“使用原始列名作为前缀”复选框，再选择“确定”   。
-    
+
     通过选择这两个列，将应用转换以联接到 DimProductSubcategory 表，将这些列包含在内***。** 事实上，“DimProductCategory”列是数据源中的另一个相关表。*
-    
+
     查询列名称必须始终是唯一的。*选中后，此复选框将为每个列添加扩展列名作为前缀（在本例中为“DimProductSubcategory”）。因为已知所选列名不会与“Product”查询中的列名冲突，可以取消选择此选项。*
 
 1. 请注意，该转换的结果是添加了两列，并且删除了“DimProductSubcategory”列。
@@ -197,7 +178,7 @@ lab:
 
 1. 在状态栏中，验证查询是否具有 6 列和 397 行。
 
-### **任务 5：配置 Reseller 查询**
+## **配置 Reseller 查询**
 
 在此任务中，配置 Reseller 查询。
 
@@ -236,14 +217,14 @@ lab:
 
 1. 在状态栏中，确认查询具有 6 列和 701 行。
 
-### **任务 6：配置 Region 查询**
+## **配置 Region 查询**
 
 在此任务中，你将配置 Region 查询。
 
 1. 选择 DimSalesTerritory 查询，并将查询重命名为 Region 。
 
 1. 向“SalesTerritoryAlternateKey”列应用筛选器以删除值 0（零）。
-    
+
     这会删除一行。
 
 1. 删除除以下列之外的所有列：
@@ -261,7 +242,7 @@ lab:
 
 1. 在状态栏中，验证查询是否具有 4 列和 10 行。
 
-### **任务 7：配置 Sales 查询**
+## **配置 Sales 查询**
 
 在此任务中，配置 Sales 查询。
 
@@ -280,7 +261,7 @@ lab:
     - TotalProductCost
     - SalesAmount
     - DimProduct
-        
+
         注意：回想一下，“在 Power BI Desktop 中准备数据”实验室中有一小部分 FactResellerSales 行缺少 TotalProductCost 值。为了帮助修复缺少的值，已将 DimProduct 列包含在内，用于检索产品标准成本列。   
 
 1. 展开“DimProduct”列，取消选中所有列，然后仅包括“StandardCost”列。
@@ -294,7 +275,7 @@ lab:
 1. 在“自定义列公式”框中，输入以下表达式（等号后面的文本）：
     - 可从 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。
     - 此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。   
-    
+
 
     `
     if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
@@ -312,13 +293,13 @@ lab:
     - 将 SalesAmount 重命名为 Sales
 
 1. 若要修改列数据类型，请在 Quantity 列标头中，选择列名左侧的“1.2”图标，然后选择“整数”  。
-    
+
     配置正确数据类型是非常重要的。当列包含数值时，如果想执行数学计算，也务必要选择正确的类型。
 
      ![图片 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. 将以下三列数据类型修改为“定点小数”。
-    
+
     定点十进制数数据类型允许 19 位数字，并允许更高的精度，以避免舍入错误。请务必为财务值或费率（例如汇率）使用定点十进制数类型。
 
     - Unit Price
@@ -326,10 +307,10 @@ lab:
     - Cost
 
 1. 在状态栏中，确认查询具有 10 列和超过 999 行。
-    
+
     *对于每一查询，最多将加载 1000 行作为预览数据。*
 
-### **任务 8：配置 Targets 查询**
+## **配置 Targets 查询**
 
 在此任务中，你将配置 Targets 查询。
 
@@ -351,7 +332,7 @@ lab:
     - 将 Value 重命名为 Target
 
 1. 要准备“MonthNumber”列值，请右键单击“MonthNumber”列标题，然后选择“替换值”。
-        
+
     现在，你将应用转换来生成一个日期列。*日期将派生自 Year 和 MonthNumber 列 。* 你将使用“示例中的列”功能来创建列。
 
 1. 在“替换值”窗口的“要查找的值”框中，输入“M”并将“替换为”留空   。
@@ -365,11 +346,11 @@ lab:
 1. 请注意，第一行对应年份“2017”和月份“7”。
 
 1. 在“Column1”列的第一个网格单元中，开始输入“7/1/2017”，然后按 Enter。
-    
+
     由于虚拟机使用美国区域设置，因此此日期实际上是 2017 年 7 月 1 日。其他区域设置可能需要在日期之前加一个 0。
 
 1. 请注意，网格单元格将更新为预测值。
-    
+
     此功能已准确预测你正在合并 Year 列和 MonthNumber 列中的值 。
 
 1. 另请注意查询网格上方显示的公式。
@@ -389,7 +370,7 @@ lab:
     - 将 TargetMonth 的数据类型修改为日期
 
 1. 若要将 Target 值乘以 1000，请选择 Target 列标头，然后在“转换”功能区选项卡上的“编号列”组中，选择“标准”，然后选择“乘”     。
-    
+
     *你可能还记得，目标值是以千为单位存储的。*
 
      ![图片 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
@@ -398,7 +379,7 @@ lab:
 
 1. 在状态栏中，验证查询是否具有 3 列和 809 行。
 
-### **任务 9：配置 ColorFormats 查询**
+## **配置 ColorFormats 查询**
 
 在此任务中，你将配置 ColorFormats 查询。
 
@@ -410,14 +391,14 @@ lab:
 
 1. 在状态栏中，验证查询是否具有 3 列和 10 行。
 
-### **任务 10：更新 Product 查询**
+## **更新 Product 查询**
 
 在此任务中，你将通过合并 ColorFormats 查询来更新 Product 查询。
 
 1. 选择 Product 查询。
 
 1. 若要合并 ColorFormats 查询，请在“开始”功能区选项卡上，选择“合并”向下箭头，然后选择“合并查询”   。
-    
+
     合并查询能够实现集成数据，在本例中，这些数据来自不同的数据源（SQL Server 和 CSV 文件）。
 
      ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
@@ -433,7 +414,7 @@ lab:
 1. 在“ColorFormats”查询网格中，选择“Color”列标题。
 
 1. 在“隐私级别”窗口打开后，对于这两个数据源，在相应的下拉列表中选择“组织”，然后选择“保存”  。
-    
+
     可以为数据源配置隐私级别来确定数据是否可以在源之间共享。将每个数据源设置为“组织”以使它们能够共享数据（如有必要）。私有数据源永远不能与其他数据源共享。这并不意味着私有数据不能共享，这只是表示 Power Query 引擎无法在源之间共享数据。
 
      ![图片 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
@@ -447,7 +428,7 @@ lab:
 
 1. 在状态栏中，确认查询现在具有 8 列和 397 行。
 
-### **任务 11：更新 ColorFormats 查询**
+## **更新 ColorFormats 查询**
 
 在此任务中，你将更新 ColorFormats 以禁用加载它。
 
@@ -458,12 +439,12 @@ lab:
      ![图片 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. 在“查询属性”窗口中，取消选中“启用加载到报表”复选框。
-    
+
     禁用加载意味着它不会作为表加载到数据模型。这样做是因为查询已经与 Product 查询合并，后者已启用了加载到数据模型。
 
      ![图片 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-### **任务 12：完成**
+### **完成**
 
 在此任务中，你将完成此实验室。
 
@@ -479,12 +460,12 @@ lab:
     - ColorFormats（这不会加载到数据模型）
 
 1. 若要加载数据模型，请在“文件”后台视图中选择“关闭 &amp; 应用”。 
-    
+
     *所有已启用加载的查询现已加载到数据模型。*
 
      ![图片 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-1. 在“字段”窗格（位于右侧）中，请注意已加载到数据模型的七个表。
+1. 在“数据”窗格中（位于右侧），可以注意到有 7 个表已加载到数据模型中。
 
      ![图片 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
