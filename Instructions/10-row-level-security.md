@@ -1,40 +1,24 @@
 ---
 lab:
   title: 强制执行行级别安全性
-  module: 12 - Row-Level Security
+  module: Enforce Row-Level Security
 ---
 
 
 # 强制执行行级别安全性
 
-**预估完成本实验室需要 45 分钟**
+## **实验室场景**
 
 在本实验室中，强制执行行级别安全性，确保销售人员只能分析向其分配的区域的销售数据。
 
 本实验室介绍如何完成以下操作：
 
 - 强制执行行级别安全性
+- 在动态和静态方法之间进行选择
 
-### **实验室场景**
+**此实验室应该大约需要 45 分钟。**
 
-此实验室是一系列实验室中的一个，它被设计成一个从准备数据到发布为报表和仪表板的完整场景。 你可以按任意顺序完成实验室。 但是，如果你打算逐步完成多个实验室，建议你按以下顺序进行：
-
-1. 在 Power BI Desktop 中准备数据
-1. 在 Power BI Desktop 中加载数据
-1. 在 Power BI 中设计数据模型
-1. 在 Power BI Desktop 中创建 DAX 计算
-1. 在 Power BI Desktop 中创建高级 DAX 计算
-1. 在 Power BI Desktop 中设计报表
-1. 在 Power BI Desktop 中增强报表
-1. 在 Power BI Desktop 中执行数据分析
-1. 创建 Power BI 面板
-1. 强制执行行级别安全性
-
-## **练习 1：强制执行行级别安全性**
-
-在此练习中，强制执行行级别安全性，确保销售人员只能看到向其分配的区域中的销售额。
-
-### **任务 1：入门**
+## **入门**
 
 在此任务中，设置实验室的环境。
 
@@ -60,7 +44,7 @@ lab:
 
 1. 如果系统提示应用更改，请选择“稍后应用”。
 
-### **任务 2：强制执行行级别安全性**
+## **强制执行行级别安全性**
 
 在此任务中，强制执行行级别安全性，确保销售人员只能看到向其分配的区域中的销售额。
 
@@ -68,7 +52,7 @@ lab:
 
    ![图片 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
-1. 在“字段”窗格中，选择“Salesperson (Performance)”表。
+1. 在“数据”窗格中，选择“Salesperson (Performance)”表 。
 
 
 1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为 **michael-blythe@adventureworks.com**
@@ -126,6 +110,10 @@ lab:
 1. 在“管理角色”窗口中，选择“删除”。 当看到确认删除的提示时，选择“是，删除”。
 
    ![图片 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+
+### **完成**
+
+在此任务中，你将完成此实验室。
 
 1. 选择“保存”，然后保存 Power BI Desktop 文件，结束实验室。
 
