@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 在 Power BI 中执行高级分析
+  title: 使用 AI 视觉对象执行高级分析
   module: Perform Data Analysis in Power BI
 ---
 
