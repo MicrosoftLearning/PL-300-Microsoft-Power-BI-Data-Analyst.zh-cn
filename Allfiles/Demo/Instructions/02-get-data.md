@@ -1,50 +1,50 @@
 ---
 demo:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+    title: 'Get data in Power BI'
+    module: 'Get data in Power BI'
 ---
-# 在 Power BI 中获取数据
+# Get data in Power BI
 
-## 开始开发 Power BI 报表
+## Start the development of a Power BI report
 
-1. 打开 Power BI Desktop，然后关闭“入门”页面。
+1. Open Power BI Desktop, and then dismiss the getting started page.
 
-1. 将文件保存到 D:\PL300\Demo 文件夹作为“销售额分析”。
+1. Save the file to the D:\PL300\Demo folder as Sales Analysis.
 
-## 连接到 SQL Server 数据库
+## Connect to a SQL Server database
 
-1. 从 SQL Server 中“获取数据”。
+1. “Get data” from SQL Server.
 
-1. 使用 Windows 身份验证连接到 MySettings.txt 文件中找到的数据库服务器名称。
+1. Connect to the database server name found in the MySettings.txt file, using Windows authentication.
 
-1. 展开 TailspinToys2020-US 数据库。
+1. Expand the TailspinToys2020-US database.
 
-## 基于数据库表创建查询
+## Create queries based on database tables
 
-1. 选择“产品”表以预览数据。
+1. Select the Product table to preview the data.
 
-1. 检查“产品”表以创建查询。
+1. Check the Product table to create query.
 
-1. 重复“销售额”表。
+1. Repeat the Sales table.
 
-1. 单击“转换数据”。
+1. Click Transform Data.
 
-## 预览数据
+## Preview data
 
-1. 描述 Power Query 编辑器窗口布局，包括“查询”窗格、“查询设置”窗格、功能区、预览网格和状态栏。
+1. Describe the Power Query Editor window layout, including the Queries pane, the Query Settings pane, the ribbon, the preview grid, and the status bar.
 
-1. 指出列标题下方的“质量”栏，并将光标悬停在其上方以显示有关列值的统计信息。
+1. Point out the quality bar beneath the column headers and hover the cursor over it to reveal statistics about the column values.
 
-1. 在“查看”功能区选项卡上，打开“列质量”。
+1. On the View ribbon tab, turn on Column Quality.
 
-1. 打开“列分布”，并指出“ProductID”（唯一值）和“ProductCategory”（多个重复值）等列。
+1. Turn on Column Distribution and point out columns like ProductID (unique values) and ProductCategory (several duplicate values).
 
-1. 打开“列配置文件”，然后选择“ProductCategory”列。
+1. Turn on Column Profile, and then select the ProductCategory column.
 
-1. 指出列的统计信息和分布情况。
+1. Point out the column statistics and distribution.
 
-1. 关闭三个选项。
+1. Turn back off the three options.
 
-1. 保存 Power BI Desktop 文件，但不要应用所做的更改。
+1. Save the Power BI Desktop file, but do not apply changes.
 
-1. 让 Power BI Desktop 文件保持打开状态，以便在下一个演示中使用该文件。
+1. Leave the Power BI Desktop file open for the next demo.

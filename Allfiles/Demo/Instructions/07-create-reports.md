@@ -1,52 +1,52 @@
 ---
 demo:
-  "\_\_ title": Create reports in Power BI
-  "\_\_ module": Create reports in Power BI
+    title: 'Create reports in Power BI'
+    module: 'Create reports in Power BI'
 ---
-# 创建报表
+# Create reports
 
-## 创建单页报表
+## Create a single-page report
 
-1. 删除用于测试和验证模型计算的矩阵视觉对象。
+1. Remove the matrix visual that was used to test and validate the model calculations.
 
-1. 将报表页面重命名为“销售额总计”。
+1. Rename the report page as Sales Summary.
 
-## 添加切片器
+## Add a slicer
 
-1. 在“日期”表中的“年份”列中添加切片器，并将其放置在报表页面的左上方。
+1. Add a slicer for the Date table Year column and position it at the top-left of the report page.
 
-1. 使用格式设置选项将切片器配置为单选。
+1. Use the formatting options to configure the slicer for single selection.
 
-## 添加各种视觉对象
+## Add various visuals
 
-1. 在页面上添加折线图和堆积柱形图，并进行如下配置：
+1. Add a line and stacked column chart to the page, and configure it as follows:
 
-    - 共享轴：日期 | 月份
+    - Shared axis: Date | Month
 
-    - 列值：销售额 | 销售额
+    - Columns values: Sales | Sales
 
-    - 行值：销售额 | 利润率
+    - Line values: Sales | Profit Margin
 
-1. 使用切片器按 CY2019 和 CY2020 筛选页面。
+1. Use the slicer to filter the page by CY2019, and then CY2020.
 
-1. 在折线图和堆积柱形图中，指出 2020 年 12 月没有“销售额”列。
+1. In the line and stacked column chart, point out that there is no sales column for December 2020.
 
-1. 将共享轴配置为“显示没有数据的项”。
+1. Configure the shared axis to “show items with no data”.
 
-1. 指出 2020 年 12 月已添加到该轴，但是没有数据列。
+1. Point out that December 2020 is added to the axis, but there is no column of data.
 
-1. 说明尚未出现 2020 年 12 月的销售额数据。 *你将在后续演示中运行脚本以加载 2020 年 12 月的销售额。*
+1. Explain that sales data for December 2020 has not happened yet. *You will run a script in a later demo to load December 2020 sales.*
 
-1. 添加漏斗图，并进行如下配置：
+1. Add a funnel chart, and configure it as follows:
 
-    - 组：产品 | 类别
+    - Group: Product | Category
 
-    - 值：销售额 | 利润率
+    - Values: Sales | Profit Margin
 
-1. 使用格式设置选项来选择对比数据颜色。
+1. Use the formatting options to select a contrasting data color.
 
-1. 添加一个问答视觉对象，并输入以下问题：按产品人口统计信息划分的总销售额
+1. Add a Q&A visual, and enter the following question: Total sales by product demographic
 
-1. 保存 Power BI Desktop 文件。
+1. Save the Power BI Desktop file.
 
-1. 让 Power BI Desktop 文件保持打开状态，以便在后续演示中使用该文件。
+1. Leave the Power BI Desktop file open for a later demo.
