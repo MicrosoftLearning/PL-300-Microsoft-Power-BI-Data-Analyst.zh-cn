@@ -1,57 +1,57 @@
 ---
 demo:
-    title: 'Create and manage workspaces in Power BI'
-    module: 'Deploy and manage Power BI service items'
+  "\_\_ title": Create and manage workspaces in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
 ---
 
-# Create and manage workspaces
+# 创建和管理工作区
 
-## Share a dashboard
+## 共享仪表板
 
-1. Open another Microsoft Edge window, in a new InPrivate window.
+1. 在新的 InPrivate 窗口中打开另一个 Microsoft Edge 窗口。
 
-1. Sign in to the Power BI service, and accept the Power BI Pro trial license if not already done.
+1. 登录到 Power BI 服务，接受 Power BI Pro 试用版许可证（如果尚未接受）。
 
-## Open the shared dashboard
+## 打开共享仪表板
 
-1. Switch to the **instructor** Power BI service window.
+1. 切换到 Power BI 服务的“**讲师**”窗口。
 
-1. Open the **Sales Monitoring** dashboard.
+1. 打开“销售额监视”仪表板****。
 
-1. On the menu, select Share.
+1. 在菜单上，选择“共享”。
 
-1. Share the dashboard to the recipient account.
+1. 将仪表板共享到收件人帐户。
 
-1. Switch to the **recipient** Power BI service window.
+1. 切换到 Power BI 服务的“**收件人**”窗口。
 
-1. Open **Shared with Me** and open the Sales Monitoring dashboard.
+1. 打开“**与我共享**”，然后打开“销售额监视”仪表板。
 
-1. Point out that the dashboard is read-only.
+1. 指出该仪表板是只读仪表板。
 
-## Create an app
+## 创建应用
 
-1. Switch to the **instructor** Power BI service window.
+1. 切换到 Power BI 服务的“**讲师**”窗口。
 
-1. In the Navigation pane, select the workspace name.
+1. 在导航窗格中，选择工作区名称。
 
-1. At the top-right, select **Create App**.
+1. 在右上角选择“创建应用”。
 
-1. In the Setup section, enter description text and optionally choose a theme color.
+1. 在“设置”部分，输入描述文本，并根据需要选择主题颜色。
 
-1. In the Navigation section, optionally sequence the report before the dashboard.
+1. 在“导航”部分中，根据需要在仪表板前对报表进行排序。
 
-1. In the Permissions section, grant access to the recipient account.
+1. 在“权限”部分中，授予对收件人帐户的访问权限。
 
-1. Publish the app.
+1. 发布应用。
 
-## Get and open the app
+## 获取并打开应用
 
-1. Switch to the **recipient** Power BI service window.
+1. 切换到 Power BI 服务的“**收件人**”窗口。
 
-1. Open Apps, and then get the app you just published.
+1. 打开“应用”，获取刚发布的应用。
 
-1. Once added, open the app.
+1. 添加后，打开应用。
 
-1. Navigate between the report pages and the dashboard.
+1. 在报表页面和仪表板之间导航。
 
-1. Leave the app open. It will be used in the row-level security demo later.
+1. 让应用保持打开状态。 稍后将在行级别安全性演示中使用它。

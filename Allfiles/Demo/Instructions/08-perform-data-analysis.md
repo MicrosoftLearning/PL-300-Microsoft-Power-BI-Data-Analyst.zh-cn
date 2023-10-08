@@ -1,44 +1,44 @@
 ---
 demo:
-    title: 'Perform data analysis in Power BI'
-    module: 'Perform data analysis in Power BI'
+  "\_\_ title": Perform data analysis in Power BI
+  "\_\_ module": Perform data analysis in Power BI
 ---
-# Perform data analysis
+# 执行数据分析
 
-## Add a group
+## 添加组
 
-1. Add another new page to the report named **Category Analysis**.
+1. 将另一个新页面添加到名为“类别分析”的报表中****。
 
-1. Copy, paste, and then sync the **Year slicer** from the **Profit Analysis** page to the new page.
+1. 复制、粘贴“年份”切片器，然后将其从“利润分析”页面同步到新页面 。
 
-1. Add a new group based on the **Product** table **Category** column.
+1. 基于“产品”表中的“类别”列添加一个新组********。
 
-1. Create a group based on the Trainer value.
+1. 基于“教练机”值创建一个组。
 
-1. Select the **Include Other Group** checkbox.
+1. 选择“包括其他组”复选框。
 
-1. Add a matrix visual, and position and size it so it fills the page.
+1. 添加矩阵视觉对象，并设置其位置和大小，以使其适合页面。
 
-1. Configure the matrix visual as follows:
+1. 按照如下配置矩阵视觉对象：
 
-    - Rows: Product | Category (groups) and Product | Product
+    - 行：“产品 | 类别（组）”和“产品 | 产品”
 
-    - Values: Quantity, Sales, Profit, and Profit Margin from the Sales table
+    - 值：“销售额”表中的“数量”、“销售额”、“利润”和“利润率”
 
-1. Expand both categories.
+1. 展开两个类别。
 
-## Apply conditional formatting
+## 应用条件格式
 
-1. In the matrix visual, apply background color conditional formatting to the **Profit Margin** field.
+1. 在矩阵视觉对象中，将背景颜色条件格式应用于“利润率”字段****。
 
-1. Select red for the minimum color, and green for the maximum color.
+1. 选择红色作为最小颜色，选择绿色作为最大颜色。
 
-1. Point out the range of colors used to convey low-to-high profit margin values.
+1. 指出用于表示从低到高利润率值的颜色范围。
 
-1. Save the Power BI Desktop file.
+1. 保存 Power BI Desktop 文件。
 
-1. Publish the report to the newer workspace, overwriting when prompted.
+1. 将报表发布到较新的工作区，并在系统出现提示时进行覆盖。
 
-1. In the Power BI service, open the **Sales Analysis** report, and interact with each of the report pages.
+1. 在 Power BI 服务中，打开“销售额分析”报表，然后与每个报表页面进行交互****。
 
-1. Leave the Power BI Desktop file open.
+1. 让 Power BI Desktop 文件保持打开状态。

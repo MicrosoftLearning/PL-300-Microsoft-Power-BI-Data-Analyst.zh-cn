@@ -1,52 +1,52 @@
 ---
 demo:
-    title: 'Design a data model in Power BI'
-    module: 'Design a data model in Power BI'
+  "\_\_ title": Design a data model in Power BI
+  "\_\_ module": Design a data model in Power BI
 ---
-# Design a data model in Power BI
+# 在 Power BI 中设计数据模型
 
-## Review the model
+## 查看模型
 
-1. In the Data pane, expand all tables to reveal all fields.
+1. 在“数据”窗格中，展开所有表以显示所有字段。
 
-1. In the Sales table, point out the OrderDate hierarchy, which was created automatically.
+1. 在“销售额”表中，指出自动创建的 OrderDate 层次结构。
 
-1. Explain that a Date table will be created in the next demo.
+1. 说明在下一个演示中将创建一个“日期”表。
 
-1. In Model view, hover over the automatically-created relationship between the two tables.
+1. 在“模型”视图中，将鼠标悬停在两个表之间的自动创建的关系上。
 
-1. Explain how filters will propagate from the Product table to the Sales table.
+1. 说明筛选器如何从“产品”表传播到“销售额”表。
 
-## Create a hierarchy
+## 创建层次结构
 
-1. Create a hierarchy based on the Product table Category column.
+1. 基于“产品”表的“类别”列创建层次结构。
 
-1. Rename the hierarchy as Products.
+1. 将层次结构重命名为“产品”。
 
-1. Add the Product column as the second level.
+1. 将“产品”列作为第二个级别添加。
 
-## Set model properties
+## 设置模型属性
 
-1. Hide both the ProductID columns.
+1. 隐藏两个 ProductID 列。
 
-1. Format the Quantity column to use the thousands separator.
+1. 设置“数量”列的格式以使用千位分隔符。
 
-1. Multi-select the Sales and Unit Price columns, and format them to use two decimal places.
+1. 同时选择“销售额”和“单价”列，然后将其格式设置为使用两位小数。
 
-## Validate the model design with a matrix visual
+## 使用矩阵视觉对象验证模型设计
 
-1. In Report view, add a matrix visual to the page, and then size it to fill the entire page.
+1. 在“报表”视图中，向页面添加矩阵视觉对象，然后调整其大小以填充整个页面。
 
-1. Add the Products hierarchy to the rows, and then add the Quantity, Sales, and Unit Price fields.
+1. 将“产品”层次结构添加到行中，然后添加“数量”、“销售额”和“单价”字段。
 
-1. Expand all levels of the Products hierarchy.
+1. 展开“产品”层次结构的所有级别。
 
-1. Point out that the Unit Price values are the sum of prices, which is not correct.
+1. 指出“单价”值是价格的总和，这是不正确的。
 
-1. In the Data pane, select the Unit Price field, and configure its summarization to use Average.
+1. 在“数据”窗格中，选择“单价”字段，然后将其汇总配置为使用“平均值”。
 
-1. Remove the Sum of Unit Price column from the matrix visual, and then add the Unit Price field back again.
+1. 从矩阵视觉对象中删除“单价总和”列，然后再次添加“单价”字段。
 
-1. Save the Power BI Desktop file.
+1. 保存 Power BI Desktop 文件。
 
-1. Leave the Power BI Desktop file open for the next demo.
+1. 让 Power BI Desktop 文件保持打开状态，以便在下一个演示中使用该文件。
