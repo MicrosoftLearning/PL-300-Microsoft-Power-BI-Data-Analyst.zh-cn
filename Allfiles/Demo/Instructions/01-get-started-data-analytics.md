@@ -1,30 +1,30 @@
 ---
 demo:
-    title: 'Get started with Microsoft data analytics'
-    module: 'Get started with Microsoft data analytics'
+  "\_\_ title": Get started with Microsoft data analytics
+  "\_\_ module": Get started with Microsoft data analytics
 ---
-# Get started with Microsoft data analytics
+# Microsoft 数据分析入门
 
-## Explore the dashboard
+## 浏览仪表板
 
-1. Show the Sales Monitoring dashboard, and explain how it can be used to get at-a-glance facts.
+1. 显示“销售额监视”仪表板，并说明如何使用它来一目了然地获取事实。
 
-1. Click either tile to click through to the Sales Analysis report.
+1. 单击任一磁贴以单击进入“销售额分析”报表。
 
-## Explore the report
+## 浏览报表
 
-1. Interact with various slicers and visuals across the pages.
+1. 与页面上的各种切片器和视觉对象进行交互。
 
-1. Edit the report, and then expand all fields in the Data pane.
+1. 编辑报表，然后在“数据”窗格中展开所有字段。
 
-## Describe the solution that will be developed during the course
+## 描述将在课程中开发的解决方案
 
-1. Explain that the data model is based on a SQL Server database and an Excel workbook, which helps to determine cost of goods sold.
+1. 说明数据模型基于 SQL Server 数据库 和 Excel 工作簿，这有助于确定所售商品的成本。
 
-1. Explain that a gateway will be set up to keep data current.
+1. 说明将设置网关以使数据保持最新。
 
-1. Explain that it will be shared with a recipient, and that recipients will only be allowed to see a subset of data being only the product categories they manage.
+1. 说明它将与收件人共享，并且只允许收件人查看仅属于其管理的产品类别的数据子集。
 
-1. Return to the Power BI service home page, and collapse the workspace.
+1. 返回 Power BI 服务主页，并折叠工作区。
 
-> **Note**: You will not use this pre-developed solution again.
+> 注意：你将不再使用此预先开发的解决方案。
