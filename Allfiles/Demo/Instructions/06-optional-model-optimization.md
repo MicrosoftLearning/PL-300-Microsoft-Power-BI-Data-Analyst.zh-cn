@@ -1,81 +1,75 @@
----
-demo:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
----
+# (Optional) Optimize model performance
 
-# （可选）优化模型性能
+## Review a DirectQuery model design
 
-## 查看 DirectQuery 模型设计
+> **Note**: This demo uses a different Power BI Desktop file.
 
-> 注意：本演示使用另一个 Power BI Desktop 文件。
+1. Open the D:\PL300\Demo\Resources\AW Sales Analysis.pbix file.
 
-1. 打开“D:\PL300\Demo\Resources\AW Sales Analysis.pbix”文件。
+1. If prompted to connect to the data source, click Connect.
 
-1. 如果系统提示你连接到数据源，请单击“连接”。
+1. At the bottom-right corner, point out that the data model comprises DirectQuery tables.
 
-1. 在右下角，指出数据模型包含 DirectQuery 表。
+1. Save the Power BI Desktop file to the D:\PL300\Demo\MySolution folder.
 
-1. 将 Power BI Desktop 文件保存到“D:\PL300\Demo\MySolution”文件夹。
+1. In Model view, introduce the model design, which includes two related tables.
 
-1. 在“模型”视图中，介绍模型设计，该模型包含两个相关表。
+1. In Report view, interact with the report by selecting different items in the Fiscal Year slicer.
 
-1. 在“报表”视图中，通过在“财年”切片器中选择不同的项来与报表进行交互。
+1. Drill through on any month column to reveal order details.
 
-1. 在任何月份列上开始钻取，以显示订单详细信息。
+1. Return to the Sales Summary page.
 
-1. 返回到“销售额总计”页面。
+## Review query performance
 
-## 查看查询性能
+1. On the View ribbon tab, show the Performance Analyzer pane.
 
-1. 在“视图”功能区选项卡上，显示“性能分析器”窗格。
+1. Refresh the visuals, and then expand the slicer and Sales by Month visual.
 
-1. 刷新视觉对象，然后展开切片器和“按月销售额”视觉对象。
+1. Point out that they used DirectQuery mode (data was requested from the data source).
 
-1. 指出他们使用了 DirectQuery 模式（已请求数据源中的数据）。
+## Configure Dual storage tables
 
-## 配置双存储表
+1. In Model view, select the Date table, and then select the storage mode to Dual.
 
-1. 在“模型”视图中，选择“日期”表，然后将存储模式选择为“双”。
+1. When the data has imported, switch to Report view, and then in the Performance Analyzer pane, refresh the visuals.
 
-1. 导入数据后，切换到“报表”视图，然后在“性能分析器”窗格中刷新视觉对象。
+1. Point out that the Date table is now queried from the model cache.
 
-1. 指出现在可以从模型缓存中查询“日期”表。
+## Create aggregations
 
-## 创建聚合
+1. Open the Power Query Editor window, and in the Queries pane, duplicate the Reseller Sales query.
 
-1. 打开 Power Query 编辑器窗口，然后在“查询”窗格中复制“经销商销售额”查询。
+1. Rename the new query Reseller Sales Agg.
 
-1. 将新查询重命名为“经销商销售额聚合”。
+1. Apply a group by transformation, as follows:
 
-1. 通过转换应用组，如下所示：
+    - Group by OrderDate.
 
-    - 按 OrderDate 列进行分组。
+    - New column: Sales, which is the sum of the SalesAmount column.
 
-    - 新列：“销售额”，该列是 SalesAmount 列的总和。
+1. Close and apply the queries.
 
-1. 关闭并应用查询。
+1. In Model view, set the storage mode for the Reseller Sales Agg table to Import.
 
-1. 在“模型”视图中，将“经销商销售额聚合”表的存储模式设置为“导入”。
+1. Create a relationship from the Date table Date column to the Reseller Sales Agg table OrderDate column—ensure that the column cardinality is set to one-to-many, with the Date table on the one-side.
 
-1. 创建从“日期”表中的“日期”列到“经销商销售额聚合”表中的“OrderDate”列的关系，确保列基数设置为“一对多”，并且“日期”表位于一侧。
+1. Manage aggregations on the Reseller Sales Agg table:
 
-1. 在“经销商销售额聚合”表上管理聚合：
+    - OrderDate: Group by the Reseller Sales table OrderDate column.
 
-    - OrderDate：按“经销商销售额”表中的 OrderDate 列进行分组。
+    - Sales: Sum the Reseller Sales table SalesAmount column.
 
-    - Sales：对“经销商销售额”表中的 SalesAmount 列进行求和。
+1. Point out that the aggregation table is now hidden.
 
-1. 指出聚合表现已隐藏。
+1. Switch to Report view, and in the Performance Analyzer pane, and then refresh the visuals.
 
-1. 切换到“报表”视图，并在“性能分析器”窗格中刷新视觉对象。
+1. Point out that the Sales by Month table is now queried from the model cache.
 
-1. 指出现在可以从模型缓存中查询“按月份划分的销售额”表。
+1. Drill through from any month, and point out that the details in the table are requested as DirectQuery from the data source.
 
-1. 从任何月份开始钻取，并指出表中的详细信息是作为 DirectQuery 从数据源请求的。
+1. Save the Power BI Desktop file.
 
-1. 保存 Power BI Desktop 文件。
+1. Close Power BI Desktop.
 
-1. 关闭 Power BI Desktop。
-
-> 注意：你将不再使用此 Power BI Desktop 解决方案。
+> **Note**: You will not use this Power BI Desktop solution again.
