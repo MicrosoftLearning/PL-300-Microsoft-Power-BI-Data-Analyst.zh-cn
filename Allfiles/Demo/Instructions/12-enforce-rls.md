@@ -1,69 +1,74 @@
-# EnforceRow-level security in Power BI
+---
+demo:
+  "\_\_ title": Enforce Row-level security in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
+---
+# 在 Power BI 中强制实施行级别安全性
 
-## Add a security table to the model
+## 在模型中添加安全性表
 
-1. In Power BI Desktop, open the Power Query Editor window.
+1. 在 Power BI Desktop 中，打开 Power Query 编辑器窗口。
 
-1. Add a new query based on the `D:\Demo\Data\**ManagerCategory**.xlsx` file.
+1. 添加基于 `D:\Demo\Data\**ManagerCategory**.xlsx` 文件的新查询。
 
-1. Use the **ManagerCategory** table in the file.
+1. 使用文件中的 ManagerCategory 表。
 
-1. Remove the **Manager** column.
+1. 删除“管理员”列****。
 
-1. Split the **Category** column by the semicolon delimiter and split into rows (advanced options).
+1. 用分号分隔符将“**类别**”列拆分为行（高级选项）。
 
-1. In the **Email** column, replace the value **<ty-johnston@tailspintoys.com>** with the recipient account (from the MySettings.txt file).
+1. 在“电子邮件”列中，将值 <ty-johnston@tailspintoys.com> 替换为收件人帐户（来自 MySettings.txt 文件） 。
 
-1. Point out that this user is able to see three product categories: **Collective pitch, Trainer, and Warbird**.
+1. 指出该用户能够看到三个产品类别：可变螺距直升机、教练机和作战飞机。
 
-1. Close and apply the queries.
+1. 关闭并应用查询。
 
-1. In Model view, create a relationship between the **ManagerCategory** and Product tables relating the **Category** column.
+1. 在“模型”视图中，在与“类别”列相关的 ManagerCategory 表和 Product 表之间创建一个关系 。
 
-1. Set the cross filter direction to Single (**ManagerCategory** filters Product).
+1. 将交叉筛选方向设置为“单向(ManagerCategory 筛选 Product)”。
 
-1. Hide the **ManagerCategory** table.
+1. 隐藏 ManagerCategory 表****。
 
-## Add a role
+## 添加角色
 
-1. In Report view, open Manage Roles, and then create a role named **Manager**.
+1. 在“报表”视图中，打开“管理角色”，然后创建一个名为“管理员”的角色。
 
-1. In the role, filter the **ManagerCategory** table Email address column as follows:
+1. 在角色中筛选 ManagerCategory 表的“电子邮件地址”列，如下所示：
 
   ```dax
    [Email] = USERPRINCIPALNAME()
    ```
 
-1. **Save**.
+1. 保存。
 
-## Validate the role
+## 验证角色
 
-1. Open View As, and then configure the following settings:
+1. 打开“查看方式”，然后配置以下设置：
 
-    - Other User: Check, then enter the recipient account.
+    - 其他用户：选中，然后输入收件人帐户。
 
-    - Manager role: Check
+    - 管理员角色：选中
 
-1. Point out that the filter visual shows just three product categories.
+1. 指出筛选视觉对象仅显示三个产品类别。
 
-1. Stop viewing the report using the view-as options.
+1. 使用“查看方式”选项停止查看报表。
 
-1. Save the Power BI Desktop file.
+1. 保存 Power BI Desktop 文件。
 
-1. Publish the Power BI Desktop file to the workspace, overwriting the dataset and report in the service.
+1. 将 Power BI Desktop 文件发布到工作区，从而覆盖服务中的数据集和报表。
 
-1. Close Power BI Desktop.
+1. 关闭 Power BI Desktop。
 
-## Configure dataset security
+## 配置数据集安全性
 
-1. In the Power BI service for the instructor, from the Navigation pane, open the security page for the **Sales Analysis** dataset.
+1. 在适用于讲师的 Power BI 服务中，从“导航”窗格打开“销售额分析”数据集的“安全性”页面。
 
-1. In the Members section, enter the recipient account (representing **Ty Johnston**).
+1. 在“成员”部分，输入收件人帐户（代表 Ty Johnston）。
 
-1. Add and Save.
+1. 添加并保存。
 
-## Test row-level security in the app
+## 在应用中测试行级别安全性
 
-1. In the Power BI service for the recipient, refresh the dashboard (left open from the previous demo).
+1. 在适用于收件人的 Power BI 服务中，刷新仪表板（在上一个演示中保持打开状态）。
 
-1. In the **Profit Margin** dashboard tile, verify that only three product categories can be seen.
+1. 在“利润率”仪表板磁贴中，确认只能看到三个产品类别。
