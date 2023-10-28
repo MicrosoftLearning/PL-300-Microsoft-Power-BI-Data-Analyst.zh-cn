@@ -1,84 +1,79 @@
----
-demo:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
----
-# 在 Power BI 中使用 DAX 创建度量值
+# Create measures using dax in Power BI
 
-> 提示：所有计算都可以从 D:\PL300\Demo\Resources\Snippets-Demo-05.txt 文件中复制。
+> **Tip**: All calculations can be copied from the D:\PL300\Demo\Resources\Snippets-Demo-05.txt file.
 
-## 创建计算表
+## Create a calculated table
 
-1. 使用以下表达式创建一个计算表：
+1. Create a calculated table by using the following expression:
 
 ```dax
 Date = CALENDARAUTO()
 ```
 
-1. 切换到“数据”视图，然后查看包含一个“日期”列的表。
+1. Switch to Data view, and review the table, which comprises a single date column.
 
-创建计算列
+Create calculated columns
 
-1. 在“日期”表中添加一个计算列：
+1. Add a calculated column to the Date table:
 
 ```dax
 Year = "CY" & YEAR('Date'[Date])
 ```
 
-1. 在“日期”表中添加一个附加的计算列：
+1. Add an additional calculated column to the Date table:
 
 ```dax
 Month = FORMAT('Date'[Date], "YYYY-MM")
 ```
 
-1. 在“模型”视图中，通过将“日期”表中的“日期”列拖到“销售额”表中的“OrderDate”列来创建关系。
+1. In Model view, create a relationship by dragging the Date table Date column to the Sales table OrderDate column.
 
-1. 隐藏“销售额”表中的 OrderDate 列。
+1. Hide the Sales table OrderDate column.
 
-1. 在“日期”表中，创建具有“年份”和“月份”级别的“日历”层次结构。
+1. In the Date table, create the Calendar hierarchy, with Year and Month levels.
 
-1. 在“报表”视图中，使用“日期”列将“日期”表标记为日期表。
+1. In Report view, mark the Date table as a date table using the Date column.
 
-1. 在矩阵视觉对象中，删除“产品”层次结构，然后将其替换为“日历”层次结构。
+1. In the matrix visual, remove the Products hierarchy, and then replace it with the Calendar hierarchy.
 
-1. 在“销售额”表中添加一个计算列：
+1. Add a calculated column to the Sales table:
 
 ```dax
 Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 ```
 
-1. 将“成本”列的格式设置为两位小数。
+1. Format the Cost column to two decimal places.
 
-## 创建快速度量
+## Create a Quick Measure
 
-1. 将快速度量添加到“销售额”表中，然后从“利润”列中减去“成本”列。
+1. Add a quick measure to the Sales table, subtracting the Cost column from Profit column.
 
-1. 将度量值重命名为“利润”。
+1. Rename the measure as Profit.
 
-1. 说明该度量值未在模型中存储数据。
+1. Explain that the measure does not store data in the model.
 
-创建常规度量值
+Create regular measures
 
-1. 在“销售额”表中添加一个度量值：
+1. Add a measure to the Sales table:
 
 ```dax
 Profit Margin = DIVIDE([Profit], SUM('Sales'[Sales]))
 ```
 
-1. 将“利润率”列的格式设置为百分比。
+1. Format the Profit Margin column as a percentage.
 
-1. 在“销售额”表中添加另一个度量值：
+1. Add another measure to the Sales table:
 
 ```dax
 Sales YTD = TOTALYTD(SUM('Sales'[Sales]), 'Date'[Date])
 ```
 
-1. 将“年初至今销售额”列的格式设置为两位小数。
+1. Format the Sales YTD column to two decimal places.
 
-## 使用矩阵视觉对象验证计算
+## Validate the calculations with the matrix visual
 
-1. 将“成本”、“利润”、“利润率”和“年初至今销售额”字段添加到矩阵视觉对象中。
+1. Add the Cost, Profit, Profit Margin, and Sales YTD fields to the matrix visual.
 
-1. 保存 Power BI Desktop 文件。
+1. Save the Power BI Desktop file.
 
-1. 让 Power BI Desktop 文件保持打开状态，以便在后续演示中使用该文件。
+1. Leave the Power BI Desktop file open for a later demo.

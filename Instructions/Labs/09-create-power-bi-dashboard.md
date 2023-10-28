@@ -1,0 +1,235 @@
+---
+lab:
+  title: 创建 Power BI 面板
+  module: Create Dashboards
+---
+
+
+# 创建 Power BI 仪表板
+
+## **实验室场景**
+
+在本实验室中，你将使用现有报表在Power BI 服务中创建“销售监视”仪表板。
+
+本实验室介绍如何完成以下操作：
+
+- 将视觉对象固定到仪表板
+- 使用问答功能创建仪表板磁贴
+
+**此实验室应该大约需要 30 分钟。**
+
+## **开始 - 登录**
+
+在此任务中，通过登录到 Power BI 来设置实验室的环境。
+
+注意：如果已登录到 Power BI，请跳到下一个任务。
+
+1. 若要打开 Microsoft Edge，请在任务栏上，选择 Microsoft Edge 程序快捷方式。
+
+     ![图片 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
+
+1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://app.powerbi.com**。
+
+    *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
+
+1. 使用组织凭据（或提供的凭据）完成登录过程。 如果 Microsoft Edge 提示是否保持登录状态，请选择“是”。
+
+1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，在“导航”窗格中展开“我的工作区”。 使 Microsoft Edge 浏览器窗口保持打开状态。
+
+     ![图片 22](Linked_image_Files/07-my-workspace-new.png)
+
+## **开始 - 打开报表**
+
+在此任务中，通过打开入门报表来设置实验室的环境。
+
+重要说明：如果你是从上一个实验继续（并且已经成功完成该实验室），请不要完成此任务，而是从下一个任务开始继续操作。
+
+1. 打开 Power BI Desktop。
+    
+    默认情况下，“入门”对话框在 Power BI Desktop 前面打开。请登录，然后关闭弹出窗口。
+
+    ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+
+1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+
+1. 在“打开”窗口中，导航到 D:\PL300\Labs\09-create-power-bi-dashboard\Starter 文件夹，然后打开“Sales Analysis”文件  。
+
+1. 关闭任何可能打开的信息窗口。
+
+1. 请注意功能区下方的黄色警告消息。 此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在实验室中应用查询。
+    
+    要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
+
+1. 如果系统提示应用更改，请选择“稍后应用”。
+
+## **开始 - 发布报表**
+
+在此任务中，通过创建数据集来设置实验室的环境。 如果已发布数据集，请转到下一个任务。
+
+1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，导航到“我的工作区”。
+
+1. 选择“上传”>“浏览”。
+
+1. 导航到 D:\PL300\Labs\09-create-power-bi-dashboard\Starter 文件夹。
+
+1. 选择 Sales Analysis.pbix 文件，然后选择“打开”。
+
+如果系统提示替换数据集，请选择“替换”。
+
+## **创建仪表板**
+
+在此任务中，创建 Sales Monitoring 仪表板。 你将从报表固定一个视觉对象，并根据图像数据 URI 添加一个磁贴，然后使用问答功能来创建一个磁贴。
+
+1. 在 Power BI 服务中，打开 Sales Analysis 报表。
+
+1. 在“概述”页中，将“Year”切片器设置为“FY2020”。
+
+    ![图片 4](Linked_image_Files/09-create-power-bi-dashboard_image17.png)
+
+1. 将“区域”切片器设置为“全选”。
+
+    固定的视觉对象是在固定时使用筛选器上下文设置的。如果基础视觉对象发生更改，则还需要更新仪表板磁贴。对于基于时间的筛选器，最好使用相对日期切片器（或使用基于相对时间的问题进行问答）。
+
+1. 要创建仪表板并固定视觉对象，请将光标悬停在“Sales and Profit Margin by Month”（列/行）视觉对象上，然后选择图钉。
+
+    ![图片 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
+
+1. 在“固定到仪表板”窗口中的“仪表板名称”框内输入 Sales Monitoring，然后选择“固定”   。
+
+    ![图片 3](Linked_image_Files/09-create-power-bi-dashboard_image19.png)
+
+1. 打开“我的工作区”，然后打开“Sales Monitoring”仪表板 。
+
+1. 注意仪表板只有一个磁贴。
+
+    ![图片 45](Linked_image_Files/09-create-power-bi-dashboard_image22.png)
+
+1. 要根据问题添加磁贴，请在仪表板左上角选择“询问数据相关问题”。
+    
+    可以使用问答功能提出问题，Power BI 会通过视觉对象进行答复。
+
+    ![图片 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
+
+1. 在问答框下的蓝色框中选择任一推荐问题，然后查看回复。
+
+1. 删除问答框中的所有文本，然后输入 Sales YTD
+
+1. 请注意，答复为“(空)”。
+    
+    你可能还记得在“在 Power BI Desktop 中创建高级 DAX 计算”实验室中添加了“Sales YTD”度量值。此度量值是时间智能表达式，它需要对 Date 表进行筛选以生成结果。  
+
+    ![图片 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
+
+1. 在问题中加入“FY2020 年”。
+
+1. 请注意，答复现在为“3300 万美元”。
+
+    ![图片 13](Linked_image_Files/09-create-power-bi-dashboard_image27.png)
+
+1. 若要将回复固定到仪表板，请选择右上角的“固定视觉对象”。
+
+    ![图片 15](Linked_image_Files/09-create-power-bi-dashboard_image28.png)
+
+1. 当系统提示将磁贴固定到仪表板时，选择“固定”。
+
+1. 要返回到该仪表板，请选择左上角的“退出问答”。
+
+1. 若要添加公司徽标，请在菜单栏上选择“编辑”，然后选择“添加磁贴” 。
+    
+    通过此技术添加仪表板磁贴可让你使用媒体增强仪表板，这些媒体包括 Web 内容、图像、格式丰富的文本框和视频（使用 YouTube 或 Vimeo 链接）。
+
+1. 在“添加磁贴”窗格（位于右侧）中，选择“图像”磁贴，然后选择“下一步”  。
+
+1. 在“添加图像磁贴”窗格的“URL”框中，输入在 D:\PL300\Resources\AdventureWorksLogo_DataURL.txt 文件中找到的完整 URL，然后选择“应用”   。
+    
+    *可以使用图像的 URL 嵌入图像，也可以使用数据 URL 嵌入内联内容。*
+
+1. 要调整徽标磁贴的大小，请拖动右下角，并将磁贴大小调整为一个单位宽，两个单位高。
+    
+    磁贴大小限制为矩形。
+
+1. 整理磁贴，使徽标显示在左上方，使“年初至今的销售额”磁贴显示在徽标下方，并使“销售额和利润率”磁贴显示在右侧。
+
+    ![图片 52](Linked_image_Files/09-create-power-bi-dashboard_image35.png)
+
+## **编辑磁贴详细信息**
+
+在此任务中，编辑两个磁贴的详细信息。
+
+1. 将光标悬停在“年初至今的销售额”磁贴上，选择磁贴右上角的省略号，然后选择“编辑详细信息”。
+
+    ![图片 50](Linked_image_Files/09-create-power-bi-dashboard_image36.png)
+
+1. 在“磁贴详细信息”窗格（位于右侧）的“副标题”框中输入“FY2020”，然后选择“应用”   。
+
+1. 请注意，“年初至今的销售额”磁贴显示了副标题。
+
+    ![图片 21](Linked_image_Files/09-create-power-bi-dashboard_image39.png)
+
+1. 编辑“销售额和利润率”磁贴的磁贴详细信息。
+
+1. 在“磁贴详细信息”窗格的“功能”部分中，选中“显示上次刷新时间”，然后选择“应用”   。
+
+    ![图片 22](Linked_image_Files/09-create-power-bi-dashboard_image40.png)
+
+1. 请注意，该磁贴会显示上次刷新时间（在 Power BI Desktop 中加载数据模型时执行刷新）。
+
+你将在下一个练习中刷新数据集。根据数据和报表，可以随时执行临时数据刷新或设置计划。但是，计划刷新需要无法为此实验室配置的网关。因此，在 Power BI Desktop 中执行手动数据刷新，然后将文件上传到工作区。
+
+## **刷新数据集**
+
+在此练习中，请先将 2020 年 6 月的销售订单数据加载到“AdventureWorksDW2020”数据库中。 然后打开 Power BI Desktop 文件，执行数据刷新，再将该文件上传到工作区。
+
+## **更新实验室数据库**
+
+在此任务中，你将运行 PowerShell 脚本来更新“AdventureWorksDW2020”数据库中的数据。
+
+1. 在文件资源管理器中打开 D:\PL300\Setup 文件夹，右键单击 UpdateDatabase-2-AddSales.ps1 文件，然后选择“使用 PowerShell 运行”  。
+
+    ![图片 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
+
+1. 如果系统提示更改执行策略，请按“A”。
+
+1. 当系统提示按任意键关闭时，请再次按 Enter。
+
+AdventureWorksDW2020 数据库现在包含 2020 年 6 月的销售订单。**
+
+## **刷新 Power BI Desktop 文件**
+
+在此任务中，打开“Sales Analysis”Power BI Desktop 文件，执行数据刷新，然后将该文件上传到 Sales Analysis 工作区 。
+
+1. 在 Power BI Desktop 文件的“数据”窗格中，右键单击“销售额”表，然后选择“刷新数据”  。
+
+    ![图片 55](Linked_image_Files/09-create-power-bi-dashboard_image47.png)
+
+1. 完成刷新后，保存 Power BI Desktop 文件。
+
+1. 要将文件发布到工作区，请在“开始”功能区选项卡上的“共享”组中，选择“发布”，然后选择“选择”进行发布   。
+
+    ![图片 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
+
+1. 在系统提示替换数据集时，请选择“替换”。
+
+1. 关闭 Power BI Desktop。
+
+Power BI 服务中的数据集现已包含 2020 年 6 月的销售数据。
+
+### **查看仪表板**
+
+在此任务中，在仪表板中查看更新后的销售额。
+
+1. 在 Microsoft Edge 浏览器窗口中，打开 Power BI 服务，然后在“我的工作区”中查看“Sales Monitoring”仪表板 。
+
+2. 在“Sales, Profit Margin”磁贴中的副标题部分，可以看到数据刷新时间为“刚刚刷新” 。
+
+3. 还可以看到，其中包含“2020 Jun”列。
+    
+    如果没有看到 2020 年 6 月的数据，可能需要按 F5 重新加载 Web 浏览器。**
+
+    ![图片 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
+
+### **完成**
+
+在此任务中，你将完成此实验室。
+
+1. 保存报表并关闭浏览器。
