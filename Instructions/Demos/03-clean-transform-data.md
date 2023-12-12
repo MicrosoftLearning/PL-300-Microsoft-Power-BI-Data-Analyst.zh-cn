@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  title: 在 Power BI 中清理、转换和加载数据
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # 在 Power BI 中清理、转换和加载数据
 
 ## 应用查询转换
@@ -11,7 +12,7 @@ lab:
 
 1. 删除“RetailPrice”、“照片”和“销售额”列。
 
-1. 将“Channels”列的数据类型更改为“整数”。
+1. 将“Channels”列的数据类型更改为“整数”。。
 
 1. 为以下列重命名：
 

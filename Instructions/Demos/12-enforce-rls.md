@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Enforce Row-level security in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: 在 Power BI 中强制实施行级别安全性
+  module: Deploy and manage Power BI service items
 ---
+
 # 在 Power BI 中强制实施行级别安全性
 
 ## 在模型中添加安全性表
