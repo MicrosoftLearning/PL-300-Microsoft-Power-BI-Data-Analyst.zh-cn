@@ -251,8 +251,8 @@ lab:
 
 1. 创建以下两个模型关系：
 
-    - 从“Date \| Date”到“Sales \| OrderDate” 
-    - 从“Date \| Date”到“Targets \| TargetMonth” 
+    - 从“Date \| Date”到“Sales \| OrderDate”
+    - 从“Date \| Date”到“Targets \| TargetMonth”
 
 1. 隐藏以下两列：
 
@@ -283,7 +283,7 @@ lab:
 
 在此任务中，你将创建简单的度量值。 简单的度量值聚合单个列中的值或对表中的行进行计数。
 
-1. 在“报表”视图“第 2 页”上的“数据”窗格中，将“Sales \| Unit Price”字段拖到矩阵视觉对象。  
+1. 在“报表”视图“第 2 页”上的“数据”窗格中，将“Sales \| Unit Price”字段拖到矩阵视觉对象。
 
     *实验室使用速记表示法引用字段。它将如下所示：Sales \| Unit Price。在此示例中，Sales 是表名称，Unit Price 是字段名称。 *
 

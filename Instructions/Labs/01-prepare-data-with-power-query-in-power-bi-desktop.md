@@ -24,7 +24,7 @@ lab:
 - 数据加载 > 首次加载时从数据源导入关系
 - 数据加载 > 加载数据后自动检测新关系
 
-注意：虽然在开发数据模型时启用这两个选项可能会有所帮助，但你之前禁用了它们来支持实验室体验。在“在 Power BI Desktop 中加载数据”实验室中创建关系时，可了解添加每个关系的原因。**
+*备注：虽然在开发数据模型时启用这两个选项可能会有所帮助，但你之前禁用了这些选项来支持实验室体验。在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中创建关系时，可了解添加每个关系的原因。*
 
 1. 打开 Power BI Desktop。
 
@@ -39,6 +39,7 @@ lab:
 1. 选择“销售分析”文件。
 
 1. 通过“另存为”将文件副本保存到 D:\PL300\MySolution 文件夹 。
+
 
 ## **从 SQL Server 获取数据**
 
@@ -56,7 +57,7 @@ lab:
 
 1. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
 
-    注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。 
+    注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。
 
 1. 选择但不要选中 DimEmployee 表
 
@@ -73,8 +74,10 @@ lab:
     - DimSalesTerritory
     - FactResellerSales
 
-1. 单击“转换数据”完成此任务，这会打开 Power Query 编辑器。
+1. 选择“转换数据”**** 完成此任务，这会打开 Power Query 编辑器。
+    
     1. 此实验室仅用于连接和分析数据，但不转换数据。
+
 
 ## **在 Power Query 编辑器中预览数据**
 
@@ -94,7 +97,7 @@ lab:
 
 1. 在“数据预览”窗格中，水平滚动以查看所有列。 请注意，最后五列包含表或值链接。
 
-    这五列表示与数据库中其他表的关系，可用于将表联接在一起。联接表的操作在“在 Power BI Desktop 中加载数据”实验室中完成。
+    这五列表示与数据库中其他表的关系，可用于将表联接在一起。联接表的操作会在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中完成。**
 
 1. 要评估列质量，请在“视图”功能区选项卡的“数据预览”组中，勾选“列质量”。 通过列质量功能，可以轻松确定列中的有效值、错误值或空值的百分比。
 
@@ -122,7 +125,7 @@ lab:
 
 1. 水平滚动以显示最后面的列。 请注意 DimProductSubcategory 列。
 
-    在“在 Power BI Desktop 中加载数据”实验室中向此查询添加转换时，使用“DimProductSubcategory”列联接表。 
+    在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中向此查询添加转换时，使用“DimProductSubcategory”**** 列联接表。**
 
 1. 在“查询”窗格中，选择 DimReseller 查询。
 
@@ -140,11 +143,11 @@ lab:
 
 1. 将光标悬停在“Ware House”栏上，请注意有 5 个行包含此值。
 
-    “在 Power BI Desktop 中加载数据”实验室中将应用转换来重新标记这五行。
+    “在 Power BI Desktop 中加载已转换的数据”**** 实验室中将应用转换来重新标记这五行。**
 
 1. 在“查询”窗格中，选择 DimSalesTerritory 查询。  
 
-    在 DimSalesTerritory 表中，每个销售区域占一行，包括 Corporate HQ（总部）。区域会分配到国家/地区，国家/地区会分配到组。“Power BI Desktop 中为数据建模”实验室中会创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。  
+    在 DimSalesTerritory 表中，每个销售区域占一行，包括 Corporate HQ（总部）。区域会分配到国家/地区，国家/地区会分配到组。“Power BI Desktop 中为数据建模”实验室中会创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。
 
 1. 在“查询”窗格中，选择 FactResellerSales 查询。
 
@@ -152,7 +155,8 @@ lab:
 
 1. 查看 TotalProductCost 列的列质量，请注意 8% 的行都为空。
 
-    缺少 TotalProductCost 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载数据”实验室中，使用存储在相关 DimProduct 表中的产品标准成本来应用转换以填充缺少的值。  
+    缺少“TotalProductCost”**** 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中，使用存储在相关 DimProduct**** 表中的产品标准成本来应用转换以填充缺少的值。**
+
 
 ## **从 CSV 文件获取数据**
 
@@ -178,9 +182,10 @@ lab:
 
     在 ColorFormats CSV 文件中，每个产品颜色占一行。每行都记录十六进制代码以设置背景和字体颜色的格式。
 
-现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。 
+现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。
 
  ![查询列表](Linked_image_Files/01-all-queries-loaded.png)
+
 
 ### **完成**
 
