@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Manage files and datasets in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: 在 Power BI 中管理文件和数据集
+  module: Deploy and manage Power BI service items
 ---
 # 在 Power BI 中管理文件和数据集
 
@@ -47,7 +47,7 @@ lab:
 
 1. 刷新数据集之前，请打开“销售额监视”仪表板****。
 
-1. 编辑“销售额、利润率”磁贴的详细信息以显示上一次刷新时间。
+1. 编辑“销售额、利润率”磁贴的详细信息以显示上次刷新时间。
 
 1. 右键单击 `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` 文件，然后使用 PowerShell 运行。 此脚本会将 2020 年 12 月的销售额数据加载到数据库中。
 

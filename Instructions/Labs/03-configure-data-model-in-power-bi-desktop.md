@@ -41,7 +41,7 @@ lab:
 
 在本任务中，你将创建模型关系。 该文件配置为不标识先前实验室中的表之间的关系。 这不是默认设置，但建议使用该设置，以避免在为模型创建正确的关系时执行额外的工作。
 
-重要说明：实验室使用速记表示法引用字段。如下所示：“Product \| Category”。在此示例中，Product 是表名，Category 是字段名。  
+重要说明：实验室使用速记表示法引用字段。如下所示：“Product \| Category”。在此示例中，Product 是表名，Category 是字段名。
 
 1. 在 Power BI Desktop 的左侧，选择“模型”视图图标。
 
@@ -119,8 +119,8 @@ lab:
 
 1. 使用新方法创建以下两个模型关系：
 
-     - “Region \| SalesTerritoryKey”到“Sales \| SalesTerritoryKey” 
-     - “Salesperson \| EmployeeKey”到“Sales \| EmployeeKey” 
+     - “Region \| SalesTerritoryKey”到“Sales \| SalesTerritoryKey”
+     - “Salesperson \| EmployeeKey”到“Sales \| EmployeeKey”
 
 1. 在该图中，排列表，以使“Sales”表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
 
@@ -142,7 +142,7 @@ lab:
 
 在此任务中，配置 Product 表。
 
-1. 在“模型”视图中的“数据”窗格中，展开“Product”表以显示所有字段（如有必要）。 
+1. 在“模型”视图中的“数据”窗格中，展开“Product”表以显示所有字段（如有必要）。
 
 1. 若要创建层次结构，请在“数据”窗格中，右键单击“Category”列，然后选择“创建层次结构”。
 
@@ -268,7 +268,7 @@ lab:
 
     这些列是隐藏的，因为它们要么被关系使用，要么将在行级别安全性配置或计算逻辑中使用。
 
-    “在 Power BI Desktop 中创建 DAX 计算”实验室中会在计算中使用 SalesOrderNumber。 
+    “在 Power BI Desktop 中创建 DAX 计算”实验室中会在计算中使用 SalesOrderNumber。
 
 1. 从以下三个列中进行选择（多选）：
 
@@ -332,7 +332,7 @@ lab:
 
      ![图片 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
 
-1. 在“快速度量值”窗口的“数据”窗格中，展开“Sales”表。  
+1. 在“快速度量值”窗口的“数据”窗格中，展开“Sales”表。
 
 1. 将“Sales”字段拖入“基值”框。
 
@@ -340,7 +340,7 @@ lab:
 
      ![图片 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 
-1. 注意“数据”窗格“Sales”表中的新度量值。 
+1. 注意“数据”窗格“Sales”表中的新度量值。
     1. 度量值使用计算器图标。
 
      ![图片 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
@@ -352,8 +352,8 @@ lab:
 1. 根据以下要求，在“Sales”表中添加第二个快速度量值：
 
      - 使用“除法”数学运算
-     - 将“分子”设置为“Sales \| Profit”字段 
-     - 将“分母”设置为“Sales \| Sales”字段 
+     - 将“分子”设置为“Sales \| Profit”字段
+     - 将“分母”设置为“Sales \| Sales”字段
      - 将度量值重命名为“Profit Margin”
 
 1. 确保选中“Profit Margin”度量值，然后在“度量工具”上下文功能区上，将格式设置为“百分比”并保留两位小数。
@@ -397,8 +397,8 @@ lab:
 
 1. 使用拖放方法创建以下两个模型关系：
 
-     - “Salesperson \| EmployeeKey”到“SalespersonRegion \| EmployeeKey” 
-     - “Region \| SalesTerritoryKey”到“SalespersonRegion \| SalesTerritoryKey” 
+     - “Salesperson \| EmployeeKey”到“SalespersonRegion \| EmployeeKey”
+     - “Region \| SalesTerritoryKey”到“SalespersonRegion \| SalesTerritoryKey”
 
     “SalespersonRegion”表可被视为桥接表**。
 
@@ -406,13 +406,13 @@ lab:
 
 1. 切换回“模型”视图，然后按照“Salesperson”表中的关系筛选方向（箭头）进行操作。
 
-    假设“Salesperson”表筛选了“Sales”表。它还会筛选“SalespersonRegion”表，但不会继续将筛选器传播到“Region”表（箭头指向错误方向）。   
+    假设“Salesperson”表筛选了“Sales”表。它还会筛选“SalespersonRegion”表，但不会继续将筛选器传播到“Region”表（箭头指向错误方向）。
 
      ![图片 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
 
 1. 若要编辑“Region”和“SalespersonRegion”表之间的关系，请双击该关系。
 
-1. 在“编辑关系”窗口的“交叉筛选方向”下拉列表中，选择“双向”。  
+1. 在“编辑关系”窗口的“交叉筛选方向”下拉列表中，选择“双向”。
 
 1. 选中“在两个方向上应用安全筛选器”复选框。然后选择“确定”。
 
@@ -424,7 +424,7 @@ lab:
 
 1. 切换到“报表”视图，然后注意到销售额仍未更改。
 
-    问题现在与以下事实有关：“Salesperson”和“Sales”表之间存在两个可能的筛选器传播路径。基于“最少表数”评估，这种歧义在内部得到解决。需要明确的是，不应设计具有此类歧义的模型，该问题在本实验室的后面部分通过完成“在 Power BI Desktop 中创建 DAX 计算”实验室得以解决。  
+    问题现在与以下事实有关：“Salesperson”和“Sales”表之间存在两个可能的筛选器传播路径。基于“最少表数”评估，这种歧义在内部得到解决。需要明确的是，不应设计具有此类歧义的模型，该问题在本实验室的后面部分通过完成“在 Power BI Desktop 中创建 DAX 计算”实验室得以解决。
 
 1. 切换到“模型”视图以强制通过桥接表传播筛选器。 请编辑（双击）“Salesperson”表和“Sales”表之间的关系 。
 

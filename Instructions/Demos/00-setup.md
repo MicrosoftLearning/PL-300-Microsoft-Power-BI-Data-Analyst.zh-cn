@@ -1,8 +1,9 @@
 ---
 demo:
-  "\_\_ title": Setup demo environment
-  "\_\_ module": Setup demo environment
+  title: 设置自己的环境
+  module: Set up your own environment
 ---
+
 
 # 演示设置
 
@@ -10,7 +11,7 @@ demo:
 
 1. 使用Student 帐户登录虚拟机环境。
 
-1. 打开 Microsoft Edge，然后导航到 https://powerbi.com 并使用讲师帐户登录<https://powerbi.com>。
+1. 打开 Microsoft Edge，然后导航到 <https://powerbi.com> 并使用讲师帐户登录。
     > 提示：如果系统提示你更改密码，请确保将其记录在 D:\PL300\Demo\Setup\MySettings.txt 文件中。
 
 1. 在 Power BI 服务中，接受 Power BI Pro 试用版。

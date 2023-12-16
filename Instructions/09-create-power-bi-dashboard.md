@@ -116,7 +116,7 @@ lab:
 
 1. 请注意，答复为“(空)”。
     
-    你可能还记得在“在 Power BI Desktop 中创建高级 DAX 计算”实验室中添加了“Sales YTD”度量值。此度量值是时间智能表达式，它需要对 Date 表进行筛选以生成结果。  
+    你可能还记得在“在 Power BI Desktop 中创建高级 DAX 计算”实验室中添加了“Sales YTD”度量值。此度量值是时间智能表达式，它需要对 Date 表进行筛选以生成结果。
 
     ![图片 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 

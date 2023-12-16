@@ -56,7 +56,7 @@ lab:
 
 1. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
 
-    注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。 
+    注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。
 
 1. 选择但不要选中 DimEmployee 表
 
@@ -122,7 +122,7 @@ lab:
 
 1. 水平滚动以显示最后面的列。 请注意 DimProductSubcategory 列。
 
-    在“在 Power BI Desktop 中加载数据”实验室中向此查询添加转换时，使用“DimProductSubcategory”列联接表。 
+    在“在 Power BI Desktop 中加载数据”实验室中向此查询添加转换时，使用“DimProductSubcategory”列联接表。
 
 1. 在“查询”窗格中，选择 DimReseller 查询。
 
@@ -144,7 +144,7 @@ lab:
 
 1. 在“查询”窗格中，选择 DimSalesTerritory 查询。  
 
-    在 DimSalesTerritory 表中，每个销售区域占一行，包括 Corporate HQ（总部）。区域会分配到国家/地区，国家/地区会分配到组。“Power BI Desktop 中为数据建模”实验室中会创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。  
+    在 DimSalesTerritory 表中，每个销售区域占一行，包括 Corporate HQ（总部）。区域会分配到国家/地区，国家/地区会分配到组。“Power BI Desktop 中为数据建模”实验室中会创建一个层次结构，用来支持在区域、国家/地区或组级别进行分析。
 
 1. 在“查询”窗格中，选择 FactResellerSales 查询。
 
@@ -152,7 +152,7 @@ lab:
 
 1. 查看 TotalProductCost 列的列质量，请注意 8% 的行都为空。
 
-    缺少 TotalProductCost 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载数据”实验室中，使用存储在相关 DimProduct 表中的产品标准成本来应用转换以填充缺少的值。  
+    缺少 TotalProductCost 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载数据”实验室中，使用存储在相关 DimProduct 表中的产品标准成本来应用转换以填充缺少的值。
 
 ## **从 CSV 文件获取数据**
 
@@ -178,7 +178,7 @@ lab:
 
     在 ColorFormats CSV 文件中，每个产品颜色占一行。每行都记录十六进制代码以设置背景和字体颜色的格式。
 
-现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。 
+现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。
 
  ![查询列表](Linked_image_Files/01-all-queries-loaded.png)
 

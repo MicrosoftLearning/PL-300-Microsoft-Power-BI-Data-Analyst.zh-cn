@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  title: 在 Power BI 中获取数据
+  module: Get data in Power BI
 ---
+
 # 在 Power BI 中获取数据
 
 ## 开始开发 Power BI 报表

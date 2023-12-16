@@ -69,7 +69,7 @@ lab:
 
      ![“管理列”>“选择列”>“转到列”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
-1. 在“转到列”窗口中，若要按列名对列表进行排序，请选择“AZ”排序按钮，然后选择“名称”和 SalesPersonFlag   。 单击“确定”。 
+1. 在“转到列”窗口中，若要按列名对列表进行排序，请选择“AZ”排序按钮，然后选择“名称”和 SalesPersonFlag   。 单击“确定”。
 
      ![“转到列”排序选项](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
@@ -110,7 +110,7 @@ lab:
 
 1. 在“新列名”框中，将文本替换为“Salesperson”。
 
-1. 若要重命名 EmployeeNationalIDAlternateKey 列，请双击 EmployeeNationalIDAlternateKey 列标头并将文本替换为 EmployeeID，然后按 Enter。   
+1. 若要重命名 EmployeeNationalIDAlternateKey 列，请双击 EmployeeNationalIDAlternateKey 列标头并将文本替换为 EmployeeID，然后按 Enter。
 
 1. 使用前面的步骤将“EmailAddress”列重命名为“UPN”。
 
@@ -262,7 +262,7 @@ lab:
     - SalesAmount
     - DimProduct
 
-        注意：回想一下，“在 Power BI Desktop 中准备数据”实验室中有一小部分 FactResellerSales 行缺少 TotalProductCost 值。为了帮助修复缺少的值，已将 DimProduct 列包含在内，用于检索产品标准成本列。   
+        注意：回想一下，“在 Power BI Desktop 中准备数据”实验室中有一小部分 FactResellerSales 行缺少 TotalProductCost 值。为了帮助修复缺少的值，已将 DimProduct 列包含在内，用于检索产品标准成本列。
 
 1. 展开“DimProduct”列，取消选中所有列，然后仅包括“StandardCost”列。
 
@@ -274,7 +274,7 @@ lab:
 
 1. 在“自定义列公式”框中，输入以下表达式（等号后面的文本）：
     - 可从 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。
-    - 此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。   
+    - 此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。
 
 
     `
@@ -328,7 +328,7 @@ lab:
 
 1. 重命名以下两列：
 
-    - Attribute 重命名为 MonthNumber（没有空格） 
+    - Attribute 重命名为 MonthNumber（没有空格）
     - 将 Value 重命名为 Target
 
 1. 要准备“MonthNumber”列值，请右键单击“MonthNumber”列标题，然后选择“替换值”。
@@ -459,7 +459,7 @@ lab:
     - Targets
     - ColorFormats（这不会加载到数据模型）
 
-1. 若要加载数据模型，请在“文件”后台视图中选择“关闭 &amp; 应用”。 
+1. 若要加载数据模型，请在“文件”后台视图中选择“关闭 &amp; 应用”。
 
     *所有已启用加载的查询现已加载到数据模型。*
 
