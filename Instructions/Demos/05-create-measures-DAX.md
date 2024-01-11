@@ -1,7 +1,7 @@
 ---
-demo:
-  title: 在 Power BI 中使用 DAX 创建度量值
-  module: Create measures using DAX in Power BI
+lab:
+  "\_\_ title": Create measures using DAX in Power BI
+  "\_\_ module": Create measures using DAX in Power BI
 ---
 # 在 Power BI 中使用 DAX 创建度量值
 

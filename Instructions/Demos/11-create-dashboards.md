@@ -1,7 +1,7 @@
 ---
-demo:
-  title: 在 Power BI 服务中创建仪表板
-  module: Deploy and manage Power BI service items
+lab:
+  "\_\_ title": Create dashboards in the Power BI service
+  "\_\_ module": Deploy and manage Power BI service items
 ---
 # 在 Power BI 服务中创建仪表板
 

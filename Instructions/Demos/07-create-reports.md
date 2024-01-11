@@ -1,7 +1,7 @@
 ---
-demo:
-  title: 在 Power BI 中创建报表
-  module: Create reports in Power BI
+lab:
+  "\_\_ title": Create reports in Power BI
+  "\_\_ module": Create reports in Power BI
 ---
 # 创建报表
 
@@ -35,7 +35,7 @@ demo:
 
 1. 指出 2020 年 12 月已添加到该轴，但是没有数据列。
 
-1. 说明尚未出现 2020 年 12 月的销售额数据。 *你将在后续演示中运行脚本以加载 2020 年 12 月的销售额。*
+1. 说明尚未出现 2020 年 12 月的销售额数据。 你将在后续演示中运行脚本以加载 2020 年 12 月的销售额。**
 
 1. 添加漏斗图，并进行如下配置：
 

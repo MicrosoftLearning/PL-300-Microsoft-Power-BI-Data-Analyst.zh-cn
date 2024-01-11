@@ -1,7 +1,7 @@
 ---
-demo:
-  title: （可选）在 Power BI 中优化模型性能
-  module: Optimize model performance in Power BI
+lab:
+  "\_\_ title": (Optional) Optimize model performance in Power BI
+  "\_\_ module": Optimize model performance in Power BI
 ---
 
 # （可选）优化模型性能
