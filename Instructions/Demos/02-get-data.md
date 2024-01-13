@@ -1,9 +1,8 @@
 ---
-demo:
-  title: 在 Power BI 中获取数据
-  module: Get data in Power BI
+lab:
+  "\_\_ title": Get data in Power BI
+  "\_\_ module": Get data in Power BI
 ---
-
 # 在 Power BI 中获取数据
 
 ## 开始开发 Power BI 报表
@@ -40,7 +39,7 @@ demo:
 
 1. 打开“列分布”，并指出“ProductID”（唯一值）和“ProductCategory”（多个重复值）等列。
 
-1. 打开“列配置文件”，然后选择“ProductCategory”列。
+1. 打开“列分析”，然后选择“ProductCategory”列。
 
 1. 指出列的统计信息和分布情况。
 

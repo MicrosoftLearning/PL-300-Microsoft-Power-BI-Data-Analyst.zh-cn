@@ -1,7 +1,7 @@
 ---
-demo:
-  title: 在 Power BI 中执行数据分析
-  module: Perform data analysis in Power BI
+lab:
+  "\_\_ title": Perform data analysis in Power BI
+  "\_\_ module": Perform data analysis in Power BI
 ---
 # 执行数据分析
 
@@ -21,7 +21,7 @@ demo:
 
 1. 按照如下配置矩阵视觉对象：
 
-    - 行：产品 | 类别（组）和产品 | 产品
+    - 行：“产品 | 类别(组)”和“产品 | 产品”
 
     - 值：“销售额”表中的“数量”、“销售额”、“利润”和“利润率”
 

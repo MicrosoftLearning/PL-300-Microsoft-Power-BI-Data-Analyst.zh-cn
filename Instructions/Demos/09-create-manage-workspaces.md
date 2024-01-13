@@ -1,7 +1,7 @@
 ---
-demo:
-  title: 在 Power BI 中创建和管理工作区
-  module: Deploy and manage Power BI service items
+lab:
+  "\_\_ title": Create and manage workspaces in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
 ---
 
 # 创建和管理工作区
@@ -18,13 +18,13 @@ demo:
 
 1. 打开“销售额监视”仪表板****。
 
-1. 在菜单上，选择“共享”。
+1. 在菜单上选择“共享”。
 
 1. 将仪表板共享到收件人帐户。
 
 1. 切换到“收件人”**** Power BI 服务窗口。
 
-1. 打开“与我共享”****，然后打开“销售额监视”仪表板。
+1. 打开“与我共享的内容”****，然后打开“销售额监视”仪表板。
 
 1. 指出该仪表板是只读仪表板。
 
@@ -34,7 +34,7 @@ demo:
 
 1. 在“导航”窗格中，选择工作区名称。
 
-1. 在右上角，选择“创建应用”****。
+1. 在右上角选择“创建应用”****。
 
 1. 在“设置”部分，输入描述文本，并根据需要选择主题颜色。
 
