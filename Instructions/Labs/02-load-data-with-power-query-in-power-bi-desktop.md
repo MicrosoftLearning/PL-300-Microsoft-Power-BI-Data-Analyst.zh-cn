@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 在 Power BI Desktop 中加载已转换的数据
   module: 'Clean, Transform, and Load Data in Power BI'
 ---
@@ -31,17 +32,17 @@ lab:
 
 1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter 文件夹，然后打开“Sales Analysis”文件  。
+1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter 文件夹，然后打开“Sales Analysis”文件************。
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 请注意功能区下方的黄色警告消息。
+1. 请注意功能区下方的警告消息。
 
     此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
 
-    若要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
+    若要关闭该警告消息，请在警告消息的右侧选择“X”。****
 
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\PL300\MySolution 文件夹 。
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\Allfiles\MySolution 文件夹。********
 
 1. 如果系统提示应用更改，请选择“稍后应用”。
 
@@ -273,7 +274,7 @@ lab:
 1. 在“自定义列”窗口的“新列名”框中，将文本替换为“Cost”。
 
 1. 在“自定义列公式”框中，输入以下表达式（等号后面的文本）：
-    - 可从 D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。
+    - 可从 D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。******
     - 此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。
 
 
