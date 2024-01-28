@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: 创建 Power BI 面板
   module: Create Dashboards
 ---
@@ -46,7 +47,7 @@ lab:
 
 1. 选择“上传”>“浏览”。
 
-1. 导航到 D:\PL300\Labs\09-create-power-bi-dashboard\Starter 文件夹。
+1. 导航到 D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter 文件夹****。
 
 1. 选择 Sales Analysis.pbix 文件，然后选择“打开”。
 
@@ -116,7 +117,7 @@ lab:
 
 1. 在“添加磁贴”窗格（位于右侧）中，选择“图像”磁贴，然后选择“下一步”  。
 
-1. 在“添加图像磁贴”窗格的“URL”框中，输入在 D:\PL300\Resources\AdventureWorksLogo_DataURL.txt 文件中找到的完整 URL，然后选择“应用”   。
+1. 在“添加图像磁贴”窗格的“URL”框中，输入在 D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt 文件中找到的完整 URL，然后选择“应用”****************。
     
     *可以使用图像的 URL 嵌入图像，也可以使用数据 URL 嵌入内联内容。*
 
@@ -160,7 +161,7 @@ lab:
 
 在此任务中，你将运行 PowerShell 脚本来更新“AdventureWorksDW2020”数据库中的数据。
 
-1. 在文件资源管理器中打开 D:\PL300\Setup 文件夹，右键单击 UpdateDatabase-2-AddSales.ps1 文件，然后选择“使用 PowerShell 运行”  。
+1. 在文件资源管理器的“D:\Allfiles\Setup”文件夹中，右键单击 UpdateDatabase-2-AddSales.ps1 文件，然后选择“使用 PowerShell 运行”************。
 
     ![图片 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 
