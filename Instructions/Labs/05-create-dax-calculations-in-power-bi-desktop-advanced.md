@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: 在 Power BI Desktop 中创建高级 DAX 计算
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -30,17 +31,17 @@ lab:
 
 1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter 文件夹，并打开“Sales Analysis”文件  。
+1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter 文件夹，并打开“Sales Analysis”文件************。
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 请注意功能区下方的黄色警告消息。 
+1. 请注意功能区下方的警告消息。 
 
     此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
     
-    要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
+    若要关闭该警告消息，请在警告消息的右侧选择“X”。******
 
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\PL300\MySolution 文件夹 。
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\Allfiles\MySolution 文件夹。********
 
 ## **创建矩阵视觉对象**
 
@@ -90,7 +91,7 @@ lab:
 
 1. 基于以下表达式向“Sales”表添加一个度量值：
     
-     为了方便起见，可以从 D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义**。
+     为了方便起见，可以从 D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt 文件复制本实验室中的所有 DAX 定义。******
 
 
     **DAX**
