@@ -1,11 +1,12 @@
 ---
-lab:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: 在 Power BI 中使用 DAX 创建度量值
+  module: Create measures using DAX in Power BI
 ---
 # 在 Power BI 中使用 DAX 创建度量值
 
-> 提示：所有计算都可以从 D:\PL300\Demo\Resources\Snippets-Demo-05.txt 文件中复制。
+> **提示**：可以从 D:\Allfiles\Demo\Resources\Snippets-Demo-05.txt 文件复制所有计算。
 
 ## 创建计算表
 
