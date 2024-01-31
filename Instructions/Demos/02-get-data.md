@@ -1,15 +1,17 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: 在 Power BI 中获取数据
+  module: Get data in Power BI
 ---
+
 # 在 Power BI 中获取数据
 
 ## 开始开发 Power BI 报表
 
 1. 打开 Power BI Desktop，然后关闭“入门”页面。
 
-1. 将文件保存到 D:\PL300\Demo 文件夹作为“销售额分析”。
+1. 将文件保存到“D:\PL300\Demo”文件夹，命名为“销售额分析”。
 
 ## 连接到 SQL Server 数据库
 
