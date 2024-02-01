@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 在 Power BI Desktop 中创建 DAX 计算
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -33,17 +34,17 @@ lab:
 
 1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter 文件夹，并打开“Sales Analysis”文件  。
+1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter 文件夹，并打开“Sales Analysis”文件************。
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 请注意功能区下方的黄色警告消息。
+1. 请注意功能区下方的警告消息。
 
     此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
 
-    要关闭该警告消息，请在黄色警告消息的右侧选择“X”。
+    若要关闭该警告消息，请在警告消息的右侧选择“X”。******
 
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\PL300\MySolution 文件夹 。
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\Allfiles\MySolution 文件夹。********
 
 1. 如果系统提示应用更改，请选择“稍后应用”。
 
@@ -61,7 +62,7 @@ lab:
 
 2. 在编辑栏（在创建或编辑计算时在功能区正下方打开）中，键入“Salesperson =”，按 Shift+Enter，键入“Salesperson (Performance)”，然后按 Enter。
 
-    为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义**。
+    为了方便起见，可以从 D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义******。
 
      ![图片 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -137,7 +138,7 @@ lab:
 
 在此任务中，添加其他列，以支持按不同时间段进行筛选和分组。 你还将创建一个计算列来控制其他列的排序顺序。
 
-为了方便起见，可以从 D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义**。
+为了方便起见，可以从 D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt 中的代码片段文件复制本实验室中的所有 DAX 定义******。
 
 1. 在“表工具”关联功能区上，选择“计算”组中的“新建列”。
 

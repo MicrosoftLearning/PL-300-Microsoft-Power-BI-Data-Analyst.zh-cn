@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: PL-300
+  title: 在 Power BI 服务中创建仪表板
+  module: Deploy and manage Power BI service items
 ---
 # 在 Power BI 服务中创建仪表板
 
@@ -9,7 +10,7 @@ lab:
 
 1. 首先，在 Power BI 服务中创建新的工作区。
 
-1. 对于工作区图标，请选择 `D:\PL300\Demo\Resources\Icon-Airplane.jpg` 图像。
+1. 对于工作区图标，请选择 `D:\Allfiles\Demo\Resources\Icon-Airplane.jpg` 图像。
 
 1. 在 Power BI Desktop 中，将“销售额分析”报表发布到新工作区****。
 
