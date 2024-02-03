@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
+demo:
+  course: PL-300
+  title: （可选）在 Power BI 中优化模型性能
+  module: Optimize model performance in Power BI
 ---
 
 # （可选）优化模型性能
@@ -10,13 +11,13 @@ lab:
 
 > 注意：本演示使用另一个 Power BI Desktop 文件。
 
-1. 打开“D:\PL300\Demo\Resources\AW Sales Analysis.pbix”文件。
+1. 打开“D:\Allfiles\Demo\Resources\AW Sales Analysis.pbix”文件。
 
 1. 如果系统提示你连接到数据源，请单击“连接”。
 
 1. 在右下角，指出数据模型包含 DirectQuery 表。
 
-1. 将 Power BI Desktop 文件保存到“D:\PL300\Demo\MySolution”文件夹。
+1. 将 Power BI Desktop 文件保存到“D:\Allfiles\Demo\MySolution”文件夹。
 
 1. 在“模型”视图中，介绍模型设计，该模型包含两个相关表。
 

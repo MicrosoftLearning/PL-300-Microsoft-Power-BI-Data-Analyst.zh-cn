@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 在 Power BI Desktop 中获取数据
   module: Get Data in Power BI
 ---
@@ -34,11 +35,11 @@ lab:
 
 1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 在“打开”窗口中，导航到 D:\PL300\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter 文件夹 。
+1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter 文件夹********。
 
 1. 选择“销售分析”文件。
 
-1. 通过“另存为”将文件副本保存到 D:\PL300\MySolution 文件夹 。
+1. 通过“另存为”将文件副本保存到 D:\Allfiles\MySolution 文件夹********。
 
 
 ## **从 SQL Server 获取数据**
@@ -164,7 +165,7 @@ lab:
 
 1. 若要添加新查询，请在“Power Query 编辑器”窗口的“主页”功能区选项卡上的“新建查询”组中，选择“新建源”向下箭头，然后选择“文本/CSV”。
 
-1. 在“打开”窗口中，导航到“D:\PL300\Resources”文件夹，然后选择“ResellerSalesTargets.csv”文件  。 选择“打开”  。
+1. 在“打开”窗口中，导航到 D:\Allfiles\Resources 文件夹，然后选择“ResellerSalesTargets.csv”文件************。 选择“打开”  。
 
 1. 在“ResellerSalesTargets.csv”窗口中，查看预览数据。 选择“确定”。
 
@@ -178,7 +179,7 @@ lab:
 
      ![图片 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-1. 基于 D:\PL300\Resources\ColorFormats.csv 文件重复这些步骤，以创建查询。
+1. 基于 D:\Allfiles\Resources\ColorFormats.csv 文件重复这些步骤，以创建查询****。
 
     在 ColorFormats CSV 文件中，每个产品颜色占一行。每行都记录十六进制代码以设置背景和字体颜色的格式。
 

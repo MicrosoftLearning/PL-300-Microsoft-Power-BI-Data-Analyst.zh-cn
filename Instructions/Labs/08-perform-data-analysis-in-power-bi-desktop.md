@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: 使用 AI 视觉对象执行高级分析
   module: Perform Data Analysis in Power BI
 ---
@@ -46,7 +47,7 @@ lab:
 
 1. 选择“上传”>“浏览”。
 
-1. 导航到 D:\PL300\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter 文件夹。
+1. 导航到 D:\Allfiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter 文件夹****。
 
 1. 选择 Sales Analysis.pbix 文件，然后选择“打开”。
 
@@ -70,7 +71,7 @@ lab:
 
 1. 在“数据中心”**** 窗口中，选择“我的工作区”**** 中的“销售分析”**** 语义模型，然后通过“连接”**** 或双击加载语义模型。
 
-1. 导航到“文件”>“保存”，将文件名命名为“Sales Exploration”并保存到 D:\PL300\MySolution 文件夹  。
+1. 导航到“文件”>“保存”，将文件名命名为“Sales Exploration”并保存到 D:\Allfiles\MySolution 文件夹************。
 
 现在，你将创建两个报表页面，在每个页面上，你将使用不同的视觉对象来分析和浏览数据。
 

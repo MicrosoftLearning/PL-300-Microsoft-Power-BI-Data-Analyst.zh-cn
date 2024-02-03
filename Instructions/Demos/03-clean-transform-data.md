@@ -1,8 +1,10 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  course: 'PL-300, DP-605'
+  title: 在 Power BI 中清理、转换和加载数据
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # 在 Power BI 中清理、转换和加载数据
 
 ## 应用查询转换
@@ -47,7 +49,7 @@ lab:
 
 ## 整合查询
 
-1. 使用 Excel 连接器创建一个新查询，连接到 D:\PL300\Demo\Data\ProductCost.xlsx 文件。
+1. 使用 Excel 连接器创建一个新查询，连接到 D:\Allfiles\Demo\Data\ProductCost.xlsx 文件。
 
 1. 删除“产品”列。
 

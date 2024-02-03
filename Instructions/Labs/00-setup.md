@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 设置自己的环境
   module: Set up your own environment
 ---
@@ -9,7 +10,7 @@ lab:
 理想情况下，应在托管实验室环境中完成这些实验室。 如果要在你自己的计算机上完成它们，可以通过安装以下软件来完成。
 
 - 可以[从 GitHub 下载](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/AllfilesDownload.zip)所有安装程序和资源文件。
-  - 将“AllFiles”文件夹提取到 D:/，并将其重命名为“PL300”。
+  - 将 'AllFiles' 文件夹提取到 D:/，并将其重命名为 'D:\Allfiles\'。
 
 ***使用自己的环境时，可能会出现意外的对话框和行为。由于本地配置层出不穷，课程团队无法为你在自己环境中可能遇到的问题提供支持。***
 

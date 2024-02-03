@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 在 Power BI Desktop 中设计报表
   module: Create Reports in Power BI Desktop
 ---
@@ -24,9 +25,9 @@ lab:
 
 1. 在 Power BI Desktop 中，导航到“文件” > “打开报表” > “浏览报表”  。
 
-1. 打开 D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter 文件夹中的 Sales Analysis 文件 。
+1. 打开 **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** 文件夹中的 **Sales Analysis** 文件。
 
-1. 通过转到“文件” > “另存为”创建文件副本，并将副本保存在 D:\PL300\MySolution 文件夹中  。
+1. 通过转到“**文件**” > “**另存为**”创建文件副本，并将副本保存在 **D:\Allfiles\MySolution** 文件夹中。
 
 ## **设计页面 1**
 
@@ -42,7 +43,7 @@ lab:
 
     ![图 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. 在“打开”窗口中，导航到“D:\PL300\Resources”文件夹 。
+1. 在“**打开**”窗口中，导航到“**D:\Allfiles\Resources**”文件夹。
 
 1. 选择 AdventureWorksLogo.jpg 文件，然后选择“打开”。
 

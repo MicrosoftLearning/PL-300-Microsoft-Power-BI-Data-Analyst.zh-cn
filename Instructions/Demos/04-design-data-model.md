@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Design a data model in Power BI
-  "\_\_ module": Design a data model in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: 在 Power BI 中设计数据模型
+  module: Design a data model in Power BI
 ---
 # 在 Power BI 中设计数据模型
 
