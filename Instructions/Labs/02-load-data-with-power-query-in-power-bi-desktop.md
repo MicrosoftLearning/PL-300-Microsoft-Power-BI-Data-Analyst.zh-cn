@@ -42,7 +42,7 @@ lab:
 
     若要关闭该警告消息，请在警告消息的右侧选择“X”。****
 
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\Allfiles\MySolution 文件夹。********
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到“D:\Allfiles\MySolution”文件夹。********
 
 1. 如果系统提示应用更改，请选择“稍后应用”。
 
@@ -273,14 +273,14 @@ lab:
 
 1. 在“自定义列”窗口的“新列名”框中，将文本替换为“Cost”。
 
-1. 在“自定义列公式”框中，输入以下表达式（等号后面的文本）：
-    - 可从 D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。******
-    - 此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。
+1. 在“自定义列公式”框中，输入以下表达式（等号后面的内容），然后保存新列：****
 
+        `
+    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
 
-    `
-    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-    `
+    可从 D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。******
+
+    此表达式测试是否缺失 TotalProductCost 值。如果缺失，则通过将 OrderQuantity 值乘以 StandardCost 值来生成一个值；否则，它使用现有的 TotalProductCost 值。
 
 1. 删除以下两列：
 
