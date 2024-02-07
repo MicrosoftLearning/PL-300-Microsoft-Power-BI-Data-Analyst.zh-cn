@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Create reports in Power BI
-  "\_\_ module": Create reports in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: 在 Power BI 中创建报表
+  module: Create reports in Power BI
 ---
 # 创建报表
 

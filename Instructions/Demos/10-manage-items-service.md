@@ -1,9 +1,9 @@
 ---
-lab:
-  "\_\_ title": Manage files and semantic models in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: PL-300
+  title: 在 Power BI 中管理文件存储和语义模型
+  module: Deploy and manage Power BI service items
 ---
-
 # 在 Power BI 中管理文件存储和语义模型
 
 ## 准备网关数据刷新
@@ -50,7 +50,7 @@ lab:
 
 1. 编辑“销售额和利润率”磁贴的详细信息以显示上次刷新时间。
 
-1. 右键单击 `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` 文件，然后使用 PowerShell 运行。 此脚本会将 2020 年 12 月的销售额数据加载到数据库中。
+1. 右键单击 `D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` 文件，然后使用 PowerShell 运行。 此脚本会将 2020 年 12 月的销售额数据加载到数据库中。
 
 1. 在适用于讲师的 Power BI 服务中，在“导航”窗格中刷新“销售分析”**** 语言模型。
 

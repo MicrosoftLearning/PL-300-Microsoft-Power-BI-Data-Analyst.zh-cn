@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 在 Power BI 中设计数据模型
   module: Design a Data Model in Power BI
 ---
@@ -31,11 +32,11 @@ lab:
 
 1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
 
-1. 导航到 D:\PL300\Labs\03-configure-data-model-in-power-bi-desktop\Starter 文件夹，然后选择 Sales Analysis 文件 。
+1. 导航到 D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter 文件夹，然后选择 Sales Analysis 文件。********
 
 1. 关闭任何可能打开的信息窗口。
 
-1. 转到“文件”>“另存为”，并将文件保存到 D:\PL300\MySolution 文件夹 。
+1. 转到“文件”>“另存为”，并将文件保存到 D:\Allfiles\MySolution 文件夹。********
 
 ## **创建模型关系**
 
@@ -336,7 +337,7 @@ lab:
 
 1. 将“Sales”字段拖入“基值”框。
 
-1. 将“Cost”字段拖入“要减去的值”框。
+1. 将“Cost”字段拖入“要减去的值”框，然后选择“添加”。************  
 
      ![图片 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 

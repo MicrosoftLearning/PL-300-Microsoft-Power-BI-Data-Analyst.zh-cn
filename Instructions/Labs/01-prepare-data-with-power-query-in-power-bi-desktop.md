@@ -20,7 +20,7 @@ lab:
 
 ## **Power BI Desktop 入门**
 
-在此任务中，首先打开一个 Power BI (.pbix) 入门文件。 入门文件不包含任何数据，但经过专门配置，可帮助完成实验室。 入门文件中禁用了以下报表级设置：
+ 在此任务中，首先打开一个 Power BI (.pbix) 入门文件。 入门文件不包含任何数据，但经过专门配置，可帮助完成实验室。 入门文件中禁用了以下报表级设置：
 
 - 数据加载 > 首次加载时从数据源导入关系
 - 数据加载 > 加载数据后自动检测新关系
@@ -41,7 +41,6 @@ lab:
 
 1. 通过“另存为”将文件副本保存到 D:\Allfiles\MySolution 文件夹********。
 
-
 ## **从 SQL Server 获取数据**
 
 此任务介绍如何连接到 SQL Server 数据库并导入表，这会在 Power Query 中创建查询。
@@ -50,23 +49,23 @@ lab:
 
      ![SQL Server 获取数据图标](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-1. 在“SQL Server 数据库”窗口的“服务器”框中，输入“localhost”，然后选择“确定”   。
+1. 在“SQL Server 数据库”窗口的“服务器”框中，输入“localhost”，将“数据库”留空，然后选择“确定”********************。
 
     注意：在此实验室中，使用 localhost 连接到 SQL Server 数据库，因为网关数据源无法解析 localhost。不建议在创建自己的解决方案时这样做 。
 
 1. 如果系统提示输入凭据，请在“SQL Server 数据库”窗口中，选择“使用我的当前凭据”，然后选择“连接”  。
 
-1. 在“导航器”窗口的左侧，展开“AdventureWorksDW2020”数据库。
+1. 在“导航器”窗格中，展开“AdventureWorksDW2020”数据库。********
 
     注意：AdventureWorksDW2020 数据库基于 AdventureWorksDW2017 示例数据库。已对其进行修改，以支持课程实验室的学习目标。
 
-1. 选择但不要选中 DimEmployee 表
+1. 选择 DimEmployee 表，注意表数据的预览。****
 
      ![指示 DimEmployee 的 AdventureWorksDW2020 数据库](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-1. 请注意右侧窗格中表数据的预览。 可以通过预览数据来查看列和行示例。
+    *注意：可以通过预览数据来查看列和行示例。*
 
-1. 若要创建查询，请选中下面 6 个表旁边的复选框：
+1. 若要导入表数据，**** 选中以下六个表旁边的复选框：
 
     - DimEmployee
     - DimEmployeeSalesTerritory
@@ -76,13 +75,12 @@ lab:
     - FactResellerSales
 
 1. 选择“转换数据”**** 完成此任务，这会打开 Power Query 编辑器。
-    
-    1. 此实验室仅用于连接和分析数据，但不转换数据。
 
+现在已将数据导入 Power BI，并打开了 Power Query 编辑器以完成下一个任务。
 
 ## **在 Power Query 编辑器中预览数据**
 
-此任务介绍 Power Query 编辑器，并允许查看和分析数据。 这有助于确定之后如何清理和转换数据。
+此任务介绍 Power Query 编辑器，并允许查看和分析数据。 这有助于确定之后如何清理和转换数据。 你还将查看前缀为“Dim”的维度表，以及前缀为“Fact”的事实数据表。
 
 1. 请注意“Power Query 编辑器”窗口左侧的“查询”窗格。 “查询”窗格包含一个针对每个所选表的查询。
 
@@ -118,15 +116,9 @@ lab:
 
      ![显示 296 个非重复值和 296 个唯一值的列分布](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-1. 在“查询”窗格中，选择 DimEmployeeSalesTerritory 查询。
+1. 在“查询”窗格中，选择 DimProduct 查询。
 
-    DimEmployeeSalesTerritory 表中每个员工及其管理的销售区域占一行。该表支持将多个区域与单个员工关联。某些员工管理一个、两个或可能更多区域。为这些数据建模时需要定义多对多关系。
-
-1. 在“查询”窗格中，选择 DimProduct 查询。 DimProduct 表包含的每个行表示公司已销售的每个产品。
-
-1. 水平滚动以显示最后面的列。 请注意 DimProductSubcategory 列。
-
-    在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中向此查询添加转换时，使用“DimProductSubcategory”**** 列联接表。**
+    *DimProduct 表包含的每个行表示公司已销售的每个产品。*****
 
 1. 在“查询”窗格中，选择 DimReseller 查询。
 
@@ -158,7 +150,6 @@ lab:
 
     缺少“TotalProductCost”**** 列值是数据质量问题。为了解决此问题，请在“在 Power BI Desktop 中加载已转换的数据”**** 实验室中，使用存储在相关 DimProduct**** 表中的产品标准成本来应用转换以填充缺少的值。**
 
-
 ## **从 CSV 文件获取数据**
 
 在此任务中，基于 CSV 文件创建新查询。
@@ -186,7 +177,6 @@ lab:
 现在应该有两个新查询：ResellerSalesTargets 和 ColorFormats。
 
  ![查询列表](Linked_image_Files/01-all-queries-loaded.png)
-
 
 ### **完成**
 
