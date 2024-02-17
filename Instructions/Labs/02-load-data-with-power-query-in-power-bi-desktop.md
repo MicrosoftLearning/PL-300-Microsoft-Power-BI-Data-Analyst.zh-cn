@@ -275,8 +275,7 @@ lab:
 
 1. 在“自定义列公式”框中，输入以下表达式（等号后面的内容），然后保存新列：****
 
-        `
-    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
+   ` if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost] `
 
     可从 D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt 文件中复制表达式。******
 
