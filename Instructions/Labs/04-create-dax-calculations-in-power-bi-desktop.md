@@ -30,11 +30,11 @@ lab:
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
-
-1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
 
 1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter 文件夹，并打开“Sales Analysis”文件************。
+
+   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
 
 1. 关闭任何可能打开的信息窗口。
 
@@ -70,7 +70,7 @@ lab:
 
      提示：建议输入“空格”（即回车和制表符）来以直观且易于阅读的格式编写公式，尤其在公式又长又复杂的情况下。要输入回车符，请按 Shift+Enter。“空格”是可选的。
 
-1. 在“数据”窗格中，我们注意到，表图标为蓝色阴影（表示计算表）。
+1. 在**数据**窗格中，请注意，表图标前面还有另一个计算器图标（表示计算表）。
 
     ![图片 10](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image11.png)
 
@@ -104,7 +104,7 @@ lab:
 
 在此任务中，你将创建“Date”表。
 
-1. 切换到“数据”视图。 在“主页”功能区选项卡上，选择“计算”组中的“新建表”。
+1. 切换到表视图。 在“主页”功能区选项卡上，选择“计算”组中的“新建表”。
 
     ![图片 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
 
@@ -201,7 +201,7 @@ lab:
 
     *默认情况下，文本值按字母顺序排序，数字按从小到大的顺序排序，日期按从早到晚的顺序排序。*
 
-1. 若要自定义“Month”字段排序顺序，请切换到“数据”视图。
+1. 要自定义“月份”**** 字段排序顺序，请切换到“表”视图。
 
 1. 将“MonthKey”列添加到“Date”表中。
 
@@ -217,7 +217,7 @@ lab:
 
     *此公式会为每个年份/月份组合计算一个数值。*
 
-1. 在“数据”视图中，验证新列是否包含数值（例如，201707 表示 2017 年 7 月等）。
+1. 在“表”视图中，验证新列是否包含数值（例如，201707 表示 2017 年 7 月等）。
 
     ![图片 21](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image28.png)
 
@@ -242,7 +242,6 @@ lab:
 
 1. 右键选择“重命名”，将新创建的层次结构重命名为“Fiscal” 。
 
-
 1. 通过在“数据”窗格中选择其余两个字段，右键单击，选择“添加到层次结构”“Fiscal”，将其添加到“Fiscal”层次结构。  -> 
 
     - Quarter
@@ -255,6 +254,8 @@ lab:
     - 从“Date \| Date”到“Sales \| OrderDate”
     - 从“Date \| Date”到“Targets \| TargetMonth”
 
+    *实验室使用速记表示法引用字段。它将如下所示：Sales \| Unit Price。在此示例中，Sales 是表名称，Unit Price 是字段名称。 *
+
 1. 隐藏以下两列：
 
     - Sales \| OrderDate
@@ -266,13 +267,11 @@ lab:
 
 1. 切换到“报表”视图。 在“数据”窗格中，选择“Date”表（不是“Date”字段）。
 
-1. 在“表工具”关联功能区上，选择“日历”组中的“标记为日期表”，然后选择“标记为日期表”。
+1. 在**表工具**上下文功能区上，从**日历**组中选择**标记为日期表**。
 
-    ![图片 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
+1. 在**标记为日期表**窗口中，将**标记为日期表**属性滑动到**是**，然后在**选择日期列**下拉列表中选择**日期**。 选择“保存”。
 
-1. 在“标记为日期表”窗口中，选择“日期列”下拉列表中的“日期”。 选择“确定”。
-
-    ![图片 37](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image33.png)
+    ![屏幕截图 2024-04-17 164626](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/f316c96a-404d-4618-9bee-f12b0868ad01)
 
 1. 保存 Power BI Desktop 文件。
 
@@ -285,8 +284,6 @@ lab:
 在此任务中，你将创建简单的度量值。 简单的度量值聚合单个列中的值或对表中的行进行计数。
 
 1. 在“报表”视图“第 2 页”上的“数据”窗格中，将“Sales \| Unit Price”字段拖到矩阵视觉对象。
-
-    *实验室使用速记表示法引用字段。它将如下所示：Sales \| Unit Price。在此示例中，Sales 是表名称，Unit Price 是字段名称。 *
 
     ![图片 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
@@ -443,10 +440,6 @@ lab:
     ![图片 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
 
     虽然看上去所有销售员都未达到目标，但请记住，尚未按特定时间段对表视觉对象进行筛选。“在 Power BI Desktop 中设计报表”实验室中按用户所选的时间段进行筛选，以生成销售绩效报表。
-
-1. 在“数据”窗格的右上角，折叠后展开，以打开此窗格。
-
-    折叠并重新打开此窗格会重置内容。
 
 1. 我们注意到，“Targets”表现在显示在列表的最上面。
 

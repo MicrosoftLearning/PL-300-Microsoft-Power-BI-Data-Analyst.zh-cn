@@ -31,15 +31,15 @@ lab:
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
-
-1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
 
 1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter 文件夹********。
 
 1. 选择“销售分析”文件。
 
-1. 通过“另存为”将文件副本保存到 D:\Allfiles\MySolution 文件夹********。
+    *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
+
+1. 通过“文件”>“另存为”**** 将文件副本保存到 D:\Allfiles\MySolution**** 文件夹。
 
 ## **从 SQL Server 获取数据**
 
@@ -76,7 +76,7 @@ lab:
 
 1. 选择“转换数据”**** 完成此任务，这会打开 Power Query 编辑器。
 
-现在已将数据导入 Power BI，并打开了 Power Query 编辑器以完成下一个任务。
+现已连接到数据，并已打开 Power Query 编辑器以完成下一个任务。
 
 ## **在 Power Query 编辑器中预览数据**
 

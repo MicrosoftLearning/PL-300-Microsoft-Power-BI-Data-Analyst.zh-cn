@@ -29,11 +29,11 @@ lab:
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。请登录，然后关闭弹出窗口。
-
-1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
 
 1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\10-row-level-security\Starter 文件夹，打开“Sales Analysis”文件。************
+
+   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
 
 1. 关闭任何可能打开的信息窗口。
 
@@ -49,7 +49,7 @@ lab:
 
 在此任务中，强制执行行级别安全性，确保销售人员只能看到向其分配的区域中的销售额。
 
-1. 切换到“数据”视图。
+1. 切换到表视图。
 
    ![图片 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
@@ -60,27 +60,35 @@ lab:
     
     回想一下，Michael Blythe 被分配到三个销售区域：美国东北部、美国中部和美国东南部。
 
-1. 在“建模”功能区选项卡上，从“安全组”中选择“管理角色”  。
+1. 从“主页”**** 功能区选项卡上的“安全”**** 组中选择“管理角色”****。
 
     ![图片 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-1. 在“管理角色”窗口中，选择“创建”。
+1. 在“管理安全角色”**** 窗口中的“角色”**** 部分中，选择“新建”****。
 
 1. 在方框中，用角色名称替换选定的文本：“Salespeople”的名称，然后按 Enter。
 
    ![图片 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-1. 要分配筛选器，请在 Salesperson (Performance) 表中选择省略号 (…) 字符，然后选择“添加筛选器”\|“[UPN]” 。
+1. 要分配筛选器，请选择“销售人员（绩效）”**** 表，然后选择“筛选器数据”**** 部分中的“切换到 DAX 编辑器”****。
 
-   ![图片 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+   ![屏幕截图 2024-04-18 144345](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/1308d47f-2cca-4f88-9237-b02b66b4cf1e)
 
-1. 在“表筛选器 DAX 表达式”框中，通过将“Value”替换为 USERPRINCIPALNAME() 来修改表达式，然后选择“保存”   。
+1. 在“DAX 编辑器”框中，输入以下表达式：
+
+    **DAX**
+
+    ```
+    [UPN] = USERPRINCIPALNAME()
+    ```
     
     USERPRINCIPALNAME () 是一种数据分析表达式 (DAX) 函数，它返回已经过身份验证的用户的名称。*这意味着，“Salesperson (Performance)”表将按查询模型的用户的用户主体名称 (UPN) 进行筛选。*
 
    ![图片 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-1. 若要测试安全角色，请在“建模”功能区选项卡上的“安全”组中，选择“查看者身份”。
+1. 选择“保存”和“关闭” 。
+
+1. 要测试安全角色，请从“主页”**** 功能区选项卡的“安全”**** 组中，选择“查看者身份”****。
 
    ![图片 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
@@ -104,13 +112,13 @@ lab:
 
    ![图片 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-1. 要删除“Salespeople”角色，请在“建模”功能区选项卡上，从“安全”组中选择“管理角色”   。
+1. 要删除 **Salespeople** 角色，请在**主页**功能区选项卡上，从**安全**组中选择**管理角色**。
 
    ![图片 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-1. 在“管理角色”窗口中，选择“删除”。 当看到确认删除的提示时，选择“是，删除”。
+1. 在**管理安全角色**窗口中，选择 **Salespeople** 角色上的省略号（...），然后选择“删除”****。 当看到确认删除的提示时，选择“是，删除”。
 
-   ![图片 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+   ![屏幕截图 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
 ### **完成**
 
