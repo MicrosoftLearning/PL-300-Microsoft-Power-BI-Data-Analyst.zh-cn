@@ -28,11 +28,11 @@ lab:
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
-
-1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
 
 1. 导航到 D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter 文件夹，然后选择 Sales Analysis 文件。********
+
+   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
 
 1. 关闭任何可能打开的信息窗口。
 
@@ -76,7 +76,7 @@ lab:
 
 1. 若要创建关系，请选择“新建”。
 
-1. 在“创建关系”窗口的第一个下拉列表中，选择“Product”表。
+1. 在“新建关系”**** 窗口的第一个下拉列表中，选择“产品”**** 表。
 
      ![图片 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
@@ -247,7 +247,7 @@ lab:
 
 在此任务中，使用单个批量更新来更新多个列。 可使用此方法来隐藏列，并设置列值的格式。
 
-1. 在“数据”窗格中，选择“Product \| ProductKey”列 。
+1. 在“模型视图”**** > “数据”**** 窗格中，选择“Product  \|ProductKey”**** 列 。
 
 1. 在按下 Ctrl 键的同时选择以下 13 列（跨多个表）：
 
@@ -378,8 +378,6 @@ lab:
 ## **创建多对多关系**
 
 在本任务中，在“Salesperson”表和“Sales”表之间创建多对多关系 。
-
- *实验室使用速记表示法引用字段。它将如下所示：Salesperson \| Salesperson。* 在此示例中，前面的 Salesperson 是表名称，后面的 Salesperson 是字段名称 。
 
 1. 在 Power BI Desktop 中，在“报表”视图的“数据”窗格中，选中以下两个字段以创建表视觉对象 。
 

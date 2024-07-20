@@ -27,11 +27,11 @@ lab:
 
     ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    提示：默认情况下，“入门”对话框在 Power BI Desktop 前面打开。可以选择登录，然后关闭弹出窗口。
-
-1. 要打开 Power BI Desktop 入门文件，请选择“文件”>“打开报表”>“浏览报表”。
+1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
 
 1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter 文件夹，并打开“Sales Analysis”文件************。
+
+   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择“取消”**** 并继续实验。*
 
 1. 关闭任何可能打开的信息窗口。
 
@@ -41,7 +41,9 @@ lab:
     
     若要关闭该警告消息，请在警告消息的右侧选择“X”。******
 
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到 D:\Allfiles\MySolution 文件夹。********
+1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到“D:\Allfiles\MySolution”文件夹。********
+
+1. 如果系统提示应用更改，请选择“稍后应用”。
 
 ## **创建矩阵视觉对象**
 

@@ -23,9 +23,11 @@ lab:
 
 在此任务中，通过打开入门报表来设置实验室的环境。
 
-1. 在 Power BI Desktop 中，导航到“文件” > “打开报表” > “浏览报表”  。
+1. 在 Power BI Desktop 中，导航到“打开”>“浏览此设备”****。
 
 1. 打开 **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** 文件夹中的 **Sales Analysis** 文件。
+
+   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
 
 1. 通过转到“**文件**” > “**另存为**”创建文件副本，并将副本保存在 **D:\Allfiles\MySolution** 文件夹中。
 
@@ -172,7 +174,7 @@ lab:
 
 1. 基于“Region \| Region”字段添加切片器。
 
-1. 使用“格式”窗格启用“全选”选项（在“选择”组中） 。
+1. 使用“格式”**** 窗格启用“全选”选项（在“切片器设置”>“选择”**** 组中） 。
 
 1. 调整该切片器的大小和位置，使其位于报表页面左侧，高度约为页面高度的一半。
 
@@ -190,9 +192,9 @@ lab:
 
      - Orders（来自“计数”文件夹）
      - Sales
-     - Cost
-     - Profit
-     - Profit Margin
+     - 成本
+     - 利润（来自“定价”**** 文件夹）
+     - 利润率（来自“定价”**** 文件夹）
 
      ![图片 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -315,9 +317,9 @@ lab:
 
 1. 在 Microsoft Edge 浏览器窗口，在 Power BI 服务的“导航”窗格（位于左侧，可能处于折叠状态）中，展开“我的工作区” 。
 
-    ![图片 93](Linked_image_Files/06-my-workspace-new.png)
+    ![屏幕截图 2024 年 4 月 18 日 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
-1. 查看工作区内容。 请注意“全部”、“内容”和“语义模型 + 数据流”的导航选项。
+1. 查看工作区内容。
     1. *工作区中可以有四种类型的项，我们将讨论“报表”**** 和“语义模型”****。*
     1. 如果语义模型不可见，可能需要刷新 Microsoft Edge 浏览器。**
     1. 当你发布了 Power BI Desktop 文件后，数据模型即发布为语义模型。**
