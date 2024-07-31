@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: 在 Power BI 中创建报表
   module: Create reports in Power BI
 ---

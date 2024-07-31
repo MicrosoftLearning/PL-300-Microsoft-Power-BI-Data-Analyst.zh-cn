@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: 在 Power BI 中使用 DAX 创建度量值
   module: Create measures using DAX in Power BI
 ---

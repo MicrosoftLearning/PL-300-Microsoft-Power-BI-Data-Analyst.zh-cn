@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: 创建 Power BI 面板
   module: Create Dashboards
 ---
 
-
 # 创建 Power BI 仪表板
 
-## **实验室场景**
+## 实验室场景
 
 在本实验室中，你将使用现有报表在Power BI 服务中创建“销售监视”仪表板。
 
@@ -19,45 +17,33 @@ lab:
 
 **此实验室应该大约需要 30 分钟。**
 
-## **开始 - 登录**
+## 开始使用
 
-在此任务中，通过登录到 Power BI 来设置实验室的环境。
+若要完成本练习，请先打开 Web 浏览器并输入以下 URL 以下载 zip 文件夹：
 
-注意：如果已登录到 Power BI，请跳到下一个任务。
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/09-create-power-bi-dashboard/09-create-dashboard.zip`
 
-1. 若要打开 Microsoft Edge，请在任务栏上，选择 Microsoft Edge 程序快捷方式。
+将文件夹解压缩到 C:\Users\Student\Downloads\09-create-dashboard **** 文件夹。
 
-     ![图片 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
+## **发布报表**
 
-1. 在 Microsoft Edge 浏览器窗口中，导航到 **https://app.powerbi.com**。
-
-    *提示：还可以使用 Microsoft Edge 收藏夹栏上收藏的 Power BI 服务。*
-
-1. 使用组织凭据（或提供的凭据）完成登录过程。 如果 Microsoft Edge 提示是否保持登录状态，请选择“是”。
-
-1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，在“导航”窗格中展开“我的工作区”。 使 Microsoft Edge 浏览器窗口保持打开状态。
-
-     ![图片 22](Linked_image_Files/07-my-workspace-new.png)
-
-## **开始 - 发布报表**
-
-在此任务中，通过创建语义模型来设置实验室的环境。 如果已发布语义模型，请转到下一个任务。**
+在此任务中，通过创建语义模型来设置实验室的环境。
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，导航到“我的工作区”。
 
 1. 选择“上传”>“浏览”。
 
-1. 导航到 D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter 文件夹****。
+1. 导航到 C:\Users\Student\Downloads\09-create-dashboard**** 文件夹。
 
-1. 选择 Sales Analysis.pbix 文件，然后选择“打开”。
+1. 选择 09-Starter-Sales Analysis.pbix **** 文件，然后选择“打开”****。
 
-如果系统提示替换语义模型，请选择“替换”****。**
+    > 如果系统提示替换语义模型，请选择“替换”****。**
 
 ## **创建仪表板**
 
 在此任务中，创建 Sales Monitoring 仪表板。 你将从报表固定一个视觉对象，并根据图像数据 URI 添加一个磁贴，然后使用问答功能来创建一个磁贴。
 
-1. 在 Power BI 服务中，打开 Sales Analysis 报表。
+1. 在 Power BI 服务中，打开 09-Starter-Sales Analysis **** 报表。
 
 1. 在“概述”页中，将“Year”切片器设置为“FY2020”。
 
@@ -65,7 +51,7 @@ lab:
 
 1. 将“区域”切片器设置为“全选”。
 
-    固定的视觉对象是在固定时使用筛选器上下文设置的。如果基础视觉对象发生更改，则还需要更新仪表板磁贴。对于基于时间的筛选器，最好使用相对日期切片器（或使用基于相对时间的问题进行问答）。
+    > 固定的视觉对象是在固定时使用筛选器上下文设置的。如果基础视觉对象发生更改，则还需要更新仪表板磁贴。对于基于时间的筛选器，最好使用相对日期切片器（或使用基于相对时间的问题进行问答）。
 
 1. 要创建仪表板并固定视觉对象，请将光标悬停在“Sales and Profit Margin by Month”（列/行）视觉对象上，然后选择图钉。
 
@@ -81,9 +67,9 @@ lab:
 
     ![图片 45](Linked_image_Files/09-create-power-bi-dashboard_image22.png)
 
-1. 要根据问题添加磁贴，请在仪表板左上角选择“询问数据相关问题”。
-    
-    可以使用问答功能提出问题，Power BI 会通过视觉对象进行答复。
+1. 要根据问题添加磁贴，请在仪表板左上角选择“询问数据相关问题”。 
+
+    可以使用问答功能提出问题，Power BI 会通过视觉对象进行答复。**
 
     ![图片 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
@@ -92,8 +78,8 @@ lab:
 1. 删除问答框中的所有文本，然后输入 Sales YTD
 
 1. 请注意，答复为“(空)”。
-    
-    你可能还记得在“在 Power BI Desktop 中创建高级 DAX 计算”实验室中添加了“Sales YTD”度量值。此度量值是时间智能表达式，它需要对 Date 表进行筛选以生成结果。
+
+    > *你可能还记得在**在 Power BI Desktop 中创建高级 DAX 计算**实验室中添加了 **Sales YTD** 度量值。此度量值是时间智能表达式，它需要对**日期**表进行筛选以生成结果。*
 
     ![图片 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
@@ -107,23 +93,23 @@ lab:
 
     ![图片 15](Linked_image_Files/09-create-power-bi-dashboard_image28.png)
 
-1. 当系统提示将磁贴固定到仪表板时，选择“固定”。
+1. 当系统提示将磁贴固定到“销售监控”**** 仪表板时，选择“固定”****。
 
 1. 要返回到该仪表板，请选择左上角的“退出问答”。
 
 1. 若要添加公司徽标，请在菜单栏上选择“编辑”，然后选择“添加磁贴” 。
     
-    通过此技术添加仪表板磁贴可让你使用媒体增强仪表板，这些媒体包括 Web 内容、图像、格式丰富的文本框和视频（使用 YouTube 或 Vimeo 链接）。
+    > 通过此技术添加仪表板磁贴可让你使用媒体增强仪表板，这些媒体包括 Web 内容、图像、格式丰富的文本框和视频（使用 YouTube 或 Vimeo 链接）。
 
 1. 在“添加磁贴”窗格（位于右侧）中，选择“图像”磁贴，然后选择“下一步”  。
 
-1. 在“添加图像磁贴”窗格的“URL”框中，输入在 D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt 文件中找到的完整 URL，然后选择“应用”****************。
+1. 在“添加图像磁贴”**** 窗格的“URL”**** 框中，输入在 C:\Users\Student\Downloads\09-create-dashboard\AdventureWorksLogo_DataURL.txt**** 文件中找到的完整 URL，然后选择“应用”****。
     
-    *可以使用图像的 URL 嵌入图像，也可以使用数据 URL 嵌入内联内容。*
+    > *可以使用图像的 URL 嵌入图像，也可以使用数据 URL 嵌入内联内容。*
 
 1. 要调整徽标磁贴的大小，请拖动右下角，并将磁贴大小调整为一个单位宽，一个单位高。
     
-    磁贴大小限制为矩形。
+    > 磁贴大小限制为矩形。
 
 1. 整理磁贴，使徽标显示在左上方，使“年初至今的销售额”磁贴显示在徽标下方，并使“销售额和利润率”磁贴显示在右侧。
 
@@ -157,11 +143,13 @@ lab:
 
 在此练习中，请先将 2020 年 6 月的销售订单数据加载到“AdventureWorksDW2020”数据库中。 然后打开 Power BI Desktop 文件，执行数据刷新，再将该文件上传到工作区。
 
+> ***备注**：如果无法连接到数据库，可以使用 09-Solution-Sales-Analysis.pbix**** 文件。 不要更新数据库并刷新语义模型，而是将解决方案文件上传到“我的工作区”****，并查看以下任务中引用的更改。*
+
 ## **更新实验室数据库**
 
 在此任务中，你将运行 PowerShell 脚本来更新“AdventureWorksDW2020”数据库中的数据。
 
-1. 在文件资源管理器的“D:\Allfiles\Setup”文件夹中，右键单击 UpdateDatabase-2-AddSales.ps1 文件，然后选择“使用 PowerShell 运行”************。
+1. 在文件资源管理器的 C:\Users\Student\Downloads\09-create-dashboard**** 文件夹中，右键单击“UpdateDatabase-2-AddSales.ps1”**** 文件，然后选择“使用 PowerShell 运行”****。
 
     ![图片 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 
@@ -173,7 +161,7 @@ AdventureWorksDW2020 数据库现在包含 2020 年 6 月的销售订单。**
 
 ## **刷新 Power BI Desktop 文件**
 
-在此任务中，打开“Sales Analysis”Power BI Desktop 文件，执行数据刷新，然后将该文件上传到 Sales Analysis 工作区 。
+在此任务中，打开“09-Starter-Sales 分析”**** Power BI Desktop 文件，执行数据刷新，然后将该文件上传到“销售分析”**** 工作区。
 
 1. 在 Power BI Desktop 文件的“数据”窗格中，右键单击“销售额”表，然后选择“刷新数据”  。
 
@@ -200,13 +188,9 @@ Power BI 服务中的语义模型现已包含 2020 年 6 月的销售数据。**
 2. 在“Sales, Profit Margin”磁贴中的副标题部分，可以看到数据刷新时间为“刚刚刷新” 。
 
 3. 还可以看到，其中包含“2020 Jun”列。
-    
-    如果没有看到 2020 年 6 月的数据，可能需要按 F5 重新加载 Web 浏览器。**
+
+    > 如果没有看到 2020 年 6 月的数据，可能需要按 F5 重新加载 Web 浏览器。**
 
     ![图片 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-### **完成**
-
-在此任务中，你将完成此实验室。
-
-1. 保存报表并关闭浏览器。
+## 实验已完成

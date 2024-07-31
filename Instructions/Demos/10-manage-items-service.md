@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: 在 Power BI 中管理文件存储和语义模型
   module: Deploy and manage Power BI service items
 ---

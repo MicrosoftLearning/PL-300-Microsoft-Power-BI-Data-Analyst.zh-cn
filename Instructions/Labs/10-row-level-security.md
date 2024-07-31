@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: 强制执行行级别安全性
   module: Enforce Row-Level Security
 ---
 
-
 # 强制执行行级别安全性
 
-## **实验室场景**
+## 实验室场景
 
 在本实验室中，强制执行行级别安全性，确保销售人员只能分析向其分配的区域的销售数据。
 
@@ -19,33 +17,19 @@ lab:
 
 **此实验室应该大约需要 20 分钟。**
 
-## **入门**
+## 开始使用
 
-在此任务中，设置实验室的环境。
+若要完成本练习，请先打开 Web 浏览器并输入以下 URL 以下载 zip 文件夹：
 
-重要说明：如果你是从上一个实验继续（并且已经成功完成该实验室），请不要完成此任务，而是从下一个任务开始继续操作。
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/10-row-level-security/10-row-level-security.zip`
 
-1. 打开 Power BI Desktop。
+将文件夹解压缩到 C:\Users\Student\Downloads\10-row-level-security **** 文件夹。
 
-    ![Power BI Desktop 图标](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+打开 10-Starter-Sales Analysis.pbix**** 文件。
 
-1. 要打开 Power BI Desktop 入门文件，请选择“打开”>“浏览此设备”****。
+> ***备注**：可以通过选择“取消”**** 来取消登录。 关闭所有其他信息窗口。 如果系统提示应用更改，请选择“稍后应用”****。*
 
-1. 在“打开”窗口中，导航到 D:\Allfiles\Labs\10-row-level-security\Starter 文件夹，打开“Sales Analysis”文件。************
-
-   *注意：此时，Power BI 会要求你登录（如果尚未登录）。可以登录或选择**取消**并继续完成实验室的内容。*
-
-1. 关闭任何可能打开的信息窗口。
-
-1. 请注意功能区下方的警告消息。 此消息提醒你查询尚未应用于加载为模型表这一事实。稍后将在此实验室中应用查询。
-    
-    若要关闭该警告消息，请在警告消息的右侧选择“X”。******
-
-1. 若要创建文件的副本，请转到“文件”>“另存为”，并保存到“D:\Allfiles\MySolution”文件夹。********
-
-1. 如果系统提示应用更改，请选择“稍后应用”。
-
-## **强制执行行级别安全性**
+## 强制执行行级别安全性
 
 在此任务中，强制执行行级别安全性，确保销售人员只能看到向其分配的区域中的销售额。
 
@@ -55,10 +39,9 @@ lab:
 
 1. 在“数据”窗格中，选择“Salesperson (Performance)”表 。
 
-
-1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为 **michael-blythe@adventureworks.com**
+1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为 **`michael-blythe@adventureworks.com`**
     
-    回想一下，Michael Blythe 被分配到三个销售区域：美国东北部、美国中部和美国东南部。
+    > 回想一下，Michael Blythe 被分配到三个销售区域：美国东北部、美国中部和美国东南部。
 
 1. 从“主页”**** 功能区选项卡上的“安全”**** 组中选择“管理角色”****。
 
@@ -76,15 +59,13 @@ lab:
 
 1. 在“DAX 编辑器”框中，输入以下表达式：
 
-    **DAX**
-
-    ```
+    ```DAX
     [UPN] = USERPRINCIPALNAME()
     ```
-    
-    USERPRINCIPALNAME () 是一种数据分析表达式 (DAX) 函数，它返回已经过身份验证的用户的名称。*这意味着，“Salesperson (Performance)”表将按查询模型的用户的用户主体名称 (UPN) 进行筛选。*
 
    ![图片 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
+
+    > USERPRINCIPALNAME () 是一种数据分析表达式 (DAX) 函数，它返回已经过身份验证的用户的名称。*这意味着，“Salesperson (Performance)”表将按查询模型的用户的用户主体名称 (UPN) 进行筛选。*
 
 1. 选择“保存”和“关闭” 。
 
@@ -92,11 +73,11 @@ lab:
 
    ![图片 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：** michael-blythe@adventureworks.com**
+1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：** `michael-blythe@adventureworks.com`**
 
 1. 选中“Salespeople”角色，然后选择“确定” 。
     
-    完成此配置后，系统将使用“Salespeople”角色，并使用 Michael Blythe 的姓名扮演该用户。**
+    > 完成此配置后，系统将使用“Salespeople”角色，并使用 Michael Blythe 的姓名扮演该用户。**
 
    ![图片 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
@@ -120,10 +101,6 @@ lab:
 
    ![屏幕截图 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
-### **完成**
+*备注：Power BI Desktop 文件发布到 Power BI 服务后，需要完成发布后的任务，以将安全主体映射到**销售员**角色。在本实验室中不执行此操作。*
 
-在此任务中，你将完成此实验室。
-
-1. 选择“保存”，然后保存 Power BI Desktop 文件，结束实验室。
-
-注意：Power BI Desktop 文件发布到 Power BI 服务后，需要完成发布后的任务，以将安全主体映射到“Salespeople”角色。在本实验室中不执行此操作**。
+## 实验已完成
