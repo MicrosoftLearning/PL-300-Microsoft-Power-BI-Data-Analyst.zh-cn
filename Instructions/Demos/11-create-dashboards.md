@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: 在 Power BI 服务中创建仪表板
   module: Deploy and manage Power BI service items
 ---
