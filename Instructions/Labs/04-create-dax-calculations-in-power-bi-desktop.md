@@ -45,7 +45,7 @@ lab:
 
 2. 在编辑栏（在创建或编辑计算时在功能区正下方打开）中，键入“Salesperson =”，按 Shift+Enter，键入“Salesperson (Performance)”，然后按 Enter。
 
-    > **备注**：为了方便起见，本实验室中的所有 DAX 定义都可以从代码片段文件中复制，该文件位于 D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt****。**
+    > **备注**：*为方便起见，本实验室中的所有 DAX 定义都可以从位于 **04-intro-dax\Snippets.txt** 中的片段文件中复制。*
 
      ![图片 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -123,13 +123,14 @@ lab:
     ![图片 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
 1. 在公式栏中键入以下内容（或从代码片段文件中复制），然后按 Enter：
+    > 此公式使用日期的年份值，但如果月份是在 6 月后，则会在年份值上加 1。这就是 Adventure Works 会计年度的计算方式。
 
    ```DAX
    Year =
    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
    ```
 
-    > 此公式使用日期的年份值，但如果月份是在 6 月后，则会在年份值上加 1。这就是 Adventure Works 会计年度的计算方式。
+
 
 1. 使用代码片段文件定义为“Date”表创建以下两个计算列：
 
