@@ -31,8 +31,6 @@ lab:
 
 > ***备注**：可以通过选择“取消”**** 来取消登录。 关闭所有其他信息窗口。 如果系统提示应用更改，请选择“稍后应用”****。*
 
-在 Power BI Desktop 中，转到“**文件 > 选项和设置 > 选项 > 预览功能**”。 选择“ **视觉计算**” ，然后选择“ **确定**”。 重启 Power BI Desktop 后，将启用视觉计算。
-
 ## 创建 Power BI 条形图视觉对象
 
 在此任务中，你将创建条形图，其中按财政年度显示销售额、总产品成本和利润，并将比较指标作为工具提示。
@@ -128,7 +126,7 @@ lab:
 1. 在视觉计算编辑窗口中，键入并保存以下计算：
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales])
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
    ```
 
 > 请注意矩阵如何显示每个类别的销售额与第一个类别的销售额之间的差异。
@@ -136,7 +134,7 @@ lab:
 1. 选择“**值**”井/区域中的字段“**与第一个对比**”，通过将轴参数的 ROWS 值添加到 FIRST 来更新计算：
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales], ROWS)
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
    ```
 
 > 请注意，当 ROWS 是轴参数的默认值时，不会发生任何变化。
