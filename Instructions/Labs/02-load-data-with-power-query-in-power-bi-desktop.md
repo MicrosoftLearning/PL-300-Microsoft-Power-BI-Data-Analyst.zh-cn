@@ -37,13 +37,13 @@ lab:
 
 1. 若要打开“Power Query 编辑器”窗口，请在“开始”功能区选项卡上的“查询”组中，选择“转换数据”图标。
 
-     ![“开始”功能区上的“转换数据”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+    ![“开始”功能区上的“转换数据”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. 在“Power Query 编辑器”窗口的“查询”窗格中，选择“DimEmployee”查询  。
 
-     ![图 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+    ![图 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
-> **注意：** 如果收到一条警告消息，要求指定如何连接，请选择“**编辑凭据**”，使用当前凭据进行连接，然后选择“**确定**”以使用未加密的连接。
+    > **注意：** 如果收到一条警告消息，要求指定如何连接，请选择“**编辑凭据**”，使用当前凭据进行连接，然后选择“**确定**”以使用未加密的连接。
  
 1. 若要重命名查询，请在“查询设置”窗格（位于右侧）的“名称”框中，将文本替换为 Salesperson，然后按 Enter 键。 然后，在“查询”窗格中验证名称是否已更新。
 
@@ -53,11 +53,11 @@ lab:
 
     > 包含多列时，“转到列”功能非常有用。如果不使用该功能，可以水平滚动查找列。
 
-     ![“管理列”>“选择列”>“转到列”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+    ![“管理列”>“选择列”>“转到列”](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
 1. 在“转到列”窗口中，若要按列名对列表进行排序，请选择“AZ”排序按钮，然后选择“名称”和 SalesPersonFlag   。 单击“确定”。
 
-     ![“转到列”排序选项](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+    ![“转到列”排序选项](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. 找到 SalesPersonFlag 列，然后筛选该列以仅选择“Salespeople”（即 TRUE），然后单击“确定”  。
 
@@ -65,7 +65,7 @@ lab:
 
     > 创建的每一个转换都会生成另一个步骤逻辑。可以编辑或删除步骤。在查询转换阶段，还可以选择一个步骤来预览查询结果。
 
-     ![已应用步骤](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+    ![已应用步骤](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
 
 1. 若要删除列，请在“开始”功能区选项卡上依次选择“管理列”组和“选择列”图标  。
 
@@ -82,11 +82,11 @@ lab:
 
 1. 在“应用的步骤”列表中，请注意添加了另一个查询步骤。
 
-     ![已删除其他列步骤](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
+    ![已删除其他列步骤](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
 1. 若要创建单一名称列，请首先选择 FirstName 列标头。 在按住 Ctrl 键的同时选择 LastName 列。
 
-     ![同时选择两列来创建单列](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+    ![同时选择两列来创建单列](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. 右键单击任一所选列标题，然后在上下文菜单中选择“合并列”。
 
@@ -149,7 +149,7 @@ lab:
 1. 选择 EnglishProductSubcategoryName 和 DimProductCategory，然后先取消选中“使用原始列名作为前缀”复选框，再选择“确定”   。
 
     > 通过选择这两个列，将应用转换以联接到 DimProductSubcategory 表，将这些列包含在内***。** 事实上，“DimProductCategory”列是数据源中的另一个相关表。*
-    >
+
     > 查询列名称必须始终是唯一的。*选中后，此复选框将为每个列添加扩展列名作为前缀（在本例中为“DimProductSubcategory”）。因为已知所选列名不会与“Product”查询中的列名冲突，可以取消选择此选项。*
 
 1. 请注意，该转换的结果是添加了两列，并且删除了“DimProductSubcategory”列。
@@ -193,7 +193,7 @@ lab:
     - 在“要查找的值”框中，输入“Ware House”
     - 在“替换为”框中，输入“Warehouse”
 
-     ![“替换值”对话框](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+    ![“替换值”对话框](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. 对以下四列进行重命名：
 
@@ -255,7 +255,7 @@ lab:
 
 1. 若要创建自定义列，请在“添加列”功能区选项卡上的“常规”组中，选择“自定义列”  。
 
-     ![图片 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
+    ![图片 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
 1. 在“自定义列”窗口的“新列名”框中，将文本替换为“Cost”。
 
@@ -282,7 +282,7 @@ lab:
 
     > 配置正确数据类型是非常重要的。当列包含数值时，如果想执行数学计算，也务必要选择正确的类型。
 
-     ![图片 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
+    ![图片 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. 将以下三列数据类型修改为“定点小数”。
 
@@ -300,7 +300,7 @@ lab:
 
 1. 选择 ResellerSalesTargets 查询，并重命名为 Targets 。
 
-> **注意：** 如果收到一条警告消息，要求指定如何连接，请选择“**编辑凭据**”，并使用匿名访问。
+    > **注意：** 如果收到一条警告消息，要求指定如何连接，请选择“**编辑凭据**”，并使用匿名访问。
 
 1. 若要对 12 个月的列进行逆透视（M01-M12），首先，选择多个 Year 和 EmployeeID 列标头   。
 
@@ -341,7 +341,7 @@ lab:
 
 1. 另请注意查询网格上方显示的公式。
 
-     ![图片 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
+    ![图片 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
 
 1. 若要重命名新列，请双击 Merged 列标头，并将该列重命名为 TargetMonth 。
 
@@ -359,7 +359,7 @@ lab:
 
     > *你可能还记得，目标值是以千为单位存储的。*
 
-     ![图片 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
+    ![图片 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
 1. 在“乘”窗口的“值”框中，输入 1000，然后选择“确定”   。
 
@@ -373,7 +373,7 @@ lab:
 
 1. 在“开始”功能区选项卡上的“转换”组中，选择“将第一行用作标头”  。
 
-     ![图片 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
+    ![图片 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
 在状态栏中，验证查询是否有 3 列和 10 行。****
 
@@ -387,15 +387,15 @@ lab:
 
     > 合并查询能够实现集成数据，在本例中，这些数据来自不同的数据源（SQL Server 和 CSV 文件）。
 
-     ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
+    ![图片 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
 1. 在“合并”窗口的“Product”查询网格中，选择“Color”列标题。
 
-     ![图片 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
+    ![图片 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
 1. 在“产品”查询网格下方的下拉列表中，选择“ColorFormats”查询 。
 
-     ![图片 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
+    ![图片 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
 
 1. 在“ColorFormats”查询网格中，选择“Color”列标题。
 
@@ -403,7 +403,7 @@ lab:
 
     > 可以为数据源配置隐私级别来确定数据是否可以在源之间共享。将每个数据源设置为“组织”以使它们能够共享数据（如有必要）。私有数据源永远不能与其他数据源共享。这并不意味着私有数据不能共享，这只是表示 Power Query 引擎无法在源之间共享数据。
 
-     ![图片 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
+    ![图片 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
 1. 在“合并”窗口中，使用默认的联接类型保持左外选择，然后选择“确定”  。
 
@@ -422,33 +422,33 @@ lab:
 
 1. 在“查询设置”**** 窗格中，选择“所有属性”**** 链接。
 
-     ![图片 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
+    ![图片 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. 在“查询属性”窗口中，取消选中“启用加载到报表”复选框。
 
     > 禁用加载意味着它不会作为表加载到数据模型。这样做是因为查询已经与 Product 查询合并，后者已启用了加载到数据模型。
 
-     ![图片 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
+    ![图片 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
 ### 查看最终产品
 
-在Power Query 编辑器中，验证是否具有 8 个查询****，按如下所示正确命名：
+1. 在Power Query 编辑器中，验证是否具有 8 个查询****，按如下所示正确命名：
 
-- Salesperson
-- SalespersonRegion
-- Product
-- Reseller
-- Region
-- Sales
-- Targets
-- ColorFormats（这不会加载到数据模型）
+    - Salesperson
+    - SalespersonRegion
+    - Product
+    - Reseller
+    - Region
+    - Sales
+    - Targets
+    - ColorFormats（这不会加载到数据模型）
 
-选择“关闭 &amp; 应用”**** 以将数据加载到模型，然后关闭 Power Query 编辑器窗口。
+1. 选择“关闭 &amp; 应用”**** 以将数据加载到模型，然后关闭 Power Query 编辑器窗口。
 
-![图片 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
+    ![图片 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-现在可以在 Power BI Desktop 中看到画布，右侧有“筛选器”、“可视化”和“数据”窗格。 在“数据”窗格中，可以注意到有 7 个表**** 已加载到数据模型中。
+1. 现在可以在 Power BI Desktop 中看到画布，右侧有“筛选器”、“可视化”和“数据”窗格。 在“数据”窗格中，可以注意到有 7 个表**** 已加载到数据模型中。
 
-![图片 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+    ![图片 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## 实验已完成
