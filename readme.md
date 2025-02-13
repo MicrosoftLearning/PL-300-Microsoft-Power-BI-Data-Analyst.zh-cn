@@ -1,3 +1,11 @@
+#README
+
+We've turned off the ability to report issues directly on this repo and do not monitor PRs.
+
+Provide feedback here: https://aka.ms/provide-feedback
+
+Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
+
 # PL-300：Microsoft Power BI 数据分析师
 
 此存储库包含 Microsoft 课程 [PL-300：Microsoft Power BI 数据分析师](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00)的动手实验室练习。 这些实验室专门设计为配合教材使用，可以让学员使用其描述的方法进行练习。
