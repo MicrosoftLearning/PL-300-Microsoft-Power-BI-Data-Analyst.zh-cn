@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 创建 Power BI 面板
+  title: 创建 Power BI 仪表板
   module: Create Dashboards
 ---
 
@@ -31,7 +31,7 @@ lab:
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，导航到“我的工作区”。
 
-1. 选择“上传”>“浏览”。
+1. 选择**导入 > 报表或分页报表 > 从此计算机**。
 
 1. 导航到 C:\Users\Student\Downloads\09-create-dashboard**** 文件夹。
 
