@@ -360,7 +360,7 @@ lab:
 
      ![图片 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-1. 再次将光标悬停在其中一个视觉对象上，然后选择右上角的省略号 (…)，查看显示的菜单选项。 试用除“在 Teams 中聊天”以外的每个选项。
+1. 再次将光标悬停在其中一个视觉对象上，然后选择右上角的省略号 (…)，查看显示的菜单选项。 试用每个选项，“**共享**”中的选项除外。
 
      ![图片 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
