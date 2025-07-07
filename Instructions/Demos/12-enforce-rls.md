@@ -1,7 +1,7 @@
 ---
 demo:
   title: 在 Power BI 中强制实施行级别安全性
-  module: Deploy and manage Power BI service items
+  module: Secure data access in Power BI
 ---
 
 # 在 Power BI 中强制实施行级别安全性
