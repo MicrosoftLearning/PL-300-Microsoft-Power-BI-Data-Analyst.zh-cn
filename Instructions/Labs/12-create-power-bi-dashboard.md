@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 在 Power BI 中创建仪表板
+  title: （可选）在 Power BI 中创建仪表板
   module: Create dashboards in Power BI
 ---
 
@@ -24,6 +24,8 @@ lab:
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/12-create-power-bi-dashboard/12-create-dashboard.zip`
 
 将文件夹提取到 C:\Users\Student\Downloads\12-create-dashboard 文件夹****。
+
+> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在 `https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
 
 ## **发布报表**
 

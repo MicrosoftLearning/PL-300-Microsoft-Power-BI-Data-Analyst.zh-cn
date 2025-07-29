@@ -100,10 +100,6 @@ lab:
 
     ![图片 9](Linked_image_Files/09-enhance-power-bi-reports_image29.png)
 
-1. 在“图标 – 利润率”窗口的“应用于”下拉列表中，选择“值和总计”************。
-
-    ![图片 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
-
 1. 在“图标 - 利润率”窗口中，在“图标布局”下拉列表中选择“数据右侧”。
 
     ![图片 11](Linked_image_Files/09-enhance-power-bi-reports_image30.png)
@@ -129,6 +125,10 @@ lab:
     ![图片 13](Linked_image_Files/09-enhance-power-bi-reports_image32.png)
 
     > _规则总结如下：如果利润率值小于 0，则显示红色菱形；如果该值大于或等于 0，则显示绿色圆圈。_
+
+1. 在“图标 – 利润率”窗口的“应用于”下拉列表中，选择“值和总计”************。
+
+    ![图片 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
 
 1. 选择“确定”****。
 
@@ -249,6 +249,8 @@ lab:
 
 在本练习中，将报表发布到 Power BI 服务并浏览已发布的报表行为。
 
+> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在 `https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
+
 > _注意****：即使无法访问 Power BI 服务以直接执行任务，也可以查看练习的其余部分。_
 
 1. 选择“概述”页。
@@ -277,7 +279,7 @@ lab:
 
 1. 在浏览器窗口，在 Power BI 服务的“导航”窗格（位于左侧，可能处于折叠状态）中，选择“我的工作区”********。
 
-1. 要浏览报表，请选择 07-Starter-Sales Analysis 报表__。
+1. 要浏览报表，请选择 09-Starter-Sales Analysis 报表__。
 
 1. 若要测试钻取功能，请在“概述”页的“各类别的数量总和”视觉对象中右键单击“服装”栏，然后选择“钻取”>“产品详细信息”______****。
 
