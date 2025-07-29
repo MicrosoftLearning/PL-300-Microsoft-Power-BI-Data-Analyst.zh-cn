@@ -8,7 +8,9 @@ layout: home
 
 下面列出了每个实验室练习和演示的超链接。
 
-## 实验室
+> **注意**：如果遇到该内容的任何 bug，请[在 GitHub 存储库中创建新问题](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose)。
+
+## 实验室练习
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | 模块 | 实验室 |
@@ -19,7 +21,8 @@ layout: home
 ## 演示
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| 模块 | 演示 |
-| --- | --- | 
-{% for activity in demos  %} |{{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
+
+| 演示 |
+| --- |
+{% for activity in demos  %}| [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
