@@ -10,7 +10,7 @@ demo:
 
 1. 在 Power BI Desktop 中，打开 Power Query 编辑器窗口。
 
-1. 添加基于 `D:\Demo\Data\**ManagerCategory**.xlsx` 文件的新查询。
+1. 添加基于`D:\Demo\Data\**ManagerCategory**.xlsx` 文件的新查询。
 
 1. 使用文件中的 ManagerCategory 表。
 
@@ -18,7 +18,7 @@ demo:
 
 1. 用分号分隔符将“**类别**”列拆分为行（高级选项）。
 
-1. 在“电子邮件”列中，将值 <ty-johnston@tailspintoys.com> 替换为收件人帐户（来自 MySettings.txt 文件） 。
+1. 在“电子邮件”列中，将值<ty-johnston@tailspintoys.com> 替换为收件人帐户（来自 MySettings.txt 文件） 。
 
 1. 指出该用户能够看到三个产品类别：可变螺距直升机、教练机和作战飞机。
 

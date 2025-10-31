@@ -9,7 +9,7 @@ demo:
 
 1. 首先，在 Power BI 服务中创建新的工作区。
 
-1. 对于工作区图标，请选择 `D:\Allfiles\Demo\Resources\Icon-Airplane.jpg` 图像。
+1. 对于工作区图标，请选择`D:\Allfiles\Demo\Resources\Icon-Airplane.jpg` 图像。
 
 1. 在 Power BI Desktop 中，将“销售额分析”报表发布到新工作区****。
 

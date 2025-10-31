@@ -18,7 +18,7 @@ demo:
 
     - 将“ProductSKU”重命名为“SKU”
 
-    - 将“ProductName”重命名为“Product” 
+    - 将“ProductName”重命名为“Product”
 
     - 将“ProductCategory”重命名为“类别”
 

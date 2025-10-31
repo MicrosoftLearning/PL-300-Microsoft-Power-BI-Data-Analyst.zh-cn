@@ -45,15 +45,15 @@ lab:
 
 1. 将以下字段添加到视觉对象井/区域中：
 
-    > 实验室使用速记表示法引用字段。如下所示：Reseller \| Business Type。在此示例中，Reseller 是表名，Business Type 是字段名    。
+    > 实验室使用速记表示法引用字段。如下所示：Reseller\| Business Type。在此示例中，Reseller 是表名，Business Type 是字段名    。
 
-     - X 轴：Sales \| Sales
-     - Y 轴：Sales \| Profit Margin
-     - 图例：Reseller \| Business Type
-     - 大小：Sales \| Quantity
-     - 播放轴：Date \| Quarter
+     - X 轴：Sales\| Sales
+     - Y 轴：Sales\| Profit Margin
+     - 图例：Reseller\| Business Type
+     - 大小：Sales\| Quantity
+     - 播放轴：Date\| Quarter
 
-1. 在“筛选器”窗格中，将“Product \| Category”字段添加到“此页上的筛选器”井/区域中  。
+1. 在“筛选器”窗格中，将“Product\| Category”字段添加到“此页上的筛选器”井/区域中  。
 
 1. 在筛选器卡中，按“自行车”进行筛选。
 
@@ -89,16 +89,16 @@ lab:
 
 1. 将以下字段添加到视觉对象井/区域中：
 
-     - X 轴：Date \| Date
-     - Y 轴：Sales \| Sales
+     - X 轴：Date\| Date
+     - Y 轴：Sales\| Sales
 
-1. 在“筛选器”窗格中，将“Date \| Year”字段添加到“此页上的筛选器”井/区域中  。
+1. 在“筛选器”窗格中，将“Date\| Year”字段添加到“此页上的筛选器”井/区域中  。
 
 1. 在筛选器卡中，按两个年份进行筛选：2019 财年和 2020 财年。
 
     > 按时间线进行预测时，需要至少两个周期（年）的数据才能生成准确稳定的预测。
 
-1. 将“Product \| Category”字段也添加到“此页上的筛选器”井/区域中，并按“自行车”进行筛选  。
+1. 将“Product\| Category”字段也添加到“此页上的筛选器”井/区域中，并按“自行车”进行筛选  。
 
 1. 若要添加预测，请在“可视化效果”窗格下选择“分析”窗格。
 

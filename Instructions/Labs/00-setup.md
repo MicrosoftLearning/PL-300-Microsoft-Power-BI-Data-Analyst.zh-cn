@@ -19,13 +19,13 @@ lab:
 
 ### Power BI Desktop
 
-1. 从 Microsoft Store 下载并安装。 如果你无权访问 Microsoft Store，请从 [Web](https://www.microsoft.com/download/details.aspx?id=58494) 下载。 Power BI Desktop 是这些实验室中的主要应用程序。
+1. 从 Microsoft Store 下载并安装。 如果你无权访问 Microsoft Store，请从[Web](https://www.microsoft.com/download/details.aspx?id=58494) 下载。 Power BI Desktop 是这些实验室中的主要应用程序。
 
     - 使用安装程序中的默认选项。
 
 ### Microsoft 365 开发者帐户
 
-在部分练习中，需要使用组织帐户登录 Power BI。 可以使用自己的帐户，但如果没有访问权限，可以创建免费的 [Microsoft 365 开发者帐户](https://developer.microsoft.com/microsoft-365/dev-program)。
+在部分练习中，需要使用组织帐户登录 Power BI。 可以使用自己的帐户，但如果没有访问权限，可以创建免费的[Microsoft 365 开发者帐户](https://developer.microsoft.com/microsoft-365/dev-program)。
 
 ### SQL Server 数据库引擎
 
@@ -38,4 +38,4 @@ lab:
 
 ### Microsoft Edge
 
-1. 安装最新版本的 [Microsoft Edge](https://microsoft.com/edge) 以在线访问 Power BI 服务。
+1. 安装最新版本的[Microsoft Edge](https://microsoft.com/edge) 以在线访问 Power BI 服务。
