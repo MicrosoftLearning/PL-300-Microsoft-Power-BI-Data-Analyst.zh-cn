@@ -62,7 +62,7 @@ lab:
 
     ![图片 4](Linked_image_Files/09-enhance-power-bi-reports_image24.png)
 
-1. 将 `Product | Category` 字段拖到卡片视觉对象中。
+1. 将`Product | Category` 字段拖到卡片视觉对象中。
 
 1. 为视觉对象配置格式选项，将“类别标签”属性设置为“关”********。
 
@@ -238,7 +238,7 @@ lab:
 
 1. 使用复制和粘贴创建按钮的副本，然后配置新按钮，如下所示：
 
-    > _提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。 _
+    > _提示：复制和粘贴的快捷方式命令是，先按 Ctrl+C 然后按 Ctrl+V。_
 
     - 将按钮文本设置为“柱形图”__。
     - 将操作书签设置为“打开柱形图”****。
@@ -249,7 +249,7 @@ lab:
 
 在本练习中，将报表发布到 Power BI 服务并浏览已发布的报表行为。
 
-> _注意****：发布报表至少需要 Power BI 免费许可证****。打开 Microsoft Edge 浏览器并导航到 `https://app.powerbi.com`__。 使用授权实验室托管者 (ALH) 提供的 Microsoft 365 租户的凭据登录。系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。_
+> _注意****：发布报表至少需要 Power BI 免费许可证****。打开 Microsoft Edge 浏览器并导航到`https://app.powerbi.com`__。 使用授权实验室托管者 (ALH) 提供的 Microsoft 365 租户的凭据登录。系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。_
 
 > _注意****：即使无法访问 Power BI 服务以直接执行任务，也可以查看练习的其余部分。_
 
@@ -275,7 +275,7 @@ lab:
 
 1. 关闭 Power BI Desktop。
 
-1. 打开 Microsoft Edge 浏览器，然后登录 `https://app.powerbi.com`（或使用现有的浏览器会议）。
+1. 打开 Microsoft Edge 浏览器，然后登录`https://app.powerbi.com`（或使用现有的浏览器会议）。
 
 1. 在浏览器窗口，在 Power BI 服务的“导航”窗格（位于左侧，可能处于折叠状态）中，选择“我的工作区”********。
 

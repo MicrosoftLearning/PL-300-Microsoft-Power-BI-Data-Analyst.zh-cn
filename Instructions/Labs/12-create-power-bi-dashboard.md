@@ -25,7 +25,7 @@ lab:
 
 将文件夹提取到 C:\Users\Student\Downloads\12-create-dashboard 文件夹****。
 
-> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在 `https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
+> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在`https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
 
 ## 发布报表
 
@@ -81,7 +81,7 @@ lab:
 
 1. 请注意，答复为“(空)”。
 
-    > *你可能还记得在**在 Power BI Desktop 中创建高级 DAX 计算**实验室中添加了 **Sales YTD** 度量值。此度量值是时间智能表达式，它需要对**日期**表进行筛选以生成结果。*
+    > *你可能还记得在**在 Power BI Desktop 中创建高级 DAX 计算**实验室中添加了**Sales YTD** 度量值。此度量值是时间智能表达式，它需要对**日期**表进行筛选以生成结果。*
 
     ![图片 14](Linked_image_Files/12-create-power-bi-dashboard_image25.png)
 

@@ -28,7 +28,7 @@ lab:
 
 将文件解压缩到 C:\Users\Student\Downloads\08-design-report 文件夹****。
 
-打开 08-Starter-Sales Analysis.pbix **** 文件。
+打开 08-Starter-Sales Analysis.pbix**** 文件。
 
 > _注意****：文件加载时，可能会看到登录对话框。选择“取消”以关闭登录对话框。**** 关闭所有其他信息窗口。如果系统提示应用更改，请选择“稍后应用”****。_
 
@@ -80,7 +80,7 @@ lab:
 
 1. 通过选择报表页的空白区域取消选择该切片器。
 
-1. 基于 `Region | Region` 字段（而不是层次结构的 `Region` 级别）创建第二个切片器。
+1. 基于`Region | Region` 字段（而不是层次结构的`Region` 级别）创建第二个切片器。
 
 1. 将切片器保留为列表，然后调整切片器的大小，并将其放置在“年份”切片器下。
 
@@ -113,7 +113,7 @@ lab:
 
 1. 请注意，视觉对象只有 11 个月。
 
-    > _该年的最后一个月（2020 年 6 月）尚未有任何销售额。默认情况下，视觉对象已删除销售额为 `BLANK` 的月份。现在可将视觉对象配置为显示所有月份。_
+    > _该年的最后一个月（2020 年 6 月）尚未有任何销售额。默认情况下，视觉对象已删除销售额为`BLANK` 的月份。现在可将视觉对象配置为显示所有月份。_
 
 1. 在视觉对象字段窗格中的“X 轴”井中，对于“Month”字段，选择向下箭头，然后选择“显示没有数据的项”************。
 
@@ -176,7 +176,7 @@ lab:
 
 1. 若要创建新页，请选择左下角的加号图标。 添加页面后，将其重命名为“利润”__。
 
-1. 基于 `Region | Region` 字段添加切片器。
+1. 基于`Region | Region` 字段添加切片器。
 
 1. 使用“格式”窗格显示“全选”选项（位于“切片器设置”>“选择”部分）****__****。
 
@@ -188,17 +188,17 @@ lab:
 
     ![图片 20](Linked_image_Files/08-design-power-bi-reports_image41.png)
 
-1. 将 `Date | Fiscal` 层次结构添加到“矩阵”视觉对象的“行”井****。
+1. 将`Date | Fiscal` 层次结构添加到“矩阵”视觉对象的“行”井****。
 
     ![图片 21](Linked_image_Files/08-design-power-bi-reports_image42.png)
 
-1. 将以下五个 `Sales` 表字段添加到“值”井****：
+1. 将以下五个`Sales` 表字段添加到“值”井****：
 
-     - `Orders`（来自 `Counts` 文件夹）
+     - `Orders`（来自`Counts` 文件夹）
      - `Sales`
      - `Cost`
-     - `Profit`（来自 `Pricing` 文件夹）
-     - `Profit Margin`（来自 `Pricing` 文件夹）
+     - `Profit`（来自`Pricing` 文件夹）
+     - `Profit Margin`（来自`Pricing` 文件夹）
 
     ![图片 22](Linked_image_Files/08-design-power-bi-reports_image43.png)
 
@@ -206,13 +206,13 @@ lab:
 
     ![图片 23](Linked_image_Files/08-design-power-bi-reports_image44.png)
 
-1. 从“数据”窗格中，将 `Product | Category` 字段拖到“此页上的筛选器”井中********。
+1. 从“数据”窗格中，将`Product | Category` 字段拖到“此页上的筛选器”井中********。
 
     > 添加到“筛选器”窗格中的字段可以实现与切片器相同的结果。_**** 区别之一是它们不占用报表页上的空间。_ 另一个区别是，可以通过配置它们来满足更加复杂的筛选要求。
 
 1. 在筛选器卡中，选择右上角的箭头以折叠此卡。
 
-1. 将以下每个 `Product` 表字段添加到“此页上的筛选器”井中，并折叠在 `Category` 字段正下方****：
+1. 将以下每个`Product` 表字段添加到“此页上的筛选器”井中，并折叠在`Category` 字段正下方****：
 
      - `Subcategory`
      - `Product`
@@ -232,7 +232,7 @@ lab:
 
 1. 创建一个新的页面，然后将其重命名为“我的绩效”__。
 
-1. 要模拟行级安全筛选器的性能，请将 `Salesperson (Performance) | Salesperson` 字段拖动到筛选器窗格中的页面级筛选器。
+1. 要模拟行级安全筛选器的性能，请将`Salesperson (Performance) | Salesperson` 字段拖动到筛选器窗格中的页面级筛选器。
 
     ![图 25](Linked_image_Files/08-design-power-bi-reports_image999.png)
 
@@ -240,7 +240,7 @@ lab:
 
     > 报表页面上的数据现将进行筛选，仅显示 Michael Blythe 的数据。__
 
-1. 基于 `Date | Year` 字段添加下拉切片器，然后重设大小并重新定位，使其位于页面的左上角。
+1. 基于`Date | Year` 字段添加下拉切片器，然后重设大小并重新定位，使其位于页面的左上角。
 
     ![图 26](Linked_image_Files/08-design-power-bi-reports_image49.png)
 
@@ -277,7 +277,7 @@ lab:
 1. 向“视觉对象”井添加以下字段：
 
      - Y 轴：`Date | Month`
-     - X 轴：`Sales | Sales` 和 `Targets | Target`
+     - X 轴：`Sales | Sales` 和`Targets | Target`
 
         ![图片 33](Linked_image_Files/08-design-power-bi-reports_image56.png)
 
@@ -327,7 +327,7 @@ lab:
 
 在此任务中，将报表发布到 Power BI 服务。 然后，浏览已发布的报表行为。
 
-> _注意****：发布报表至少需要 Power BI 免费许可证****。打开 Microsoft Edge 浏览器并导航到 `https://app.powerbi.com`__。 使用授权实验室托管者 (ALH) 提供的 Microsoft 365 租户的凭据登录。系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。_
+> _注意****：发布报表至少需要 Power BI 免费许可证****。打开 Microsoft Edge 浏览器并导航到`https://app.powerbi.com`__。 使用授权实验室托管者 (ALH) 提供的 Microsoft 365 租户的凭据登录。系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。_
 
 > _注意****：即使无法访问 Power BI 服务以直接执行任务，也可以查看练习的其余部分。_
 
@@ -347,7 +347,7 @@ lab:
 
 1. 发布成功后，选择“知道了”****。
 
-1. 打开 Microsoft Edge 浏览器，然后导航到 `https://app.powerbi.com`。
+1. 打开 Microsoft Edge 浏览器，然后导航到`https://app.powerbi.com`。
 
 1. 在浏览器窗口，在 Power BI 服务的“导航”窗格（位于左侧，可能处于折叠状态）中，展开“我的工作区”********。
 
@@ -409,7 +409,7 @@ lab:
 
     > 通过“筛选器”窗格，可以定义超出切片器页面范围的筛选器。__
 
-1. 在矩阵视觉对象中，使用加号 (+) 按钮钻取 `Fiscal` 层次结构。
+1. 在矩阵视觉对象中，使用加号 (+) 按钮钻取`Fiscal` 层次结构。
 
 1. 选择“我的绩效”页。
 

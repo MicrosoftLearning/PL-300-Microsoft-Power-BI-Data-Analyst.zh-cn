@@ -27,7 +27,7 @@ lab:
 
 将文件夹提取到 C:\Users\Student\Downloads\01-get-data 文件夹****。
 
-打开 01-Starter-Sales Analysis.pbix **** 文件。
+打开 01-Starter-Sales Analysis.pbix**** 文件。
 
 - 此启动文件已经过特殊配置，可帮助完成实验室。 入门文件中禁用了以下报表级设置：
 
@@ -52,7 +52,7 @@ lab:
 
 1. 在“导航器”窗格中，展开“AdventureWorksDW2020”数据库。********
 
-    > ***备注**：AdventureWorksDW2020 **** 数据库基于 AdventureWorksDW2017 **** 示例数据库。 已对其进行修改，以支持课程实验室的学习目标。*
+    > ***备注**：AdventureWorksDW2020**** 数据库基于 AdventureWorksDW2017**** 示例数据库。 已对其进行修改，以支持课程实验室的学习目标。*
 
 1. 选择 DimEmployee 表，注意表数据的预览。****
 
@@ -83,7 +83,7 @@ lab:
 
 1. 选择 DimEmployee 查询。****
 
-    > SQL Server 数据库的 DimEmployee **** 表中每个员工占一行。此表中的行子集表示销售人员，与要开发的模型相关。**
+    > SQL Server 数据库的 DimEmployee**** 表中每个员工占一行。此表中的行子集表示销售人员，与要开发的模型相关。**
 
 1. 状态栏的左下角提供了一些表统计信息 - 该表包含 33 列和 296 行。
 
@@ -139,7 +139,7 @@ lab:
 
 1. 查看 TotalProductCost 列的列质量，请注意 8% 的行都为空。
 
-    > 缺少 TotalProductCost **** 列值是数据质量问题。**
+    > 缺少 TotalProductCost**** 列值是数据质量问题。**
 
 ## 从 CSV 文件获取数据
 
@@ -161,7 +161,7 @@ lab:
 
      ![列数据类型](Linked_image_Files/01-get-data-in-power-bi_image38.png)
 
-1. 基于 ColorFormats.csv **** 文件重复这些步骤，以创建查询。
+1. 基于 ColorFormats.csv**** 文件重复这些步骤，以创建查询。
 
     > 在 ColorFormats CSV 文件中，每个产品颜色占一行。每行都记录十六进制代码以设置背景和字体颜色的格式。
 

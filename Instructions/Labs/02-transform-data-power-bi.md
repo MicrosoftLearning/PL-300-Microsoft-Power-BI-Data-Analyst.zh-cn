@@ -25,7 +25,7 @@ lab:
 
 将文件夹解压缩到 C:\Users\Student\Downloads\02-transform-data 文件夹****。
 
-打开 02-Starter-Sales Analysis.pbix **** 文件。
+打开 02-Starter-Sales Analysis.pbix**** 文件。
 
 > _注意****：文件加载时，可能会看到登录对话框。选择“取消”以关闭登录对话框。**** 关闭所有其他信息窗口。如果系统提示应用更改，请选择“稍后应用”****。_
 
@@ -445,7 +445,7 @@ lab:
     - Targets
     - ColorFormats（这不会加载到数据模型）
 
-1. 选择“关闭 &amp; 应用”**** 以将数据加载到模型，然后关闭 Power Query 编辑器窗口。
+1. 选择“关闭&amp; 应用”**** 以将数据加载到模型，然后关闭 Power Query 编辑器窗口。
 
     ![图片 326](Linked_image_Files/02-transform-data-power-bi_image83.png)
 

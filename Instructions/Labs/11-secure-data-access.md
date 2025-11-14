@@ -34,7 +34,7 @@ lab:
 
 1. 在“数据”窗格中，选择“Salesperson (Performance)”表 。
 
-1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为 **`michael-blythe@adventureworks.com`**
+1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为**`michael-blythe@adventureworks.com`**
     
     > 回想一下，Michael Blythe 被分配到三个销售区域：美国东北部、美国中部和美国东南部。
 
@@ -68,7 +68,7 @@ lab:
 
    ![图片 5708](Linked_image_Files/11-secure-data-access_image27.png)
 
-1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：** `michael-blythe@adventureworks.com`**
+1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：**`michael-blythe@adventureworks.com`**
 
 1. 选中“Salespeople”角色，然后选择“确定” 。
     
@@ -88,11 +88,11 @@ lab:
 
    ![图片 5712](Linked_image_Files/11-secure-data-access_image32.png)
 
-1. 要删除 **Salespeople** 角色，请在**主页**功能区选项卡上，从**安全**组中选择**管理角色**。
+1. 要删除**Salespeople** 角色，请在**主页**功能区选项卡上，从**安全**组中选择**管理角色**。
 
    ![图片 16](Linked_image_Files/11-secure-data-access_image33.png)
 
-1. 在**管理安全角色**窗口中，选择 **Salespeople** 角色上的省略号（...），然后选择“删除”****。 当看到确认删除的提示时，选择“是，删除”。
+1. 在**管理安全角色**窗口中，选择**Salespeople** 角色上的省略号（...），然后选择“删除”****。 当看到确认删除的提示时，选择“是，删除”。
 
    ![图片 34](Linked_image_Files/11-secure-data-access_image34.png)
 

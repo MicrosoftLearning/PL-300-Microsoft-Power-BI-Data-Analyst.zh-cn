@@ -7,7 +7,7 @@ demo:
 
 # 演示设置
 
-1. 打开 Microsoft Edge，然后导航到 <https://powerbi.com>，使用工作或学校（组织）帐户登录。
+1. 打开 Microsoft Edge，然后导航到<https://powerbi.com>，使用工作或学校（组织）帐户登录。
     > **提示**：如果系统提示你更改密码，请确保将其记录在 D:\Allfiles\Demo\Setup\MySettings.txt 文件中。
 
 1. 创建一个工作区，并将 D:\Allfiles\Demo\Resources\Icon-Star.jpg 图像用作其图标。
@@ -26,4 +26,4 @@ demo:
 
 1. 关闭 Power BI Desktop。
 
-> 注意：可以在 PL-300 Power BI 数据分析师 [GitHub 存储库](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo)中找到演示资产。
+> 注意：可以在 PL-300 Power BI 数据分析师[GitHub 存储库](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo)中找到演示资产。

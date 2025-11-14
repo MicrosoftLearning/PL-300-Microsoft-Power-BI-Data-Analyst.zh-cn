@@ -1,10 +1,10 @@
 # PL-300：Microsoft Power BI 数据分析师
 
-此存储库包含 Microsoft 课程 [PL-300：Microsoft Power BI 数据分析师](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00)的动手实验室练习。 这些实验室专门设计为配合教材使用，可以让学员使用其描述的方法进行练习。
+此存储库包含 Microsoft 课程[PL-300：Microsoft Power BI 数据分析师](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00)的动手实验室练习。 这些实验室专门设计为配合教材使用，可以让学员使用其描述的方法进行练习。
 
-- 你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **需要手动生成实验室说明？** - [MicrosoftLearning/Docker-Build ](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
-- **是否需要回顾各个实验室与各项课程演示之间的对应关系？** - 查看 [GitHub 页面](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
+- 你是 MCT 吗？ - 查看[MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
+- **需要手动生成实验室说明？** -[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
+- **是否需要回顾各个实验室与各项课程演示之间的对应关系？** - 查看[GitHub 页面](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
 
 ## 我们要做什么？
 
