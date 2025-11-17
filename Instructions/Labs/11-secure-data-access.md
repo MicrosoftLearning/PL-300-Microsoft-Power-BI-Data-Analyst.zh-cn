@@ -8,7 +8,10 @@ lab:
 
 ## 实验室场景
 
-在本实验室中，强制执行行级别安全性，确保销售人员只能分析向其分配的区域的销售数据。 你将使用动态方法强制实施行级别安全性。
+在本实验室中，强制执行行级别安全性，确保销售人员只能分析向其分配的区域的销售数据。 学习如何：
+
+- 在 Power BI 中实现动态行级别安全性 (RLS)。
+- 使用 USERPRINCIPALNAME() 创建并测试角色。
 
 **此实验室应该大约需要 20 分钟。**
 
@@ -34,7 +37,7 @@ lab:
 
 1. 在“数据”窗格中，选择“Salesperson (Performance)”表 。
 
-1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为**`michael-blythe@adventureworks.com`**
+1. 查看数据，会发现 Michael Blythe（EmployeeKey 为 281）的 UPN 值为 **`michael-blythe@adventureworks.com`**
     
     > 回想一下，Michael Blythe 被分配到三个销售区域：美国东北部、美国中部和美国东南部。
 
@@ -48,7 +51,7 @@ lab:
 
    ![图片 5703](Linked_image_Files/11-secure-data-access_image23.png)
 
-1. 要分配筛选器，请选择“销售人员（绩效）”**** 表，然后选择“筛选器数据”**** 部分中的“切换到 DAX 编辑器”****。
+1. 要分配筛选器，请选择“销售人员（绩效）”表，然后选择“规则”部分中的“切换到 DAX 编辑器”。************
 
    ![图片 5703](Linked_image_Files/11-secure-data-access_image24.png)
 
@@ -68,7 +71,7 @@ lab:
 
    ![图片 5708](Linked_image_Files/11-secure-data-access_image27.png)
 
-1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：**`michael-blythe@adventureworks.com`**
+1. 在“以角色身份查看”窗口中，勾选“其他用户”项，然后在相应的框中输入：** `michael-blythe@adventureworks.com`**
 
 1. 选中“Salespeople”角色，然后选择“确定” 。
     
@@ -76,7 +79,7 @@ lab:
 
    ![图片 5709](Linked_image_Files/11-secure-data-access_image28.png)
 
-1. 请注意报表页上面的黄色横幅，其中说明了测试安全性上下文。
+1. 请注意报表页上面的红色横幅，其中说明了测试安全性上下文。
 
    ![图片 13](Linked_image_Files/11-secure-data-access_image30.png)
 
@@ -84,15 +87,15 @@ lab:
 
    ![图片 5713](Linked_image_Files/11-secure-data-access_image31.png)
 
-1. 若要停止测试，请在黄色横幅的右侧，选择“停止查看”。
+1. 若要停止测试，请在红色横幅的右侧，选择“停止查看”****。
 
    ![图片 5712](Linked_image_Files/11-secure-data-access_image32.png)
 
-1. 要删除**Salespeople** 角色，请在**主页**功能区选项卡上，从**安全**组中选择**管理角色**。
+1. 要删除 **Salespeople** 角色，请在**主页**功能区选项卡上，从**安全**组中选择**管理角色**。
 
    ![图片 16](Linked_image_Files/11-secure-data-access_image33.png)
 
-1. 在**管理安全角色**窗口中，选择**Salespeople** 角色上的省略号（...），然后选择“删除”****。 当看到确认删除的提示时，选择“是，删除”。
+1. 在**管理安全角色**窗口中，选择 **Salespeople** 角色上的省略号（...），然后选择“删除”****。 当看到确认删除的提示时，选择“是，删除”。
 
    ![图片 34](Linked_image_Files/11-secure-data-access_image34.png)
 
