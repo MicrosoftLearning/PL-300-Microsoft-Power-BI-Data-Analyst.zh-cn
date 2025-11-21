@@ -25,7 +25,7 @@ lab:
 
 将文件夹提取到 C:\Users\Student\Downloads\12-create-dashboard 文件夹****。
 
-> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在`https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
+> _**注意**：发布报表至少需要 Power BI 免费许可证****。 打开 Microsoft Edge 浏览器，然后在 `https://app.powerbi.com` 上登录。 系统要求解决难题或启动 Fabric 免费试用版时，可以跳过此步骤并关闭浏览器。
 
 ## 发布报表
 
@@ -33,7 +33,7 @@ lab:
 
 1. 在 Microsoft Edge 浏览器窗口的 Power BI 服务中，导航到“我的工作区”。
 
-1. 选择**导入 > 报表或分页报表 > 从此计算机**。
+1. 选择“导入”>“报表、分页报表或工作簿”>“从此计算机”****。
 
 1. 导航到 C:\Users\Student\Downloads\12-create-dashboard 文件夹****。
 
@@ -81,7 +81,7 @@ lab:
 
 1. 请注意，答复为“(空)”。
 
-    > *你可能还记得在**在 Power BI Desktop 中创建高级 DAX 计算**实验室中添加了**Sales YTD** 度量值。此度量值是时间智能表达式，它需要对**日期**表进行筛选以生成结果。*
+    > *你可能还记得在**在 Power BI Desktop 中创建高级 DAX 计算**实验室中添加了 **Sales YTD** 度量值。此度量值是时间智能表达式，它需要对**日期**表进行筛选以生成结果。*
 
     ![图片 14](Linked_image_Files/12-create-power-bi-dashboard_image25.png)
 
@@ -95,7 +95,7 @@ lab:
 
     ![图片 15](Linked_image_Files/12-create-power-bi-dashboard_image28.png)
 
-1. 当系统提示将磁贴固定到“销售监控”**** 仪表板时，选择“固定”****。
+1. 出现提示时，从下拉菜单中选择“销售额监视”，然后选择“固定”********。
 
 1. 要返回到该仪表板，请选择左上角的“退出问答”。
 
@@ -167,7 +167,7 @@ AdventureWorksDW2020 数据库现在包含 2020 年 6 月的销售订单。**
 
 在此任务中，你将打开 12-Starter-Sales Analysis Power BI Desktop 文件，执行数据刷新，然后将该文件上传到“销售分析”工作区********。
 
-1. 在 Power BI Desktop 文件的“数据”窗格中，右键单击“销售额”表，然后选择“刷新数据”  。
+1. 在 Power BI Desktop 文件的“数据”窗格中，右键单击“销售额”表，然后选择“刷新”>“数据”************。
 
     ![图片 55](Linked_image_Files/12-create-power-bi-dashboard_image47.png)
 

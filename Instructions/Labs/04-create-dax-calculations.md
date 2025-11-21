@@ -26,13 +26,13 @@ lab:
 
 将文件解压缩到 C:\Users\Student\Downloads\04-dax-calculations**** 文件夹。
 
-打开 04-Starter-Sales Analysis.pbix**** 文件。
+打开 04-Starter-Sales Analysis.pbix **** 文件。
 
 > _注意****：文件加载时，可能会看到登录对话框。选择“取消”以关闭登录对话框。**** 关闭所有其他信息窗口。如果系统提示应用更改，请选择“稍后应用”****。_
 
 ## 创建销售员计算表
 
-在本任务中，创建`Salesperson` 计算表（该表与`Sales` 表之间有之间关系）。
+在本任务中，创建 `Salesperson` 计算表（该表与 `Sales` 表之间有之间关系）。
 
 计算表的创建方式为，先输入表名称，后面依次跟等于号 (=) 和返回表的 DAX 公式。 表名称不能是数据模型中已有的。
 
@@ -48,7 +48,7 @@ lab:
 
     ![图 2](Linked_image_Files/04-create-dax-calculations_image10.png)
 
-    > 此表定义创建`Salesperson (Performance)` 表的副本。__ 它仅复制数据，但是不复制模型属性（如可见性、格式设置等）。
+    > 此表定义创建 `Salesperson (Performance)` 表的副本。__ 它仅复制数据，但是不复制模型属性（如可见性、格式设置等）。
 
 1. 在“数据”窗格中，请注意，新表的图标前面还有一个计算器图标（表示计算表）。****
 
@@ -58,33 +58,33 @@ lab:
     >
     > 与基于 Power Query 的表不同，计算表不能用于从外部数据源加载数据。__ 它们只能根据已加载到数据模型中的内容来转换数据。
 
-1. 切换到“模型”视图，并注意`Salesperson` 表不可用。****
+1. 切换到“模型”视图，并注意 `Salesperson` 表不可用。****
 
-1. 创建从`Salesperson | EmployeeKey` 列到`Sales | EmployeeKey` 列的关系。
+1. 创建从 `Salesperson | EmployeeKey` 列到 `Sales | EmployeeKey` 列的关系。
 
     > _实验室使用速记表示法引用字段。它将如下所示：`Salesperson | EmployeeKey`。在此示例中，`Salesperson` 是表名，`EmployeeKey` 是字段名。_
 
-1. 右键单击`Salesperson (Performance)` 和`Sales` 表之间的非活动关系，然后选择“删除”****。 当看到确认删除的提示时，选择**是**。
+1. 右键单击 `Salesperson (Performance)` 和 `Sales` 表之间的非活动关系，然后选择“删除”****。 当看到确认删除的提示时，选择**是**。
 
-1. 在`Salesperson` 表中，选择以下列，然后将其隐藏（将“隐藏”**** 属性设置为“是”__）：
+1. 在 `Salesperson` 表中，选择以下列，然后将其隐藏（将“隐藏”**** 属性设置为“是”__）：
 
     - `EmployeeID`
     - `EmployeeKey`
     - `UPN`
 
-1. 在模型图中，选择`Salesperson` 表。
+1. 在模型图中，选择 `Salesperson` 表。
 
 1. 在“属性”**** 窗格的“说明”**** 框中，输入：与销售额相关的销售员****
 
     > 回想一下，每当用户将光标悬停在表或字段上时，描述将显示为“数据”窗格中的工具提示。_****_
 
-1. 对于`Salesperson (Performance)` 表，将说明设置为：销售人员与一个或多个区域相关__
+1. 对于 `Salesperson (Performance)` 表，将说明设置为：销售人员与一个或多个区域相关__
 
-> 数据模型现在会在分析销售人员时提供两种替代方案。__`Salesperson` 表可便于分析销售人员的销售额，而`Salesperson (Performance)` 表则可便于分析分配给销售人员的一个或多个销售区域中的销售额。
+> 数据模型现在会在分析销售人员时提供两种替代方案。__`Salesperson` 表可便于分析销售人员的销售额，而 `Salesperson (Performance)` 表则可便于分析分配给销售人员的一个或多个销售区域中的销售额。
 
 ## 创建“Date”表
 
-在此任务中，你将创建`Date` 表。
+在此任务中，你将创建 `Date` 表。
 
 1. 切换到“表”视图。**** 在“主页”功能区选项卡上，选择“计算”组中的“新建表”。
 
@@ -132,7 +132,7 @@ lab:
    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
    ```
 
-1. 使用代码片段文件定义为`Date` 表创建以下两个计算列：
+1. 使用代码片段文件定义为 `Date` 表创建以下两个计算列：
 
     - `Quarter`
     - `Month`
@@ -153,7 +153,7 @@ lab:
 
     ![图片 11](Linked_image_Files/04-create-dax-calculations_image23.png)
 
-1. 在“数据”窗格中，从`Date` 表内，将`Year` 字段拖入“行”井中********。
+1. 在“数据”窗格中，从 `Date` 表内，将 `Year` 字段拖入“行”井中********。
 
     ![图片 12](Linked_image_Files/04-create-dax-calculations_image24.png)
 
@@ -169,9 +169,9 @@ lab:
 
     > _默认情况下，文本值按字母顺序排序，数字按从小到大的顺序排序，日期按从早到晚的顺序排序。_
 
-1. 若要自定义`Month` 字段排序顺序，请切换到“表”视图。****
+1. 若要自定义 `Month` 字段排序顺序，请切换到“表”视图。****
 
-1. 将`MonthKey` 列添加到`Date` 表中。
+1. 将 `MonthKey` 列添加到 `Date` 表中。
 
     ```dax
     MonthKey =
@@ -186,7 +186,7 @@ lab:
 
 1. 切换回“报表”视图。****
 
-1. 在“数据”窗格中**** 选择`Month` 字段。
+1. 在“数据”窗格中，选择 `Month` 字段****。
 
 1. 在“列工具”关联功能区上，选择“排序”组中的“按列排序”，然后选择“MonthKey”。
 
@@ -198,11 +198,11 @@ lab:
 
 ## 完成“Date”表
 
-在此任务中，你将通过隐藏列和创建层次结构来完成`Date` 表的设计。 然后，你将创建与“`Sales`”和“`Targets`”表的关系。
+在此任务中，你将通过隐藏列和创建层次结构来完成 `Date` 表的设计。 然后，你将创建与“`Sales`”和“`Targets`”表的关系。
 
 1. 切换到“模型”视图。
 
-1. 在`Date` 表中，隐藏`MonthKey` 列（将“隐藏”设置为“是”）****__。
+1. 在 `Date` 表中，隐藏 `MonthKey` 列（将“隐藏”设置为“是”）****__。
 
 1. 在“数据”窗格中，选择“`Date`”表，右键选择“`Year`”列，然后选择“创建层次结构”********。
 
@@ -218,8 +218,8 @@ lab:
 
 1. 创建以下两个模型关系：
 
-    - `Date | Date` 至`Sales | OrderDate`
-    - `Date | Date` 至`Targets | TargetMonth`
+    - `Date | Date` 至 `Sales | OrderDate`
+    - `Date | Date` 至 `Targets | TargetMonth`
 
 1. 隐藏以下两列：
 
@@ -238,7 +238,7 @@ lab:
 
     ![图片 21](Linked_image_Files/04-create-dax-calculations_image31a.png)
 
-1. 在“标记为日期表”**** 窗口中，将“标记为日期表”**** 属性滑动到“是”__。
+1. 在“标记为日期表”**** 窗口中，将“标记为日期表”**** 属性滑动到“开”__。
 
 1. 在“选择日期列”下拉列表中，选择“日期”********。
 
@@ -279,15 +279,15 @@ lab:
     AVERAGE(Sales[Unit Price])
     ```
 
-1. 将`Avg Price` 度量值添加到矩阵视觉对象中，注意它生成的结果与`Unit Price` 列相同（但格式不同）。
+1. 将 `Avg Price` 度量值添加到矩阵视觉对象中，注意它生成的结果与 `Unit Price` 列相同（但格式不同）。
 
-1. 在“值”井中，打开`Avg Price` 字段的上下文菜单，可以注意到无法更改聚合技术****。
+1. 在“值”井中，打开 `Avg Price` 字段的上下文菜单，可以注意到无法更改聚合技术****。
 
     ![图 25](Linked_image_Files/04-create-dax-calculations_image39.png)
 
     > 无法修改度量值的聚合行为。__
 
-1. 使用代码片段文件定义为`Sales` 表创建以下五个度量值：
+1. 使用代码片段文件定义为 `Sales` 表创建以下五个度量值：
 
     - `Median Price`
     - `Min Price`
@@ -295,11 +295,11 @@ lab:
     - `Orders`
     - `Order Lines`
 
-    > “`Orders`”度量值中使用的`DISTINCTCOUNT` 函数只会对订单进行一次计数（忽略重复项）。__“`Order Lines`”度量值中使用的`COUNTROWS` 函数对表执行运算。
+    > “`Orders`”度量值中使用的 `DISTINCTCOUNT` 函数只会对订单进行一次计数（忽略重复项）。__“`Order Lines`”度量值中使用的 `COUNTROWS` 函数对表执行运算。
     >
     > 在此示例中，订单数是通过统计非重复“`SalesOrderNumber`”列值来计算的，而订单行数则就是表行数（每行都是一个订单行）。__
 
-1. 切换到“模型”视图，然后选择四个价格度量值：`Avg Price`、`Max Price`、`Median Price` 和`Min Price`。****
+1. 切换到“模型”视图，然后选择四个价格度量值：`Avg Price`、`Max Price`、`Median Price` 和 `Min Price`。****
 
 1. 对于选择的多个度量值，配置以下要求：
 
@@ -308,7 +308,7 @@ lab:
 
     ![图 26](Linked_image_Files/04-create-dax-calculations_image40.png)
 
-1. 隐藏`Unit Price` 列。
+1. 隐藏 `Unit Price` 列。
 
     > 报表作者现在无法使用“`Unit Price`”列。他们必须使用你添加到模型中的定价度量值。这种设计方法可确保报表作者不会以不当的方式对价格进行聚合（例如，通过对价格进行求和）。__
 
@@ -347,7 +347,7 @@ lab:
 
 1. 选择表视觉对象，然后在“可视化效果”窗格中，删除“Sum of Target”********。
 
-1. 将`Targets | Target` 重命名为 TargetAmount__。
+1. 将 `Targets | Target` 重命名为 TargetAmount__。
 
     > _提示：有多种方法可以在“报表”视图中重命名列：**** 在“数据”窗格中，可以右键单击相应的列，然后选择“重命名”；或双击相应的列；或按 F2。************_
 
@@ -361,15 +361,15 @@ lab:
     )
     ```
 
-    > `HASONEVALUE` 函数测试是否在“`Salesperson`”列中筛选出单个值。如果为 true，则表达式返回目标额总和（仅针对此销售人员）。如果为 false，返回`BLANK`。__
+    > `HASONEVALUE` 函数测试是否在“`Salesperson`”列中筛选出单个值。如果为 true，则表达式返回目标额总和（仅针对此销售人员）。如果为 false，返回 `BLANK`。__
 
 1. 将“`Target`”度量值的格式设置为没有小数位。
 
     > _提示：_ 可以使用“度量值工具”上下文功能区。
 
-1. 隐藏`TargetAmount` 列。
+1. 隐藏 `TargetAmount` 列。
 
-    > 提示：在“数据”窗格中，可以右键单击该列，然后选择“隐藏”__。
+    > 提示：在“数据”窗格中，可以右键单击该列，然后选择“隐藏”_ _。
 
 1. 我们注意到，“`Targets`”表现在显示在列表的最上面。
 
@@ -379,7 +379,7 @@ lab:
 
 1. 将“`Target`”度量值添加到表视觉对象。
 
-1. 我们注意到，“Target”**** 列总计现在为`BLANK`。
+1. 我们注意到，“Target”**** 列总计现在为 `BLANK`。
 
     ![图片 32](Linked_image_Files/04-create-dax-calculations_image47.png)
 

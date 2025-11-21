@@ -62,15 +62,15 @@ lab:
 
 1. 要创建关系，请选择“+ 新建关系”****。
 
-1. 要配置从`Product` 表到`Sales` 表的关系，请在“从表”**** 下拉列表中选择`Product` 表，然后在“到表”**** 下拉列表中选择`Sales` 表。
+1. 要配置从 `Product` 表到 `Sales` 表的关系，请在“从表”**** 下拉列表中选择 `Product` 表，然后在“到表”**** 下拉列表中选择 `Sales` 表。
 
     ![图片 4](Linked_image_Files/03-configure-semantic-model-create-relationships.png)
 
 1. 请注意，已自动配置以下属性：
 
     - **已选择各个表中的 ProductKey 列**。 由于这些列具有相同名称和数据类型，因此自动将其选中。可能需要在实际数据中查找具有不同名称的匹配列。
-    - **基数类型为一对多 (1:\*)**。 由于 Power BI 认为`Product` 表中的`ProductKey` 列包含唯一值，因此已自动检测到基数。__ 一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。
-    - **交叉筛选片方向类型为“单一”**。 单个筛选方向表示筛选器从“一侧”传播到“多侧”。__ 在本例中，这意味着应用于`Product` 表的筛选将传播到`Sales` 表，但传播方向不能反过来。
+    - **基数类型为一对多 (1:\*)**。 由于 Power BI 认为 `Product` 表中的 `ProductKey` 列包含唯一值，因此已自动检测到基数。__ 一对多关系是最常见的基数，在本实验室中创建的所有关系都将是这种类型。
+    - **交叉筛选片方向类型为“单一”**。 单个筛选方向表示筛选器从“一侧”传播到“多侧”。__ 在本例中，这意味着应用于 `Product` 表的筛选将传播到 `Sales` 表，但传播方向不能反过来。
     - **已选中“使此关系可用”**。 活动关系传播筛选。_可以将关系标记为非活动，这样筛选器就不会传播。当表之间存在多个关系路径时，可能存在非活动关系。_ 在这种情况下，模型计算可以使用特殊函数来激活它们。
 
     ![图片 5](Linked_image_Files/03-configure-semantic-model-new-relationship.png)
@@ -91,7 +91,7 @@ lab:
 
 1. 切换到“报表”视图，可以看到表视觉对象已更新为针对每个产品类别显示不同的值。****
 
-    > 应用于`Product` 表的筛选器现已传播到`Sales` 表。__
+    > 应用于 `Product` 表的筛选器现已传播到 `Sales` 表。__
 
     ![图片 7](Linked_image_Files/03-configure-semantic-model-table-with-relationship.png)
 
@@ -101,7 +101,7 @@ lab:
 
 1. 若要使用不同的技术创建新关系，请切换到“模型”视图。****
 
-1. 从`Reseller` 表中，将“`ResellerKey`”列拖到`Sales` 表的“`ResellerKey`”列中。
+1. 从 `Reseller` 表中，将“`ResellerKey`”列拖到 `Sales` 表的“`ResellerKey`”列中。
 
     > 重要说明：_**** 有时候，无法拖动某个列。如果出现这种情况，请选择其他列，然后再次选择要拖动的列，然后重试。_ 确保显示添加到该图的新关系。
 
@@ -111,10 +111,10 @@ lab:
 
 1. 使用新方法创建以下两个模型关系：
 
-     - `Region | SalesTerritoryKey` 至`Sales | SalesTerritoryKey`
-     - `Salesperson | EmployeeKey` 至`Sales | EmployeeKey`
+     - `Region | SalesTerritoryKey` 至 `Sales | SalesTerritoryKey`
+     - `Salesperson | EmployeeKey` 至 `Sales | EmployeeKey`
 
-1. 在该图中，排列表，以使`Sales` 表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
+1. 在该图中，排列表，以使 `Sales` 表位于图的中心，并围绕该表排列相关的表。 将断开联接的表放在一边。
 
     ![图片 9](Linked_image_Files/03-configure-semantic-model-relationships-configured.png)
 
@@ -122,13 +122,13 @@ lab:
 
 ## 配置“Product”表
 
-在此任务中，你将使用层次结构和显示文件夹配置`Product` 表。
+在此任务中，你将使用层次结构和显示文件夹配置 `Product` 表。
 
 1. 切换到“模型”视图。
 
-1. 在“数据”窗格中，展开`Product` 表以显示所有字段（如有必要）。****
+1. 在“数据”窗格中，展开 `Product` 表以显示所有字段（如有必要）。****
 
-1. 在`Product` 表中，右键单击“`Category`”列，然后选择“创建层次结构”****。
+1. 在 `Product` 表中，右键单击“`Category`”列，然后选择“创建层次结构”****。
 
     ![图片 10](Linked_image_Files/03-configure-semantic-model-create-hierarchy.png)
 
@@ -136,17 +136,17 @@ lab:
 
     ![图片 11](Linked_image_Files/03-configure-semantic-model-create-hierarchy-rename.png)
 
-1. 向层次结构添加级别的方法是，在“层次结构”下拉列表中选择“Subcategory”，再依次选择“Products”和“应用级别更改”****************。
+1. 要向层次结构添加级别，可在“层次结构”下拉列表中选择“子类别”，再依次选择“产品”和“应用级别更改”****************。
 
     ![图片 12](Linked_image_Files/03-configure-semantic-model-create-hierarchy-levels.png)
 
-1. 注意“数据”**** 窗格中的`Products` 层次结构。 展开层次结构级别即可显示这些级别。
+1. 注意“数据”**** 窗格中的 `Products` 层次结构。 展开层次结构级别即可显示这些级别。
 
     ![图片 13](Linked_image_Files/03-configure-semantic-model_image28.png)
 
-1. 若要将列组织到一个显示文件夹中，先在“数据”**** 窗格中选择`Background Color Format` 列。
+1. 若要将列组织到一个显示文件夹中，先在“数据”**** 窗格中选择 `Background Color Format` 列。
 
-1. 在按住 Ctrl 键的同时选择`Font Color Format` 列****。
+1. 在按住 Ctrl 键的同时选择 `Font Color Format` 列****。
 
 1. 在“属性”窗格的“显示文件夹”框中，输入“Formatting”。
 
@@ -160,15 +160,15 @@ lab:
 
 ## 配置“Region”表
 
-在此任务中，你将使用层次结构和更新的类别配置`Region` 表。
+在此任务中，你将使用层次结构和更新的类别配置 `Region` 表。
 
-1. 在`Region` 表中，创建名为“Regions”的层次结构，其中包含以下三个级别__：
+1. 在 `Region` 表中，创建名为“Regions”的层次结构，其中包含以下三个级别__：
 
      - `Group`
      - `Country`
      - `Region`
 
-1. 选择`Country` 列（而不是`Country` 层次结构级别）。
+1. 选择 `Country` 列（而不是 `Country` 层次结构级别）。
 
 1. 在“属性”**** 窗格中，展开“高级”**** 部分（位于窗格底部），然后在“数据类别”**** 下拉列表中，选择“国家/地区”****。
 
@@ -178,9 +178,9 @@ lab:
 
 ## 配置“Reseller”表
 
-在此任务中，你将配置`Reseller` 表以添加层次结构并更新数据类别。
+在此任务中，你将配置 `Reseller` 表以添加层次结构并更新数据类别。
 
-1. 在`Reseller` 表中，创建名为“Resellers”__ 的层次结构，其中包含以下两个级别：
+1. 在 `Reseller` 表中，创建名为“Resellers”__ 的层次结构，其中包含以下两个级别：
 
      - `Business Type`
      - `Reseller`
@@ -200,7 +200,7 @@ lab:
 
 ## 配置“Sales”表
 
-在此任务中，你将使用更新的说明、格式和摘要配置`Sales` 表。
+在此任务中，你将使用更新的说明、格式和摘要配置 `Sales` 表。
 
 1. 在“`Sales`”表中，选择“`Cost`”列。
 
@@ -218,7 +218,7 @@ lab:
 
 1. 在“高级”组（可能需要向下滚动以找到它）的“汇总依据”下拉列表中，选择“Average”。
 
-    > 默认情况下，数字列通过将值加在一起进行汇总。此默认行为不适用于表示费率的列，例如`Unit Price`。将默认汇总设置为平均值将生成有意义的结果。
+    > 默认情况下，数字列通过将值加在一起进行汇总。此默认行为不适用于表示费率的列，例如 `Unit Price`。将默认汇总设置为平均值将生成有意义的结果。
 
 ## 批量更新属性
 
@@ -246,7 +246,7 @@ lab:
 
     > 这些列是隐藏的，因为它们要么被关系使用，要么将在行级别安全性配置或计算逻辑中使用。__
     >
-    > “在 Power BI Desktop 中创建 DAX 计算”实验室中会在计算中使用`SalesOrderNumber` 列。_****_
+    > “在 Power BI Desktop 中创建 DAX 计算”实验室中会在计算中使用 `SalesOrderNumber` 列。_****_
 
 1. 从以下三个列中进行选择（多选）：
 
@@ -271,7 +271,7 @@ lab:
      - 默认情况下，使用 sigma 符号 (Ʃ) 修饰的字段将进行汇总。
      - 将光标悬停在“`Sales | Cost`”字段上会出现工具提示。
 
-1. 展开“`Sales | OrderDate`”字段，注意它显示一个`Date Hierarchy`。 “`Targets | TargetMonth`”字段提供类似的层次结构。
+1. 展开“`Sales | OrderDate`”字段，注意它显示一个 `Date Hierarchy`。 “`Targets | TargetMonth`”字段提供类似的层次结构。
 
     ![图片 16](Linked_image_Files/03-configure-semantic-model_image40.png)
 
@@ -289,7 +289,7 @@ lab:
 
 在本任务中，创建两个快速度量值用于计算利润和利润率。 快速度量值可为你创建计算公式。 你可以轻松、快速地创建它们，以进行简单的常见计算。
 
-1. 在“数据”窗格中，右键单击`Sales` 表，然后选择“新建快速度量值”********。
+1. 在“数据”窗格中，右键单击 `Sales` 表，然后选择“新建快速度量值”********。
 
     ![图片 18](Linked_image_Files/03-configure-semantic-model_image46.png)
 
@@ -301,13 +301,13 @@ lab:
 
     ![图片 20](Linked_image_Files/03-configure-semantic-model-quick-measure-add-sales-field.png)
 
-1. 将`Sales | Cost` 字段拖入“要减去的值”框****。  
+1. 将 `Sales | Cost` 字段拖入“要减去的值”框****。  
 
     ![图片 21](Linked_image_Files/03-configure-semantic-model_image48.png)
 
-1. 选择**添加** 。
+1. 选择 **添加** 。
 
-1. 注意“数据”窗格`Sales` 表中的新度量值****。
+1. 注意“数据”窗格 `Sales` 表中的新度量值****。
 
     > 度量值用计算器图标表示。__
 
@@ -317,16 +317,16 @@ lab:
 
     > _提示：_ 若要重命名字段，也可以双击它，或选择它并按 F2。
 
-1. 根据以下要求，在`Sales` 表中添加第二个快速度量值：
+1. 根据以下要求，在 `Sales` 表中添加第二个快速度量值：
 
     > 重要说明****：如果上下文菜单中未显示创建快速度量值的选项，则使用“主页”功能区上“计算”组内的命令********。
 
     - 使用“除法”**** 数学运算。
-    - 将“分子”设为`Sales | Profit` 字段****。
-    - 将“分母”设置为`Sales | Sales` 字段****。
+    - 将“分子”设为 `Sales | Profit` 字段****。
+    - 将“分母”设置为 `Sales | Sales` 字段****。
     - 将度量值重命名为“Profit Margin”__。
 
-1. 确保选中`Profit Margin` 度量值，然后在“度量工具”上下文功能区上，将格式设置为“百分比”******** 并保留两位小数。
+1. 确保选中 `Profit Margin` 度量值，然后在“度量工具”上下文功能区上，将格式设置为“百分比”******** 并保留两位小数。
 
     ![图片 23](Linked_image_Files/03-configure-semantic-model_image54.png)
 
@@ -363,24 +363,24 @@ lab:
 
 1. 请注意，Michael Blythe 的销售额已近 900 万美元__。
 
-1. 切换到“模型”视图，然后拖动`SalespersonRegion` 表，将其放置在`Region` 和`Salesperson` 表之间。****
+1. 切换到“模型”视图，然后拖动 `SalespersonRegion` 表，将其放置在 `Region` 和 `Salesperson` 表之间。****
 
 1. 使用拖放方法创建以下两个模型关系：
 
-    - `Salesperson | EmployeeKey` 至`SalespersonRegion | EmployeeKey`
-    - `Region | SalesTerritoryKey` 至`SalespersonRegion | SalesTerritoryKey`
+    - `Salesperson | EmployeeKey` 至 `SalespersonRegion | EmployeeKey`
+    - `Region | SalesTerritoryKey` 至 `SalespersonRegion | SalesTerritoryKey`
 
-    > 可以将`SalespersonRegion` 表视为桥接表__。
+    > 可以将 `SalespersonRegion` 表视为桥接表__。
 
 1. 切换到“报表”视图，然后注意到，视觉对象尚未更新，即 Michael Blythe 的销售结果尚未更改。****
 
-1. 切换回“模型”视图，然后按照`Salesperson` 表中的关系筛选方向（箭头）进行操作。****
+1. 切换回“模型”视图，然后按照 `Salesperson` 表中的关系筛选方向（箭头）进行操作。****
 
-    > 考虑使`Salesperson` 表筛选`Sales` 表。__ 还可以筛选`SalespersonRegion` 表，但不会继续将筛选器传播到`Region` 表（箭头指向错误方向）。
+    > 考虑使 `Salesperson` 表筛选 `Sales` 表。__ 还可以筛选 `SalespersonRegion` 表，但不会继续将筛选器传播到 `Region` 表（箭头指向错误方向）。
 
     ![图片 28](Linked_image_Files/03-configure-semantic-model_u_image11.png)
 
-1. 要编辑`Region` 和`SalespersonRegion` 表之间的关系，请双击关系。
+1. 要编辑 `Region` 和 `SalespersonRegion` 表之间的关系，请双击关系。
 
 1. 在“编辑关系”窗口的“交叉筛选方向”下拉列表中，选择“双向”。
 
@@ -396,11 +396,11 @@ lab:
 
 1. 切换到“报表”视图，然后注意到销售额仍未更改。****
 
-    > _问题现在与以下事实有关：`Salesperson` 和`Sales` 表之间存在两个可能的筛选器传播路径。基于“最少表数”评估，这种多义性问题在内部得以解决。需要明确的是，不应设计具有此类歧义的模型，该问题将在本实验室的后面部分通过完成“在 Power BI Desktop 中创建 DAX 计算”**** 实验室解决。_
+    > _问题现在与以下事实有关：`Salesperson` 和 `Sales` 表之间存在两个可能的筛选器传播路径。基于“最少表数”评估，这种多义性问题在内部得以解决。需要明确的是，不应设计具有此类歧义的模型，该问题将在本实验室的后面部分通过完成“在 Power BI Desktop 中创建 DAX 计算”**** 实验室解决。_
 
 1. 切换到“模型”视图。
 
-1. 要通过桥接表强制实施筛选传播，请编辑（双击）`Salesperson` 和`Sales` 表之间的关系。
+1. 要通过桥接表强制实施筛选传播，请编辑（双击）`Salesperson` 和 `Sales` 表之间的关系。
 
 1. 在“编辑关系”**** 窗口中，取消选中“使此关系可用”**** 复选框。
 
@@ -422,7 +422,7 @@ lab:
      >
      > _虽然多对多关系现在有效，但现在无法分析销售人员的销售额（因为该关系处于非活动状态）。在“在 Power BI Desktop 中创建 DAX 计算”实验室中引入可可分析对销售人员分配的销售区域的销售额的计算表（用于绩效分析），以便能够重新激活此关系****_。
 
-1. 切换到“模型”视图，然后在模型图中选择`Salesperson` 表。****
+1. 切换到“模型”视图，然后在模型图中选择 `Salesperson` 表。****
 
 1. 在“属性”窗格的“名称”框中，将文本替换为“Salesperson (Performance)”。
 
@@ -430,11 +430,11 @@ lab:
 
 ## 关联“Targets”表
 
-在本任务中，创建与`Targets` 表的关系。
+在本任务中，创建与 `Targets` 表的关系。
 
-1. 通过`Salesperson (Performance) | EmployeeID` 列和`Targets | EmployeeID` 列创建关系。
+1. 通过 `Salesperson (Performance) | EmployeeID` 列和 `Targets | EmployeeID` 列创建关系。
 
-1. 在“报表”视图中，将`Targets | Target` 字段添加到表视觉对象。****
+1. 在“报表”视图中，将 `Targets | Target` 字段添加到表视觉对象。****
 
 1. 重设表视觉对象的大小，使所有列均可见。
 
